@@ -1,0 +1,423 @@
+{
+  "actual_source": {
+    "episode": {
+      "bytes": 20255,
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/canonical17-release01/reserved/video/episode-217500/receipt.json",
+      "sha256": "643de6e6a746b29ad33e10f8749e457dcda2d21321d3415b24fd7034b46e53f7"
+    },
+    "exact": false,
+    "label": 217500,
+    "reset_distribution": "Published noisy benchmark reset; not literal hanging. No new reset or controller episode in this review.",
+    "tape": {
+      "bytes": 438026,
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/canonical17-release01/reserved/video/episode-217500/tape.npz",
+      "sha256": "8d0f664f37886d2352c336eaa5728ef6d673c09f65d417206383ab71f4a5cc2f"
+    }
+  },
+  "all_independent_review_and_diagnostic_owners": {
+    "independent-audio-alignment-diagnostic-prepared01": {
+      "CPU_seconds": 0.8319599999999999,
+      "all_source_pins_unchanged": true,
+      "child_returncode": 0,
+      "completion": {
+        "bytes": 1191614,
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/independent-audio-alignment-diagnostic-prepared01/completion.json",
+        "sha256": "aca8984c9e5bd169fe3be743e83b05d8015ea8df11e1bd89d51b493f698d48c2"
+      },
+      "launch": {
+        "bytes": 1708382,
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/independent-audio-alignment-diagnostic-prepared01/launch.json",
+        "sha256": "835329c5a0edbf9357fb3e28b1dacb93585d145016ec276ab2edd6bde4cb0ea6"
+      },
+      "log": {
+        "bytes": 3102,
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/independent-audio-alignment-diagnostic-prepared01/worker.log",
+        "sha256": "9cf4fccb297a891ce5f68d849dd3e09a93317f235ba7bed64ca1dfb4e0590548"
+      },
+      "naturally_closed_zero": true,
+      "peak_rss_kib": 222984,
+      "reaped": [
+        "group_already_exited"
+      ],
+      "source_pins": 8331,
+      "wall_seconds": 1.9448554400005378
+    },
+    "independent-audio-reference-prepared01": {
+      "CPU_seconds": 0.9218179999999999,
+      "all_source_pins_unchanged": true,
+      "child_returncode": 0,
+      "completion": {
+        "bytes": 1193648,
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/independent-audio-reference-prepared01/completion.json",
+        "sha256": "904d9257076d215797c05cc801fbbe1cf2e1549840720cd1004bda144b5dd7a1"
+      },
+      "launch": {
+        "bytes": 1711462,
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/independent-audio-reference-prepared01/launch.json",
+        "sha256": "4de5ede8cc98ea3fd2d4b41d836591efff9518644caaba81c67f069ab22c9087"
+      },
+      "log": {
+        "bytes": 4359,
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/independent-audio-reference-prepared01/worker.log",
+        "sha256": "841d1676553c8ffd285da7b956bb144395bd304147d19ac8dcab690e0969f0f3"
+      },
+      "naturally_closed_zero": true,
+      "peak_rss_kib": 58200,
+      "reaped": [
+        "group_already_exited"
+      ],
+      "source_pins": 8346,
+      "wall_seconds": 2.135180556040723
+    },
+    "independent-audio-spectrum-diagnostic-prepared01": {
+      "CPU_seconds": 0.527705,
+      "all_source_pins_unchanged": true,
+      "child_returncode": 0,
+      "completion": {
+        "bytes": 1192970,
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/independent-audio-spectrum-diagnostic-prepared01/completion.json",
+        "sha256": "b63264c06ba18b204771de48e342aed27c3b4fd5bc7dd398d11f47229ef27b12"
+      },
+      "launch": {
+        "bytes": 1710336,
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/independent-audio-spectrum-diagnostic-prepared01/launch.json",
+        "sha256": "965cf5644dbbd3adefbeb1dcf16e3fa9908c0fe6c6c040113decc349ea13de44"
+      },
+      "log": {
+        "bytes": 6087,
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/independent-audio-spectrum-diagnostic-prepared01/worker.log",
+        "sha256": "0e5b49cfefc538cd547aa49fa72d36fa7ce07bbf801443f200af2f0135af7e54"
+      },
+      "naturally_closed_zero": true,
+      "peak_rss_kib": 176120,
+      "reaped": [
+        "group_already_exited"
+      ],
+      "source_pins": 8341,
+      "wall_seconds": 1.6877822909737006
+    },
+    "independent-audio-window-diagnostic-prepared01": {
+      "CPU_seconds": 0.459211,
+      "all_source_pins_unchanged": true,
+      "child_returncode": 0,
+      "completion": {
+        "bytes": 1192287,
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/independent-audio-window-diagnostic-prepared01/completion.json",
+        "sha256": "46cc7fe9b6edd061a97261336572792c9acbb0ea9473580fa8c88e82be0804ae"
+      },
+      "launch": {
+        "bytes": 1709342,
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/independent-audio-window-diagnostic-prepared01/launch.json",
+        "sha256": "5d2ecb540139063bcd173e7d3288cc5cebf60d6e1f6b586b892cbe01fef3db84"
+      },
+      "log": {
+        "bytes": 9351,
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/independent-audio-window-diagnostic-prepared01/worker.log",
+        "sha256": "e9492084a9793ec142fdaed7348450d96040650cd22cc56a13e9ac1c46b2ac29"
+      },
+      "naturally_closed_zero": true,
+      "peak_rss_kib": 196664,
+      "reaped": [
+        "group_already_exited"
+      ],
+      "source_pins": 8336,
+      "wall_seconds": 1.6316525780130178
+    },
+    "independent-media-audit-prepared01": {
+      "CPU_seconds": 19.718256,
+      "all_source_pins_unchanged": true,
+      "child_returncode": 1,
+      "completion": {
+        "bytes": 1191079,
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/independent-media-audit-prepared01/completion.json",
+        "sha256": "e98ce0a0b93efe758cd067044350ec0e1965cf8559ad978babb56cf9e2114190"
+      },
+      "launch": {
+        "bytes": 1707640,
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/independent-media-audit-prepared01/launch.json",
+        "sha256": "f26d32f3c6e3d7f2b2dba8b9af3131d8321ca9e4b48260752e4cfad30fc1506c"
+      },
+      "log": {
+        "bytes": 664,
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/independent-media-audit-prepared01/worker.log",
+        "sha256": "6d7abcd5c8b24da7d0e314e0bd9c67598b30c77435b156cc55fa6862945da674"
+      },
+      "naturally_closed_zero": false,
+      "peak_rss_kib": 209148,
+      "reaped": [
+        "group_already_exited"
+      ],
+      "source_pins": 8327,
+      "wall_seconds": 15.649732513993513
+    },
+    "independent-media-audit-prepared02": {
+      "CPU_seconds": 21.060733000000003,
+      "all_source_pins_unchanged": true,
+      "child_returncode": 0,
+      "completion": {
+        "bytes": 1194845,
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/independent-media-audit-prepared02/completion.json",
+        "sha256": "1100a85bc497ac5f905958e2efe717812e4fe52b3b25c70d785cea55cc2252f9"
+      },
+      "launch": {
+        "bytes": 1713177,
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/independent-media-audit-prepared02/launch.json",
+        "sha256": "ee63a279ad06f0522303964ea8ca85bf8514616850b8d0162f2b4f1b150e354d"
+      },
+      "log": {
+        "bytes": 218,
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/independent-media-audit-prepared02/worker.log",
+        "sha256": "53b2b36fd294ed2bd218e6ca7f546bae2e8430fb7c1887f975e40124cb2d2733"
+      },
+      "naturally_closed_zero": true,
+      "peak_rss_kib": 209304,
+      "reaped": [
+        "group_already_exited"
+      ],
+      "source_pins": 8355,
+      "wall_seconds": 16.661411356995814
+    }
+  },
+  "controller_calls": 0,
+  "diagnostic_only_reference_transcodes": 1,
+  "external_writes": 0,
+  "final_audit": {
+    "bytes": 15718,
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/independent-media-audit-prepared02/receipt.json",
+    "sha256": "82d21c18ed1f0a2cab1a65166b19841ec113165659869271f2236288e3aa4f7a"
+  },
+  "final_worker": {
+    "bytes": 15880,
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/independent-media-source01/review_media_v2.py",
+    "sha256": "17cc8f4c000d4bb28086ed4812d0c99b9b031f10751ff1044245554983fdc82d"
+  },
+  "independent_owner_cost_totals_including_retained_failure": {
+    "CPU_seconds": 43.519683,
+    "scope": "One retained failed audit, three successful decode-only diagnostics, one authorized diagnostic reference transcode, one successful final audit. Original render/music owner costs remain separate.",
+    "wall_seconds": 39.710614736017305
+  },
+  "native_commands": 0,
+  "new_physical_episodes": 0,
+  "new_reserved_claims": 0,
+  "new_scientific_or_silent_renders": 0,
+  "no_original_media_files_modified": true,
+  "original_render_and_music_owners": {
+    "telemetry-music-share-owner01": {
+      "CPU_seconds": 19.641635,
+      "all_pins_unchanged": true,
+      "completion": {
+        "bytes": 1188207,
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/telemetry-music-share-owner01/completion.json",
+        "sha256": "2e641225d9547d105f44239c72c14557d29430d0e01d2cdde3e28e3a8ebdf858"
+      },
+      "launch": {
+        "bytes": 1704566,
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/telemetry-music-share-owner01/launch.json",
+        "sha256": "29f85bb2a8e9281fb97b7b0440c52b35e7fa9e91e4a3581e66dfd0cec6cbe601"
+      },
+      "log": {
+        "bytes": 1129,
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/telemetry-music-share-owner01/worker.log",
+        "sha256": "7eccab57553e1785ec313f80c8aa1881f7111300148e42ec9d56646a749bb860"
+      },
+      "naturally_closed_zero": true,
+      "reaped": true,
+      "source_pins": 8304,
+      "wall_seconds": 15.236096940003335
+    },
+    "telemetry-video-render-owner01": {
+      "CPU_seconds": 40.443174,
+      "all_pins_unchanged": true,
+      "completion": {
+        "bytes": 1185065,
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/telemetry-video-render-owner01/completion.json",
+        "sha256": "9a235bdc59689186d4b69050d0558ca0049bcbe415d5cd0d92ad56859cd3bce7"
+      },
+      "launch": {
+        "bytes": 1700325,
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/telemetry-video-render-owner01/launch.json",
+        "sha256": "46c5b346d57b560e5f98144d38dc91996c781ffc6a1f51b3de4b8c59c21ed6fe"
+      },
+      "log": {
+        "bytes": 557,
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/telemetry-video-render-owner01/worker.log",
+        "sha256": "af2e2a4580df16a5410306b2633f3f01f08c1192e05b0776d79ee1bd3ac7b7a9"
+      },
+      "naturally_closed_zero": true,
+      "reaped": true,
+      "source_pins": 8278,
+      "wall_seconds": 10.571892657026183
+    }
+  },
+  "passed": true,
+  "presentation": {
+    "all1500_decoded_frame_hashes_and_timestamps_silent_vs_music_identical": true,
+    "all1500_encoded_video_packet_payload_hashes_PTS_DTS_durations_identical": true,
+    "all1500_post_command_rows_match_actual_state_force_angle_clock_hold": true,
+    "all6_inspection_PNGs_visually_reviewed": true,
+    "dimensions": [
+      1280,
+      1080
+    ],
+    "displayed_time": "post-command/50",
+    "duration_seconds": 30,
+    "encoded_PTS": "(post-command-1)/50",
+    "final_best_hold_seconds": 7.36,
+    "final_best_hold_ticks": 368,
+    "final_lossless_poster_matches_encoded_frame1499": true,
+    "first_250_hold_earned_post_command": 1382,
+    "first_qualifying_hold_start_post_command": 1133,
+    "fixed_camera_complete_rail_chain_and_grid": true,
+    "fps": 50,
+    "frames": 1500,
+    "initial_state_not_rendered": true,
+    "inspection_post_commands": [
+      1,
+      850,
+      851,
+      1000,
+      1250,
+      1500
+    ],
+    "music_video": {
+      "bytes": 1977926,
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/video217500-music01/canonical17-telemetry-rising-tide.mp4",
+      "sha256": "62f97711dd1594fbf957e30a51873e53034eae2f4c85980d48bdd842c01b4ec4"
+    },
+    "nominal_geometry_native_serialization_17segments": 0.176470588,
+    "post_command850": "HANGING SETTLE",
+    "post_command851": "SWING UP AND BALANCE",
+    "scientific_video": {
+      "bytes": 656562,
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/video217500-scientific01/episode.mp4",
+      "sha256": "80169fa50e54fbc98bd2901429a1ed5b7dbccf4bd92211b769173cb549cc1554"
+    },
+    "silent_video": {
+      "bytes": 1229461,
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/video217500-telemetry01/canonical17-telemetry.mp4",
+      "sha256": "5d712fc3d6819b3a50814751b98423e4a5ce6d290cd5311f1580897bce8bbab1"
+    },
+    "standard": {
+      "bytes": 5199,
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/arena17-staging01/site/docs/video-standard.md",
+      "sha256": "5166212f4728621097a4120ae1f75ca2ad9eeba358c5f85319f4eaa6771f98a1"
+    },
+    "unchanged_renderer": {
+      "bytes": 21667,
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/arena17-staging01/site/scripts/render_telemetry_video.py",
+      "sha256": "52979a8b5b28c588fd6326027349ef723403008a013881f9397694dc1193eca8"
+    },
+    "visual_review": "Legible title/parameters, complete chain/rail, fixed camera and grid, scalar cart/force, strict angle and streak/latched hold, 850/851 phase change, final30.00s/7.36s and Rage Industries/neuralyogi.com footer.",
+    "webp_poster": {
+      "bytes": 44334,
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/video217500-music01/canonical17-poster.webp",
+      "sha256": "5a2ef461ec7bafb45d84b28c2e67d49cdc64a04108a2ab1e37643d58aa7f3fe9"
+    }
+  },
+  "qualification_awarded_by_media_review": false,
+  "reset_RNG_draws": 0,
+  "retained_negative_guard": {
+    "AAC_RMS_retention_16k_to_Nyquist": 0.00022435333172037594,
+    "best_integer_lag_samples": 0,
+    "complex_coherence_20_to5000_Hz_min": 0.999713887389245,
+    "correction": "The global waveform threshold was unjustified for this declared lossy AAC transformation. Near-Nyquist source energy removal explains the correlation loss. It remains reported; source identity is decisively verified by an independent exact-argv reference producing the entire MP4 byte-identically. No original audio/video was changed and no threshold in scientific qualification was changed.",
+    "first_failed_owner": {
+      "CPU_seconds": 19.718256,
+      "all_source_pins_unchanged": true,
+      "child_returncode": 1,
+      "completion": {
+        "bytes": 1191079,
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/independent-media-audit-prepared01/completion.json",
+        "sha256": "e98ce0a0b93efe758cd067044350ec0e1965cf8559ad978babb56cf9e2114190"
+      },
+      "launch": {
+        "bytes": 1707640,
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/independent-media-audit-prepared01/launch.json",
+        "sha256": "f26d32f3c6e3d7f2b2dba8b9af3131d8321ca9e4b48260752e4cfad30fc1506c"
+      },
+      "log": {
+        "bytes": 664,
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/independent-media-audit-prepared01/worker.log",
+        "sha256": "6d7abcd5c8b24da7d0e314e0bd9c67598b30c77435b156cc55fa6862945da674"
+      },
+      "naturally_closed_zero": false,
+      "peak_rss_kib": 209148,
+      "reaped": [
+        "group_already_exited"
+      ],
+      "source_pins": 8327,
+      "wall_seconds": 15.649732513993513
+    },
+    "first_failed_worker": {
+      "bytes": 13996,
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/independent-media-source01/review_media.py",
+      "sha256": "2df895fe8cef902b6f9fe193db27136ff6fb3768332f893c9c3c21b8af4ef424"
+    },
+    "frequency_diagnostic": {
+      "bytes": 7595,
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/independent-audio-spectrum-diagnostic-prepared01/receipt.json",
+      "sha256": "d6df6f71612101eb0058aaafc56d80658ddcb42b4c74c96b73eddabaa69c052e"
+    },
+    "observed_least_squares_gain": 0.5566487398613637,
+    "observed_zero_lag_correlation": 0.746585254822059,
+    "original_threshold": "Global zero-lag sourcePCM correlation>0.99 and gain0.98..1.02.",
+    "source_energy_fraction_16k_to_Nyquist": 0.4425334514317154,
+    "source_seek0_did_not_change_result": true
+  },
+  "schema": "rage_mill.canonical17_independent_media_review.v1",
+  "scope": "Saved media checks within the same root author session. Independent subagent implementation; not third-party benchmark reproduction.",
+  "site_writes": 0,
+  "soundtrack": {
+    "ISRC": "USUAN1900010",
+    "artist": "Kevin MacLeod",
+    "changes": "Source0..30s,0dB,linear fadein0..0.25s/fadeout28.5..30s,AAC192kbit/s44100Hzstereo; video stream copied.",
+    "clipped_samples": 0,
+    "decoded_audio_RMS": 0.055755154718867696,
+    "decoded_audio_peak": 0.6177343130111694,
+    "entire_MP4_reference_bytes_identical": true,
+    "exact_reference_1293_AAC_packet_payload_hashes_PTS_DTS_durations_identical": true,
+    "full_credit": "\"Rising Tide\" Kevin MacLeod (incompetech.com). Licensed under Creative Commons: By Attribution 4.0 License. https://creativecommons.org/licenses/by/4.0/",
+    "full_credit_artist_comment_copyright_present_in_actual_MP4": true,
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "nonfinite_samples": 0,
+    "official_page_and_catalogue_evidence": {
+      "page": {
+        "bytes": 26826,
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/media-source02/license-source-canonical.html",
+        "sha256": "0aaccc3d496fc4ae189e27e3fe2d4f5216266e3bcccf2e0ba77fb1b57a28fa94"
+      },
+      "scope": "The official page fetches pieces.json by ISRC and applies its CC BY 4.0 attribution template to that track. Catalogue matches USUAN1900010 to Rising Tide.mp3.",
+      "selected_track": {
+        "bytes": 1118,
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/media-source02/selected-track.json",
+        "sha256": "5a5f74f7f47d85445c5d89b551db64ccf6a094b9f6cf3b926af848e0e98e3b56"
+      },
+      "track_catalogue": {
+        "bytes": 881512,
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/media-source02/pieces.json",
+        "sha256": "54802ad340562624b9d1c9c97aa9f005e2b9bf79001f8a1a07ed857e68b2164a"
+      }
+    },
+    "official_primary_page": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1900010",
+    "primary_license_review": "Cached official page JavaScript binds the ISRC catalogue item and emits the Kevin MacLeod/CC BY4.0 attribution template. Cached official catalogue matches the title and filename. Current official CC BY4.0 deed was read; the current track page is dynamic in the text browser.",
+    "reference_MP4_SHA256": "62f97711dd1594fbf957e30a51873e53034eae2f4c85980d48bdd842c01b4ec4",
+    "source_and_license_links_and_excerpt_changes_disclosed_in_adjacent_provenance": true,
+    "source_audio": {
+      "bytes": 11100913,
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/media-source02/Rising Tide.mp3",
+      "sha256": "56e5f0b8f69de4bfc81abd6b50414db2e14a2f487de01a38027188c18d00d420"
+    },
+    "source_identity_reference": {
+      "bytes": 4897,
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/independent-audio-reference-prepared01/receipt.json",
+      "sha256": "f771ea3c13ad14914ebfa94dc5e255398ffb34b8842c819ea0461432ab3fc3ba"
+    },
+    "source_provenance": {
+      "bytes": 2385,
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/media-source02/provenance02.json",
+      "sha256": "e95e18b2a5d3e06cb9f5f4dd10f29592bd91478a112ed7b86d23b54a5af7cf28"
+    },
+    "title": "Rising Tide"
+  }
+}

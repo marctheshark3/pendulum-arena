@@ -1,0 +1,61 @@
+{
+  "schema": "pendulum_arena.canonical17_reserved.v1",
+  "passed": true,
+  "episodes": 141,
+  "successes": 141,
+  "cohorts": [
+    {
+      "gate": "noisy20",
+      "receipt": {
+        "path": "reserved/noisy20/receipt.json",
+        "sha256": "c4f6a124f59395d616feb3fef6f36d3e261d0f19a90b8459bba1c0fc561397a1",
+        "bytes": 25026
+      },
+      "seed_start": 217000,
+      "episodes": 20,
+      "exact": false,
+      "stage": "reserved",
+      "successes": 20
+    },
+    {
+      "gate": "noisy100",
+      "receipt": {
+        "path": "reserved/noisy100/receipt.json",
+        "sha256": "61984abb7748ee62c1254f6be8d80bf51e99fc3a7213b7997ecb2e6359cb8f8e",
+        "bytes": 43690
+      },
+      "seed_start": 217100,
+      "episodes": 100,
+      "exact": false,
+      "stage": "reserved",
+      "successes": 100
+    },
+    {
+      "gate": "exact20",
+      "receipt": {
+        "path": "reserved/exact20/receipt.json",
+        "sha256": "914470b31e2067c4c643ab3a9677ec2c3e58189ec31232a2a83c6acae8472995",
+        "bytes": 25025
+      },
+      "seed_start": 217200,
+      "episodes": 20,
+      "exact": true,
+      "stage": "reserved",
+      "successes": 20
+    },
+    {
+      "gate": "video",
+      "receipt": {
+        "path": "reserved/video/receipt.json",
+        "sha256": "7d663481b03042db78df58813342ecbfa5eff98106035a55b5adb630e371e192",
+        "bytes": 20609
+      },
+      "seed_start": 217500,
+      "episodes": 1,
+      "exact": false,
+      "stage": "reserved",
+      "successes": 1
+    }
+  ],
+  "once_only_label_claims": 141
+}

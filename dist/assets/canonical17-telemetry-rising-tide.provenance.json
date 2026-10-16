@@ -1,0 +1,91 @@
+{
+  "schema": "rage_mill.canonical17_music_share.v1",
+  "complete": true,
+  "video": "canonical17-telemetry-rising-tide.mp4",
+  "video_sha256": "62f97711dd1594fbf957e30a51873e53034eae2f4c85980d48bdd842c01b4ec4",
+  "video_bytes": 1977926,
+  "original_video": "canonical17-telemetry.mp4",
+  "original_video_sha256": "5d712fc3d6819b3a50814751b98423e4a5ce6d290cd5311f1580897bce8bbab1",
+  "original_provenance": "canonical17-telemetry.provenance.json",
+  "original_provenance_sha256": "b3b67e1f15c664b67c7cee3b52ffd6b6644eb019c1ead021c8abd0124e31f909",
+  "video_stream_copied_without_reencoding": true,
+  "scientific_video": "canonical17.mp4",
+  "scientific_video_sha256": "80169fa50e54fbc98bd2901429a1ed5b7dbccf4bd92211b769173cb549cc1554",
+  "frames": 1500,
+  "fps": 50,
+  "duration_seconds": 30,
+  "resolution": [
+    1280,
+    1080
+  ],
+  "new_simulation_or_controller_inference": false,
+  "music": {
+    "title": "Rising Tide",
+    "artist": "Kevin MacLeod",
+    "ISRC": "USUAN1900010",
+    "track_page": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1900010",
+    "source_audio": {
+      "file": "Rising Tide.mp3",
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/media-source02/Rising Tide.mp3",
+      "sha256": "56e5f0b8f69de4bfc81abd6b50414db2e14a2f487de01a38027188c18d00d420",
+      "bytes": 11100913
+    },
+    "source_provenance": {
+      "file": "provenance02.json",
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/media-source02/provenance02.json",
+      "sha256": "e95e18b2a5d3e06cb9f5f4dd10f29592bd91478a112ed7b86d23b54a5af7cf28",
+      "bytes": 2385
+    },
+    "excerpt_start_seconds": 0,
+    "excerpt_end_seconds": 30,
+    "gain_db": 0,
+    "volume_multiplier": 1,
+    "fade_in_seconds": 0.25,
+    "fade_out_start_seconds": 28.5,
+    "fade_out_duration_seconds": 1.5,
+    "encoder": "AAC",
+    "target_bitrate_bps": 192000,
+    "sample_rate_hz": 44100,
+    "channels": 2
+  },
+  "music_license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "credit": "\"Rising Tide\" Kevin MacLeod (incompetech.com). Licensed under Creative Commons: By Attribution 4.0 License. https://creativecommons.org/licenses/by/4.0/",
+  "changes": "Excerpt 0..30 s; gain 0 dB; fade in 0..0.25 s; fade out 28.5..30 s; AAC 192 kbit/s, 44100 Hz stereo. Video packets copied without reencoding.",
+  "exact_audio_filters": "volume=1,afade=t=in:st=0:d=0.25,afade=t=out:st=28.5:d=1.5",
+  "audio_verification": {
+    "codec": "aac",
+    "target_bitrate_bps": 192000,
+    "sample_rate_hz": 44100,
+    "channels": 2,
+    "stream_duration_seconds": 30.0,
+    "decoded_frames": 1323008,
+    "decoded_float_samples": 2646016,
+    "aac_decoding_may_include_padding": true,
+    "all_samples_finite": true,
+    "rms": 0.055755154718867696,
+    "peak_absolute": 0.6177343130111694,
+    "clipped_samples_at_or_above_one": 0,
+    "finite_non_silent_and_unclipped": true,
+    "pcm_f32le_sha256": "0a3ce1c8281bd1fd2b3d5555a54fb9a0388e234bca9ed04e2da299399b767c4b"
+  },
+  "independent_review": {
+    "receipt": "canonical17-media-review.json",
+    "receipt_sha256": "3699b35c431da444de2aff95e6066bf1ab04e03592a08dfc736c06317e535d1d",
+    "review_scope": "Separate saved-media verification implementation within the author project; not third-party benchmark reproduction.",
+    "all_1500_decoded_video_frames_and_timestamps_identical": true,
+    "all_1500_encoded_video_packet_payload_hashes_and_pts_dts_durations_identical": true,
+    "audio_valid_non_silent_and_unclipped": true
+  },
+  "poster": {
+    "file": "canonical17-poster.webp",
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/video217500-music01/canonical17-poster.webp",
+    "sha256": "5a2ef461ec7bafb45d84b28c2e67d49cdc64a04108a2ab1e37643d58aa7f3fe9",
+    "bytes": 44334
+  },
+  "native_commands": 0,
+  "controller_calls": 0,
+  "reset_RNG_draws": 0,
+  "new_physical_resets": 0,
+  "qualification_awarded": false
+}

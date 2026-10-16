@@ -1,0 +1,27 @@
+{
+  "schema": "rage_mill.canonical17_original_source_freeze_clock.v1",
+  "source_freeze_commit": "461dff89e2a824aa6771b927e5da0b67a3184f71",
+  "original_commit_object": {
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/original-source-freeze-commit01.txt",
+    "sha256": "90ca8fd76676b86cf196da01fed7f43e5de8665e1907c5bf62a22ee5fa717209",
+    "bytes": 240
+  },
+  "Git_object_SHA1_verified": true,
+  "original_source_freeze_UTC": "2026-10-16T22:08:44+00:00",
+  "same_original_author_and_committer_epoch": 1792188524,
+  "freeze": {
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/canonical17-release01/freeze.json",
+    "sha256": "02b2360d66705f70e77423ebb1dbb2c6cbe17e535155b27bfb16a7e8d9219f26",
+    "bytes": 183227
+  },
+  "source_bundle": {
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/canonical17-release01/source.bundle",
+    "sha256": "d1285fd8c1f32471abe7d63c5b7b0608766e139f8236a074b5441a64886f4aa7",
+    "bytes": 22579788
+  },
+  "basis": "Original dedicated source-freeze commit, whose tree includes all identity-required controller/config/source bytes and original-path mapping. Original freeze source uses ordinary Git commit time, without date overrides. This is the recorded source/controller freeze clock, not a public publication clock or relocated execution identity. No file-mtime inference or backdating.",
+  "initial_assembly_failure": "The first registry assembly incorrectly supplied null frozenAt; strict existing validator refused it after all scientific reaudits passed. Preserve owner01/output01 unchanged.",
+  "native_commands": 0,
+  "new_physical_episodes": 0,
+  "new_claims": 0
+}

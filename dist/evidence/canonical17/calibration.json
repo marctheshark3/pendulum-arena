@@ -1,0 +1,11 @@
+{
+  "schema": "pendulum_arena.canonical17_calibration.v1",
+  "passed": true,
+  "source": {
+    "path": "calibration/source-calibration.json",
+    "sha256": "794a8f8cfc1b183ce0cd2cdea84abae64d44a20fcf0629a0c38126ac92e94502",
+    "bytes": 748
+  },
+  "maximum_dynamics_defect": 0.0,
+  "initial_state_gap": 0.0
+}

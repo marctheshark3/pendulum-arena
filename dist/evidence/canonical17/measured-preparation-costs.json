@@ -1,0 +1,297 @@
+{
+  "schema": "rage_mill.canonical17_measured_preparation_cost_inventory.v1",
+  "created_UTC": "2026-10-16T23:10:29.746081+00:00",
+  "records": [
+    {
+      "file": {
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/native-value-calibration01-preparation.time",
+        "sha256": "fa3ad9f4f5bc121bb8391d8922ecccd5744001b6afe709f9212373c44d68fbf2",
+        "bytes": 89
+      },
+      "measured": {
+        "wall_seconds": 3.18,
+        "user_CPU_seconds": 2.37,
+        "system_CPU_seconds": 0.79,
+        "max_rss_kib": 68040.0,
+        "exit": 0.0
+      },
+      "aggregate_CPU_seconds": 3.16
+    },
+    {
+      "file": {
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/native-value-calibration02-preparation.time",
+        "sha256": "cda157500fc92f941cb8d7d729d27e93cd658e38e78715de18e8f2440c2bbeb8",
+        "bytes": 89
+      },
+      "measured": {
+        "wall_seconds": 3.3,
+        "user_CPU_seconds": 2.44,
+        "system_CPU_seconds": 0.84,
+        "max_rss_kib": 68056.0,
+        "exit": 0.0
+      },
+      "aggregate_CPU_seconds": 3.28
+    },
+    {
+      "file": {
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/native-value-candidate01-preparation.time",
+        "sha256": "15374e3c14c11a19f31eecd1d1c6c8f98861ceb11a64a46b92fbc84666add4eb",
+        "bytes": 89
+      },
+      "measured": {
+        "wall_seconds": 1.02,
+        "user_CPU_seconds": 0.75,
+        "system_CPU_seconds": 0.24,
+        "max_rss_kib": 87144.0,
+        "exit": 0.0
+      },
+      "aggregate_CPU_seconds": 0.99
+    },
+    {
+      "file": {
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/native-value-candidate02-preparation.time",
+        "sha256": "4b7449142864b13590a16b3c29fc61cf79ffd1fc486a630cd4f37e636ad20ccf",
+        "bytes": 90
+      },
+      "measured": {
+        "wall_seconds": 1.09,
+        "user_CPU_seconds": 0.81,
+        "system_CPU_seconds": 0.24,
+        "max_rss_kib": 103264.0,
+        "exit": 0.0
+      },
+      "aggregate_CPU_seconds": 1.05
+    },
+    {
+      "file": {
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/native-value-development100-01-preparation.time",
+        "sha256": "616643afe81995ce185fcf8ec75f4dd42399f55e6fab65c502ee522aaba5a609",
+        "bytes": 90
+      },
+      "measured": {
+        "wall_seconds": 10.05,
+        "user_CPU_seconds": 7.78,
+        "system_CPU_seconds": 2.24,
+        "max_rss_kib": 86396.0,
+        "exit": 0.0
+      },
+      "aggregate_CPU_seconds": 10.02
+    },
+    {
+      "file": {
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/native-value-development20-01-preparation.time",
+        "sha256": "fa20e9b9f37bc78e326d4afa86d87eb455eb05d9a28e2613dd4186d044bb2891",
+        "bytes": 89
+      },
+      "measured": {
+        "wall_seconds": 5.7,
+        "user_CPU_seconds": 4.28,
+        "system_CPU_seconds": 1.38,
+        "max_rss_kib": 72976.0,
+        "exit": 0.0
+      },
+      "aggregate_CPU_seconds": 5.66
+    },
+    {
+      "file": {
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/owner-cost-final01.execution.cost.json",
+        "sha256": "b4c16f6d550663b4406114f57808a2c226c01825f58086bce247d9e2ac60a285",
+        "bytes": 86
+      },
+      "measured": {
+        "user_CPU_seconds": 1.45,
+        "system_CPU_seconds": 0.1,
+        "wall_seconds": 0.43,
+        "exit_code": 0
+      },
+      "aggregate_CPU_seconds": 1.55
+    },
+    {
+      "file": {
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/owner-cost-prepublication01.execution.cost.json",
+        "sha256": "c9a85bbd8420dbcee17a2ce6009d9b0d96d5b444dd2d0977ddc44f910320b2ce",
+        "bytes": 86
+      },
+      "measured": {
+        "user_CPU_seconds": 1.18,
+        "system_CPU_seconds": 0.09,
+        "wall_seconds": 0.37,
+        "exit_code": 0
+      },
+      "aggregate_CPU_seconds": 1.27
+    },
+    {
+      "file": {
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/public-assembly-prepare01.cost.json",
+        "sha256": "057a9765f05444a1bbca94e1470c1491005a988bf1420ff600f3b76ebf22ff86",
+        "bytes": 86
+      },
+      "measured": {
+        "user_CPU_seconds": 6.09,
+        "system_CPU_seconds": 2.38,
+        "wall_seconds": 8.53,
+        "exit_code": 0
+      },
+      "aggregate_CPU_seconds": 8.469999999999999
+    },
+    {
+      "file": {
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/release-freeze-preparation01.cost.json",
+        "sha256": "a41cfcf02699d67739af6db3d1d69ba58edec03dc8eb36bbf14481c6223736ef",
+        "bytes": 88
+      },
+      "measured": {
+        "user_CPU_seconds": 26.79,
+        "system_CPU_seconds": 5.09,
+        "wall_seconds": 31.31,
+        "exit_code": 0
+      },
+      "aggregate_CPU_seconds": 31.88
+    },
+    {
+      "file": {
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/reserved-exact20-preparation01.cost.json",
+        "sha256": "658e5377402231442d5bf0a446f3e11db5b06d158b53c9bfc421fb00167a9543",
+        "bytes": 88
+      },
+      "measured": {
+        "user_CPU_seconds": 24.69,
+        "system_CPU_seconds": 6.53,
+        "wall_seconds": 31.2,
+        "exit_code": 0
+      },
+      "aggregate_CPU_seconds": 31.220000000000002
+    },
+    {
+      "file": {
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/reserved-exact20-proof-preparation01.cost.json",
+        "sha256": "f3e63ba2857124de61c9c455a4b90da8f8cc1f687447eda3f6e8529e5d484df8",
+        "bytes": 88
+      },
+      "measured": {
+        "user_CPU_seconds": 27.94,
+        "system_CPU_seconds": 8.06,
+        "wall_seconds": 36.0,
+        "exit_code": 0
+      },
+      "aggregate_CPU_seconds": 36.0
+    },
+    {
+      "file": {
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/reserved-noisy100-preparation01.cost.json",
+        "sha256": "9209075b00c49e9f46db00e68e77db58693e9238a498c8eabb9f14e480c273f3",
+        "bytes": 88
+      },
+      "measured": {
+        "user_CPU_seconds": 17.99,
+        "system_CPU_seconds": 5.76,
+        "wall_seconds": 23.75,
+        "exit_code": 0
+      },
+      "aggregate_CPU_seconds": 23.75
+    },
+    {
+      "file": {
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/reserved-noisy100-proof-preparation01.cost.json",
+        "sha256": "a746c3de5a7a4c626fa5851a96c9465b82ed8fa2de8ad3c65f09857b56942bc3",
+        "bytes": 88
+      },
+      "measured": {
+        "user_CPU_seconds": 24.78,
+        "system_CPU_seconds": 6.7,
+        "wall_seconds": 31.47,
+        "exit_code": 0
+      },
+      "aggregate_CPU_seconds": 31.48
+    },
+    {
+      "file": {
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/reserved-noisy20-preparation01.cost.json",
+        "sha256": "53cfe41a36129087ac230de1705545163df97d6a975abe2cfc051aea9a8db438",
+        "bytes": 126
+      },
+      "measured": {
+        "user_CPU_seconds": 15.18,
+        "system_CPU_seconds": 5.11,
+        "wall_seconds": 20.26,
+        "exit_code": 1
+      },
+      "aggregate_CPU_seconds": 20.29
+    },
+    {
+      "file": {
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/reserved-noisy20-preparation02.cost.json",
+        "sha256": "bb0cb4325733c27cf39d33f67a2f542055960675c5dcdd58e7a73309fd36fbe2",
+        "bytes": 88
+      },
+      "measured": {
+        "user_CPU_seconds": 15.18,
+        "system_CPU_seconds": 4.85,
+        "wall_seconds": 20.03,
+        "exit_code": 0
+      },
+      "aggregate_CPU_seconds": 20.03
+    },
+    {
+      "file": {
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/reserved-noisy20-proof-preparation01.cost.json",
+        "sha256": "afb713b2afc8da5e6141e3a34e390f8c3e85efcab66d9d7d3dc107b2adb77582",
+        "bytes": 88
+      },
+      "measured": {
+        "user_CPU_seconds": 18.01,
+        "system_CPU_seconds": 5.75,
+        "wall_seconds": 23.75,
+        "exit_code": 0
+      },
+      "aggregate_CPU_seconds": 23.76
+    },
+    {
+      "file": {
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/reserved-video-preparation01.cost.json",
+        "sha256": "e1d848f65f5f26114be3c834cc5efa48bcc9880ea92219bd6c16a988f17c1e3a",
+        "bytes": 88
+      },
+      "measured": {
+        "user_CPU_seconds": 28.06,
+        "system_CPU_seconds": 7.93,
+        "wall_seconds": 36.0,
+        "exit_code": 0
+      },
+      "aggregate_CPU_seconds": 35.989999999999995
+    },
+    {
+      "file": {
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/reserved-video-proof-prepare01.cost.json",
+        "sha256": "48b791e97abdef1cd9f423a8b3ca3ea476142e9bbacbc13897af8df7a6342f16",
+        "bytes": 88
+      },
+      "measured": {
+        "user_CPU_seconds": 29.75,
+        "system_CPU_seconds": 7.69,
+        "wall_seconds": 37.44,
+        "exit_code": 0
+      },
+      "aggregate_CPU_seconds": 37.44
+    },
+    {
+      "file": {
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/typed-release-prepare01.cost.json",
+        "sha256": "7e5ce3205a2fb76fb71734cfa5876ae029cca8d734f1813be5c99799a4aeef84",
+        "bytes": 88
+      },
+      "measured": {
+        "user_CPU_seconds": 19.03,
+        "system_CPU_seconds": 5.66,
+        "wall_seconds": 24.73,
+        "exit_code": 0
+      },
+      "aggregate_CPU_seconds": 24.69
+    }
+  ],
+  "aggregate_user_plus_system_CPU_seconds": 351.98,
+  "sum_wall_seconds": 349.61,
+  "scope": "All explicit top-level measured metadata preparation and cost-inventory commands at this cutoff; failures retained, separate from bounded owner child CPU. Does not cover every setup/operational action or reasoning. Unmeasured costs are not zero. Hybrid setup lower-bound scopes stay separate; no whole-system total inferred. Wall intervals may overlap.",
+  "native_commands": 0,
+  "new_physical_episodes": 0
+}

@@ -1,0 +1,158 @@
+{
+  "audio": false,
+  "camera": {
+    "center_x": 0.0,
+    "center_z": 0.050000000000000044,
+    "fixed_for_complete_recording": true,
+    "pixels_per_meter": 117.1875,
+    "xhi": 3.35,
+    "xlo": -3.35,
+    "zhi": 3.25,
+    "zlo": -3.15
+  },
+  "claim_scope": "new presentation of a hash-bound actual held-out recording; no hardware or real-time claim",
+  "controller_calls_during_render": 0,
+  "encoder_tools": {
+    "ffmpeg": {
+      "bytes": 330120,
+      "file": "ffmpeg",
+      "sha256": "9f126bd755615d8c5d9aa2e67c568626be05389feb795478e0f14d41217270f4"
+    },
+    "ffprobe": {
+      "bytes": 204064,
+      "file": "ffprobe",
+      "sha256": "b98cabc72a01bf522a3eb85cae3cf7a8843817bfb0315ff14d8699cef5413f7d"
+    }
+  },
+  "extra_held_frames": 0,
+  "fonts": [
+    {
+      "bytes": 759720,
+      "file": "DejaVuSans.ttf",
+      "sha256": "ae7b7855e115a5966d8b1b3f80f254ccc117ec86f9965e202ee2940453837280"
+    },
+    {
+      "bytes": 708920,
+      "file": "DejaVuSans-Bold.ttf",
+      "sha256": "5c1247acef7f2b8522a31742c76d6adcb5569bacc0be7ceaa4dc39dd252ce895"
+    }
+  ],
+  "fps": 50,
+  "geometry": {
+    "angle_coordinates": "cumulative native relative hinge positions",
+    "capsule_radius_m": 0.025,
+    "cart_pivot_z_m": 0.07,
+    "link_count": 17,
+    "serialized_link_length_m": 0.176470588
+  },
+  "height": 1080,
+  "initial_frame_included": false,
+  "inspection_frames": [
+    {
+      "bytes": 55344,
+      "file": "post-command-0001.png",
+      "post_command": 1,
+      "sha256": "fcc5fa923b6130c99de98ec704f3f10b9491efecce86ed4e1152d640cb557513"
+    },
+    {
+      "bytes": 53808,
+      "file": "post-command-0850.png",
+      "post_command": 850,
+      "sha256": "026c34ccdb8f49087698e786dee0243fe7c8809b159876f098bc1d6f1f45700f"
+    },
+    {
+      "bytes": 57713,
+      "file": "post-command-0851.png",
+      "post_command": 851,
+      "sha256": "2b91c8ac61c27f9b0f7cd9ccee3c4178a9150a017e0ea0775023b47b4f06aaca"
+    },
+    {
+      "bytes": 57570,
+      "file": "post-command-1000.png",
+      "post_command": 1000,
+      "sha256": "5a445c08b8ddb3c10253810df1fb8ffb2b5c6f480605909d23f35df76d8e1918"
+    },
+    {
+      "bytes": 57508,
+      "file": "post-command-1250.png",
+      "post_command": 1250,
+      "sha256": "2b4671c001da49ee03561e354755ca35e72e2d7e9325278d60c5639943c74d40"
+    },
+    {
+      "bytes": 57536,
+      "file": "post-command-1500.png",
+      "post_command": 1500,
+      "sha256": "f0264a0ff9b555d1e36022c6d28feb3e660f3b03c72ea9988a910e4a23191300"
+    }
+  ],
+  "n_links": 17,
+  "native_clock_saved": true,
+  "output": {
+    "bytes": 1229461,
+    "file": "canonical17-telemetry.mp4",
+    "sha256": "5d712fc3d6819b3a50814751b98423e4a5ce6d290cd5311f1580897bce8bbab1"
+  },
+  "park_ticks": 850,
+  "passed": true,
+  "physics_steps_during_render": 0,
+  "post_command_indices": [
+    1,
+    1500
+  ],
+  "qualification_awarded_by_renderer": false,
+  "reference_style": {
+    "historical_sources_modified": false,
+    "renderer": "original fifteen scripts/render_canonical_video.py",
+    "sha256": "550066d65d04d7b4cb7139680142883c004620cb4127163ecff4ce3b6e48101d"
+  },
+  "render_runtime": {
+    "Pillow": "12.2.0",
+    "encoder_threads": 4,
+    "executable": {
+      "bytes": 7845048,
+      "file": "python3.12",
+      "sha256": "a7d56a8a764faf7bbf5c164055a48fd072be52287bdeb523a9e07b2042f4e7e1"
+    },
+    "numpy": "2.5.2",
+    "python": "3.12.3"
+  },
+  "rendered_frames": 1500,
+  "schema": "pendulum_arena.telemetry_video.v1",
+  "seed": 217500,
+  "simulated_seconds": 30.0,
+  "source_layout": "original episode receipt",
+  "source_receipt": {
+    "bytes": 20255,
+    "file": "receipt.json",
+    "sha256": "643de6e6a746b29ad33e10f8749e457dcda2d21321d3415b24fd7034b46e53f7"
+  },
+  "source_recording": {
+    "bytes": 438026,
+    "file": "tape.npz",
+    "sha256": "8d0f664f37886d2352c336eaa5728ef6d673c09f65d417206383ab71f4a5cc2f"
+  },
+  "source_renderer": {
+    "bytes": 21667,
+    "file": "scripts/render_telemetry_video.py",
+    "sha256": "52979a8b5b28c588fd6326027349ef723403008a013881f9397694dc1193eca8"
+  },
+  "stream_probe": {
+    "programs": [],
+    "streams": [
+      {
+        "duration": "30.000000",
+        "height": 1080,
+        "nb_read_frames": "1500",
+        "r_frame_rate": "50/1",
+        "width": 1280
+      }
+    ]
+  },
+  "telemetry": {
+    "bytes": 656540,
+    "file": "telemetry.json",
+    "sha256": "a3d53e224e9df889a00854b4355226e2c4679b8ebee8a823f605bf5764a57563"
+  },
+  "telemetry_alignment": "post-command state i; delivered action i-1 promoted to binary64 before x80; encoded PTS=(i-1)/50",
+  "width": 1280
+}

@@ -1,0 +1,99 @@
+{
+  "schema": "rage_mill.canonical17_media_review.v1",
+  "passed": true,
+  "complete": true,
+  "scope": "Saved-media checks by a separate verification implementation in the same author project; not independent benchmark reproduction or qualification.",
+  "actual_receipt": {
+    "file": "receipt.json",
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/canonical17-release01/reserved/video/episode-217500/receipt.json",
+    "sha256": "643de6e6a746b29ad33e10f8749e457dcda2d21321d3415b24fd7034b46e53f7",
+    "bytes": 20255
+  },
+  "actual_tape": {
+    "file": "tape.npz",
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/canonical17-release01/reserved/video/episode-217500/tape.npz",
+    "sha256": "8d0f664f37886d2352c336eaa5728ef6d673c09f65d417206383ab71f4a5cc2f",
+    "bytes": 438026
+  },
+  "telemetry_source_check": {
+    "file": "telemetry-source-check.json",
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/video217500-music01/telemetry-source-check.json",
+    "sha256": "224893b930c4bbacb0a0a77ced3ea1021a99080f962930c29807a9f92e5e28ad",
+    "bytes": 4523
+  },
+  "parent_video": {
+    "file": "canonical17-telemetry.mp4",
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/video217500-telemetry01/canonical17-telemetry.mp4",
+    "sha256": "5d712fc3d6819b3a50814751b98423e4a5ce6d290cd5311f1580897bce8bbab1",
+    "bytes": 1229461
+  },
+  "soundtrack_video": {
+    "file": "canonical17-telemetry-rising-tide.mp4",
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/video217500-music01/canonical17-telemetry-rising-tide.mp4",
+    "sha256": "62f97711dd1594fbf957e30a51873e53034eae2f4c85980d48bdd842c01b4ec4",
+    "bytes": 1977926
+  },
+  "silent_frames": {
+    "file": "silent-video.framemd5",
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/video217500-music01/silent-video.framemd5",
+    "sha256": "14c4142768b9f4bfdde52e1e633edcc16cdfa5278099dafe213c80a39fb245aa",
+    "bytes": 120217
+  },
+  "soundtrack_frames": {
+    "file": "soundtrack-video.framemd5",
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/video217500-music01/soundtrack-video.framemd5",
+    "sha256": "14c4142768b9f4bfdde52e1e633edcc16cdfa5278099dafe213c80a39fb245aa",
+    "bytes": 120217
+  },
+  "all_1500_decoded_video_frames_and_timestamps_identical": true,
+  "all_1500_encoded_packet_payload_sha256_and_pts_dts_durations_identical": true,
+  "packet_payload_verification": "SHA256 for each complete encoded packet, with equal packet count, size and order.",
+  "audio_valid_non_silent_and_unclipped": true,
+  "audio": {
+    "codec": "aac",
+    "target_bitrate_bps": 192000,
+    "sample_rate_hz": 44100,
+    "channels": 2,
+    "stream_duration_seconds": 30.0,
+    "decoded_frames": 1323008,
+    "decoded_float_samples": 2646016,
+    "aac_decoding_may_include_padding": true,
+    "all_samples_finite": true,
+    "rms": 0.055755154718867696,
+    "peak_absolute": 0.6177343130111694,
+    "clipped_samples_at_or_above_one": 0,
+    "finite_non_silent_and_unclipped": true,
+    "pcm_f32le_sha256": "0a3ce1c8281bd1fd2b3d5555a54fb9a0388e234bca9ed04e2da299399b767c4b"
+  },
+  "frames": 1500,
+  "fps": 50,
+  "duration_seconds": 30,
+  "dimensions": [
+    1280,
+    1080
+  ],
+  "poster": {
+    "file": "canonical17-poster.webp",
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/video217500-music01/canonical17-poster.webp",
+    "sha256": "5a2ef461ec7bafb45d84b28c2e67d49cdc64a04108a2ab1e37643d58aa7f3fe9",
+    "bytes": 44334
+  },
+  "poster_lossless_source_frame": {
+    "file": "canonical17-poster-final.png",
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/video217500-music01/canonical17-poster-final.png",
+    "sha256": "62ed6d1b82ad8e80657a3d3e8dedbf29d23af7af349e7cea8b50dae82074745a",
+    "bytes": 191032
+  },
+  "poster_source": {
+    "encoded_frame_index": 1499,
+    "post_command": 1500,
+    "display_time_seconds": 30.0,
+    "encoded_pts_seconds": 29.98
+  },
+  "native_commands": 0,
+  "controller_calls": 0,
+  "reset_RNG_draws": 0,
+  "new_physical_resets": 0,
+  "new_simulation_or_controller_inference": false,
+  "qualification_awarded": false
+}

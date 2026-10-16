@@ -1,0 +1,118 @@
+{
+  "schema": "rage_mill.canonical17_telemetry_source_check.v1",
+  "passed": true,
+  "source_receipt": {
+    "file": "receipt.json",
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/canonical17-release01/reserved/video/episode-217500/receipt.json",
+    "sha256": "643de6e6a746b29ad33e10f8749e457dcda2d21321d3415b24fd7034b46e53f7",
+    "bytes": 20255
+  },
+  "source_tape": {
+    "file": "tape.npz",
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/canonical17-release01/reserved/video/episode-217500/tape.npz",
+    "sha256": "8d0f664f37886d2352c336eaa5728ef6d673c09f65d417206383ab71f4a5cc2f",
+    "bytes": 438026
+  },
+  "telemetry": {
+    "file": "telemetry.json",
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/video217500-telemetry01/render-proof/telemetry.json",
+    "sha256": "a3d53e224e9df889a00854b4355226e2c4679b8ebee8a823f605bf5764a57563",
+    "bytes": 656540
+  },
+  "all_1500_rows_equal": true,
+  "first_qualifying_hold_start_post_command": 1133,
+  "first_250_hold_earned_post_command": 1382,
+  "longest_upright_ticks": 368,
+  "strict_angle_threshold_rad": 0.15,
+  "cumulative_angle_max_difference": 0.0,
+  "all_1501_geometry_states_checked": true,
+  "geometry_nodes_per_state": 18,
+  "serialized_link_length_m": 0.176470588,
+  "cart_pivot_z_m": 0.07,
+  "maximum_geometry_coordinate_difference_m": 1.3322676295501878e-15,
+  "inspection_frame_checks": [
+    {
+      "post_command": 1,
+      "source_state_index": 1,
+      "delivered_action_index": 0,
+      "encoded_frame_index": 0,
+      "pixels_equal": true,
+      "image": {
+        "file": "post-command-0001.png",
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/video217500-telemetry01/render-proof/post-command-0001.png",
+        "sha256": "fcc5fa923b6130c99de98ec704f3f10b9491efecce86ed4e1152d640cb557513",
+        "bytes": 55344
+      }
+    },
+    {
+      "post_command": 850,
+      "source_state_index": 850,
+      "delivered_action_index": 849,
+      "encoded_frame_index": 849,
+      "pixels_equal": true,
+      "image": {
+        "file": "post-command-0850.png",
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/video217500-telemetry01/render-proof/post-command-0850.png",
+        "sha256": "026c34ccdb8f49087698e786dee0243fe7c8809b159876f098bc1d6f1f45700f",
+        "bytes": 53808
+      }
+    },
+    {
+      "post_command": 851,
+      "source_state_index": 851,
+      "delivered_action_index": 850,
+      "encoded_frame_index": 850,
+      "pixels_equal": true,
+      "image": {
+        "file": "post-command-0851.png",
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/video217500-telemetry01/render-proof/post-command-0851.png",
+        "sha256": "2b91c8ac61c27f9b0f7cd9ccee3c4178a9150a017e0ea0775023b47b4f06aaca",
+        "bytes": 57713
+      }
+    },
+    {
+      "post_command": 1000,
+      "source_state_index": 1000,
+      "delivered_action_index": 999,
+      "encoded_frame_index": 999,
+      "pixels_equal": true,
+      "image": {
+        "file": "post-command-1000.png",
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/video217500-telemetry01/render-proof/post-command-1000.png",
+        "sha256": "5a445c08b8ddb3c10253810df1fb8ffb2b5c6f480605909d23f35df76d8e1918",
+        "bytes": 57570
+      }
+    },
+    {
+      "post_command": 1250,
+      "source_state_index": 1250,
+      "delivered_action_index": 1249,
+      "encoded_frame_index": 1249,
+      "pixels_equal": true,
+      "image": {
+        "file": "post-command-1250.png",
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/video217500-telemetry01/render-proof/post-command-1250.png",
+        "sha256": "2b4671c001da49ee03561e354755ca35e72e2d7e9325278d60c5639943c74d40",
+        "bytes": 57508
+      }
+    },
+    {
+      "post_command": 1500,
+      "source_state_index": 1500,
+      "delivered_action_index": 1499,
+      "encoded_frame_index": 1499,
+      "pixels_equal": true,
+      "image": {
+        "file": "post-command-1500.png",
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/video217500-telemetry01/render-proof/post-command-1500.png",
+        "sha256": "f0264a0ff9b555d1e36022c6d28feb3e660f3b03c72ea9988a910e4a23191300",
+        "bytes": 57536
+      }
+    }
+  ],
+  "native_commands": 0,
+  "controller_calls": 0,
+  "reset_RNG_draws": 0,
+  "new_physical_resets": 0,
+  "qualification_awarded": false
+}

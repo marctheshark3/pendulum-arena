@@ -1,0 +1,57 @@
+{
+  "schema": "pendulum_arena.telemetry_video.v1",
+  "complete": true,
+  "video": "canonical17-telemetry.mp4",
+  "video_sha256": "5d712fc3d6819b3a50814751b98423e4a5ce6d290cd5311f1580897bce8bbab1",
+  "video_bytes": 1229461,
+  "scientific_video": "canonical17.mp4",
+  "scientific_video_sha256": "80169fa50e54fbc98bd2901429a1ed5b7dbccf4bd92211b769173cb549cc1554",
+  "source_recording_sha256": "8d0f664f37886d2352c336eaa5728ef6d673c09f65d417206383ab71f4a5cc2f",
+  "source_receipt_sha256": "643de6e6a746b29ad33e10f8749e457dcda2d21321d3415b24fd7034b46e53f7",
+  "n_links": 17,
+  "seed": 217500,
+  "frames": 1500,
+  "fps": 50,
+  "duration_seconds": 30,
+  "dimensions": [
+    1280,
+    1080
+  ],
+  "state_samples": "post-command 1..1500",
+  "park_ticks": 850,
+  "new_simulation_or_controller_inference": false,
+  "native_commands": 0,
+  "controller_calls": 0,
+  "reset_RNG_draws": 0,
+  "new_physical_resets": 0,
+  "qualification_awarded_by_renderer": false,
+  "render_receipt": {
+    "file": "canonical17-telemetry.render.json",
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/video217500-music01/canonical17-telemetry.render.json",
+    "sha256": "5190988f353cb0cafaf181b849999f40a3ee84c49b9876a1b90b42c22b1783cc",
+    "bytes": 4563
+  },
+  "telemetry_rows": {
+    "file": "canonical17-telemetry.frames.json",
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/video217500-music01/canonical17-telemetry.frames.json",
+    "sha256": "a3d53e224e9df889a00854b4355226e2c4679b8ebee8a823f605bf5764a57563",
+    "bytes": 656540,
+    "rows": 1500
+  },
+  "renderer": {
+    "file": "render_telemetry_video.py",
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/arena17-staging01/site/scripts/render_telemetry_video.py",
+    "sha256": "52979a8b5b28c588fd6326027349ef723403008a013881f9397694dc1193eca8",
+    "bytes": 21667
+  },
+  "source_verification": {
+    "file": "telemetry-source-check.json",
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/video217500-music01/telemetry-source-check.json",
+    "sha256": "224893b930c4bbacb0a0a77ced3ea1021a99080f962930c29807a9f92e5e28ad",
+    "bytes": 4523
+  },
+  "first_qualifying_hold_start_post_command": 1133,
+  "first_250_hold_earned_post_command": 1382,
+  "longest_upright_ticks": 368,
+  "claim_scope": "Actual recorded held-out simulation presentation. No hardware, wall-clock real-time or qualification claim is awarded by rendering."
+}

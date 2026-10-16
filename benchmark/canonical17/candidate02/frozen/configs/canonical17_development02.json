@@ -1,0 +1,8 @@
+{
+  "schema": "rage_mill.canonical17_development_declaration.v1",
+  "n_links": 17,
+  "exact_calibration_seed": 3177001,
+  "development20": {"seed_start": 3178000, "episodes": 20, "exact": false},
+  "development100": {"seed_start": 3178100, "episodes": 100, "exact": false},
+  "reason": "Fresh calibration after candidate01 physically passed but failed complete runtime coverage. Preserve spent3177000; both development ranges are still untouched. Numerical policy unchanged."
+}

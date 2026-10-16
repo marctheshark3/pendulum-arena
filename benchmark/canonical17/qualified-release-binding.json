@@ -1,0 +1,11 @@
+{
+  "verified_release": {
+    "path": "metadata/verified-release.json",
+    "sha256": "03c2b27dcfacbb89d5bd3552921d865c5c7ff38ead26c4086d341f6fc4b784cb",
+    "bytes": 2373
+  },
+  "evidence_files_sha256": "cf781e68def10fbe2301245d76e3c0043f2e383e5ff04744d03d2d2a9e56eb6f",
+  "original_candidate_identity_sha256": "61993d118c341001ef7973fce77a200f85dd86588b78919bc03d629e09c95268",
+  "qualification_source": "Completed original typed release; the source loader grants no qualification.",
+  "source_inventory_immutable": true
+}

@@ -1,0 +1,32 @@
+{
+  "schema": "pendulum_arena.canonical17_public_adapter_provenance.v1",
+  "preparation_only": true,
+  "qualification_authority": false,
+  "original_candidate_identity_sha256": "61993d118c341001ef7973fce77a200f85dd86588b78919bc03d629e09c95268",
+  "original_frozen_source_manifest_sha256": "e75eb97379ebbb7be95482e3cc71a74496a556bcf035a343dc7512fe12903a7e",
+  "new_public_files": [
+    "public_support.py",
+    "audit_source.py",
+    "README.md",
+    "LICENSE",
+    "adapter-provenance.json",
+    "files.json"
+  ],
+  "new_adapters_outside_original_identity": true,
+  "original_identity_rehashed_or_relocated": false,
+  "default_audit_factory_calls": 0,
+  "default_audit_controller_calls": 0,
+  "default_audit_native_calls": 0,
+  "default_audit_reset_RNG_draws": 0,
+  "exploratory_loader_explicit_only": true,
+  "runtime_binary_hashes_verified": false,
+  "portable_execution_claim": false,
+  "qualification_outcomes_included": false,
+  "private_Git_history": false,
+  "native_runtime_binaries": false,
+  "source_credit": {
+    "repository": "https://github.com/corbensorenson/cartpole",
+    "commit": "b84c6413974d5c0831cdf261ce15e58ba65cd3f5"
+  },
+  "project_license": "MIT"
+}

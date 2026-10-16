@@ -49,6 +49,47 @@ Existing results are retained. Retractions and supersessions are appended with
 reasons and sources. Source/credit corrections have a
 [dedicated form](https://github.com/marctheshark3/pendulum-arena/issues/new?template=correction.yml).
 
+## Seventeen links
+
+The seventeen-link campaign passes **141/141 frozen held-out episodes**, each
+completing 1,500 commands and a **7.36 s upright hold**. Exact source calibration
+and fresh disjoint development20+100 pass under the same policy. Separate saved
+checks reproduce all 211,500 held-out raw commands, delivered float32 actions,
+and complete selected forecasts; native cold and continuous replay have zero
+defect. These are same-owner checks and the registry remains author-attested.
+
+The [seventeen-link evidence release](https://github.com/marctheshark3/pendulum-arena/releases/tag/canonical17-20261016)
+retains all 262 actual calibration/development/reserved recordings. Native replay
+coverage is source calibration plus 141 reserved episodes: **142 episodes /
+213,000 unique commands**, checked cold and continuously. The 120 development
+episodes are scored but are not added to native replay coverage. Original-path
+runtime identities remain bound to that execution; the [public source view](benchmark/canonical17/README.md)
+is for inspection, without a portable qualification claim.
+
+The adopted controller is classical observed-state feedback with bounded native
+one-step value selection. The bounded action-conditioned JEPA warm-start ranking
+comparison failed its adoption gates and is retained as a negative result.
+This campaign does not establish learned-control progress or hardware realtime.
+
+The featured [telemetry replay](dist/assets/canonical17-telemetry-rising-tide.mp4)
+shows every actual post-command state from held-out seed 217500, once, at 50 fps
+for 30 seconds, using the [standard 1280×1080 layout](docs/video-standard.md).
+The [silent presentation](dist/assets/canonical17-telemetry.mp4),
+[scientific recording](dist/assets/canonical17.mp4),
+[render provenance](dist/assets/canonical17-telemetry.provenance.json) and
+[separate soundtrack provenance](dist/assets/canonical17-telemetry-rising-tide.provenance.json)
+remain available. No dynamics or inference runs during rendering.
+
+“Rising Tide” Kevin MacLeod (incompetech.com). Licensed under Creative Commons:
+[By Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/).
+[Official source](https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1900010).
+The edit uses the first 30 seconds, with brief fades; video frames are unchanged.
+See the [independent saved-media review](dist/evidence/canonical17/media-review.json),
+[complete bounded-owner costs](dist/evidence/canonical17/owner-costs.json) and
+[separately measured preparation costs](dist/evidence/canonical17/measured-preparation-costs.json).
+Music is separate from the website’s MIT license. All historical registry rows,
+protocols and media remain intact.
+
 ## Sixteen links
 
 The sixteen-link Rage Mill campaign reports **141/141 frozen held-out passes**,
@@ -67,7 +108,7 @@ Failed forecast summaries are retained; full unselected failed forecast state
 tapes were not saved. This differs from fifteen’s forecast retention and is
 disclosed in the result.
 
-The featured replay uses our [standard video format](docs/video-standard.md),
+The sixteen-link replay uses our [standard video format](docs/video-standard.md),
 matching fifteen: a 1280×1080 fixed scene, cart position and applied force,
 wrapped absolute angle, upright streak, and Rage Industries / NeuralYogi footer.
 The [new sixteen-link telemetry video](dist/assets/canonical16-telemetry-im-still-standing.mp4)
@@ -119,7 +160,8 @@ records exactly what was inspected and what was not.
 
 Read the [registry contract](docs/registry.md), [JSON schema](schemas/registry.schema.json)
 and the native [fifteen-link](dist/data/protocol-canonical15.json) and
-[sixteen-link](dist/data/protocol-canonical16.json) protocols.
+[sixteen-link](dist/data/protocol-canonical16.json) and
+[seventeen-link](dist/data/protocol-canonical17.json) protocols.
 
 ## Hosting
 

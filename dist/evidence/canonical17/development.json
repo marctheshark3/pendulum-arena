@@ -1,0 +1,32 @@
+{
+  "schema": "pendulum_arena.canonical17_development.v1",
+  "passed": true,
+  "cohorts": [
+    {
+      "gate": "development20",
+      "receipt": {
+        "path": "development20/episodes/receipt.json",
+        "sha256": "89893c0261f99460ad39e6236ea352fcfdf1ebf42eedfb0360b3ddf00ce53d86",
+        "bytes": 23979
+      },
+      "seed_start": 3178000,
+      "episodes": 20,
+      "exact": false,
+      "stage": "development",
+      "successes": 20
+    },
+    {
+      "gate": "development100",
+      "receipt": {
+        "path": "development100/episodes/receipt.json",
+        "sha256": "0cdc67248fa3177d925a9c99f9cd4b0f017159629efb04d348a46fb349b4812d",
+        "bytes": 43281
+      },
+      "seed_start": 3178100,
+      "episodes": 100,
+      "exact": false,
+      "stage": "development",
+      "successes": 100
+    }
+  ]
+}
