@@ -1,0 +1,68 @@
+{
+  "checks": [
+    {
+      "native_transition_max_error": 1.4795942249179461e-12,
+      "tick": 0
+    },
+    {
+      "native_transition_max_error": 2.5607294062979236e-13,
+      "tick": 10
+    },
+    {
+      "native_transition_max_error": 6.733363866473496e-13,
+      "tick": 100
+    },
+    {
+      "native_transition_max_error": 3.382016888764383e-13,
+      "tick": 200
+    },
+    {
+      "native_transition_max_error": 1.48274448275032e-12,
+      "tick": 300
+    },
+    {
+      "native_transition_max_error": 1.6077139619596892e-12,
+      "tick": 400
+    },
+    {
+      "native_transition_max_error": 1.990194250720001e-12,
+      "tick": 699
+    }
+  ],
+  "derivative_checkpoint_comparison": {
+    "all_array_bytes_equal": true,
+    "fields": {
+      "A": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          34,
+          23800
+        ]
+      },
+      "B": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          34,
+          700
+        ]
+      }
+    }
+  },
+  "n_links": 16,
+  "passed": true,
+  "publication_note": "New synthesis-export validation. Paths are portable aliases; original validation JSON hash is recorded separately.",
+  "reserved_episodes": 0,
+  "runtime": {
+    "casadi": "3.8.1",
+    "mpmath": "1.3.0",
+    "mujoco": "3.3.5",
+    "numpy": "2.5.2",
+    "scipy": "1.18.1"
+  },
+  "scope": "New planning component; sampled native checks, not controller qualification",
+  "xml_sha256": "6351ddc4468533786231ac988cb9707f3bec8e327c46e2c5036cb2f041289639"
+}

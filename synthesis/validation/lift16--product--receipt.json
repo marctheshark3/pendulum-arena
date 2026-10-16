@@ -1,0 +1,5 @@
+{
+  "donor_sha256": "6bc6d9ea44c5fb7eba0b5182aeaaa7cd391721d52301fefc157e5ca99111a34d",
+  "publication_note": "New synthesis-export validation. Paths are portable aliases; original validation JSON hash is recorded separately.",
+  "role": "offline initializer only"
+}

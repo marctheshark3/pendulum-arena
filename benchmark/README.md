@@ -1,5 +1,8 @@
 # Recheck the canonical fifteen-link result
 
+For reference generation, gain/value design, parking construction and a runnable
+design reconstruction, see the [synthesis export](../synthesis/README.md).
+
 This directory publishes a curated, runnable export of the fifteen-link controller and native saved-trajectory auditor. Eleven files in `frozen/` are **byte-exact copies** from the original frozen commit `886267f09ce67d7215c166c92e14a0adaca8e34f`. Their SHA256 values and the seven-file original `source_identity` are in [`frozen-manifest.json`](frozen-manifest.json). This export contains no private Git history or full repository bundle.
 
 The blank `frozen/src/rage_mill/__init__.py` is a new package adapter. `public_support.py`, `run_episode.py`, and `audit_saved.py` are also new public adapters, authored after qualification. They are outside the original freeze. The adapters verify the frozen source and leave every original receipt unchanged. Original absolute paths remain historical metadata; relocation happens through `--proof-root`, never by rewriting or rehashing a freeze.

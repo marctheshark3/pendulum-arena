@@ -1,0 +1,56 @@
+{
+  "artifact_path": "validation-work/validation/orbit16/product/frequency-2.5/orbit.npz",
+  "artifact_sha256": "f1c9094052cee933c56596b6d87ba8a5c4fe66d3a423083191e5d23f55326599",
+  "closure_pass": true,
+  "dropped_original_cart_row_analytic": -1.0602629885170245e-14,
+  "dropped_original_cart_row_native": -1.058875209736243e-14,
+  "frequency_Hz": 2.5,
+  "gain_ratio_to_static": 0.04287955483055963,
+  "gauge_mean_cart": 0.0,
+  "harmonic_absolute_angle_amplitude": 0.08,
+  "harmonic_cart_amplitude": 0.03810339394964617,
+  "harmonic_force_amplitude_normalized": 0.1318130936082064,
+  "harmonic_spatial_angle_amplitude_variation": 0.07999973012314389,
+  "initializer": "discrete held-input (exp(i*omega*.02)I-A)^-1 B",
+  "max_absolute_angle": 0.07820956803818786,
+  "max_cart_m": 0.03759285410187374,
+  "max_spatial_bend_rad": 0.07820916668034238,
+  "maximum_affine_offset": 2.295051229013463e-05,
+  "maximum_analytic_held_map_residual": 1.7628884463327665e-12,
+  "maximum_gain_norm": 1071023571.0729284,
+  "maximum_native_held_map_residual": 1.0000611450067254e-12,
+  "newton": {
+    "all_original_rows_closed": true,
+    "dropped_original_cart_row": -1.0602629885170245e-14,
+    "dropped_row_index": 3366,
+    "first_maps": 2,
+    "history": [
+      {
+        "alpha": 1.0,
+        "iteration": 0,
+        "mean_cart_gauge": 1.6653345369377347e-18,
+        "modified_merit": 5.8667316155114335e-06,
+        "original_max": 0.01942015502770822
+      },
+      {
+        "alpha": 1.0,
+        "iteration": 1,
+        "mean_cart_gauge": -1.3877787807814457e-19,
+        "modified_merit": 1.7628884463327665e-12,
+        "original_max": 5.8667316155114335e-06
+      },
+      {
+        "iteration": 2,
+        "mean_cart_gauge": 0.0,
+        "original_max": 1.7628884463327665e-12
+      }
+    ],
+    "mean_cart_gauge": 0.0,
+    "value_maps": 6
+  },
+  "period_ticks": 20,
+  "planning_bounds_ok": true,
+  "profile_index": 0,
+  "publication_note": "New synthesis-export validation. Paths are portable aliases; original validation JSON hash is recorded separately.",
+  "repeats": 5
+}

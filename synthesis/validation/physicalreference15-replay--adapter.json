@@ -1,0 +1,31 @@
+{
+  "checkpoint_comparison": {
+    "all_array_bytes_equal": true,
+    "fields": {
+      "actions": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          700
+        ]
+      },
+      "states": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          701,
+          32
+        ]
+      }
+    }
+  },
+  "commands": [],
+  "original_receipt": "validation-work/validation/physicalreference15-replay/product/receipt.json",
+  "public_adapter_wall_seconds": 0.2425993109936826,
+  "publication_note": "New synthesis-export validation. Paths are portable aliases; original validation JSON hash is recorded separately.",
+  "reserved_episodes": 0,
+  "scope": "New design/diagnostic reproduction; no historical outcome or once-only label is replaced",
+  "stage": "15-physical-reference"
+}

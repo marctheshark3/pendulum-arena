@@ -1,0 +1,484 @@
+{
+  "cases": [
+    {
+      "alpha": 0.0,
+      "cases": [
+        {
+          "error": 2.6483877948686654e-07,
+          "maximum_action": 0.06033649295568466,
+          "maximum_cart_m": 0.10477532036605819,
+          "seed": 3156040,
+          "ticks": 800
+        },
+        {
+          "error": 2.7257848678449887e-07,
+          "maximum_action": 0.0754057765007019,
+          "maximum_cart_m": 0.13895733887322276,
+          "seed": 3156041,
+          "ticks": 800
+        },
+        {
+          "error": 1.3166234799523507e-08,
+          "maximum_action": 0.013465759344398975,
+          "maximum_cart_m": 0.06725402055719346,
+          "seed": 3156042,
+          "ticks": 800
+        },
+        {
+          "error": 2.054294173117039e-08,
+          "maximum_action": 0.03519749641418457,
+          "maximum_cart_m": 0.19705194126338985,
+          "seed": 3156043,
+          "ticks": 800
+        },
+        {
+          "error": 1.7791169955767572e-07,
+          "maximum_action": 0.06038004532456398,
+          "maximum_cart_m": 0.1500026322992697,
+          "seed": 3156044,
+          "ticks": 800
+        },
+        {
+          "error": 2.458829699495265e-07,
+          "maximum_action": 0.02260734513401985,
+          "maximum_cart_m": 0.0800427164249139,
+          "seed": 3156045,
+          "ticks": 800
+        },
+        {
+          "error": 3.054453718601766e-07,
+          "maximum_action": 0.028771469369530678,
+          "maximum_cart_m": 0.13186874476705512,
+          "seed": 3156046,
+          "ticks": 800
+        },
+        {
+          "error": 1.4047015454054174e-07,
+          "maximum_action": 0.07700013369321823,
+          "maximum_cart_m": 0.11926666967513126,
+          "seed": 3156047,
+          "ticks": 800
+        },
+        {
+          "error": 1.170566783555898e-07,
+          "maximum_action": 0.0233530942350626,
+          "maximum_cart_m": 0.06695773352428701,
+          "seed": 3156048,
+          "ticks": 800
+        },
+        {
+          "error": 8.334726185841725e-08,
+          "maximum_action": 0.021247247233986855,
+          "maximum_cart_m": 0.11833617035222187,
+          "seed": 3156049,
+          "ticks": 800
+        }
+      ],
+      "gain_norm": 1.524742622184477,
+      "median_error": 1.5919092704910873e-07,
+      "valid": true,
+      "worst_error": 3.054453718601766e-07
+    },
+    {
+      "alpha": 0.5,
+      "cases": [
+        {
+          "error": 2.417810456013159e-10,
+          "maximum_action": 0.13656310737133026,
+          "maximum_cart_m": 0.06280033543633878,
+          "seed": 3156040,
+          "ticks": 800
+        },
+        {
+          "error": 4.286422770004059e-10,
+          "maximum_action": 0.09069878607988358,
+          "maximum_cart_m": 0.114316403645316,
+          "seed": 3156041,
+          "ticks": 800
+        },
+        {
+          "error": 2.5120702710987065e-10,
+          "maximum_action": 0.023919085040688515,
+          "maximum_cart_m": 0.06677525927169266,
+          "seed": 3156042,
+          "ticks": 800
+        },
+        {
+          "error": 5.865342653890283e-10,
+          "maximum_action": 0.04159920662641525,
+          "maximum_cart_m": 0.2037093015139678,
+          "seed": 3156043,
+          "ticks": 800
+        },
+        {
+          "error": 9.443684387556724e-10,
+          "maximum_action": 0.09968923777341843,
+          "maximum_cart_m": 0.1390769705679503,
+          "seed": 3156044,
+          "ticks": 800
+        },
+        {
+          "error": 2.957809958576226e-10,
+          "maximum_action": 0.07455889135599136,
+          "maximum_cart_m": 0.07651344925856196,
+          "seed": 3156045,
+          "ticks": 800
+        },
+        {
+          "error": 1.1200568641735518e-09,
+          "maximum_action": 0.036022406071424484,
+          "maximum_cart_m": 0.09141757097537666,
+          "seed": 3156046,
+          "ticks": 800
+        },
+        {
+          "error": 6.945949501623349e-10,
+          "maximum_action": 0.1526106595993042,
+          "maximum_cart_m": 0.08514392028373037,
+          "seed": 3156047,
+          "ticks": 800
+        },
+        {
+          "error": 2.553959273215796e-10,
+          "maximum_action": 0.02813383750617504,
+          "maximum_cart_m": 0.05852035841665721,
+          "seed": 3156048,
+          "ticks": 800
+        },
+        {
+          "error": 3.28464345055793e-10,
+          "maximum_action": 0.02684655599296093,
+          "maximum_cart_m": 0.12636828463155061,
+          "seed": 3156049,
+          "ticks": 800
+        }
+      ],
+      "gain_norm": 2.5155109210578206,
+      "median_error": 3.7855331102809943e-10,
+      "valid": true,
+      "worst_error": 1.1200568641735518e-09
+    },
+    {
+      "alpha": 0.8,
+      "cases": [
+        {
+          "error": 8.378776121817228e-12,
+          "maximum_action": 0.21155017614364624,
+          "maximum_cart_m": 0.05064296080709331,
+          "seed": 3156040,
+          "ticks": 800
+        },
+        {
+          "error": 8.663887331676383e-12,
+          "maximum_action": 0.08607695251703262,
+          "maximum_cart_m": 0.09910978466077654,
+          "seed": 3156041,
+          "ticks": 800
+        },
+        {
+          "error": 5.91766237432138e-12,
+          "maximum_action": 0.04082803055644035,
+          "maximum_cart_m": 0.06642541616474182,
+          "seed": 3156042,
+          "ticks": 800
+        },
+        {
+          "error": 1.814545534982694e-11,
+          "maximum_action": 0.051191169768571854,
+          "maximum_cart_m": 0.2034742369913211,
+          "seed": 3156043,
+          "ticks": 800
+        },
+        {
+          "error": 2.768623616460792e-11,
+          "maximum_action": 0.16496537625789642,
+          "maximum_cart_m": 0.12807703027898376,
+          "seed": 3156044,
+          "ticks": 800
+        },
+        {
+          "error": 8.347317005444179e-12,
+          "maximum_action": 0.13874246180057526,
+          "maximum_cart_m": 0.09434900880616116,
+          "seed": 3156045,
+          "ticks": 800
+        },
+        {
+          "error": 2.895463329329163e-11,
+          "maximum_action": 0.1177556961774826,
+          "maximum_cart_m": 0.07628266065108229,
+          "seed": 3156046,
+          "ticks": 800
+        },
+        {
+          "error": 1.6702420960846892e-11,
+          "maximum_action": 0.2313811480998993,
+          "maximum_cart_m": 0.07247961538329628,
+          "seed": 3156047,
+          "ticks": 800
+        },
+        {
+          "error": 6.895383406866171e-12,
+          "maximum_action": 0.03358880802989006,
+          "maximum_cart_m": 0.05186923964528897,
+          "seed": 3156048,
+          "ticks": 800
+        },
+        {
+          "error": 8.213125703014689e-12,
+          "maximum_action": 0.03091057576239109,
+          "maximum_cart_m": 0.1230681921617823,
+          "seed": 3156049,
+          "ticks": 800
+        }
+      ],
+      "gain_norm": 3.667356479352979,
+      "median_error": 8.521331726746806e-12,
+      "valid": true,
+      "worst_error": 2.895463329329163e-11
+    },
+    {
+      "alpha": 1.0,
+      "cases": [
+        {
+          "error": 3.869321601857168e-13,
+          "maximum_action": 0.276664137840271,
+          "maximum_cart_m": 0.05029302060564798,
+          "seed": 3156040,
+          "ticks": 800
+        },
+        {
+          "error": 3.267258019298137e-13,
+          "maximum_action": 0.07027193903923035,
+          "maximum_cart_m": 0.0905861477756583,
+          "seed": 3156041,
+          "ticks": 800
+        },
+        {
+          "error": 1.7355835631034716e-13,
+          "maximum_action": 0.06169358268380165,
+          "maximum_cart_m": 0.06651937246354542,
+          "seed": 3156042,
+          "ticks": 800
+        },
+        {
+          "error": 6.244652830376558e-13,
+          "maximum_action": 0.06550802290439606,
+          "maximum_cart_m": 0.20263023627744664,
+          "seed": 3156043,
+          "ticks": 800
+        },
+        {
+          "error": 7.921097917231769e-13,
+          "maximum_action": 0.22318948805332184,
+          "maximum_cart_m": 0.12064240157848947,
+          "seed": 3156044,
+          "ticks": 800
+        },
+        {
+          "error": 2.0572127025373295e-13,
+          "maximum_action": 0.20521953701972961,
+          "maximum_cart_m": 0.10272506973385437,
+          "seed": 3156045,
+          "ticks": 800
+        },
+        {
+          "error": 8.989592329280252e-13,
+          "maximum_action": 0.2190750688314438,
+          "maximum_cart_m": 0.088408160457833,
+          "seed": 3156046,
+          "ticks": 800
+        },
+        {
+          "error": 3.6685943776036403e-13,
+          "maximum_action": 0.3028329610824585,
+          "maximum_cart_m": 0.06705760171659965,
+          "seed": 3156047,
+          "ticks": 800
+        },
+        {
+          "error": 2.1387936437550542e-13,
+          "maximum_action": 0.039845533668994904,
+          "maximum_cart_m": 0.05026515566527281,
+          "seed": 3156048,
+          "ticks": 800
+        },
+        {
+          "error": 2.297616672250324e-13,
+          "maximum_action": 0.03561297059059143,
+          "maximum_cart_m": 0.11932913672485373,
+          "seed": 3156049,
+          "ticks": 800
+        }
+      ],
+      "gain_norm": 4.956196985984545,
+      "median_error": 3.4679261984508886e-13,
+      "valid": true,
+      "worst_error": 8.989592329280252e-13
+    },
+    {
+      "alpha": 1.2,
+      "cases": [
+        {
+          "error": 3.718428156417455e-14,
+          "maximum_action": 0.3680022954940796,
+          "maximum_cart_m": 0.050145112362371104,
+          "seed": 3156040,
+          "ticks": 800
+        },
+        {
+          "error": 2.940280158777914e-14,
+          "maximum_action": 0.05350029841065407,
+          "maximum_cart_m": 0.0904698558113463,
+          "seed": 3156041,
+          "ticks": 800
+        },
+        {
+          "error": 1.563026472967355e-14,
+          "maximum_action": 0.08914200216531754,
+          "maximum_cart_m": 0.06687885845702399,
+          "seed": 3156042,
+          "ticks": 800
+        },
+        {
+          "error": 1.1488176700711316e-14,
+          "maximum_action": 0.12246090173721313,
+          "maximum_cart_m": 0.20154828622724272,
+          "seed": 3156043,
+          "ticks": 800
+        },
+        {
+          "error": 1.2823595130347434e-14,
+          "maximum_action": 0.273158460855484,
+          "maximum_cart_m": 0.1141623705996363,
+          "seed": 3156044,
+          "ticks": 800
+        },
+        {
+          "error": 1.9811817030066645e-14,
+          "maximum_action": 0.2974025011062622,
+          "maximum_cart_m": 0.1087805786113338,
+          "seed": 3156045,
+          "ticks": 800
+        },
+        {
+          "error": 2.187403500583865e-14,
+          "maximum_action": 0.3655458390712738,
+          "maximum_cart_m": 0.09874445939992457,
+          "seed": 3156046,
+          "ticks": 800
+        },
+        {
+          "error": 4.6058582891135786e-14,
+          "maximum_action": 0.38511714339256287,
+          "maximum_cart_m": 0.06349245474581962,
+          "seed": 3156047,
+          "ticks": 800
+        },
+        {
+          "error": 1.2393368021233468e-14,
+          "maximum_action": 0.05279962718486786,
+          "maximum_cart_m": 0.050126665443618386,
+          "seed": 3156048,
+          "ticks": 800
+        },
+        {
+          "error": 3.821282685017294e-14,
+          "maximum_action": 0.05623607710003853,
+          "maximum_cart_m": 0.11549716738540898,
+          "seed": 3156049,
+          "ticks": 800
+        }
+      ],
+      "gain_norm": 6.954855197600082,
+      "median_error": 2.084292601795265e-14,
+      "valid": true,
+      "worst_error": 4.6058582891135786e-14
+    },
+    {
+      "alpha": 1.5,
+      "cases": [
+        {
+          "error": 4.3165212141595564e-14,
+          "maximum_action": 0.6428819298744202,
+          "maximum_cart_m": 0.05005674737194075,
+          "seed": 3156040,
+          "ticks": 800
+        },
+        {
+          "error": 7.055051757879183e-14,
+          "maximum_action": 0.07946660369634628,
+          "maximum_cart_m": 0.09996670098432676,
+          "seed": 3156041,
+          "ticks": 800
+        },
+        {
+          "error": 3.656781251883001e-14,
+          "maximum_action": 0.12121254950761795,
+          "maximum_cart_m": 0.06763352722115276,
+          "seed": 3156042,
+          "ticks": 800
+        },
+        {
+          "error": 4.9420013978422713e-14,
+          "maximum_action": 0.4612519145011902,
+          "maximum_cart_m": 0.19986598967096877,
+          "seed": 3156043,
+          "ticks": 800
+        },
+        {
+          "error": 1.6925359251690965e-14,
+          "maximum_action": 0.29740849137306213,
+          "maximum_cart_m": 0.10750512830619127,
+          "seed": 3156044,
+          "ticks": 800
+        },
+        {
+          "error": 5.401819252702703e-14,
+          "maximum_action": 0.5014057755470276,
+          "maximum_cart_m": 0.11460624208567709,
+          "seed": 3156045,
+          "ticks": 800
+        },
+        {
+          "error": 2.219664180693698e-14,
+          "maximum_action": 0.6274091005325317,
+          "maximum_cart_m": 0.11035565612163625,
+          "seed": 3156046,
+          "ticks": 800
+        },
+        {
+          "error": 5.490546205230494e-14,
+          "maximum_action": 0.5110847353935242,
+          "maximum_cart_m": 0.061013559521005026,
+          "seed": 3156047,
+          "ticks": 800
+        },
+        {
+          "error": 1.685746149974734e-14,
+          "maximum_action": 0.11698413640260696,
+          "maximum_cart_m": 0.05004721448870031,
+          "seed": 3156048,
+          "ticks": 800
+        },
+        {
+          "error": 6.22967380494778e-14,
+          "maximum_action": 0.138121098279953,
+          "maximum_cart_m": 0.11065359639925333,
+          "seed": 3156049,
+          "ticks": 800
+        }
+      ],
+      "gain_norm": 12.164898964438102,
+      "median_error": 4.629261306000914e-14,
+      "valid": true,
+      "worst_error": 7.055051757879183e-14
+    }
+  ],
+  "public_export": {
+    "changes": "portable path aliases; runtime inventories excluded; outcome/numeric fields preserved",
+    "historical_stage": "parking-decay15-01/receipt.json",
+    "original_receipt_sha256": "66c9935e0401ee346c9a81b6a36b2f2bc1c61bb492770d4175942c03da4a9235"
+  },
+  "scope": "matched saved-input fifteen-link hanging decay component; no release gates"
+}

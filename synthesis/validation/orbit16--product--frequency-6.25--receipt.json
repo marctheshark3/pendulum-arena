@@ -1,0 +1,56 @@
+{
+  "artifact_path": "validation-work/validation/orbit16/product/frequency-6.25/orbit.npz",
+  "artifact_sha256": "701e2dc21b2eaa1eec6ba4a10586b3c42a95506d2f760ad4966bae43ce930019",
+  "closure_pass": true,
+  "dropped_original_cart_row_analytic": -1.2437967322753707e-14,
+  "dropped_original_cart_row_native": -1.2437967322753707e-14,
+  "frequency_Hz": 6.25,
+  "gain_ratio_to_static": 0.0045931419530800995,
+  "gauge_mean_cart": 1.1564823173178713e-18,
+  "harmonic_absolute_angle_amplitude": 0.07861600534544932,
+  "harmonic_cart_amplitude": 0.02379273084290961,
+  "harmonic_force_amplitude_normalized": 0.5,
+  "harmonic_spatial_angle_amplitude_variation": 0.0786160040448846,
+  "initializer": "discrete held-input (exp(i*omega*.02)I-A)^-1 B",
+  "max_absolute_angle": 0.07155007117099718,
+  "max_cart_m": 0.021951769488100372,
+  "max_spatial_bend_rad": 0.07177299420521223,
+  "maximum_affine_offset": 3.018718735033844e-06,
+  "maximum_analytic_held_map_residual": 1.7645773731089776e-11,
+  "maximum_gain_norm": 114725148.53458261,
+  "maximum_native_held_map_residual": 1.9239387860636725e-11,
+  "newton": {
+    "all_original_rows_closed": true,
+    "dropped_original_cart_row": -1.2437967322753707e-14,
+    "dropped_row_index": 3230,
+    "first_maps": 2,
+    "history": [
+      {
+        "alpha": 1.0,
+        "iteration": 0,
+        "mean_cart_gauge": 2.3129646346357427e-18,
+        "modified_merit": 4.367402493987704e-05,
+        "original_max": 0.11666436796716573
+      },
+      {
+        "alpha": 1.0,
+        "iteration": 1,
+        "mean_cart_gauge": -6.938893903907228e-18,
+        "modified_merit": 1.7645773731089776e-11,
+        "original_max": 4.367402493987704e-05
+      },
+      {
+        "iteration": 2,
+        "mean_cart_gauge": 1.1564823173178713e-18,
+        "original_max": 1.7645773731089776e-11
+      }
+    ],
+    "mean_cart_gauge": 1.1564823173178713e-18,
+    "value_maps": 6
+  },
+  "period_ticks": 8,
+  "planning_bounds_ok": true,
+  "profile_index": 2,
+  "publication_note": "New synthesis-export validation. Paths are portable aliases; original validation JSON hash is recorded separately.",
+  "repeats": 12
+}

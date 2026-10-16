@@ -1,5 +1,8 @@
 # Recheck the canonical sixteen-link result
 
+For the moving orbit, bridge generation, original probe07 feedback, parking
+construction and retained comparisons, see the [synthesis export](../../synthesis/README.md).
+
 This is a curated public export of the qualified sixteen-link controller. Twenty-one Python files and the runtime manifest are byte-exact copies of the original controller identity. Original package/configuration/license documents accompany them. `frozen-manifest.json` identifies every copied byte and the original isolated snapshot commit `d06e1478834519f797d28fc57a1b8bad09c61d67`. Private Git history, the full 515-file source bundle, unrelated robot/legacy code, native runtime binaries and model JIT libraries are excluded.
 
 `public_support.py`, `audit_saved.py` and the empty package initializer are NEW public adapters. They were authored after qualification and were outside the historical freeze. The original identity (`36076035…`) and freeze (`28d97cd6…`) remain unchanged. Historical receipts contain original absolute local paths as provenance, not download locations. Relocation resolves SHA256/size-bound rows through the downloaded manifest and creates a separate in-memory controller loading view; it never rewrites or rehashes a historical identity as the qualified result.

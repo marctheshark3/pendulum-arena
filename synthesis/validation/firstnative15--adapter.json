@@ -1,0 +1,63 @@
+{
+  "checkpoint_comparison": {
+    "all_array_bytes_equal": false,
+    "fields": {
+      "actions": {
+        "array_bytes_equal": false,
+        "dtype": "float64",
+        "max_absolute_difference": 6.9459892984014004e-06,
+        "shape": [
+          1500
+        ]
+      },
+      "raw_actions": {
+        "array_bytes_equal": false,
+        "dtype": "float64",
+        "max_absolute_difference": 6.945988862164643e-06,
+        "shape": [
+          1500
+        ]
+      },
+      "states": {
+        "array_bytes_equal": false,
+        "dtype": "float64",
+        "max_absolute_difference": 3.041374921110602e-05,
+        "shape": [
+          1501,
+          32
+        ]
+      }
+    }
+  },
+  "commands": [
+    [
+      "validation-work/runtime/bin/python",
+      "synthesis/original/15/scripts/validate_canonical_candidate.py",
+      "--reference",
+      "validation-work/validation/reference15/product/reference.npz",
+      "--model",
+      "validation-work/validation/model15",
+      "--design",
+      "synthesis/data/15/design.npz",
+      "--out",
+      "validation-work/validation/firstnative15/product",
+      "--seed",
+      "3156000",
+      "--episodes",
+      "1",
+      "--exact",
+      "--tracking-cost",
+      "1000",
+      "--native-bias",
+      "--native-value",
+      "--riccati-precision",
+      "double"
+    ]
+  ],
+  "original_receipt": "validation-work/validation/firstnative15/product/receipt.json",
+  "public_adapter_wall_seconds": 8.391450276016258,
+  "publication_note": "New synthesis-export validation. Paths are portable aliases; original validation JSON hash is recorded separately.",
+  "reserved_episodes": 0,
+  "scope": "New design/diagnostic reproduction; no historical outcome or once-only label is replaced",
+  "stage": "15-first-native-pass"
+}

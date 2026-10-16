@@ -1,0 +1,80 @@
+{
+  "build_seconds": 58.24861717701424,
+  "checks": [
+    {
+      "continuous_error": 2.478421912144313e-10,
+      "directional_error": 1.2971713103659965e-07,
+      "native_transition_error": 2.3580304375769856e-12,
+      "tick": 0
+    },
+    {
+      "continuous_error": 5.630518273846974e-11,
+      "directional_error": 1.7052804154871204e-08,
+      "native_transition_error": 1.491862189340054e-13,
+      "tick": 10
+    },
+    {
+      "continuous_error": 7.476330665667774e-11,
+      "directional_error": 3.6765257172000076e-08,
+      "native_transition_error": 7.091549569793187e-13,
+      "tick": 100
+    },
+    {
+      "continuous_error": 8.242739824027012e-11,
+      "directional_error": 1.299708707325209e-08,
+      "native_transition_error": 2.280953204092384e-13,
+      "tick": 200
+    },
+    {
+      "continuous_error": 8.563438846920235e-11,
+      "directional_error": 2.4922355956746856e-08,
+      "native_transition_error": 4.918843110601756e-13,
+      "tick": 250
+    },
+    {
+      "continuous_error": 1.5872858583065863e-12,
+      "directional_error": 2.7998821039432187e-09,
+      "native_transition_error": 1.74721348500384e-14,
+      "tick": 300
+    },
+    {
+      "continuous_error": 2.8167912446974697e-11,
+      "directional_error": 1.2923841552492377e-08,
+      "native_transition_error": 1.5297030135641432e-13,
+      "tick": 350
+    },
+    {
+      "continuous_error": 4.904941036665278e-12,
+      "directional_error": 3.524975866753266e-09,
+      "native_transition_error": 4.322930902134203e-14,
+      "tick": 400
+    },
+    {
+      "continuous_error": 1.1397960353320968e-10,
+      "directional_error": 4.2760478831394e-08,
+      "native_transition_error": 1.050048936690473e-12,
+      "tick": 440
+    }
+  ],
+  "controller_qualified": false,
+  "first_seconds": 0.0003382931504165754,
+  "native_commands": 9,
+  "passed": true,
+  "public_export": {
+    "changes": "portable path aliases; runtime inventories excluded; outcome/numeric fields preserved",
+    "historical_stage": "planning-model04/receipt.json",
+    "original_receipt_sha256": "8167034e4b6153c355965dca45f2f13ddecb037951f9439dcb87a490d409ebf9"
+  },
+  "reserved_episodes": 0,
+  "runtime": {
+    "casadi": "3.8.1",
+    "mujoco": "3.3.5",
+    "numpy": "2.5.2"
+  },
+  "schema": "rage_mill.canonical_planning_dynamics.v1",
+  "source_sha256": {
+    "canonical_benchmark.py": "0201e57ca7d117d7aa65029183ebf174fa00fb04f42b301c1db365ae5467fe05",
+    "canonical_dynamics.py": "989c91b59e1642ef07b268d121ba7a3a9d2a0f3948a7bbbdba8156bdb49a5765"
+  },
+  "wall_seconds": 58.35390989499865
+}

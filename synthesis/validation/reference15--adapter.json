@@ -1,0 +1,48 @@
+{
+  "checkpoint_comparison": {
+    "all_array_bytes_equal": true,
+    "fields": {
+      "actions": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          650
+        ]
+      },
+      "states": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          651,
+          32
+        ]
+      }
+    }
+  },
+  "commands": [
+    [
+      "validation-work/runtime/bin/python",
+      "synthesis/original/15/scripts/repair_canonical_reference.py",
+      "--model",
+      "validation-work/validation/model15",
+      "--warm",
+      "validation-work/validation/upstream/actual_minimax.npz",
+      "--out",
+      "validation-work/validation/reference15/product",
+      "--ticks",
+      "650",
+      "--cpu-seconds",
+      "180",
+      "--iterations",
+      "150"
+    ]
+  ],
+  "original_receipt": "validation-work/validation/reference15/product/receipt.json",
+  "public_adapter_wall_seconds": 94.80010400799802,
+  "publication_note": "New synthesis-export validation. Paths are portable aliases; original validation JSON hash is recorded separately.",
+  "reserved_episodes": 0,
+  "scope": "New design/diagnostic reproduction; no historical outcome or once-only label is replaced",
+  "stage": "15-reference"
+}

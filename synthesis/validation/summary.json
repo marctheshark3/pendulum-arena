@@ -1,0 +1,240 @@
+{
+  "files": [
+    {
+      "original_validation_sha256": "a5e274de838b37166746fdde01a09b1ea91a729dc32ea3338113a6fa888ffa6a",
+      "path": "feedback15--receipt.json",
+      "sha256": "bb48896047add24646f42020efba8765135393449623ee36ed2b0b27d2d94a6c"
+    },
+    {
+      "original_validation_sha256": "6f81fc0e5850c5519dff63c71d410ea90f069b4753511140ea3e58eecf82b762",
+      "path": "feedback16--receipt.json",
+      "sha256": "0959a726277f6cb717f405cba84567095552c3c44f6620c3d3f37e4f63af041f"
+    },
+    {
+      "original_validation_sha256": "747fa1c6211ffa9817508b578ae0abd2444487b442cbee47f7f04bb28ecc8fb8",
+      "path": "diagnostic15--receipt.json",
+      "sha256": "c5d8cbe6f30df7117a70c1ecc1f95d2d8c6469bcfc306b2b4f32ba452ab322ca"
+    },
+    {
+      "original_validation_sha256": "7a6badab6e06b2253c020ecc1704c58929f9f45f005b9bca357b047d3eb8575a",
+      "path": "diagnostic16--receipt.json",
+      "sha256": "2f01dbda2d464a330599d0859215459e10a2cace03c254fd0ca0e9a5175d27b1"
+    },
+    {
+      "original_validation_sha256": "62bb33f274f0f67528811a4be3e9431eab13b06a186253f2f9ea0b8a2a0a3cae",
+      "path": "model15--receipt.json",
+      "sha256": "304c3f740f30fc8696eedf23b16acf6e603134014d1a77072275dd34526166f4"
+    },
+    {
+      "original_validation_sha256": "856046be47f44dfbb2e2f265c9486ca15e4f8e83449f49cb469adcdc8908c855",
+      "path": "model16--receipt.json",
+      "sha256": "1f6f57357999c6327669aa52cc3e3d5c99bb6a8f5ccc17a1832641a496f8e1f4"
+    },
+    {
+      "original_validation_sha256": "8f8ba1814d1d356abf8e3ca3d6c36c590cff0838563b84877673ac9730e38ee0",
+      "path": "design15--receipt.json",
+      "sha256": "53d55b00af81600cd4616fcff705740fa35769fb1bd5c0d6f95971f7832c3d36"
+    },
+    {
+      "original_validation_sha256": "d8693832ca73cd83382879ff34277a6f1b6264778ae934c2adeea520700693ad",
+      "path": "design16--receipt.json",
+      "sha256": "799d21b47525d673b94448d06c4ff5ebe117281739af4b97ca41c6bcc865c8a6"
+    },
+    {
+      "original_validation_sha256": "99f2da7e973208a43ae94ae721be2acd2f008cc4f3d29d8826421e4f6b49c94f",
+      "path": "reference15--adapter.json",
+      "sha256": "bb7e125508f78089d5e89004a74d1b31b2351120c779df5d6be9af50ef981eb3"
+    },
+    {
+      "original_validation_sha256": "8fccc09116ef677ed9dc0105f4fc7d1342e0c434209d8397f66340dc63fb3deb",
+      "path": "reference15--product--receipt.json",
+      "sha256": "2fd35e4c865129709456e3d952b43246e01148962eeaa12252ddb3b8ba23fb32"
+    },
+    {
+      "original_validation_sha256": "ba0f096b37f3f12a3c5dc3ec6a5933af09168c20ab24f9dfa36fd307a7799fef",
+      "path": "reference16--adapter.json",
+      "sha256": "32b0a2aacf33f2c0ae107a63fcd8932f9874a2a57a6a72e3331b4c68d185fc79"
+    },
+    {
+      "original_validation_sha256": "c29a9873f4dcbc421dd1b045b9f4a68af0277096374995b4c65fb60042754118",
+      "path": "reference16--product--receipt.json",
+      "sha256": "9fd0714832a843d9760068fde641723134fea921473d542f7dec9582e9804f10"
+    },
+    {
+      "original_validation_sha256": "0bf7ed5b8899e76fd676b40a1a173cd733dfdc98c3b93840a3ffd8f08fb0a401",
+      "path": "orbit16--adapter.json",
+      "sha256": "24c6794ce1b190e87e4e9f4935fed982e08702f2145998529eae1ba85d769e86"
+    },
+    {
+      "original_validation_sha256": "3e3594d3d8e4b0705f8c24804c6fbd39cd4b68ed3480297d93861c4575881958",
+      "path": "orbit16--product--frequency-2.5--receipt.json",
+      "sha256": "3efd1710e24d8b7dab25e237edafb7dc1bf14a7783125f61df51880bd4f22ab9"
+    },
+    {
+      "original_validation_sha256": "1a8195a8bbc6baba60860b0669c0f10db19dee2d470b400ef70f1a92c650307a",
+      "path": "orbit16--product--frequency-5--receipt.json",
+      "sha256": "e3a6368da50c25a0275c6d7d87f85c87e6c3370f0e0bf65990bb7791cf6d0436"
+    },
+    {
+      "original_validation_sha256": "23acfe5366011e3fadfe7d2da158f2f8376de72f322a62ad14de3159f68c21d9",
+      "path": "orbit16--product--frequency-6.25--receipt.json",
+      "sha256": "b84eeeace5e55c6b008258e4c4975d377e862ba3090a1b33b405450662d736ce"
+    },
+    {
+      "original_validation_sha256": "c29e91c1d11c253960af992753e26ef197b5ea4c3f4474e05179c74ec62d81b4",
+      "path": "orbit16--product--receipt.json",
+      "sha256": "f160f614febc1a034b6adfef0296f256fc6d4f6a37fb65f8ebc708f90d2d8e35"
+    },
+    {
+      "original_validation_sha256": "338a1918efd21fe24983cb9558a76a00b25cab0dea29bf1ffeb93ebe0a8c59a6",
+      "path": "bridge16--adapter.json",
+      "sha256": "4c230d394d7b8b00045b47bdf9cf8fe40c59cecfa4fbd254f0eba4bdad8a40a8"
+    },
+    {
+      "original_validation_sha256": "a5b64b6ac5b19aa0129e020d8ee118af7ec03de627345983ab4d81fed310e24b",
+      "path": "bridge16--product--receipt.json",
+      "sha256": "a9e8c9ae5912edd2673504c954908f6cbccc8aecd1f129b1b1cc8abcf3ff79aa"
+    },
+    {
+      "original_validation_sha256": "2dc61de1e878da6cbc4b7af1634ffc19159c6e6ea4dccb1dde756ebf7f667a21",
+      "path": "lift16--adapter.json",
+      "sha256": "8a8dff8a9fd2fc46608ea91c232fe80c7df3fd52f35f72e82974f337819b5ad2"
+    },
+    {
+      "original_validation_sha256": "79702ea3981f0156cc66015d0b15f8e313b1a325b192d4111ba8d377bd9cebc4",
+      "path": "lift16--product--receipt.json",
+      "sha256": "b15f53ae9cdde7ea85dcbef933054d93009565cc25d9f44dc685e7a04e7db46b"
+    },
+    {
+      "original_validation_sha256": "47a185edeb5771348d26478abf80a569b0eb06f106760ecf1280bfb959bdbf24",
+      "path": "launch16--adapter.json",
+      "sha256": "9cd7d88a143854c14fa32c4dbf6404022c9e7c30306f619fd75d7c88a862443f"
+    },
+    {
+      "original_validation_sha256": "43aa5dffe4b2b9dea2e0665c30a7f0f6e44a430dc52fdd93a7230cc3edc649bf",
+      "path": "launch16--product--receipt.json",
+      "sha256": "1e2ce55bf70e1b9bf4ff235915e5375e0a272f140d45f74dccdf2ca0fb08b7ac"
+    },
+    {
+      "original_validation_sha256": "a6bd4ad05d56b479e68a027e38d1de33c459137fe89faf3dbb61ba0a49349830",
+      "path": "parking16--adapter.json",
+      "sha256": "254a549252691cccca8d57a298e70c0f41793b45ee6e4567d6beee0249177b5e"
+    },
+    {
+      "original_validation_sha256": "22c4cc2f71a7afd9e9a9875a7bb9d19a2883aa8e0a33b4e28e5b3839e4c41db3",
+      "path": "parking16--native-hanging--receipt.json",
+      "sha256": "e123e0b401e66132a0c259c8ac61c58bc18b371b1e6c64762862fa6f6d675772"
+    },
+    {
+      "original_validation_sha256": "eb4b6b31cb84072fc9b118c2263c26802400f2806717e604bf3891f13cb897ef",
+      "path": "parking16--product--receipt.json",
+      "sha256": "68b6c27c6ac08c7cb4e7e8889ad816e08867e7c52100e6de816d2412a2c773a4"
+    },
+    {
+      "original_validation_sha256": "9b4379705c02ca2d47ace6a3f3090bd011afbdd903199d529bd77d8626d2f826",
+      "path": "probe07--adapter.json",
+      "sha256": "22282d53108f6bd2852b56f51c407fbbbdf6d8fc0c7e1d012a4ee41608628fa7"
+    },
+    {
+      "original_validation_sha256": "b2a5a28befad568a5ad741322c0c6bd54a9281d798cc786a04501dfdd5a4cc1e",
+      "path": "probe07--product--receipt.json",
+      "sha256": "4efdb6bace8c2097c7e2bc11368b9c605e3ec54012e8eaa71915e8adcda96db6"
+    },
+    {
+      "original_validation_sha256": "02e16aeb50df9452599e61cfcba51f1bcd4fd0bdcc1069cdebf69bd7d0dbc148",
+      "path": "prototype15--adapter.json",
+      "sha256": "a1f406cf60c64f46713887fb39b0309b75ad0c6550fabf4d1adf8c95b442c795"
+    },
+    {
+      "original_validation_sha256": "dbf72224f5bcb255d44a0a3c6ee1ea9a439c9220184f991d36839564d9735ca1",
+      "path": "prototype15--product--provenance.json",
+      "sha256": "96146dc6ea8f5b065dea3fbed5048f9f92f8c0c088bf213f4aa32f12a5aafbb6"
+    },
+    {
+      "original_validation_sha256": "a891eb2e8713c19fd359401eb1b6792260c3016c2a3b60eebea2b732b1fe3eb7",
+      "path": "prototype15--prototype--receipt.json",
+      "sha256": "7f66d1e36f50d1da1d7e7f53629749bcaa8c39fe26a9cfb3c8a70e577510407a"
+    },
+    {
+      "original_validation_sha256": "8c3a9b847983c97c3e856a28068eec653b928f172f2bc04ccfeb0b1d11d53c7d",
+      "path": "firstnative15--adapter.json",
+      "sha256": "2046e2c564ffea651dac0b71be7a5ec775bd513c07e4dd2afa3501ec7e3ce288"
+    },
+    {
+      "original_validation_sha256": "d66c319112c0ae955e6dc95f612a40d196382b58e7d77bdbdfc5a3ad1208d092",
+      "path": "firstnative15--product--receipt.json",
+      "sha256": "5d098af2edd5507c1a393521fa38a44244e107e9d93ff7f50b33e40ad85023cb"
+    },
+    {
+      "original_validation_sha256": "51455f48ada247d186b8375ec0d52f0d5a42a3ae95449fd8d5f2e61349b5eba0",
+      "path": "physicalreference15--adapter.json",
+      "sha256": "dca9b5cc63ad8e532f2348aafe298e6697121ca7357b0151294778d96f82bcdf"
+    },
+    {
+      "original_validation_sha256": "a7fae0a5d9f12d43928df10936883a5e4f0630b686ed1f6385f95f3de3d856b3",
+      "path": "physicalreference15--product--receipt.json",
+      "sha256": "7203ddf0ef3720f82d325d22da30815a069119592db8d6802dd20544771d39de"
+    },
+    {
+      "original_validation_sha256": "9f1d780b6c562aa39ef29d3ca14d2aa1ef2e56d9d06d973b30103db668f52d28",
+      "path": "physicalreference15-fresh--adapter.json",
+      "sha256": "c2ad4f1b4e3cfc9e1d09a8da74ab8f55bd611b9a174cd5649efa4e7bfa66ef1a"
+    },
+    {
+      "original_validation_sha256": "c19b2b33d70cb241fea3423b7fb3b5e9cda88a3c6f3de4f11b2afaa0efc5bd2e",
+      "path": "physicalreference15-fresh--product--receipt.json",
+      "sha256": "d29ef6f0b95538fa5fb138089948cd86a1665b2f5c6acb09c5063254e7055e02"
+    },
+    {
+      "original_validation_sha256": "e55549276afcdbdf6337ed26115f21fea390e1ab83a4b184507ffd9037c034af",
+      "path": "physicalreference15-replay--adapter.json",
+      "sha256": "e75c564efcfe62225f8c0bc20299cbd8461cad64012f1ac9ea19a0d64153b9fc"
+    },
+    {
+      "original_validation_sha256": "45a004306d33e5fdbbc55a046ab4662b87cfd8d1fc4c845d849eb565a8c94c1b",
+      "path": "physicalreference15-replay--product--receipt.json",
+      "sha256": "45337775e27007f58ee3db993aac5056f381100e3321583f1ca7d740e4f15a67"
+    },
+    {
+      "path": "firstnative15-new-episode.npz",
+      "role": "Actual new export-validation tape; not a historical qualification recording",
+      "sha256": "b09e192e6f43e8cfa65eac3207727667fe344a8dbc914df3196ef273aa01f7db"
+    },
+    {
+      "path": "diagnostic15-new-episode.npz",
+      "role": "Actual new export-validation tape; not a historical qualification recording",
+      "sha256": "49656632beedcb9d20c48e3438ea26f8a7dad2e9edc10f3fa634616683871290"
+    },
+    {
+      "path": "diagnostic16-new-episode.npz",
+      "role": "Actual new export-validation tape; not a historical qualification recording",
+      "sha256": "5caed3348b4343a26c36fed630ecef564f0e8b504784047bbc79b08426dba3a5"
+    }
+  ],
+  "known_gap": "The first fifteen native-value rerun succeeds but differs from the historical tape beginning at command index489. Selected physical-reference checkpoint and recorded-command native replay are provided; no exact reproduction of that earlier online action selection is claimed.",
+  "qualification_replaced": false,
+  "reserved_episodes": 0,
+  "results": {
+    "bridge16_array_bytes_equal": true,
+    "first_native15_full_tape_array_bytes_equal": false,
+    "maximum_new_diagnostic_native_cold_defect": 0.0,
+    "new_exact_hanging15_success": true,
+    "new_exact_hanging16_success": true,
+    "orbit16_array_bytes_equal": true,
+    "original_probe07_array_bytes_equal": true,
+    "reference15_array_bytes_equal": true,
+    "reference16_array_bytes_equal": true,
+    "selected_feedback15_array_bytes_equal": true,
+    "selected_feedback16_array_bytes_equal": true
+  },
+  "runtime": {
+    "casadi": "3.8.1",
+    "machine": "aarch64",
+    "mpmath": "1.3.0",
+    "mujoco": "3.3.5",
+    "numpy": "2.5.2",
+    "python": "3.12.3",
+    "scipy": "1.18.1"
+  },
+  "schema": "pendulum-arena.synthesis-validation.v1"
+}

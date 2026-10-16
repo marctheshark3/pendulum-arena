@@ -1,0 +1,16 @@
+{
+  "controller_qualified": false,
+  "design": "synthesis/data/15/design.npz",
+  "design_sha256": "e334b47835a978c04d035ca1b9d5921558a1b8261855c9650e7a39304e7f3ca9",
+  "method": "bounded native route planning from the observed hanging-settle state",
+  "model_receipt_sha256": "62bb33f274f0f67528811a4be3e9431eab13b06a186253f2f9ea0b8a2a0a3cae",
+  "offline_riccati_precision": "double",
+  "parking_decay": 1.2,
+  "prototype": "validation-work/validation/prototype15/prototype",
+  "prototype_controller_sha256": "ef7f3e1271f0bb7578c141c4fd122fae68d5cdd37cbdfc15489223664e6380bb",
+  "prototype_receipt_sha256": "a891eb2e8713c19fd359401eb1b6792260c3016c2a3b60eebea2b732b1fe3eb7",
+  "publication_note": "New synthesis-export validation. Paths are portable aliases; original validation JSON hash is recorded separately.",
+  "reference_sha256": "a2195c2b328d85a8f3d0e840c58266cf8115a4830826ec475d1770e906024cc4",
+  "reserved_episodes": 0,
+  "schema": "rage_mill.canonical15_controller.v1"
+}

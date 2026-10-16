@@ -1,0 +1,141 @@
+{
+  "controller": {
+    "cart_target": 0.0,
+    "control_cost": 1000.0,
+    "joint_after": 390,
+    "joint_horizon": 2,
+    "native_value_after": 180,
+    "optimizer_xtol": 2e-08,
+    "park_ticks": 800
+  },
+  "forecast_profiles": [
+    {
+      "joint_horizon": 1,
+      "optimizer_xtol": 2e-08
+    },
+    {
+      "joint_horizon": 2,
+      "optimizer_xtol": 2e-08
+    },
+    {
+      "joint_horizon": 3,
+      "optimizer_xtol": 2e-08
+    },
+    {
+      "joint_horizon": 4,
+      "optimizer_xtol": 2e-08
+    },
+    {
+      "joint_horizon": 1,
+      "optimizer_xtol": 1e-09
+    },
+    {
+      "joint_horizon": 2,
+      "optimizer_xtol": 1e-09
+    },
+    {
+      "joint_horizon": 3,
+      "optimizer_xtol": 1e-09
+    },
+    {
+      "joint_horizon": 4,
+      "optimizer_xtol": 1e-09
+    },
+    {
+      "joint_horizon": 1,
+      "optimizer_xtol": 1e-07
+    },
+    {
+      "joint_horizon": 2,
+      "optimizer_xtol": 1e-07
+    },
+    {
+      "joint_horizon": 3,
+      "optimizer_xtol": 1e-07
+    },
+    {
+      "joint_horizon": 4,
+      "optimizer_xtol": 1e-07
+    },
+    {
+      "joint_horizon": 1,
+      "optimizer_xtol": 1e-10
+    },
+    {
+      "joint_horizon": 2,
+      "optimizer_xtol": 1e-10
+    },
+    {
+      "joint_horizon": 3,
+      "optimizer_xtol": 1e-10
+    },
+    {
+      "joint_horizon": 4,
+      "optimizer_xtol": 1e-10
+    },
+    {
+      "joint_horizon": 1,
+      "optimizer_xtol": 5e-08
+    },
+    {
+      "joint_horizon": 2,
+      "optimizer_xtol": 5e-08
+    },
+    {
+      "joint_horizon": 3,
+      "optimizer_xtol": 5e-08
+    },
+    {
+      "joint_horizon": 4,
+      "optimizer_xtol": 5e-08
+    },
+    {
+      "joint_horizon": 1,
+      "optimizer_xtol": 5e-09
+    },
+    {
+      "joint_horizon": 2,
+      "optimizer_xtol": 5e-09
+    },
+    {
+      "joint_horizon": 3,
+      "optimizer_xtol": 5e-09
+    },
+    {
+      "joint_horizon": 4,
+      "optimizer_xtol": 5e-09
+    },
+    {
+      "joint_horizon": 1,
+      "optimizer_xtol": 5e-07
+    },
+    {
+      "joint_horizon": 2,
+      "optimizer_xtol": 5e-07
+    },
+    {
+      "joint_horizon": 3,
+      "optimizer_xtol": 5e-07
+    },
+    {
+      "joint_horizon": 4,
+      "optimizer_xtol": 5e-07
+    },
+    {
+      "joint_horizon": 1,
+      "optimizer_xtol": 1e-06
+    },
+    {
+      "joint_horizon": 2,
+      "optimizer_xtol": 1e-06
+    },
+    {
+      "joint_horizon": 3,
+      "optimizer_xtol": 1e-06
+    },
+    {
+      "joint_horizon": 4,
+      "optimizer_xtol": 1e-06
+    }
+  ]
+}

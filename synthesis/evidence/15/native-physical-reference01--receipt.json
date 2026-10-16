@@ -1,0 +1,12 @@
+{
+  "actions_are_delivered_float32": true,
+  "prefix_ticks": 700,
+  "public_export": {
+    "changes": "portable path aliases; runtime inventories excluded; outcome/numeric fields preserved",
+    "historical_stage": "native-physical-reference01/receipt.json",
+    "original_receipt_sha256": "51e91bda592c5516aa5f6b0d880999e182ccf4550e1af3248306a8d19b8a67eb"
+  },
+  "scope": "actual complete successful native calibration used as offline physical reference; no new success claim",
+  "source_recording": "${SYNTHESIS}/data/15/first-native-pass.npz",
+  "source_sha256": "2a12428e67fb1b43a3a533fcbc6f12223ddc74d61c9d7d07863ac8b3ab601f13"
+}

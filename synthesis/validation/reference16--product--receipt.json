@@ -1,0 +1,23 @@
+{
+  "build_seconds": 63.10397960600676,
+  "controller_qualified": false,
+  "development_episodes": 0,
+  "initial_error": 5.322778275681293e-21,
+  "iterations": 150,
+  "maximum_dynamics_defect": 3.4357405809259944e-11,
+  "maximum_hold_angle": 2.7833686808495844e-06,
+  "model_receipt_sha256": "856046be47f44dfbb2e2f265c9486ca15e4f8e83449f49cb469adcdc8908c855",
+  "n_links": 16,
+  "planner_map_feasible": false,
+  "planning_bounds_ok": true,
+  "publication_note": "New synthesis-export validation. Paths are portable aliases; original validation JSON hash is recorded separately.",
+  "reference_only": true,
+  "reserved_episodes": 0,
+  "route_ticks": 450,
+  "schema": "rage_mill.canonical16_reference_repair.v2",
+  "status": "Maximum_Iterations_Exceeded",
+  "terminal_error": 2.9379593231974786e-14,
+  "ticks": 700,
+  "wall_seconds": 152.20883583900286,
+  "warm_sha256": "64d2173bbe693690a1bc5b65a233164504ce15332c20d1eac68ccfbac21cac57"
+}

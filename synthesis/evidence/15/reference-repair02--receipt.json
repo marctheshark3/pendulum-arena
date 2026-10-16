@@ -1,0 +1,24 @@
+{
+  "build_seconds": 35.052527595020365,
+  "controller_qualified": false,
+  "initial_error": 1.0817285885301147e-21,
+  "iterations": 120,
+  "maximum_dynamics_defect": 4.761080418802521e-12,
+  "maximum_hold_angle": 0.002695470679162599,
+  "model_receipt_sha256": "8167034e4b6153c355965dca45f2f13ddecb037951f9439dcb87a490d409ebf9",
+  "planner_map_feasible": true,
+  "planning_bounds_ok": true,
+  "public_export": {
+    "changes": "portable path aliases; runtime inventories excluded; outcome/numeric fields preserved",
+    "historical_stage": "reference-repair02/receipt.json",
+    "original_receipt_sha256": "e05e21bf7d193ae5d55cbd03de1822dd7891617d5d736d0af3b7082fe5901192"
+  },
+  "reference_only": true,
+  "reserved_episodes": 0,
+  "schema": "rage_mill.canonical_reference_repair.v1",
+  "status": "Solved_To_Acceptable_Level",
+  "terminal_error": 1.9982704436804912e-13,
+  "ticks": 650,
+  "wall_seconds": 92.27052152104443,
+  "warm_sha256": "6e0d87f4fbc12d1f0f35929b17e8182b767c6f33ee7642a202ff324861c2e22e"
+}

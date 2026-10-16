@@ -1,0 +1,238 @@
+{
+  "cases": [
+    {
+      "cases": [
+        {
+          "error": 0.013793613310616794,
+          "final_maximum_absolute_angle_from_hanging": 0.015885905831028335,
+          "maximum_action": 0.016597485169768333,
+          "maximum_cart_m": 0.060626757177642925,
+          "seed": 3156040
+        },
+        {
+          "error": 0.015057320203618402,
+          "final_maximum_absolute_angle_from_hanging": 0.010873502465652773,
+          "maximum_action": 0.01444296445697546,
+          "maximum_cart_m": 0.08080867186698187,
+          "seed": 3156041
+        },
+        {
+          "error": 0.0049828029613016005,
+          "final_maximum_absolute_angle_from_hanging": 0.014950105176361639,
+          "maximum_action": 0.0031690082978457212,
+          "maximum_cart_m": 0.054836236960290136,
+          "seed": 3156042
+        },
+        {
+          "error": 0.005693795993540118,
+          "final_maximum_absolute_angle_from_hanging": 0.013620781509021462,
+          "maximum_action": 0.009758608415722847,
+          "maximum_cart_m": 0.09245541494539151,
+          "seed": 3156043
+        },
+        {
+          "error": 0.015192267568992007,
+          "final_maximum_absolute_angle_from_hanging": 0.007681388007190648,
+          "maximum_action": 0.007647182326763868,
+          "maximum_cart_m": 0.07941741928423722,
+          "seed": 3156044
+        },
+        {
+          "error": 0.0106736150308866,
+          "final_maximum_absolute_angle_from_hanging": 0.012282062189611143,
+          "maximum_action": 0.00686795637011528,
+          "maximum_cart_m": 0.06969344906523695,
+          "seed": 3156045
+        },
+        {
+          "error": 0.01966383306946591,
+          "final_maximum_absolute_angle_from_hanging": 0.0022663590795315436,
+          "maximum_action": 0.008653794415295124,
+          "maximum_cart_m": 0.07510756329561478,
+          "seed": 3156046
+        },
+        {
+          "error": 0.00822710130942838,
+          "final_maximum_absolute_angle_from_hanging": 0.014132724153963494,
+          "maximum_action": 0.01070591900497675,
+          "maximum_cart_m": 0.06713204331141223,
+          "seed": 3156047
+        },
+        {
+          "error": 0.012223596320656751,
+          "final_maximum_absolute_angle_from_hanging": 0.0036056986213832687,
+          "maximum_action": 0.010689955204725266,
+          "maximum_cart_m": 0.06625899561345693,
+          "seed": 3156048
+        },
+        {
+          "error": 0.007745975555166025,
+          "final_maximum_absolute_angle_from_hanging": 0.02294351073851386,
+          "maximum_action": 0.012897354550659657,
+          "maximum_cart_m": 0.07763322692793297,
+          "seed": 3156049
+        }
+      ],
+      "label": "tiny",
+      "median_state_error": 0.011448605675771675
+    },
+    {
+      "cases": [
+        {
+          "error": 2.6483877948686654e-07,
+          "final_maximum_absolute_angle_from_hanging": 5.441451733645408e-08,
+          "maximum_action": 0.06033649295568466,
+          "maximum_cart_m": 0.10477532036605819,
+          "seed": 3156040
+        },
+        {
+          "error": 2.7257848678449887e-07,
+          "final_maximum_absolute_angle_from_hanging": 5.598470975698433e-08,
+          "maximum_action": 0.0754057765007019,
+          "maximum_cart_m": 0.13895733887322276,
+          "seed": 3156041
+        },
+        {
+          "error": 1.3166234799523507e-08,
+          "final_maximum_absolute_angle_from_hanging": 2.8065718638004e-09,
+          "maximum_action": 0.013465759344398975,
+          "maximum_cart_m": 0.06725402055719346,
+          "seed": 3156042
+        },
+        {
+          "error": 2.054294173117039e-08,
+          "final_maximum_absolute_angle_from_hanging": 7.638189636338666e-09,
+          "maximum_action": 0.03519749641418457,
+          "maximum_cart_m": 0.19705194126338985,
+          "seed": 3156043
+        },
+        {
+          "error": 1.7791169955767572e-07,
+          "final_maximum_absolute_angle_from_hanging": 3.9585303479583445e-08,
+          "maximum_action": 0.06038004532456398,
+          "maximum_cart_m": 0.1500026322992697,
+          "seed": 3156044
+        },
+        {
+          "error": 2.458829699495265e-07,
+          "final_maximum_absolute_angle_from_hanging": 5.020727300575345e-08,
+          "maximum_action": 0.02260734513401985,
+          "maximum_cart_m": 0.0800427164249139,
+          "seed": 3156045
+        },
+        {
+          "error": 3.054453718601766e-07,
+          "final_maximum_absolute_angle_from_hanging": 6.228912763361905e-08,
+          "maximum_action": 0.028771469369530678,
+          "maximum_cart_m": 0.13186874476705512,
+          "seed": 3156046
+        },
+        {
+          "error": 1.4047015454054174e-07,
+          "final_maximum_absolute_angle_from_hanging": 2.849533764504031e-08,
+          "maximum_action": 0.07700013369321823,
+          "maximum_cart_m": 0.11926666967513126,
+          "seed": 3156047
+        },
+        {
+          "error": 1.170566783555898e-07,
+          "final_maximum_absolute_angle_from_hanging": 2.4594589032034264e-08,
+          "maximum_action": 0.0233530942350626,
+          "maximum_cart_m": 0.06695773352428701,
+          "seed": 3156048
+        },
+        {
+          "error": 8.334726185841725e-08,
+          "final_maximum_absolute_angle_from_hanging": 2.6264727726044157e-08,
+          "maximum_action": 0.021247247233986855,
+          "maximum_cart_m": 0.11833617035222187,
+          "seed": 3156049
+        }
+      ],
+      "label": "angle10-rate1",
+      "median_state_error": 1.5919092704910873e-07
+    },
+    {
+      "cases": [
+        {
+          "error": 1.3379842235858308e-05,
+          "final_maximum_absolute_angle_from_hanging": 7.912738939630515e-07,
+          "maximum_action": 0.06502533704042435,
+          "maximum_cart_m": 0.2867116083665495,
+          "seed": 3156040
+        },
+        {
+          "error": 1.1106045403690937e-05,
+          "final_maximum_absolute_angle_from_hanging": 1.1075294956697235e-06,
+          "maximum_action": 0.2311602681875229,
+          "maximum_cart_m": 0.25129124253185586,
+          "seed": 3156041
+        },
+        {
+          "error": 1.6096974660706476e-06,
+          "final_maximum_absolute_angle_from_hanging": 4.2746114203850993e-08,
+          "maximum_action": 0.05148443952202797,
+          "maximum_cart_m": 0.0860488523992007,
+          "seed": 3156042
+        },
+        {
+          "error": 3.4317785397645003e-06,
+          "final_maximum_absolute_angle_from_hanging": 3.3347457772947564e-07,
+          "maximum_action": 0.10158340632915497,
+          "maximum_cart_m": 0.24993175625256378,
+          "seed": 3156043
+        },
+        {
+          "error": 5.160997964748092e-06,
+          "final_maximum_absolute_angle_from_hanging": 9.517352914656385e-07,
+          "maximum_action": 0.14776891469955444,
+          "maximum_cart_m": 0.15210667411663786,
+          "seed": 3156044
+        },
+        {
+          "error": 1.2957107451451455e-05,
+          "final_maximum_absolute_angle_from_hanging": 6.268251362406829e-07,
+          "maximum_action": 0.022934267297387123,
+          "maximum_cart_m": 0.2525881939696522,
+          "seed": 3156045
+        },
+        {
+          "error": 1.2818484818996992e-05,
+          "final_maximum_absolute_angle_from_hanging": 1.0073703631263697e-06,
+          "maximum_action": 0.06712444126605988,
+          "maximum_cart_m": 0.2910976105611211,
+          "seed": 3156046
+        },
+        {
+          "error": 8.085110924441197e-06,
+          "final_maximum_absolute_angle_from_hanging": 2.3316655983762757e-07,
+          "maximum_action": 0.16684260964393616,
+          "maximum_cart_m": 0.21883858507498755,
+          "seed": 3156047
+        },
+        {
+          "error": 4.512413901817352e-06,
+          "final_maximum_absolute_angle_from_hanging": 6.06600742081298e-07,
+          "maximum_action": 0.02900073304772377,
+          "maximum_cart_m": 0.09656598986939911,
+          "seed": 3156048
+        },
+        {
+          "error": 5.079315864853218e-06,
+          "final_maximum_absolute_angle_from_hanging": 8.819056338538189e-07,
+          "maximum_action": 0.025372223928570747,
+          "maximum_cart_m": 0.12701863924775456,
+          "seed": 3156049
+        }
+      ],
+      "label": "angle25-rate10-relative1",
+      "median_state_error": 6.623054444594645e-06
+    }
+  ],
+  "public_export": {
+    "changes": "portable path aliases; runtime inventories excluded; outcome/numeric fields preserved",
+    "historical_stage": "parking-costs15-01/receipt.json",
+    "original_receipt_sha256": "7a2a257d08237d7408459769d27a3e47f05fc054ded27383aed0c88b0a7cadbd"
+  },
+  "scope": "matched saved-input fifteen-link parking component only; no full controller or reserved trial"
+}

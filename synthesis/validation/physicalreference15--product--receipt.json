@@ -1,0 +1,6 @@
+{
+  "prefix_ticks": 700,
+  "publication_note": "New synthesis-export validation. Paths are portable aliases; original validation JSON hash is recorded separately.",
+  "scope": "Explicit original manual extraction stage; recorded actual states, not optimizer states",
+  "source_sha256": "2a12428e67fb1b43a3a533fcbc6f12223ddc74d61c9d7d07863ac8b3ab601f13"
+}

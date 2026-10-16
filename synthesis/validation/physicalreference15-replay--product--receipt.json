@@ -1,0 +1,7 @@
+{
+  "native_replay": true,
+  "prefix_ticks": 700,
+  "publication_note": "New synthesis-export validation. Paths are portable aliases; original validation JSON hash is recorded separately.",
+  "scope": "Native replay of the retained original command prefix from exact hanging; not a new closed-loop controller result",
+  "source_sha256": "2a12428e67fb1b43a3a533fcbc6f12223ddc74d61c9d7d07863ac8b3ab601f13"
+}

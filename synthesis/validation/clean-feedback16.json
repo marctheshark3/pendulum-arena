@@ -1,0 +1,195 @@
+{
+  "derivative_mode": "public numeric checkpoint evaluated from the original derivative provider",
+  "maximum_native_reference_defect": 3.0585816598316384e-06,
+  "n_links": 16,
+  "original_probe07_comparison": {
+    "all_array_bytes_equal": true,
+    "fields": {
+      "actions": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          700
+        ]
+      },
+      "balance_gain": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          34
+        ]
+      },
+      "gains": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          700,
+          34
+        ]
+      },
+      "native_defects": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          700,
+          34
+        ]
+      },
+      "offsets": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          700
+        ]
+      },
+      "park_gain": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          34
+        ]
+      },
+      "park_ticks": {
+        "array_bytes_equal": true,
+        "dtype": "int64",
+        "max_absolute_difference": 0.0,
+        "shape": []
+      },
+      "parking_target": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          34
+        ]
+      },
+      "states": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          701,
+          34
+        ]
+      },
+      "terminal_root": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          34,
+          34
+        ]
+      }
+    }
+  },
+  "public_clean_extraction_note": "Actual new standalone extraction run with PYTHONPATH removed and file access tracing; no original campaign/worktree paths were accessed.",
+  "reference_sha256": "b74bf2ec82fc8739de7e0443877f07d3d8d89d0a15f7fdf87d771c68308daff5",
+  "released_payload_comparison": {
+    "all_array_bytes_equal": true,
+    "fields": {
+      "actions": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          650
+        ]
+      },
+      "balance_gain": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          34
+        ]
+      },
+      "gains": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          650,
+          34
+        ]
+      },
+      "native_defects": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          650,
+          34
+        ]
+      },
+      "offsets": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          650
+        ]
+      },
+      "park_gain": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          34
+        ]
+      },
+      "park_ticks": {
+        "array_bytes_equal": true,
+        "dtype": "int64",
+        "max_absolute_difference": 0.0,
+        "shape": []
+      },
+      "parking_target": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          34
+        ]
+      },
+      "states": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          651,
+          34
+        ]
+      },
+      "terminal_root": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          34,
+          34
+        ]
+      }
+    }
+  },
+  "reserved_episodes": 0,
+  "runtime": {
+    "machine": "aarch64",
+    "packages": {
+      "casadi": "3.8.1",
+      "mpmath": "1.3.0",
+      "mujoco": "3.3.5",
+      "numpy": "2.5.2",
+      "scipy": "1.18.1"
+    },
+    "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+    "runtime_binary_hashes_verified": false
+  },
+  "scope": "New reconstruction of selected feedback arrays; no historical freeze is changed"
+}

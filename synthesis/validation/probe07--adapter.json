@@ -1,0 +1,129 @@
+{
+  "checkpoint_comparison": {
+    "all_array_bytes_equal": true,
+    "fields": {
+      "actions": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          700
+        ]
+      },
+      "balance_gain": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          34
+        ]
+      },
+      "gains": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          700,
+          34
+        ]
+      },
+      "native_defects": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          700,
+          34
+        ]
+      },
+      "offsets": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          700
+        ]
+      },
+      "park_gain": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          34
+        ]
+      },
+      "park_ticks": {
+        "array_bytes_equal": true,
+        "dtype": "int64",
+        "max_absolute_difference": 0.0,
+        "shape": []
+      },
+      "parking_target": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          34
+        ]
+      },
+      "states": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          701,
+          34
+        ]
+      },
+      "terminal_root": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          34,
+          34
+        ]
+      }
+    }
+  },
+  "commands": [
+    [
+      "validation-work/runtime/bin/python",
+      "synthesis/original/16/scripts/probe_canonical16_finite_controller.py",
+      "--reference",
+      "validation-work/validation/bridge16/product/reference.npz",
+      "--model",
+      "validation-work/validation/model16",
+      "--design",
+      "synthesis/data/16/design.npz",
+      "--out",
+      "validation-work/validation/probe07/product",
+      "--seed",
+      "3167106",
+      "--episodes",
+      "1",
+      "--exact",
+      "--park-seconds",
+      "16",
+      "--parking-design",
+      "synthesis/data/16/parking-design.npz",
+      "--expected-parking-sha256",
+      "b3f4e54a62faf831af8925d58db1de9d5bfcbae612b9ed091d029f9c95dfd7ab",
+      "--parking-target-cart",
+      "-0.05",
+      "--native-bias",
+      "--dot",
+      "float64",
+      "--terminal-policy",
+      "zero",
+      "--post-route",
+      "zero"
+    ]
+  ],
+  "original_receipt": "validation-work/validation/probe07/product/receipt.json",
+  "public_adapter_wall_seconds": 1.426413805980701,
+  "publication_note": "New synthesis-export validation. Paths are portable aliases; original validation JSON hash is recorded separately.",
+  "reserved_episodes": 0,
+  "scope": "New design/diagnostic reproduction; no historical outcome or once-only label is replaced",
+  "stage": "16-probe07"
+}

@@ -1,0 +1,50 @@
+{
+  "balance_after": 1500,
+  "cart_target": 0.0,
+  "cases": [
+    {
+      "complete": true,
+      "exact": true,
+      "finite": true,
+      "float32_delivery_ok": true,
+      "force_ok": true,
+      "invalid_reason": null,
+      "longest_upright_seconds": 8.18,
+      "longest_upright_ticks": 409,
+      "maximum_cart_m": 1.629568947881772,
+      "native_prediction_calls": 28070,
+      "rail_ok": true,
+      "recording": "episode-3156000.npz",
+      "recording_sha256": "49656632beedcb9d20c48e3438ea26f8a7dad2e9edc10f3fa634616683871290",
+      "seed": 3156000,
+      "success": true,
+      "ticks": 1500,
+      "wall_seconds": 10.709944974980317
+    }
+  ],
+  "controller_qualified": false,
+  "controller_sha256": "ef7f3e1271f0bb7578c141c4fd122fae68d5cdd37cbdfc15489223664e6380bb",
+  "fixed_prefix_ticks": 0,
+  "joint_lookahead": 2,
+  "lookahead": 1,
+  "maximum_affine_offset": 0.0,
+  "maximum_native_defect": 0.0,
+  "model_receipt_sha256": "8167034e4b6153c355965dca45f2f13ddecb037951f9439dcb87a490d409ebf9",
+  "native_bias": true,
+  "native_value": true,
+  "optimizer": "bounded",
+  "park_seconds": 16.0,
+  "parking_decay": 1.2,
+  "public_export": {
+    "changes": "portable path aliases; runtime inventories excluded; outcome/numeric fields preserved",
+    "historical_stage": "physical-native-joint2-exact01/receipt.json",
+    "original_receipt_sha256": "999f18082348f01264c700cd836b34205ce997cccdc3fb5f1d6f563d25e7ba6f"
+  },
+  "reference_sha256": "a2195c2b328d85a8f3d0e840c58266cf8115a4830826ec475d1770e906024cc4",
+  "reserved_episodes": 0,
+  "riccati_precision": "double",
+  "schema": "rage_mill.canonical15_development.v1",
+  "stage": "development",
+  "tracking_cost": 1000.0,
+  "wall_seconds": 11.420539766957518
+}

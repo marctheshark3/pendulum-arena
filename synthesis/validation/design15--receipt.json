@@ -1,0 +1,63 @@
+{
+  "comparison": {
+    "all_array_bytes_equal": true,
+    "fields": {
+      "A": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          32,
+          32
+        ]
+      },
+      "B": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          32,
+          1
+        ]
+      },
+      "Q": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          32,
+          32
+        ]
+      },
+      "gain": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          32
+        ]
+      },
+      "terminal_root": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          32,
+          32
+        ]
+      }
+    }
+  },
+  "diagnostics": {
+    "design_digits": 100,
+    "gain_norm": 3518423611.933224,
+    "iterations": 15,
+    "nonlinear_certified": false,
+    "relative_residual": "6.793781783613873757398808023527002238628610099698355413651752871365593166621758822751881784793785676e-79",
+    "rounded_gain_spectral_radius": "0.9959385321929413660662631210400204233577842598055288334669980529986402051807775174433489195383041653"
+  },
+  "n_links": 15,
+  "original_design_sha256": "e334b47835a978c04d035ca1b9d5921558a1b8261855c9650e7a39304e7f3ca9",
+  "publication_note": "New synthesis-export validation. Paths are portable aliases; original validation JSON hash is recorded separately.",
+  "reserved_episodes": 0
+}

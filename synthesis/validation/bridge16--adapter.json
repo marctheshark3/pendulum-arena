@@ -1,0 +1,83 @@
+{
+  "checkpoint_comparison": {
+    "all_array_bytes_equal": true,
+    "fields": {
+      "actions": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          700
+        ]
+      },
+      "analytic_gaps": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          700,
+          34
+        ]
+      },
+      "gains": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          700,
+          34
+        ]
+      },
+      "native_cold_gaps": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          700,
+          34
+        ]
+      },
+      "offsets": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          700
+        ]
+      },
+      "states": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          701,
+          34
+        ]
+      }
+    }
+  },
+  "commands": [
+    [
+      "validation-work/runtime/bin/python",
+      "synthesis/original/16/scripts/repair_canonical16_early_orbit_bridge.py",
+      "--model",
+      "validation-work/validation/model16",
+      "--design",
+      "synthesis/data/16/design.npz",
+      "--warm",
+      "synthesis/data/16/base-reference.npz",
+      "--orbit-owner",
+      "validation-work/validation/bridge16/historical-input-views/orbit",
+      "--launch-owner",
+      "validation-work/validation/bridge16/historical-input-views/launch",
+      "--out",
+      "validation-work/validation/bridge16/product"
+    ]
+  ],
+  "original_receipt": "validation-work/validation/bridge16/product/receipt.json",
+  "public_adapter_wall_seconds": 107.79803044698201,
+  "publication_note": "New synthesis-export validation. Paths are portable aliases; original validation JSON hash is recorded separately.",
+  "reserved_episodes": 0,
+  "scope": "New design/diagnostic reproduction; no historical outcome or once-only label is replaced",
+  "stage": "16-bridge"
+}

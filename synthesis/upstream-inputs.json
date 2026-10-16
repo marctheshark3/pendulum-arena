@@ -1,0 +1,18 @@
+{
+  "repository": "https://github.com/corbensorenson/cartpole",
+  "source_commit": "b84c6413974d5c0831cdf261ce15e58ba65cd3f5",
+  "files": [
+    {
+      "path": "runs/swingup14_uniform/fourteen_link_controller.json",
+      "sha256": "6bc6d9ea44c5fb7eba0b5182aeaaa7cd391721d52301fefc157e5ca99111a34d",
+      "bytes": 5401458,
+      "url": "https://raw.githubusercontent.com/corbensorenson/cartpole/b84c6413974d5c0831cdf261ce15e58ba65cd3f5/runs/swingup14_uniform/fourteen_link_controller.json"
+    },
+    {
+      "path": "runs/fifteen_link_partial_20261015/actual_minimax.npz",
+      "sha256": "6e0d87f4fbc12d1f0f35929b17e8182b767c6f33ee7642a202ff324861c2e22e",
+      "bytes": 122109,
+      "url": "https://raw.githubusercontent.com/corbensorenson/cartpole/b84c6413974d5c0831cdf261ce15e58ba65cd3f5/runs/fifteen_link_partial_20261015/actual_minimax.npz"
+    }
+  ]
+}

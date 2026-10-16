@@ -5,6 +5,7 @@ node_modules/
 .env.*
 !.env.example
 .artifacts/
+.venv-synthesis/
 .playwright/
 coverage/
 __pycache__/
