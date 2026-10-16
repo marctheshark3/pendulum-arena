@@ -1,0 +1,43 @@
+{
+  "schema": "rage_mill.canonical15_campaign.v1",
+  "source_repository": "https://github.com/corbensorenson/cartpole",
+  "source_commit": "b84c6413974d5c0831cdf261ce15e58ba65cd3f5",
+  "source_configuration": "configs/swingup15_uniform.yaml",
+  "source_configuration_sha256": "d55219b82f6288d5e5ff10539d83aefebdbb88d09703d3708e25ed1906695d3c",
+  "native_runtime_mujoco": "3.3.5",
+  "protocol": {
+    "n_links": 15,
+    "total_length_m": 3.0,
+    "total_mass_kg": 1.0,
+    "cart_mass_kg": 1.0,
+    "force_limit_N": 80.0,
+    "rail_limit_m": 3.0,
+    "physics_dt_s": 0.005,
+    "frame_skip": 4,
+    "episode_seconds": 30.0,
+    "upright_limit_rad": 0.15,
+    "required_hold_seconds": 5.0,
+    "cart_damping": 0.02,
+    "total_hinge_damping": 0.015,
+    "joint_armature": 0.0005,
+    "capsule_radius_m": 0.025,
+    "reset_noise_std": 0.05
+  },
+  "action_delivery": "float32 normalized commands; immediate held force; all hinges passive",
+  "initialization": "relative qpos [0, pi, 0, ...]; zero cart-position noise; independent normal 0.05 relative-joint and velocity noise in the published RNG order",
+  "task_success": "all 1500 commands valid and within rail, and at least 250 consecutive post-command states with all wrapped cumulative absolute angles strictly below 0.15 rad",
+  "development_gates": [
+    {"name": "dev20", "seed_start": 3156200, "episodes": 20, "exact": false, "required_successes": 20},
+    {"name": "dev100", "seed_start": 3156300, "episodes": 100, "exact": false, "required_successes": 100}
+  ],
+  "diagnostic_seed_range": [3156000, 3156099],
+  "source_calibration": "exact hanging-start success, feasible full 1500-command native trajectory with integrity; native maximum dynamics defect and initial-state gap each finite and at most 1e-8",
+  "reserved_gates": [
+    {"name": "noisy20", "seed_start": 215000, "episodes": 20, "exact": false, "required_successes": 20},
+    {"name": "noisy100", "seed_start": 215100, "episodes": 100, "exact": false, "required_successes": 100},
+    {"name": "exact20", "seed_start": 215200, "episodes": 20, "exact": true, "required_successes": 20},
+    {"name": "video", "seed_start": 215500, "episodes": 1, "exact": false, "required_successes": 1}
+  ],
+  "reserved_policy": "freeze controller, source, configuration and runtime before evaluating any reserved seed; retain every consumed attempt; failed gates remain failed",
+  "claim_scope": "separate matched published simulation benchmark; no hardware or established global priority"
+}

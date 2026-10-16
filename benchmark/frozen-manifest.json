@@ -1,0 +1,33 @@
+{
+  "files": {
+    "LICENSE": "175868a772d0f8b95bfd02571e6c54368e2c7d7096380c1c7a80992ba2e74dc6",
+    "configs/canonical15.json": "fb40daa071125a887006acb8928765f888afb80ce1f91f828204396c94dd3292",
+    "pyproject.toml": "10f3eecc9789ae2bc7db2701aa71d5fa311313bffb1b794fde56c1a791e8a5d5",
+    "scripts/audit_canonical_release.py": "13cefb3513664572a3648063cee9bfeab34b92806d30a61a51437216d49db899",
+    "scripts/evaluate_canonical_campaign.py": "484fb62ccc83339c3f1b4e185f7b96fe2420679944edc56fc44fa2e20173bce1",
+    "scripts/freeze_canonical_campaign.py": "92e68c1b9698bdf91de74f0d812dd50693630d626eff514cd048461f0521fff4",
+    "src/rage_mill/canonical_benchmark.py": "4e482f4297e46363cc7c16c8d18624e490b557aa15c1b4a2df79d651dcd64fcf",
+    "src/rage_mill/canonical_campaign.py": "ac70beea494e3fffd35cf1fa20e47936aa3229d1f6824dbfda665008c3432495",
+    "src/rage_mill/canonical_control.py": "dd4204c6162e665c68d15e8799e0721b1558d62647525114010b43f80886c388",
+    "src/rage_mill/canonical_dynamics.py": "989c91b59e1642ef07b268d121ba7a3a9d2a0f3948a7bbbdba8156bdb49a5765",
+    "uv.lock": "2024e7fbef3f4f7989b251d5ca64960ac337c98d9ce9ebabc25e1ac28d41588c"
+  },
+  "new_adapter_files": {
+    "frozen/src/rage_mill/__init__.py": {
+      "purpose": "New empty package adapter; not copied from the original package.",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "original_commit": "886267f09ce67d7215c166c92e14a0adaca8e34f",
+  "schema": "pendulum_arena.canonical15_curated_source.v1",
+  "scope": "Curated byte-exact benchmark files, not the full original repository or its Git history.",
+  "source_identity": {
+    "configs/canonical15.json": "fb40daa071125a887006acb8928765f888afb80ce1f91f828204396c94dd3292",
+    "pyproject.toml": "10f3eecc9789ae2bc7db2701aa71d5fa311313bffb1b794fde56c1a791e8a5d5",
+    "scripts/evaluate_canonical_campaign.py": "484fb62ccc83339c3f1b4e185f7b96fe2420679944edc56fc44fa2e20173bce1",
+    "src/rage_mill/canonical_benchmark.py": "4e482f4297e46363cc7c16c8d18624e490b557aa15c1b4a2df79d651dcd64fcf",
+    "src/rage_mill/canonical_campaign.py": "ac70beea494e3fffd35cf1fa20e47936aa3229d1f6824dbfda665008c3432495",
+    "src/rage_mill/canonical_control.py": "dd4204c6162e665c68d15e8799e0721b1558d62647525114010b43f80886c388",
+    "uv.lock": "2024e7fbef3f4f7989b251d5ca64960ac337c98d9ce9ebabc25e1ac28d41588c"
+  }
+}
