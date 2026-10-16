@@ -1,0 +1,76 @@
+{
+  "updatedAt": "2026-10-16T18:39:38Z",
+  "people": [
+    {
+      "name": "Kache",
+      "handle": "@yacineMTB",
+      "url": "https://x.com/yacineMTB",
+      "role": "Six-link demonstration and inspiration",
+      "summary": "Published a six-pendulum cart-pole demonstration and described training an AI in his own environment. We credit the public work; its exact task and evaluation cohorts are not established as equivalent to this registry's ranked protocol.",
+      "sources": [
+        {
+          "title": "Six-pendulum cart-pole demonstration — original post",
+          "url": "https://x.com/yacineMTB/status/2064148140899348779",
+          "publishedAt": "2026-06-09T00:50:41.000Z"
+        },
+        {
+          "title": "Kache's GitHub profile — identity links",
+          "url": "https://github.com/yacineMTB",
+          "publishedAt": null
+        }
+      ]
+    },
+    {
+      "name": "Corben Sorenson",
+      "handle": "@SorensonCorben",
+      "url": "https://github.com/corbensorenson/cartpole",
+      "role": "Published canonical task and fourteen-link release",
+      "summary": "Published reset-free fourteen-link swing-up evidence under the canonical 50 Hz, ±80 N, ±3 m task. His source, frozen releases, validation gates, and explicit limitations anchor our matched campaign. The separate fifteen-link partial result remains unsolved in the cited release.",
+      "sources": [
+        {
+          "title": "Fourteen-link canonical release — platform publication time",
+          "url": "https://github.com/corbensorenson/cartpole/releases/tag/fourteen-link-canonical-20261002",
+          "publishedAt": "2026-10-02T10:41:20Z"
+        },
+        {
+          "title": "Fourteen-link technical report — pinned source",
+          "url": "https://github.com/corbensorenson/cartpole/blob/b84c6413974d5c0831cdf261ce15e58ba65cd3f5/docs/fourteen_link_swingup_paper.md",
+          "publishedAt": null
+        },
+        {
+          "title": "Fifteen-link partial evidence — explicitly unsolved",
+          "url": "https://github.com/corbensorenson/cartpole/blob/b84c6413974d5c0831cdf261ce15e58ba65cd3f5/docs/fifteen_link_partial_result.md",
+          "publishedAt": null
+        },
+        {
+          "title": "Three-second fifteen-link update — original post",
+          "url": "https://x.com/SorensonCorben/status/2110753674184040921",
+          "publishedAt": "2026-10-15T15:24:26.000Z"
+        }
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2026-06-09T00:50:41.000Z",
+      "title": "Kache publishes six-link demonstration",
+      "description": "Known public X post; platform publication time. Historical credit for the demonstration, without asserting identical mechanics, qualifying cohorts, or global priority.",
+      "url": "https://x.com/yacineMTB/status/2064148140899348779",
+      "kind": "historical-demonstration"
+    },
+    {
+      "date": "2026-10-02T10:41:20Z",
+      "title": "Corben publishes canonical fourteen-link release",
+      "description": "GitHub release publication time. The author reports noisy20, disjoint noisy100, exact20, and one held-out video passing, all completing thirty seconds. Public evidence is linked; this import is not an independent reproduction.",
+      "url": "https://github.com/corbensorenson/cartpole/releases/tag/fourteen-link-canonical-20261002",
+      "kind": "author-published-release"
+    },
+    {
+      "date": "2026-10-15T15:24:26.000Z",
+      "title": "Corben reports partial fifteen-link progress",
+      "description": "X publication time. The author reports a three-second hold and requires five seconds for success; his evidence note explicitly labels fifteen unsolved. This is development history, not a qualifying result.",
+      "url": "https://x.com/SorensonCorben/status/2110753674184040921",
+      "kind": "partial-result"
+    }
+  ]
+}

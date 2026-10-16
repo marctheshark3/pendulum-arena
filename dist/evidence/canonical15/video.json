@@ -1,0 +1,68 @@
+{
+  "claim_scope": "recorded matched simulation benchmark; no hardware or established global priority",
+  "controller_calls_during_render": 0,
+  "extra_held_frames": 0,
+  "fps": 50,
+  "geometry": "15 equal 0.2 m capsules, radius 0.025 m; cumulative relative angles; cart pivot z=0.07 m",
+  "initial_frame_included": false,
+  "inspection_frames": [
+    {
+      "command": 1,
+      "file": "post-command-0001.png",
+      "sha256": "98936182445ab76c1cd484e18f83a0cbcb16c5de9537a60cdab91c12bbffbe9b",
+      "sim_time_s": 0.02
+    },
+    {
+      "command": 800,
+      "file": "post-command-0800.png",
+      "sha256": "2e73ce92500ae53ff2114aa258e156ea9ec78f59422c6afac7162dfa964b353e",
+      "sim_time_s": 16.0
+    },
+    {
+      "command": 801,
+      "file": "post-command-0801.png",
+      "sha256": "3e31f1522cb7abb45dd7b3ef979302c47ca87d27140e9a2ca5e0245f2a6ee2b8",
+      "sim_time_s": 16.02
+    },
+    {
+      "command": 1000,
+      "file": "post-command-1000.png",
+      "sha256": "ebe81964b8887011fe8b9ef9cea546924818bbbc5203193b3b8c21b89e633ec2",
+      "sim_time_s": 20.0
+    },
+    {
+      "command": 1250,
+      "file": "post-command-1250.png",
+      "sha256": "67e6848ef8471efc9dea95a9e6e33b349096a56774d4f5ac69197d81b666d275",
+      "sim_time_s": 25.0
+    },
+    {
+      "command": 1500,
+      "file": "post-command-1500.png",
+      "sha256": "e1014487382a0152d92926738ef76aa1f0d02c40d3d60cbc7122cc502ed8c5b5",
+      "sim_time_s": 30.0
+    }
+  ],
+  "passed": true,
+  "physics_steps_during_render": 0,
+  "post_command_indices": [
+    1,
+    1500
+  ],
+  "render_script_sha256": "550066d65d04d7b4cb7139680142883c004620cb4127163ecff4ce3b6e48101d",
+  "rendered_frames": 1500,
+  "reserved_receipt_sha256": "9a14861620db8ed0ae66b8321e7d95f3835c9d8f6250cff84453164a72198735",
+  "schema": "rage_mill.canonical15_video.v1",
+  "simulated_seconds": 30.0,
+  "source_recording": "/home/marctheshark/.t3/artifacts/rage-mill-canonical15-20261016/reserved141-01/cases/video-215500/episode.npz",
+  "source_recording_sha256": "82e44ba4853b27f17e1006bd293759ba3b94ec976c97221bff23bade126f1562",
+  "stream": {
+    "duration": "30.000000",
+    "height": 1080,
+    "nb_read_frames": "1500",
+    "r_frame_rate": "50/1",
+    "width": 1280
+  },
+  "video": "/home/marctheshark/.t3/worktrees/rage-mill/t3-6966e0ab/docs/media/canonical15-published-benchmark.mp4",
+  "video_sha256": "87d56006cb9a6ee285a9490857cd762a9e176eb374059ef1716ba9f14335bc7f"
+}

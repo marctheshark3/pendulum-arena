@@ -1,0 +1,13 @@
+{
+  "name": "pendulum-arena",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "An open cart-pole benchmark registry and a browser control playground.",
+  "scripts": {
+    "dev": "python3 -m http.server 4315 --directory dist --bind 127.0.0.1",
+    "test": "node --test test/*.test.mjs",
+    "check": "node scripts/validate-registry.mjs && node scripts/check-site.mjs"
+  },
+  "engines": { "node": ">=22" }
+}

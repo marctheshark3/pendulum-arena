@@ -1,0 +1,43 @@
+name: Correct a record, supply earlier work, or request retraction
+description: Keep the public history while appending a correction, credit, or evidence-backed review.
+title: "[Correction / credit] Record or prior work"
+labels: ["registry-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The history stays visible. Accepted corrections append a superseding result
+        and event, or a retraction event; old records are not silently rewritten.
+        Prior work can be credited even if its mechanics differ from ranked tasks.
+  - type: input
+    id: record
+    attributes:
+      label: Record ID or prior-work reference
+      placeholder: "rage-mill-canonical15-20261016 or a primary-source URL"
+    validations:
+      required: true
+  - type: dropdown
+    id: change
+    attributes:
+      label: Request
+      options:
+        - Correct a result
+        - Retract a result
+        - Credit prior or earlier work
+        - Review or reproduce an existing result
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: What should change and why?
+      description: Cite primary public evidence, immutable URLs, SHA256 values where available, and exact protocol differences. For earlier-work claims, distinguish author run time from first demonstrated public publication.
+    validations:
+      required: true
+  - type: textarea
+    id: identity
+    attributes:
+      label: Your relationship to this result
+      description: Entrant, maintainer, collaborator, or independent reviewer? For review/reproduction, name your public identity and disclose independence, exact runtime and the work you performed.
+    validations:
+      required: true

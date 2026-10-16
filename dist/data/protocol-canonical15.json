@@ -1,0 +1,106 @@
+{
+  "id": "canonical15-v1",
+  "title": "Published uniform-chain task, fifteen links",
+  "linksMin": 15,
+  "linksMax": 15,
+  "source": {
+    "url": "https://github.com/corbensorenson/cartpole/tree/b84c6413974d5c0831cdf261ce15e58ba65cd3f5",
+    "commit": "b84c6413974d5c0831cdf261ce15e58ba65cd3f5"
+  },
+  "fingerprint": "cf4987abf008e8dc5f7b744e55f00e920f23f5ebc18cb209e73a842ed4237808",
+  "requirements": {
+    "durationSeconds": 30,
+    "commandsPerEpisode": 1500,
+    "actionHz": 50,
+    "uprightAngleRad": 0.15,
+    "uprightConsecutiveSteps": 250,
+    "railLimitMeters": 3,
+    "forceLimitNewtons": 80,
+    "calibrationTolerance": 1e-8,
+    "integration": {
+      "engine": "MuJoCo",
+      "engineVersion": "3.3.5",
+      "precision": "binary64",
+      "integrator": "RK4",
+      "timestepSeconds": 0.005,
+      "substeps": 4
+    },
+    "mechanics": {
+      "cartMassKg": 1,
+      "totalLinkMassKg": 1,
+      "totalChainLengthMeters": 3,
+      "capsuleRadiusMeters": 0.025,
+      "armature": 0.0005,
+      "totalHingeDamping": 0.015,
+      "cartDamping": 0.02,
+      "frictionLoss": 0
+    },
+    "reset": {
+      "position": "relative [0, pi, 0, ...]",
+      "noiseStd": 0.05,
+      "cartPositionNoiseStd": 0,
+      "rngOrder": "cart position zero-scale draw; joint positions; all velocities; replacement cart velocity"
+    },
+    "acceptance": {
+      "angleConvention": "wrapped cumulative absolute",
+      "angleComparison": "strictly-less-than",
+      "samples": "post-command only",
+      "fullEpisodeRequired": true,
+      "stateOverwriteAfterInit": false,
+      "liveRetriesAllowed": false,
+      "allFiniteRequired": true
+    },
+    "cohorts": [
+      {
+        "id": "calibration",
+        "stage": "calibration",
+        "noise": "exact",
+        "required": 1
+      },
+      {
+        "id": "dev20",
+        "stage": "development",
+        "noise": "noisy",
+        "required": 20
+      },
+      {
+        "id": "dev100",
+        "stage": "development",
+        "noise": "noisy",
+        "required": 100
+      },
+      {
+        "id": "reserved-noisy20",
+        "stage": "reserved",
+        "noise": "noisy",
+        "required": 20,
+        "seedStart": 215000,
+        "seedEnd": 215019
+      },
+      {
+        "id": "reserved-noisy100",
+        "stage": "reserved",
+        "noise": "noisy",
+        "required": 100,
+        "seedStart": 215100,
+        "seedEnd": 215199
+      },
+      {
+        "id": "reserved-exact20",
+        "stage": "reserved",
+        "noise": "exact",
+        "required": 20,
+        "seedStart": 215200,
+        "seedEnd": 215219
+      },
+      {
+        "id": "video",
+        "stage": "video",
+        "noise": "noisy",
+        "required": 1,
+        "seedStart": 215500,
+        "seedEnd": 215500
+      }
+    ]
+  }
+}

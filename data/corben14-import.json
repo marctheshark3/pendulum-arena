@@ -1,0 +1,260 @@
+{
+  "schemaVersion": 1,
+  "kind": "historical-milestone-research",
+  "reviewedAt": "2026-10-16T18:45:36Z",
+  "entrant": {
+    "name": "Corben Sorenson",
+    "handle": "@SorensonCorben",
+    "url": "https://github.com/corbensorenson/cartpole"
+  },
+  "links": 14,
+  "disposition": "history-only",
+  "verificationLabel": "Author-published evidence",
+  "authorSubmittedToRegistry": false,
+  "timestamps": {
+    "runAt": null,
+    "policyFrozenAtReported": "2026-10-02T10:26:56Z",
+    "sourceSnapshotGeneratedAtReported": "2026-10-02T10:26:59Z",
+    "releaseCreatedAt": "2026-10-02T10:40:06Z",
+    "releasePublishedAt": "2026-10-02T10:41:20Z"
+  },
+  "release": {
+    "url": "https://github.com/corbensorenson/cartpole/releases/tag/fourteen-link-canonical-20261002",
+    "metadataUrl": "https://api.github.com/repos/corbensorenson/cartpole/releases/tags/fourteen-link-canonical-20261002"
+  },
+  "source": {
+    "reviewedPublicRepositoryCommit": "b84c6413974d5c0831cdf261ce15e58ba65cd3f5",
+    "frozenCommit": "3277b4173a9333819bf35acb848e384f52a227ec",
+    "bundleUrl": "https://raw.githubusercontent.com/corbensorenson/cartpole/b84c6413974d5c0831cdf261ce15e58ba65cd3f5/runs/swingup14_uniform/fourteen_link_source.bundle",
+    "bundleBytes": 2573661,
+    "bundleSha256": "23335958906e74f3f8d9752a93f3d03ad726113b8e8c494845d27bd803f5ddef",
+    "bundleBytesHashChecked": true
+  },
+  "model": {
+    "url": null,
+    "reportedGeneratedXmlSha256": "02fb1317dc1428860578eb9b548809b521063a6fe60c118e5b09b80d1dd678d2",
+    "urlMissingReason": "No standalone exact fourteen-link XML artifact located in the reviewed public release. Policy and evaluation metadata report its generated hash."
+  },
+  "runtime": {
+    "engine": "MuJoCo",
+    "engineVersion": "3.3.5",
+    "precision": "binary64",
+    "language": "Python",
+    "languageVersion": "3.12.14",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "architecture": "arm64",
+    "dependencies": {
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "clarabel": "0.11.1",
+      "crocoddyl": "3.2.1",
+      "gymnasium": "1.3.0",
+      "mlx": "0.32.2",
+      "mpmath": "1.3.0",
+      "osqp": "1.1.3"
+    }
+  },
+  "task": {
+    "totalChainLengthMeters": 3,
+    "totalLinkMassKg": 1,
+    "cartMassKg": 1,
+    "forceLimitNewtons": 80,
+    "railLimitMeters": 3,
+    "durationSeconds": 30,
+    "commandsPerEpisode": 1500,
+    "actionHz": 50,
+    "actionPrecision": "float32 normalized command",
+    "integrator": "RK4",
+    "timestepSeconds": 0.005,
+    "substeps": 4,
+    "uprightAngleRad": 0.15,
+    "uprightConsecutiveSteps": 250,
+    "angleConvention": "wrapped cumulative absolute",
+    "angleComparison": "strictly-less-than",
+    "samples": "post-command only",
+    "capsuleRadiusMeters": 0.025,
+    "armature": 0.0005,
+    "totalHingeDamping": 0.015,
+    "cartDamping": 0.02,
+    "frictionLoss": 0,
+    "initialNoiseStd": 0.05,
+    "cartPositionNoiseStd": 0,
+    "stateOverwriteAfterInit": false
+  },
+  "reportedCohorts": [
+    {
+      "id": "source-calibration",
+      "noise": "exact explicit selected state",
+      "seedStart": 20264100,
+      "seedEnd": 20264100,
+      "episodes": 1,
+      "passed": 1,
+      "minUprightSeconds": 24.16,
+      "maxCartMeters": 1.9130967506803713,
+      "evidenceId": "controller",
+      "note": "Unparked source-candidate calibration, before the released parked policy. Feasible 450-command reference diagnostics report native defect 0 and initial gap 0; these are not whole-campaign cold-audit metrics."
+    },
+    {
+      "id": "dev20",
+      "noise": "noisy",
+      "seedStart": 20264200,
+      "seedEnd": 20264219,
+      "episodes": 20,
+      "passed": 20,
+      "minUprightSeconds": 8.16,
+      "maxCartMeters": 1.8631596727063133,
+      "generatedAt": "2026-10-02T10:22:32Z",
+      "evidenceId": "development20"
+    },
+    {
+      "id": "dev100",
+      "noise": "noisy",
+      "seedStart": 20264300,
+      "seedEnd": 20264399,
+      "episodes": 100,
+      "passed": 100,
+      "minUprightSeconds": 8.16,
+      "maxCartMeters": 1.863160949962055,
+      "generatedAt": "2026-10-02T10:24:52Z",
+      "evidenceId": "development100"
+    },
+    {
+      "id": "reserved-noisy20",
+      "noise": "noisy",
+      "seedStart": 214000,
+      "seedEnd": 214019,
+      "episodes": 20,
+      "passed": 20,
+      "minUprightSeconds": 8.16,
+      "maxCartMeters": 1.8631356272754112,
+      "generatedAt": "2026-10-02T10:28:24Z",
+      "evidenceId": "reserved20"
+    },
+    {
+      "id": "reserved-noisy100",
+      "noise": "noisy",
+      "seedStart": 214100,
+      "seedEnd": 214199,
+      "episodes": 100,
+      "passed": 100,
+      "minUprightSeconds": 8.16,
+      "maxCartMeters": 1.8631687146015137,
+      "generatedAt": "2026-10-02T10:29:43Z",
+      "evidenceId": "reserved100"
+    },
+    {
+      "id": "reserved-exact20",
+      "noise": "exact",
+      "seedStart": 214200,
+      "seedEnd": 214219,
+      "episodes": 20,
+      "passed": 20,
+      "minUprightSeconds": 8.16,
+      "maxCartMeters": 1.8630973918570881,
+      "generatedAt": "2026-10-02T10:30:04Z",
+      "evidenceId": "reservedExact20"
+    },
+    {
+      "id": "video",
+      "noise": "noisy",
+      "seedStart": 214500,
+      "seedEnd": 214500,
+      "episodes": 1,
+      "passed": 1,
+      "minUprightSeconds": 8.16,
+      "maxCartMeters": 1.8630833309480503,
+      "generatedAt": "2026-10-02T10:30:14Z",
+      "evidenceId": "videoEpisode"
+    }
+  ],
+  "reservedSummary": {
+    "episodes": 141,
+    "passed": 141,
+    "commandsPerEpisode": 1500,
+    "secondsPerEpisode": 30,
+    "minUprightSeconds": 8.16,
+    "maxCartMeters": 1.8631687146015137
+  },
+  "coldAuditScope": {
+    "auditedEpisodes": null,
+    "auditedCommands": null,
+    "maxNativeDefectAcrossAllEpisodes": null,
+    "maxInitialGapAcrossAllEpisodes": null,
+    "note": "Do not convert 262 reported stage episodes into 262 cold-replayed episodes or 393000 audited commands. This import parsed the published reports; no native replay was performed."
+  },
+  "evidence": [
+    {
+      "id": "manifest",
+      "url": "https://raw.githubusercontent.com/corbensorenson/cartpole/b84c6413974d5c0831cdf261ce15e58ba65cd3f5/runs/swingup14_uniform/fourteen_link_swingup_manifest.json",
+      "sha256": "41639a43a78ce2590ab092fbf1870a4c7d4b3c224b96243e2c9681e17d82e888"
+    },
+    {
+      "id": "policy",
+      "url": "https://raw.githubusercontent.com/corbensorenson/cartpole/b84c6413974d5c0831cdf261ce15e58ba65cd3f5/runs/swingup14_uniform/fourteen_link_policy.json",
+      "sha256": "f30c75c89b1c85cc4d22e8b41a4fa8dac635c98ee29c4c999b6d4f57f07289af"
+    },
+    {
+      "id": "sourceMetadata",
+      "url": "https://raw.githubusercontent.com/corbensorenson/cartpole/b84c6413974d5c0831cdf261ce15e58ba65cd3f5/runs/swingup14_uniform/fourteen_link_source.json",
+      "sha256": "b51ec8497479f4452bbe7df824403e6115bdcceeb67b7424ceca597398ac0613"
+    },
+    {
+      "id": "controller",
+      "url": "https://raw.githubusercontent.com/corbensorenson/cartpole/b84c6413974d5c0831cdf261ce15e58ba65cd3f5/runs/swingup14_uniform/fourteen_link_controller.json",
+      "sha256": "6bc6d9ea44c5fb7eba0b5182aeaaa7cd391721d52301fefc157e5ca99111a34d"
+    },
+    {
+      "id": "reserved20",
+      "url": "https://raw.githubusercontent.com/corbensorenson/cartpole/b84c6413974d5c0831cdf261ce15e58ba65cd3f5/runs/swingup14_uniform/eval_swingup14_20.json",
+      "sha256": "d4e29a9847bd5f456f329f64f2b82a64c94f15af50a39dac1d331d2361d2af69"
+    },
+    {
+      "id": "reserved100",
+      "url": "https://raw.githubusercontent.com/corbensorenson/cartpole/b84c6413974d5c0831cdf261ce15e58ba65cd3f5/runs/swingup14_uniform/eval_swingup14_100.json",
+      "sha256": "9f4cfb200bf77e569ed452c19a6ac7000e7f8f85111fad3c1b6dbb6fc0521816"
+    },
+    {
+      "id": "reservedExact20",
+      "url": "https://raw.githubusercontent.com/corbensorenson/cartpole/b84c6413974d5c0831cdf261ce15e58ba65cd3f5/runs/swingup14_uniform/eval_swingup14_exact20.json",
+      "sha256": "d54653a712e4db10c647bc112b920ebc83405ea155dcab7b25b86b835b5885dd"
+    },
+    {
+      "id": "videoEpisode",
+      "url": "https://raw.githubusercontent.com/corbensorenson/cartpole/b84c6413974d5c0831cdf261ce15e58ba65cd3f5/runs/swingup14_uniform/fourteen_link_video_episode.json",
+      "sha256": "8816bfa13688862c59c92f8162a7fa9c14d82ed4dc88f41285e52cdd463665cc"
+    },
+    {
+      "id": "video",
+      "url": "https://raw.githubusercontent.com/corbensorenson/cartpole/b84c6413974d5c0831cdf261ce15e58ba65cd3f5/runs/swingup14_uniform/fourteen_link_swingup_success.mp4",
+      "sha256": "26f93fd2ff0b87db2bd6e7e429b8d1d4d3169fbbc328bb3831e22ea35214b7c3",
+      "hashBasis": "Author manifest and GitHub asset digest; video bytes not separately fetched for this review."
+    },
+    {
+      "id": "synthesisArchive",
+      "url": "https://github.com/corbensorenson/cartpole/releases/download/fourteen-link-canonical-20261002/synthesis_inputs.tar.gz",
+      "sha256": "aca521601aa28eab03929292f79e6961f40e451dd949bd83b599c715eb8371de",
+      "hashBasis": "GitHub asset digest and author checksum file; tar stream ended after reading the two development reports."
+    },
+    {
+      "id": "development20",
+      "containerEvidenceId": "synthesisArchive",
+      "path": "runs/frontier_campaign_20261001/n14_adjacent_retimed8s_handoff9_park16_noisy20_development/result.json",
+      "sha256": "9f28ad356d8b986472882dff73f9d16367db3b397e48d495a088ba5020d2b2f6",
+      "bytesHashChecked": true
+    },
+    {
+      "id": "development100",
+      "containerEvidenceId": "synthesisArchive",
+      "path": "runs/frontier_campaign_20261001/n14_adjacent_retimed8s_handoff9_park16_noisy100_development/result.json",
+      "sha256": "7221437bf6d17de5a2bb334294f26a60a6d171ae02c91717c46544122babe5d1",
+      "bytesHashChecked": true
+    }
+  ],
+  "limitations": [
+    "No external certification, controller execution, or native replay was performed by this import.",
+    "Publication timestamp establishes this GitHub release's publication, not global priority.",
+    "Generated model XML hash exists, but an exact model artifact URL has not been located.",
+    "No full 262-episode cold native audit is established.",
+    "This research JSON intentionally does not satisfy the strict qualified-result schema and must not be silently inserted as a qualified registry record."
+  ]
+}

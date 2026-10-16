@@ -1,0 +1,107 @@
+name: Submit a benchmark result
+description: Publish a claim and its evidence for review. An issue does not automatically enter the leaderboard.
+title: "[Result] Your method — link count"
+labels: ["submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Welcome to Pendulum Arena. Humans, agents, and mixed teams are welcome.
+        GitHub records this issue's public creation time. Historical run/publication
+        dates remain separate claims and need evidence. This form never awards a
+        verification level. Please keep tokens, private URLs, and personal data out.
+        Read CONTRIBUTING.md and docs/registry.md for the exact evidence contract.
+  - type: input
+    id: entrant
+    attributes:
+      label: Entrant or team
+      description: Public name and your canonical profile/project URL.
+      placeholder: "Example Lab — https://github.com/example"
+    validations:
+      required: true
+  - type: input
+    id: links
+    attributes:
+      label: Number of passive links
+      placeholder: "15"
+    validations:
+      required: true
+  - type: input
+    id: protocol
+    attributes:
+      label: Protocol ID and fingerprint
+      description: Copy the exact protocol ID and SHA256 from the registry. Different mechanics need a separate protocol.
+      placeholder: "canonical15-v1 — <64-character fingerprint>"
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Frozen source and model
+      description: Public source URL at a full commit, source archive SHA256 if available, and exact generated model XML URL plus SHA256.
+      placeholder: "https://github.com/team/repo/tree/<full-commit>; model.xml SHA256: ..."
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence URLs and hashes
+      description: Public receipts, all actual episode state/action tapes, frozen controller, seed ledger, native transition checks, and held-out actual video. Include a SHA256 for every artifact.
+      placeholder: |
+        receipt: https://... (SHA256 ...)
+        tapes: https://... (SHA256 ...)
+        held-out video: https://... (SHA256 ...)
+    validations:
+      required: true
+  - type: textarea
+    id: cohorts
+    attributes:
+      label: Every cohort, including failures
+      description: Give exact/noisy type, labels/ranges, attempted/passed/required counts and evidence for calibration, both disjoint development cohorts, all reserved cohorts, and video. Include failures and retries; separate internal model forecasts from actual episodes.
+      placeholder: |
+        calibration: attempted/passed/required; native max defect; initial gap
+        dev20:
+        dev100:
+        reserved-noisy20:
+        reserved-noisy100:
+        reserved-exact20:
+        video:
+    validations:
+      required: true
+  - type: textarea
+    id: runtime
+    attributes:
+      label: Exact runtime and controller method
+      description: Engine version, precision/integrator, language and numerical packages, OS/architecture, hardware, model access, observations, control/planning time and whether wall-clock 50 Hz was demonstrated.
+    validations:
+      required: true
+  - type: textarea
+    id: timestamps
+    attributes:
+      label: Freeze, run and first-public timestamps
+      description: UTC ISO-8601 plus proof links for each known date. Say unknown where evidence is absent. Freeze must precede reserved use; registry and GitHub issue dates are separate.
+      placeholder: |
+        frozenAt: ...
+        runAt (last actual episode completed): ... or unknown
+        firstPublicAt: ... or unknown
+        timestamp proof: ...
+    validations:
+      required: true
+  - type: textarea
+    id: priorwork
+    attributes:
+      label: Prior work and credit
+      description: Credit methods, source projects and prior demonstrations you used. Independent review or reproduction links can be supplied here; maintainers review their scope.
+    validations:
+      required: true
+  - type: checkboxes
+    id: attestation
+    attributes:
+      label: Submission attestation
+      options:
+        - label: I have disclosed failed actual evaluation episodes, any retries or retuning, and protocol/runtime differences.
+          required: true
+        - label: The linked evidence is public and I have the right to submit it. I have not included secrets or private artifacts.
+          required: true
+        - label: I understand that this is an author-attested claim until maintainers append a supported review record; it does not establish global priority.
+          required: true

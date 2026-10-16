@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/marctheshark3/pendulum-arena/raw/main/schemas/registry.schema.json",
+  "title": "Pendulum Arena append-only benchmark registry v1",
+  "description": "Structural schema. scripts/validate-registry.mjs also checks fingerprints, timestamp calendar validity/order, safe public URLs, cohort arithmetic, references and append-only history. Schema validity does not authenticate a submitted claim.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "protocols", "records"],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "protocols": {"type":"array","minItems":1,"items":{"$ref":"#/$defs/protocol"}},
+    "records": {"type":"array","items":{"oneOf":[{"$ref":"#/$defs/result"},{"$ref":"#/$defs/event"}]}}
+  },
+  "$defs": {
+    "id": {"type":"string","pattern":"^[a-z0-9][a-z0-9._-]{0,95}$"},
+    "text": {"type":"string","minLength":1,"maxLength":2000},
+    "sha256": {"type":"string","pattern":"^[a-f0-9]{64}$"},
+    "url": {"type":"string","format":"uri","pattern":"^https?://","maxLength":4096},
+    "utc": {"type":"string","pattern":"^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d{1,9})?(?:Z|\\+00:00)$"},
+    "nullableUtc": {"anyOf":[{"$ref":"#/$defs/utc"},{"type":"null"}]},
+    "count": {"type":"integer","minimum":0,"maximum":9007199254740991},
+    "positiveCount": {"type":"integer","minimum":1,"maximum":9007199254740991},
+    "nonnegative": {"type":"number","minimum":0},
+    "positive": {"type":"number","exclusiveMinimum":0},
+    "identity": {
+      "type":"object","additionalProperties":false,"required":["id","name","url"],
+      "properties":{"id":{"$ref":"#/$defs/id"},"name":{"type":"string","minLength":1,"maxLength":150},"url":{"$ref":"#/$defs/url"}}
+    },
+    "reviewer": {
+      "type":"object","additionalProperties":false,"required":["id","name","url","independent"],
+      "properties":{"id":{"$ref":"#/$defs/id"},"name":{"type":"string","minLength":1,"maxLength":150},"url":{"$ref":"#/$defs/url"},"independent":{"type":"boolean"}}
+    },
+    "source": {
+      "type":"object","additionalProperties":false,"required":["url","commit"],
+      "properties":{"url":{"$ref":"#/$defs/url"},"commit":{"type":"string","pattern":"^[a-f0-9]{40}$"},"sha256":{"$ref":"#/$defs/sha256"}}
+    },
+    "evidence": {
+      "type":"object","additionalProperties":false,"required":["id","kind","url","sha256","publishedAt"],
+      "properties":{
+        "id":{"$ref":"#/$defs/id"},"kind":{"enum":["receipt","source","model","trajectory","video","review","reproduction","other"]},
+        "url":{"$ref":"#/$defs/url"},"sha256":{"$ref":"#/$defs/sha256"},"publishedAt":{"$ref":"#/$defs/nullableUtc"},"description":{"$ref":"#/$defs/text"}
+      }
+    },
+    "evidenceList": {"type":"array","minItems":1,"items":{"$ref":"#/$defs/evidence"}},
+    "evidenceRefs": {"type":"array","minItems":1,"uniqueItems":true,"items":{"$ref":"#/$defs/id"}},
+    "gate": {
+      "type":"object","additionalProperties":false,"required":["id","stage","noise","required"],
+      "properties":{"id":{"$ref":"#/$defs/id"},"stage":{"enum":["calibration","development","reserved","video"]},"noise":{"enum":["noisy","exact"]},"required":{"$ref":"#/$defs/positiveCount"},"seedStart":{"$ref":"#/$defs/count"},"seedEnd":{"$ref":"#/$defs/count"}},
+      "dependentRequired":{"seedStart":["seedEnd"],"seedEnd":["seedStart"]}
+    },
+    "cohort": {
+      "type":"object","additionalProperties":false,"required":["id","stage","noise","required","attempted","passed","evidenceId"],
+      "properties":{"id":{"$ref":"#/$defs/id"},"stage":{"enum":["calibration","development","reserved","video"]},"noise":{"enum":["noisy","exact"]},"required":{"$ref":"#/$defs/positiveCount"},"attempted":{"$ref":"#/$defs/count"},"passed":{"$ref":"#/$defs/count"},"seedStart":{"$ref":"#/$defs/count"},"seedEnd":{"$ref":"#/$defs/count"},"evidenceId":{"$ref":"#/$defs/id"}},
+      "dependentRequired":{"seedStart":["seedEnd"],"seedEnd":["seedStart"]}
+    },
+    "requirements": {
+      "type":"object","additionalProperties":false,
+      "required":["durationSeconds","commandsPerEpisode","actionHz","uprightAngleRad","uprightConsecutiveSteps","railLimitMeters","forceLimitNewtons","calibrationTolerance","integration","mechanics","reset","acceptance","cohorts"],
+      "properties":{
+        "durationSeconds":{"$ref":"#/$defs/positive"},"commandsPerEpisode":{"$ref":"#/$defs/positiveCount"},"actionHz":{"$ref":"#/$defs/positive"},"uprightAngleRad":{"$ref":"#/$defs/positive"},"uprightConsecutiveSteps":{"$ref":"#/$defs/positiveCount"},"railLimitMeters":{"$ref":"#/$defs/positive"},"forceLimitNewtons":{"$ref":"#/$defs/positive"},"calibrationTolerance":{"$ref":"#/$defs/nonnegative"},
+        "integration": {
+          "type":"object","additionalProperties":false,"required":["engine","engineVersion","precision","integrator","timestepSeconds","substeps"],
+          "properties":{"engine":{"type":"string","minLength":1,"maxLength":100},"engineVersion":{"type":"string","minLength":1,"maxLength":100},"precision":{"type":"string","minLength":1,"maxLength":100},"integrator":{"type":"string","minLength":1,"maxLength":100},"timestepSeconds":{"$ref":"#/$defs/positive"},"substeps":{"$ref":"#/$defs/positiveCount"}}
+        },
+        "mechanics": {
+          "type":"object","additionalProperties":false,"required":["cartMassKg","totalLinkMassKg","totalChainLengthMeters","capsuleRadiusMeters","armature","totalHingeDamping","cartDamping","frictionLoss"],
+          "properties":{"cartMassKg":{"$ref":"#/$defs/positive"},"totalLinkMassKg":{"$ref":"#/$defs/positive"},"totalChainLengthMeters":{"$ref":"#/$defs/positive"},"capsuleRadiusMeters":{"$ref":"#/$defs/positive"},"armature":{"$ref":"#/$defs/nonnegative"},"totalHingeDamping":{"$ref":"#/$defs/nonnegative"},"cartDamping":{"$ref":"#/$defs/nonnegative"},"frictionLoss":{"$ref":"#/$defs/nonnegative"}}
+        },
+        "reset": {
+          "type":"object","additionalProperties":false,"required":["position","noiseStd","cartPositionNoiseStd","rngOrder"],
+          "properties":{"position":{"$ref":"#/$defs/text"},"noiseStd":{"$ref":"#/$defs/nonnegative"},"cartPositionNoiseStd":{"$ref":"#/$defs/nonnegative"},"rngOrder":{"$ref":"#/$defs/text"}}
+        },
+        "acceptance": {
+          "type":"object","additionalProperties":false,"required":["angleConvention","angleComparison","samples","fullEpisodeRequired","stateOverwriteAfterInit","liveRetriesAllowed","allFiniteRequired"],
+          "properties":{"angleConvention":{"$ref":"#/$defs/text"},"angleComparison":{"$ref":"#/$defs/text"},"samples":{"$ref":"#/$defs/text"},"fullEpisodeRequired":{"type":"boolean"},"stateOverwriteAfterInit":{"type":"boolean"},"liveRetriesAllowed":{"type":"boolean"},"allFiniteRequired":{"type":"boolean"}}
+        },
+        "cohorts":{"type":"array","minItems":1,"items":{"$ref":"#/$defs/gate"}}
+      }
+    },
+    "protocol": {
+      "type":"object","additionalProperties":false,"required":["id","title","linksMin","linksMax","source","fingerprint","requirements"],
+      "properties":{"id":{"$ref":"#/$defs/id"},"title":{"type":"string","minLength":1,"maxLength":200},"linksMin":{"$ref":"#/$defs/positiveCount"},"linksMax":{"$ref":"#/$defs/positiveCount"},"source":{"$ref":"#/$defs/source"},"fingerprint":{"$ref":"#/$defs/sha256"},"requirements":{"$ref":"#/$defs/requirements"}}
+    },
+    "method": {
+      "type":"object","additionalProperties":false,"required":["name","summary","wallClockRealtime","usesObservedStateOnly","disclosures"],
+      "properties":{"name":{"type":"string","minLength":1,"maxLength":200},"summary":{"$ref":"#/$defs/text"},"wallClockRealtime":{"type":"boolean"},"usesObservedStateOnly":{"type":"boolean"},"disclosures":{"type":"array","minItems":1,"items":{"$ref":"#/$defs/text"}}}
+    },
+    "runtime": {
+      "type":"object","additionalProperties":false,"required":["engine","engineVersion","language","languageVersion","os","architecture","precision"],
+      "properties":{"engine":{"type":"string","minLength":1,"maxLength":100},"engineVersion":{"type":"string","minLength":1,"maxLength":100},"language":{"type":"string","minLength":1,"maxLength":100},"languageVersion":{"type":"string","minLength":1,"maxLength":100},"os":{"type":"string","minLength":1,"maxLength":100},"architecture":{"type":"string","minLength":1,"maxLength":100},"precision":{"type":"string","minLength":1,"maxLength":100},"dependencies":{"type":"object","additionalProperties":{"type":"string","minLength":1,"maxLength":100}}}
+    },
+    "timestamps": {
+      "type":"object","additionalProperties":false,"required":["runAt","frozenAt","firstPublicAt","registeredAt"],
+      "properties":{"runAt":{"$ref":"#/$defs/nullableUtc"},"frozenAt":{"$ref":"#/$defs/nullableUtc"},"firstPublicAt":{"$ref":"#/$defs/nullableUtc"},"registeredAt":{"$ref":"#/$defs/utc"}}
+    },
+    "metrics": {
+      "type":"object","additionalProperties":false,"required":["commandsPerEpisode","secondsPerEpisode","minUprightSeconds","maxCartMeters","maxNativeDefect","maxInitialGap","auditedEpisodes","auditedCommands"],
+      "properties":{"commandsPerEpisode":{"$ref":"#/$defs/positiveCount"},"secondsPerEpisode":{"$ref":"#/$defs/positive"},"minUprightSeconds":{"$ref":"#/$defs/nonnegative"},"maxCartMeters":{"$ref":"#/$defs/nonnegative"},"maxNativeDefect":{"$ref":"#/$defs/nonnegative"},"maxInitialGap":{"$ref":"#/$defs/nonnegative"},"auditedEpisodes":{"$ref":"#/$defs/count"},"auditedCommands":{"$ref":"#/$defs/count"}}
+    },
+    "verification": {
+      "type":"object","additionalProperties":false,"required":["level"],
+      "properties":{"level":{"enum":["author-attested","evidence-reviewed","third-party-reproduced"]},"reviewer":{"$ref":"#/$defs/reviewer"},"reviewedAt":{"$ref":"#/$defs/utc"},"evidenceIds":{"$ref":"#/$defs/evidenceRefs"},"reproducedAt":{"$ref":"#/$defs/utc"},"reproductionEvidenceIds":{"$ref":"#/$defs/evidenceRefs"}},
+      "allOf":[
+        {"if":{"properties":{"level":{"const":"author-attested"}}},"then":{"maxProperties":1},"else":{"required":["reviewer","reviewedAt","evidenceIds"]}},
+        {"if":{"properties":{"level":{"const":"third-party-reproduced"}}},"then":{"required":["reproducedAt","reproductionEvidenceIds"],"properties":{"reviewer":{"properties":{"independent":{"const":true}}}}},"else":{"not":{"anyOf":[{"required":["reproducedAt"]},{"required":["reproductionEvidenceIds"]}]}}}
+      ]
+    },
+    "result": {
+      "type":"object","additionalProperties":false,"required":["id","type","protocolId","protocolFingerprint","links","qualified","entrant","method","source","model","runtime","timestamps","evidence","cohorts","metrics","verification","notes"],
+      "properties":{"id":{"$ref":"#/$defs/id"},"type":{"const":"result"},"protocolId":{"$ref":"#/$defs/id"},"protocolFingerprint":{"$ref":"#/$defs/sha256"},"links":{"$ref":"#/$defs/positiveCount"},"qualified":{"type":"boolean"},"entrant":{"$ref":"#/$defs/identity"},"method":{"$ref":"#/$defs/method"},"source":{"$ref":"#/$defs/source"},"model":{"type":"object","additionalProperties":false,"required":["url","sha256"],"properties":{"url":{"$ref":"#/$defs/url"},"sha256":{"$ref":"#/$defs/sha256"}}},"runtime":{"$ref":"#/$defs/runtime"},"timestamps":{"$ref":"#/$defs/timestamps"},"evidence":{"$ref":"#/$defs/evidenceList"},"cohorts":{"type":"array","items":{"$ref":"#/$defs/cohort"}},"metrics":{"$ref":"#/$defs/metrics"},"verification":{"$ref":"#/$defs/verification"},"notes":{"type":"array","items":{"$ref":"#/$defs/text"}}}
+    },
+    "event": {
+      "type":"object","additionalProperties":false,"required":["id","type","targetId","reason","timestamps","evidence","authority"],
+      "properties":{"id":{"$ref":"#/$defs/id"},"type":{"enum":["supersession","retraction"]},"targetId":{"$ref":"#/$defs/id"},"replacementId":{"$ref":"#/$defs/id"},"reason":{"$ref":"#/$defs/text"},"timestamps":{"type":"object","additionalProperties":false,"required":["registeredAt"],"properties":{"registeredAt":{"$ref":"#/$defs/utc"}}},"evidence":{"$ref":"#/$defs/evidenceList"},"authority":{"$ref":"#/$defs/identity"}},
+      "allOf":[{"if":{"properties":{"type":{"const":"supersession"}}},"then":{"required":["replacementId"]},"else":{"not":{"required":["replacementId"]}}}]
+    }
+  }
+}
