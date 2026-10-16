@@ -1,0 +1,415 @@
+{
+  "CPU_seconds": 3.411014608,
+  "cases": [
+    {
+      "initial_error_norm": 0.25996844269071195,
+      "invalid_reason": null,
+      "maximum_cart_m": 0.09346915887982381,
+      "measurements": [
+        {
+          "cart_error": 0.014866300075025679,
+          "error_norm": 0.3354225151702625,
+          "maximum_absolute_angle_error": 0.08607770365281661,
+          "maximum_absolute_rate": 0.2591628152908814,
+          "seconds": 8.0,
+          "ticks": 400
+        },
+        {
+          "cart_error": 0.0026390618769377566,
+          "error_norm": 0.04531143585234149,
+          "maximum_absolute_angle_error": 0.0047468060793285395,
+          "maximum_absolute_rate": 0.10717780849489275,
+          "seconds": 16.0,
+          "ticks": 800
+        },
+        {
+          "cart_error": -0.0012243801891394374,
+          "error_norm": 0.012546319038293037,
+          "maximum_absolute_angle_error": 0.00855799752273722,
+          "maximum_absolute_rate": 0.008184411811095037,
+          "seconds": 20.0,
+          "ticks": 1000
+        }
+      ],
+      "recording": {
+        "path": "validation-work/validation/parking16/native-hanging/parking-3167200.npz",
+        "sha256": "4da47db46567eb8e8f98472fdc9db44598b8e74c52ef11f1034a921ebc37179f"
+      },
+      "seed": 3167200,
+      "ticks": 1000,
+      "valid": true
+    },
+    {
+      "initial_error_norm": 0.2811871640444814,
+      "invalid_reason": null,
+      "maximum_cart_m": 0.06921902301010213,
+      "measurements": [
+        {
+          "cart_error": -0.0016189172135009297,
+          "error_norm": 0.08385132042771719,
+          "maximum_absolute_angle_error": 0.03067849031005264,
+          "maximum_absolute_rate": 0.09417298799402189,
+          "seconds": 8.0,
+          "ticks": 400
+        },
+        {
+          "cart_error": -0.0004334384714340389,
+          "error_norm": 0.017110819953152088,
+          "maximum_absolute_angle_error": 0.01691577904426129,
+          "maximum_absolute_rate": 0.02898771982104854,
+          "seconds": 16.0,
+          "ticks": 800
+        },
+        {
+          "cart_error": 9.131321200028797e-05,
+          "error_norm": 0.017938900691834365,
+          "maximum_absolute_angle_error": 0.004296145389516549,
+          "maximum_absolute_rate": 0.03921254345766887,
+          "seconds": 20.0,
+          "ticks": 1000
+        }
+      ],
+      "recording": {
+        "path": "validation-work/validation/parking16/native-hanging/parking-3167201.npz",
+        "sha256": "ed614a4cacab51ef0145920a5e7ed4704e2c7f30a621683cd757a9a93541bbff"
+      },
+      "seed": 3167201,
+      "ticks": 1000,
+      "valid": true
+    },
+    {
+      "initial_error_norm": 0.26020371219492944,
+      "invalid_reason": null,
+      "maximum_cart_m": 0.0762280103366971,
+      "measurements": [
+        {
+          "cart_error": 0.00599251828060187,
+          "error_norm": 0.07337615803984819,
+          "maximum_absolute_angle_error": 0.025153266910198726,
+          "maximum_absolute_rate": 0.04271920447692733,
+          "seconds": 8.0,
+          "ticks": 400
+        },
+        {
+          "cart_error": 0.001170770469268348,
+          "error_norm": 0.014580034228841993,
+          "maximum_absolute_angle_error": 0.019644567941419,
+          "maximum_absolute_rate": 0.011779256345620603,
+          "seconds": 16.0,
+          "ticks": 800
+        },
+        {
+          "cart_error": -0.00039334477668009904,
+          "error_norm": 0.02009746027423786,
+          "maximum_absolute_angle_error": 0.0030136989275430944,
+          "maximum_absolute_rate": 0.04730820116050369,
+          "seconds": 20.0,
+          "ticks": 1000
+        }
+      ],
+      "recording": {
+        "path": "validation-work/validation/parking16/native-hanging/parking-3167202.npz",
+        "sha256": "8fb2061b5db830b05796e21242bbc0443e53667a2e35680f82902818c0560944"
+      },
+      "seed": 3167202,
+      "ticks": 1000,
+      "valid": true
+    },
+    {
+      "initial_error_norm": 0.2108076501426918,
+      "invalid_reason": null,
+      "maximum_cart_m": 0.06586465764517045,
+      "measurements": [
+        {
+          "cart_error": -0.004678104265177639,
+          "error_norm": 0.08284244083264505,
+          "maximum_absolute_angle_error": 0.010837579213440286,
+          "maximum_absolute_rate": 0.06454788637805907,
+          "seconds": 8.0,
+          "ticks": 400
+        },
+        {
+          "cart_error": -4.5699584755067024e-05,
+          "error_norm": 0.013719651239889488,
+          "maximum_absolute_angle_error": 0.0026101270217645136,
+          "maximum_absolute_rate": 0.02814993999990581,
+          "seconds": 16.0,
+          "ticks": 800
+        },
+        {
+          "cart_error": -5.49638335139227e-05,
+          "error_norm": 0.0027519303245776825,
+          "maximum_absolute_angle_error": 0.0034511677544080653,
+          "maximum_absolute_rate": 0.004445550797307163,
+          "seconds": 20.0,
+          "ticks": 1000
+        }
+      ],
+      "recording": {
+        "path": "validation-work/validation/parking16/native-hanging/parking-3167203.npz",
+        "sha256": "06973bf50e0089d22d582675e155420971d57d8c8a5c6b4917a9e733b32f0c44"
+      },
+      "seed": 3167203,
+      "ticks": 1000,
+      "valid": true
+    },
+    {
+      "initial_error_norm": 0.33572950759870035,
+      "invalid_reason": null,
+      "maximum_cart_m": 0.08240417640036383,
+      "measurements": [
+        {
+          "cart_error": -0.013866869786189867,
+          "error_norm": 0.26719712311275057,
+          "maximum_absolute_angle_error": 0.16165258709501557,
+          "maximum_absolute_rate": 0.1218045711072887,
+          "seconds": 8.0,
+          "ticks": 400
+        },
+        {
+          "cart_error": -0.00040948467126828564,
+          "error_norm": 0.0622099955713544,
+          "maximum_absolute_angle_error": 0.0519421039117522,
+          "maximum_absolute_rate": 0.0520936324559067,
+          "seconds": 16.0,
+          "ticks": 800
+        },
+        {
+          "cart_error": -8.232437358209055e-06,
+          "error_norm": 0.06609430729583005,
+          "maximum_absolute_angle_error": 0.0026308468422299464,
+          "maximum_absolute_rate": 0.14839021552965528,
+          "seconds": 20.0,
+          "ticks": 1000
+        }
+      ],
+      "recording": {
+        "path": "validation-work/validation/parking16/native-hanging/parking-3167204.npz",
+        "sha256": "5f78bdd396520ce2d8d7b784c80349032085286b8217fae82931ddd66564074a"
+      },
+      "seed": 3167204,
+      "ticks": 1000,
+      "valid": true
+    },
+    {
+      "initial_error_norm": 0.28166359742032443,
+      "invalid_reason": null,
+      "maximum_cart_m": 0.06723155793386416,
+      "measurements": [
+        {
+          "cart_error": 0.0002287496150070803,
+          "error_norm": 0.11716643831522648,
+          "maximum_absolute_angle_error": 0.08802452231471092,
+          "maximum_absolute_rate": 0.13796619078893693,
+          "seconds": 8.0,
+          "ticks": 400
+        },
+        {
+          "cart_error": 0.001048468362465145,
+          "error_norm": 0.022807571774667766,
+          "maximum_absolute_angle_error": 0.015761281894121095,
+          "maximum_absolute_rate": 0.0461246382313977,
+          "seconds": 16.0,
+          "ticks": 800
+        },
+        {
+          "cart_error": -0.0007074105065587796,
+          "error_norm": 0.02506992137645614,
+          "maximum_absolute_angle_error": 0.004170219111817695,
+          "maximum_absolute_rate": 0.0508345984482658,
+          "seconds": 20.0,
+          "ticks": 1000
+        }
+      ],
+      "recording": {
+        "path": "validation-work/validation/parking16/native-hanging/parking-3167205.npz",
+        "sha256": "d2934fc7003f41e174bba80f52b8eb9d310b47ec99535d084a4a82901ee3e977"
+      },
+      "seed": 3167205,
+      "ticks": 1000,
+      "valid": true
+    },
+    {
+      "initial_error_norm": 0.2620254314290171,
+      "invalid_reason": null,
+      "maximum_cart_m": 0.06397403803941071,
+      "measurements": [
+        {
+          "cart_error": 0.002420694053336031,
+          "error_norm": 0.06766404527625686,
+          "maximum_absolute_angle_error": 0.046656468031710405,
+          "maximum_absolute_rate": 0.09627150237550133,
+          "seconds": 8.0,
+          "ticks": 400
+        },
+        {
+          "cart_error": 0.0009348842717502998,
+          "error_norm": 0.0140006544855938,
+          "maximum_absolute_angle_error": 0.004466399357328624,
+          "maximum_absolute_rate": 0.03237394713794046,
+          "seconds": 16.0,
+          "ticks": 800
+        },
+        {
+          "cart_error": -0.000525147031139539,
+          "error_norm": 0.009049240041085928,
+          "maximum_absolute_angle_error": 0.002346701700701782,
+          "maximum_absolute_rate": 0.016406103858436803,
+          "seconds": 20.0,
+          "ticks": 1000
+        }
+      ],
+      "recording": {
+        "path": "validation-work/validation/parking16/native-hanging/parking-3167206.npz",
+        "sha256": "cfbb3dfe06108c7080e6038c97c5c9cf89f8f331f5c48be184b8ac6f5886bf8c"
+      },
+      "seed": 3167206,
+      "ticks": 1000,
+      "valid": true
+    },
+    {
+      "initial_error_norm": 0.34720518613086554,
+      "invalid_reason": null,
+      "maximum_cart_m": 0.09524105057604253,
+      "measurements": [
+        {
+          "cart_error": 0.014569549267566408,
+          "error_norm": 0.12790268599862825,
+          "maximum_absolute_angle_error": 0.0337687207392028,
+          "maximum_absolute_rate": 0.09474914754816646,
+          "seconds": 8.0,
+          "ticks": 400
+        },
+        {
+          "cart_error": 0.0019416644680009046,
+          "error_norm": 0.025199166544391895,
+          "maximum_absolute_angle_error": 0.013179787133037775,
+          "maximum_absolute_rate": 0.06392137707470019,
+          "seconds": 16.0,
+          "ticks": 800
+        },
+        {
+          "cart_error": -0.0007578811804407962,
+          "error_norm": 0.015168988491471858,
+          "maximum_absolute_angle_error": 0.004730384071457082,
+          "maximum_absolute_rate": 0.03985352440907006,
+          "seconds": 20.0,
+          "ticks": 1000
+        }
+      ],
+      "recording": {
+        "path": "validation-work/validation/parking16/native-hanging/parking-3167207.npz",
+        "sha256": "50f2d6e1c920c9279d6a5b769e29cc6a45ac12e200143e37e78f756205979141"
+      },
+      "seed": 3167207,
+      "ticks": 1000,
+      "valid": true
+    },
+    {
+      "initial_error_norm": 0.30404107376047307,
+      "invalid_reason": null,
+      "maximum_cart_m": 0.10670695329000639,
+      "measurements": [
+        {
+          "cart_error": 0.015374995398916312,
+          "error_norm": 0.16566294352818572,
+          "maximum_absolute_angle_error": 0.08806282023397531,
+          "maximum_absolute_rate": 0.18336414156180592,
+          "seconds": 8.0,
+          "ticks": 400
+        },
+        {
+          "cart_error": 0.0008656898599833859,
+          "error_norm": 0.039992451565030285,
+          "maximum_absolute_angle_error": 0.03364062117447955,
+          "maximum_absolute_rate": 0.02210387399898137,
+          "seconds": 16.0,
+          "ticks": 800
+        },
+        {
+          "cart_error": -5.024021978577986e-06,
+          "error_norm": 0.04469085669304893,
+          "maximum_absolute_angle_error": 0.0017148912351596175,
+          "maximum_absolute_rate": 0.10284831125667196,
+          "seconds": 20.0,
+          "ticks": 1000
+        }
+      ],
+      "recording": {
+        "path": "validation-work/validation/parking16/native-hanging/parking-3167208.npz",
+        "sha256": "2c900c87c90273464d07a5c9a33a007b7c691a2c3aa0340a1c025780e6b8cbc9"
+      },
+      "seed": 3167208,
+      "ticks": 1000,
+      "valid": true
+    },
+    {
+      "initial_error_norm": 0.3078049605336018,
+      "invalid_reason": null,
+      "maximum_cart_m": 0.08585582957131588,
+      "measurements": [
+        {
+          "cart_error": 0.009918991740236895,
+          "error_norm": 0.16272260072848646,
+          "maximum_absolute_angle_error": 0.0654130965773144,
+          "maximum_absolute_rate": 0.11777587434956491,
+          "seconds": 8.0,
+          "ticks": 400
+        },
+        {
+          "cart_error": 0.0012532130556515211,
+          "error_norm": 0.026066109092956584,
+          "maximum_absolute_angle_error": 0.013392599729571063,
+          "maximum_absolute_rate": 0.06496699811375856,
+          "seconds": 16.0,
+          "ticks": 800
+        },
+        {
+          "cart_error": -0.0005037451096972304,
+          "error_norm": 0.01594203107603639,
+          "maximum_absolute_angle_error": 0.006949952057571394,
+          "maximum_absolute_rate": 0.02598002037784898,
+          "seconds": 20.0,
+          "ticks": 1000
+        }
+      ],
+      "recording": {
+        "path": "validation-work/validation/parking16/native-hanging/parking-3167209.npz",
+        "sha256": "c2af06af8ca1e53244e5748baa359a9cbabdf9bf7147d36eb0efdac1b8b64e64"
+      },
+      "seed": 3167209,
+      "ticks": 1000,
+      "valid": true
+    }
+  ],
+  "controller_qualified": false,
+  "design": {
+    "path": "validation-work/validation/parking16/native-hanging/design.npz",
+    "sha256": "0eb46b22a34f8dbd4a64e392048cba8450b93adf0eb24d73c779bbf9216a9efd"
+  },
+  "development_gate_episodes": 0,
+  "full_swing_up_episodes": 0,
+  "gain_norm": 0.1387326818247172,
+  "method": "native centered held-input hanging linearization; cart Q10/rate5, other diagonal1e-8, R1000, target-.05m",
+  "publication_note": "New synthesis-export validation. Paths are portable aliases; original validation JSON hash is recorded separately.",
+  "purpose": "Measure launch deviations after8/16/20s, not hanging swing-up or qualification",
+  "reserved_episodes": 0,
+  "runtime": {
+    "mujoco": "3.3.5",
+    "numpy": "2.5.2",
+    "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+    "scipy": "1.18.1"
+  },
+  "schema": "rage_mill.canonical16_hanging_settling_component.v1",
+  "source_hashes": {
+    "synthesis/original/16/configs/canonical16.json": "ca7c6f0d60a344333e57cd9ebc694033a6c187ae396d6416cec22444c485e677",
+    "synthesis/original/16/scripts/probe_canonical16_parking.py": "a1564bf3d91ee8885a4ab2c4c631b2ae911829b718d387f46be1952f14acbe17",
+    "synthesis/original/16/src/rage_mill/canonical_benchmark.py": "4b597725057d041277cd96b893a07c15f810bb96d0675e1c61706416d1859d8b"
+  },
+  "source_hashes_unchanged": {
+    "synthesis/original/16/configs/canonical16.json": true,
+    "synthesis/original/16/scripts/probe_canonical16_parking.py": true,
+    "synthesis/original/16/src/rage_mill/canonical_benchmark.py": true
+  },
+  "wall_seconds": 3.4110928559675813
+}

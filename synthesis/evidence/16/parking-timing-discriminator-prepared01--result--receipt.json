@@ -1,0 +1,1025 @@
+{
+  "RNG_draws": 0,
+  "controller_qualified": false,
+  "formal_development_episodes": 0,
+  "inputs": {
+    "bytes": 3343,
+    "path": "historical/canonical16/parking-timing-discriminator-prepared01/inputs.json",
+    "sha256": "9b59fdd6eaeaef14b414a21ad7b6f6195745616bbf34cb589e4a0ef2206db18e"
+  },
+  "loaded_runtime": {
+    "bytes": 42537,
+    "path": "historical/canonical16/parking-timing-discriminator-prepared01/result/loaded-runtime.json",
+    "sha256": "19445df1c9e8aec48dd6f2347b2580f37681dbfad71d379ef857f5c96d6dfe5d"
+  },
+  "physical_episodes": 33,
+  "process_cpu_seconds": 17.624852272,
+  "profiles": [
+    {
+      "all11_pass": true,
+      "cases": [
+        {
+          "RNG_draws": 0,
+          "recording": {
+            "bytes": 410139,
+            "path": "historical/canonical16/parking-timing-discriminator-prepared01/result/park-17/saved-initial-3167110.npz",
+            "sha256": "ced6cccf55f9da643cebc18e88e7fba651e7bf9bc598954548772b5c998dadd3"
+          },
+          "reset_count_after_initialization": 0,
+          "score": {
+            "complete": true,
+            "finite": true,
+            "float32_delivery_ok": true,
+            "force_ok": true,
+            "invalid_reason": null,
+            "longest_upright_seconds": 7.34,
+            "longest_upright_ticks": 367,
+            "maximum_cart_m": 1.9427943121955167,
+            "rail_ok": true,
+            "success": true,
+            "ticks": 1500
+          },
+          "seed_label": 3167110,
+          "source_recording": {
+            "bytes": 410753,
+            "path": "historical/canonical16/controller-noisy10-original-prepared01/probe/episode-3167110.npz",
+            "sha256": "be63180ef2b06cbec14770f61a1f797d621f2c3de22cd41e0334c7e721a47522"
+          }
+        },
+        {
+          "RNG_draws": 0,
+          "recording": {
+            "bytes": 410043,
+            "path": "historical/canonical16/parking-timing-discriminator-prepared01/result/park-17/saved-initial-3167111.npz",
+            "sha256": "07cf235934215e62d1ce17a917e02922fe8413c97a71dc02e8b62aee838c9c63"
+          },
+          "reset_count_after_initialization": 0,
+          "score": {
+            "complete": true,
+            "finite": true,
+            "float32_delivery_ok": true,
+            "force_ok": true,
+            "invalid_reason": null,
+            "longest_upright_seconds": 7.34,
+            "longest_upright_ticks": 367,
+            "maximum_cart_m": 1.9427944222839364,
+            "rail_ok": true,
+            "success": true,
+            "ticks": 1500
+          },
+          "seed_label": 3167111,
+          "source_recording": {
+            "bytes": 410705,
+            "path": "historical/canonical16/controller-noisy10-original-prepared01/probe/episode-3167111.npz",
+            "sha256": "be26df9bc9900513484427d8b784c5a2943de837da6b1dec954b9fde6709e753"
+          }
+        },
+        {
+          "RNG_draws": 0,
+          "recording": {
+            "bytes": 410029,
+            "path": "historical/canonical16/parking-timing-discriminator-prepared01/result/park-17/saved-initial-3167112.npz",
+            "sha256": "7f8da3b4fc10246d950cb8b990a70756f444d83f39b6e7b26be968d957632029"
+          },
+          "reset_count_after_initialization": 0,
+          "score": {
+            "complete": true,
+            "finite": true,
+            "float32_delivery_ok": true,
+            "force_ok": true,
+            "invalid_reason": null,
+            "longest_upright_seconds": 7.34,
+            "longest_upright_ticks": 367,
+            "maximum_cart_m": 1.9427942816672454,
+            "rail_ok": true,
+            "success": true,
+            "ticks": 1500
+          },
+          "seed_label": 3167112,
+          "source_recording": {
+            "bytes": 410730,
+            "path": "historical/canonical16/controller-noisy10-original-prepared01/probe/episode-3167112.npz",
+            "sha256": "f46c3d6f965fbf80b49fcb8b71438852ea2c5c0c8fedc8fad75f30c79c013b7f"
+          }
+        },
+        {
+          "RNG_draws": 0,
+          "recording": {
+            "bytes": 410137,
+            "path": "historical/canonical16/parking-timing-discriminator-prepared01/result/park-17/saved-initial-3167113.npz",
+            "sha256": "89dffda1aa12752bbc7194469304ce06f54bb2536d311a82308be82182746255"
+          },
+          "reset_count_after_initialization": 0,
+          "score": {
+            "complete": true,
+            "finite": true,
+            "float32_delivery_ok": true,
+            "force_ok": true,
+            "invalid_reason": null,
+            "longest_upright_seconds": 7.34,
+            "longest_upright_ticks": 367,
+            "maximum_cart_m": 1.9427940897859983,
+            "rail_ok": true,
+            "success": true,
+            "ticks": 1500
+          },
+          "seed_label": 3167113,
+          "source_recording": {
+            "bytes": 410649,
+            "path": "historical/canonical16/controller-noisy10-original-prepared01/probe/episode-3167113.npz",
+            "sha256": "b0e352c8a5b9a7f72c0b972f892adcdf53f61b430a22301fe023006cb3861243"
+          }
+        },
+        {
+          "RNG_draws": 0,
+          "recording": {
+            "bytes": 410110,
+            "path": "historical/canonical16/parking-timing-discriminator-prepared01/result/park-17/saved-initial-3167114.npz",
+            "sha256": "928818686c188f113879246e3e854c4ec9cf4406121664ba83ae8f0643225f48"
+          },
+          "reset_count_after_initialization": 0,
+          "score": {
+            "complete": true,
+            "finite": true,
+            "float32_delivery_ok": true,
+            "force_ok": true,
+            "invalid_reason": null,
+            "longest_upright_seconds": 7.34,
+            "longest_upright_ticks": 367,
+            "maximum_cart_m": 1.9427945441224679,
+            "rail_ok": true,
+            "success": true,
+            "ticks": 1500
+          },
+          "seed_label": 3167114,
+          "source_recording": {
+            "bytes": 410651,
+            "path": "historical/canonical16/controller-noisy10-original-prepared01/probe/episode-3167114.npz",
+            "sha256": "7f8adb1b25c649d70579a1704c1e8c96b832a564cb331cac1b23764a1ce6c98f"
+          }
+        },
+        {
+          "RNG_draws": 0,
+          "recording": {
+            "bytes": 410177,
+            "path": "historical/canonical16/parking-timing-discriminator-prepared01/result/park-17/saved-initial-3167115.npz",
+            "sha256": "5ddd6c31d80bd9a819578690861bcc8ac1fd53ab7b3385fba2dc47ffa080a44d"
+          },
+          "reset_count_after_initialization": 0,
+          "score": {
+            "complete": true,
+            "finite": true,
+            "float32_delivery_ok": true,
+            "force_ok": true,
+            "invalid_reason": null,
+            "longest_upright_seconds": 7.34,
+            "longest_upright_ticks": 367,
+            "maximum_cart_m": 1.942794421674172,
+            "rail_ok": true,
+            "success": true,
+            "ticks": 1500
+          },
+          "seed_label": 3167115,
+          "source_recording": {
+            "bytes": 410714,
+            "path": "historical/canonical16/controller-noisy10-original-prepared01/probe/episode-3167115.npz",
+            "sha256": "cc4b92be06c36a06fd4430278d893c1747e64b8c3298660e70bbb5cf06372c0b"
+          }
+        },
+        {
+          "RNG_draws": 0,
+          "recording": {
+            "bytes": 409990,
+            "path": "historical/canonical16/parking-timing-discriminator-prepared01/result/park-17/saved-initial-3167116.npz",
+            "sha256": "010064f809cdda3adb3202acd746c45b04bb6b0481c3d8a29d8ed8ddbabda382"
+          },
+          "reset_count_after_initialization": 0,
+          "score": {
+            "complete": true,
+            "finite": true,
+            "float32_delivery_ok": true,
+            "force_ok": true,
+            "invalid_reason": null,
+            "longest_upright_seconds": 7.34,
+            "longest_upright_ticks": 367,
+            "maximum_cart_m": 1.9427945271462341,
+            "rail_ok": true,
+            "success": true,
+            "ticks": 1500
+          },
+          "seed_label": 3167116,
+          "source_recording": {
+            "bytes": 410660,
+            "path": "historical/canonical16/controller-noisy10-original-prepared01/probe/episode-3167116.npz",
+            "sha256": "ab9ba6f92ef185d01885117c25a02484763b2ade147644671b58eca056f176a5"
+          }
+        },
+        {
+          "RNG_draws": 0,
+          "recording": {
+            "bytes": 410099,
+            "path": "historical/canonical16/parking-timing-discriminator-prepared01/result/park-17/saved-initial-3167117.npz",
+            "sha256": "905199b3b6e37e53283fb693f5ff6d7148465eb43efb652484882392434d6dca"
+          },
+          "reset_count_after_initialization": 0,
+          "score": {
+            "complete": true,
+            "finite": true,
+            "float32_delivery_ok": true,
+            "force_ok": true,
+            "invalid_reason": null,
+            "longest_upright_seconds": 7.34,
+            "longest_upright_ticks": 367,
+            "maximum_cart_m": 1.9427936164453348,
+            "rail_ok": true,
+            "success": true,
+            "ticks": 1500
+          },
+          "seed_label": 3167117,
+          "source_recording": {
+            "bytes": 318323,
+            "path": "${SYNTHESIS}/data/16/noisy-original-failure.npz",
+            "sha256": "4d63eed07cf90140d780d2b6caff8e1cee36f53a26efb24062e0aecabea5daee"
+          }
+        },
+        {
+          "RNG_draws": 0,
+          "recording": {
+            "bytes": 410189,
+            "path": "historical/canonical16/parking-timing-discriminator-prepared01/result/park-17/saved-initial-3167118.npz",
+            "sha256": "a85145b4f143d14cbd0add3e9cb38542d955c57d06ff83b64720bbf0e0fa9fa0"
+          },
+          "reset_count_after_initialization": 0,
+          "score": {
+            "complete": true,
+            "finite": true,
+            "float32_delivery_ok": true,
+            "force_ok": true,
+            "invalid_reason": null,
+            "longest_upright_seconds": 7.34,
+            "longest_upright_ticks": 367,
+            "maximum_cart_m": 1.9427945826887518,
+            "rail_ok": true,
+            "success": true,
+            "ticks": 1500
+          },
+          "seed_label": 3167118,
+          "source_recording": {
+            "bytes": 410767,
+            "path": "historical/canonical16/controller-noisy10-original-prepared01/probe/episode-3167118.npz",
+            "sha256": "19cc53d6353b9a1aa0a1bf9ad853a1ee4673b695667f4079f2594c611a3f257a"
+          }
+        },
+        {
+          "RNG_draws": 0,
+          "recording": {
+            "bytes": 410139,
+            "path": "historical/canonical16/parking-timing-discriminator-prepared01/result/park-17/saved-initial-3167119.npz",
+            "sha256": "a60fad84ce2502b6ab400d801a718a5ee6c01a00a57d8bf7de66e01c282e95ed"
+          },
+          "reset_count_after_initialization": 0,
+          "score": {
+            "complete": true,
+            "finite": true,
+            "float32_delivery_ok": true,
+            "force_ok": true,
+            "invalid_reason": null,
+            "longest_upright_seconds": 7.34,
+            "longest_upright_ticks": 367,
+            "maximum_cart_m": 1.9427941245176077,
+            "rail_ok": true,
+            "success": true,
+            "ticks": 1500
+          },
+          "seed_label": 3167119,
+          "source_recording": {
+            "bytes": 410700,
+            "path": "historical/canonical16/controller-noisy10-original-prepared01/probe/episode-3167119.npz",
+            "sha256": "6fca926513d577a97c8613b17172675e4d967997275184cc01b361496d4109cd"
+          }
+        },
+        {
+          "RNG_draws": 0,
+          "recording": {
+            "bytes": 409477,
+            "path": "historical/canonical16/parking-timing-discriminator-prepared01/result/park-17/saved-initial-3167106.npz",
+            "sha256": "2bc039bef938c123f0cc8361cbf8258e62bb909a0890c04cc7d09bb35e36d181"
+          },
+          "reset_count_after_initialization": 0,
+          "score": {
+            "complete": true,
+            "finite": true,
+            "float32_delivery_ok": true,
+            "force_ok": true,
+            "invalid_reason": null,
+            "longest_upright_seconds": 7.34,
+            "longest_upright_ticks": 367,
+            "maximum_cart_m": 1.9427942000985097,
+            "rail_ok": true,
+            "success": true,
+            "ticks": 1500
+          },
+          "seed_label": 3167106,
+          "source_recording": {
+            "bytes": 410290,
+            "path": "${SYNTHESIS}/data/16/probe07-exact.npz",
+            "sha256": "e5bdba54806815b45169540d12766239ae1a58443760c0e045ecbc9b1574d1ea"
+          }
+        }
+      ],
+      "controller": {
+        "bytes": 408657,
+        "path": "historical/canonical16/parking-timing-discriminator-prepared01/result/park-17/controller.npz",
+        "sha256": "de5afbb5db053a5094e01bd913bf0f7d2f4b17abd1a2679d3821f341e60ffcdb"
+      },
+      "park_ticks": 850,
+      "parking_seconds": 17,
+      "prefix_parity": {
+        "actions": true,
+        "balance_gain": true,
+        "gains": true,
+        "native_defects": true,
+        "offsets": true,
+        "park_gain": true,
+        "parking_target": true,
+        "states": true,
+        "terminal_root": true
+      },
+      "route_ticks": 650
+    },
+    {
+      "all11_pass": true,
+      "cases": [
+        {
+          "RNG_draws": 0,
+          "recording": {
+            "bytes": 410153,
+            "path": "historical/canonical16/parking-timing-discriminator-prepared01/result/park-18/saved-initial-3167110.npz",
+            "sha256": "d58c43831245f72321bba8f461fcb44c4c4d57db88652f25127c3ee6350ef9fe"
+          },
+          "reset_count_after_initialization": 0,
+          "score": {
+            "complete": true,
+            "finite": true,
+            "float32_delivery_ok": true,
+            "force_ok": true,
+            "invalid_reason": null,
+            "longest_upright_seconds": 6.34,
+            "longest_upright_ticks": 317,
+            "maximum_cart_m": 1.942794313853037,
+            "rail_ok": true,
+            "success": true,
+            "ticks": 1500
+          },
+          "seed_label": 3167110,
+          "source_recording": {
+            "bytes": 410753,
+            "path": "historical/canonical16/controller-noisy10-original-prepared01/probe/episode-3167110.npz",
+            "sha256": "be63180ef2b06cbec14770f61a1f797d621f2c3de22cd41e0334c7e721a47522"
+          }
+        },
+        {
+          "RNG_draws": 0,
+          "recording": {
+            "bytes": 410042,
+            "path": "historical/canonical16/parking-timing-discriminator-prepared01/result/park-18/saved-initial-3167111.npz",
+            "sha256": "e479b9fbedaef83ce6b2e475c0b71fc24067019d90f026707ce1c8e486208326"
+          },
+          "reset_count_after_initialization": 0,
+          "score": {
+            "complete": true,
+            "finite": true,
+            "float32_delivery_ok": true,
+            "force_ok": true,
+            "invalid_reason": null,
+            "longest_upright_seconds": 6.34,
+            "longest_upright_ticks": 317,
+            "maximum_cart_m": 1.942794281805506,
+            "rail_ok": true,
+            "success": true,
+            "ticks": 1500
+          },
+          "seed_label": 3167111,
+          "source_recording": {
+            "bytes": 410705,
+            "path": "historical/canonical16/controller-noisy10-original-prepared01/probe/episode-3167111.npz",
+            "sha256": "be26df9bc9900513484427d8b784c5a2943de837da6b1dec954b9fde6709e753"
+          }
+        },
+        {
+          "RNG_draws": 0,
+          "recording": {
+            "bytes": 409985,
+            "path": "historical/canonical16/parking-timing-discriminator-prepared01/result/park-18/saved-initial-3167112.npz",
+            "sha256": "e6970b5c343a8d92a8465632801cea44e23f486c44898d7b17f66c7d591013f3"
+          },
+          "reset_count_after_initialization": 0,
+          "score": {
+            "complete": true,
+            "finite": true,
+            "float32_delivery_ok": true,
+            "force_ok": true,
+            "invalid_reason": null,
+            "longest_upright_seconds": 6.34,
+            "longest_upright_ticks": 317,
+            "maximum_cart_m": 1.9427945334290293,
+            "rail_ok": true,
+            "success": true,
+            "ticks": 1500
+          },
+          "seed_label": 3167112,
+          "source_recording": {
+            "bytes": 410730,
+            "path": "historical/canonical16/controller-noisy10-original-prepared01/probe/episode-3167112.npz",
+            "sha256": "f46c3d6f965fbf80b49fcb8b71438852ea2c5c0c8fedc8fad75f30c79c013b7f"
+          }
+        },
+        {
+          "RNG_draws": 0,
+          "recording": {
+            "bytes": 410062,
+            "path": "historical/canonical16/parking-timing-discriminator-prepared01/result/park-18/saved-initial-3167113.npz",
+            "sha256": "86b38a3fd6540ad8162908a1e2f18c555a1582ec0e083b68c30ebb7c2e8186ae"
+          },
+          "reset_count_after_initialization": 0,
+          "score": {
+            "complete": true,
+            "finite": true,
+            "float32_delivery_ok": true,
+            "force_ok": true,
+            "invalid_reason": null,
+            "longest_upright_seconds": 6.34,
+            "longest_upright_ticks": 317,
+            "maximum_cart_m": 1.942794320879193,
+            "rail_ok": true,
+            "success": true,
+            "ticks": 1500
+          },
+          "seed_label": 3167113,
+          "source_recording": {
+            "bytes": 410649,
+            "path": "historical/canonical16/controller-noisy10-original-prepared01/probe/episode-3167113.npz",
+            "sha256": "b0e352c8a5b9a7f72c0b972f892adcdf53f61b430a22301fe023006cb3861243"
+          }
+        },
+        {
+          "RNG_draws": 0,
+          "recording": {
+            "bytes": 410118,
+            "path": "historical/canonical16/parking-timing-discriminator-prepared01/result/park-18/saved-initial-3167114.npz",
+            "sha256": "d8d41f1723fe6b6a036ce34941b7e8efbdd31d9d07ac1247a0fa241e243816cd"
+          },
+          "reset_count_after_initialization": 0,
+          "score": {
+            "complete": true,
+            "finite": true,
+            "float32_delivery_ok": true,
+            "force_ok": true,
+            "invalid_reason": null,
+            "longest_upright_seconds": 6.34,
+            "longest_upright_ticks": 317,
+            "maximum_cart_m": 1.9427941946826899,
+            "rail_ok": true,
+            "success": true,
+            "ticks": 1500
+          },
+          "seed_label": 3167114,
+          "source_recording": {
+            "bytes": 410651,
+            "path": "historical/canonical16/controller-noisy10-original-prepared01/probe/episode-3167114.npz",
+            "sha256": "7f8adb1b25c649d70579a1704c1e8c96b832a564cb331cac1b23764a1ce6c98f"
+          }
+        },
+        {
+          "RNG_draws": 0,
+          "recording": {
+            "bytes": 410151,
+            "path": "historical/canonical16/parking-timing-discriminator-prepared01/result/park-18/saved-initial-3167115.npz",
+            "sha256": "288f709567bc63ab7237353b3b95e79fa14947ef142690a8ae23c747abd0fb6b"
+          },
+          "reset_count_after_initialization": 0,
+          "score": {
+            "complete": true,
+            "finite": true,
+            "float32_delivery_ok": true,
+            "force_ok": true,
+            "invalid_reason": null,
+            "longest_upright_seconds": 6.34,
+            "longest_upright_ticks": 317,
+            "maximum_cart_m": 1.9427942585995612,
+            "rail_ok": true,
+            "success": true,
+            "ticks": 1500
+          },
+          "seed_label": 3167115,
+          "source_recording": {
+            "bytes": 410714,
+            "path": "historical/canonical16/controller-noisy10-original-prepared01/probe/episode-3167115.npz",
+            "sha256": "cc4b92be06c36a06fd4430278d893c1747e64b8c3298660e70bbb5cf06372c0b"
+          }
+        },
+        {
+          "RNG_draws": 0,
+          "recording": {
+            "bytes": 410016,
+            "path": "historical/canonical16/parking-timing-discriminator-prepared01/result/park-18/saved-initial-3167116.npz",
+            "sha256": "32bd1b607050b1183d8038ca9487c56a0c500d16902e4b9b8befc724dce1f7e4"
+          },
+          "reset_count_after_initialization": 0,
+          "score": {
+            "complete": true,
+            "finite": true,
+            "float32_delivery_ok": true,
+            "force_ok": true,
+            "invalid_reason": null,
+            "longest_upright_seconds": 6.34,
+            "longest_upright_ticks": 317,
+            "maximum_cart_m": 1.9427941449884518,
+            "rail_ok": true,
+            "success": true,
+            "ticks": 1500
+          },
+          "seed_label": 3167116,
+          "source_recording": {
+            "bytes": 410660,
+            "path": "historical/canonical16/controller-noisy10-original-prepared01/probe/episode-3167116.npz",
+            "sha256": "ab9ba6f92ef185d01885117c25a02484763b2ade147644671b58eca056f176a5"
+          }
+        },
+        {
+          "RNG_draws": 0,
+          "recording": {
+            "bytes": 410106,
+            "path": "historical/canonical16/parking-timing-discriminator-prepared01/result/park-18/saved-initial-3167117.npz",
+            "sha256": "b6d51dddee2ebe218f6e2c1d5195ad99398f7cf5665488558dc07fc05ae7dba1"
+          },
+          "reset_count_after_initialization": 0,
+          "score": {
+            "complete": true,
+            "finite": true,
+            "float32_delivery_ok": true,
+            "force_ok": true,
+            "invalid_reason": null,
+            "longest_upright_seconds": 6.34,
+            "longest_upright_ticks": 317,
+            "maximum_cart_m": 1.9427942572765189,
+            "rail_ok": true,
+            "success": true,
+            "ticks": 1500
+          },
+          "seed_label": 3167117,
+          "source_recording": {
+            "bytes": 318323,
+            "path": "${SYNTHESIS}/data/16/noisy-original-failure.npz",
+            "sha256": "4d63eed07cf90140d780d2b6caff8e1cee36f53a26efb24062e0aecabea5daee"
+          }
+        },
+        {
+          "RNG_draws": 0,
+          "recording": {
+            "bytes": 410133,
+            "path": "historical/canonical16/parking-timing-discriminator-prepared01/result/park-18/saved-initial-3167118.npz",
+            "sha256": "59a4ab36b29d7830afd43352afd7182a64e7e1e3c27982116c13fb740330221f"
+          },
+          "reset_count_after_initialization": 0,
+          "score": {
+            "complete": true,
+            "finite": true,
+            "float32_delivery_ok": true,
+            "force_ok": true,
+            "invalid_reason": null,
+            "longest_upright_seconds": 6.34,
+            "longest_upright_ticks": 317,
+            "maximum_cart_m": 1.942794482973171,
+            "rail_ok": true,
+            "success": true,
+            "ticks": 1500
+          },
+          "seed_label": 3167118,
+          "source_recording": {
+            "bytes": 410767,
+            "path": "historical/canonical16/controller-noisy10-original-prepared01/probe/episode-3167118.npz",
+            "sha256": "19cc53d6353b9a1aa0a1bf9ad853a1ee4673b695667f4079f2594c611a3f257a"
+          }
+        },
+        {
+          "RNG_draws": 0,
+          "recording": {
+            "bytes": 410051,
+            "path": "historical/canonical16/parking-timing-discriminator-prepared01/result/park-18/saved-initial-3167119.npz",
+            "sha256": "40a5539965754135b2227777d9a6a87fd7dcc06102b2128a03f5bcc742cb5251"
+          },
+          "reset_count_after_initialization": 0,
+          "score": {
+            "complete": true,
+            "finite": true,
+            "float32_delivery_ok": true,
+            "force_ok": true,
+            "invalid_reason": null,
+            "longest_upright_seconds": 6.34,
+            "longest_upright_ticks": 317,
+            "maximum_cart_m": 1.942793920613686,
+            "rail_ok": true,
+            "success": true,
+            "ticks": 1500
+          },
+          "seed_label": 3167119,
+          "source_recording": {
+            "bytes": 410700,
+            "path": "historical/canonical16/controller-noisy10-original-prepared01/probe/episode-3167119.npz",
+            "sha256": "6fca926513d577a97c8613b17172675e4d967997275184cc01b361496d4109cd"
+          }
+        },
+        {
+          "RNG_draws": 0,
+          "recording": {
+            "bytes": 409396,
+            "path": "historical/canonical16/parking-timing-discriminator-prepared01/result/park-18/saved-initial-3167106.npz",
+            "sha256": "1567ff66d76ba6ab276521ff80242e795fbe1a44ece5a7866c907ee4e3fb196c"
+          },
+          "reset_count_after_initialization": 0,
+          "score": {
+            "complete": true,
+            "finite": true,
+            "float32_delivery_ok": true,
+            "force_ok": true,
+            "invalid_reason": null,
+            "longest_upright_seconds": 6.34,
+            "longest_upright_ticks": 317,
+            "maximum_cart_m": 1.942793868259994,
+            "rail_ok": true,
+            "success": true,
+            "ticks": 1500
+          },
+          "seed_label": 3167106,
+          "source_recording": {
+            "bytes": 410290,
+            "path": "${SYNTHESIS}/data/16/probe07-exact.npz",
+            "sha256": "e5bdba54806815b45169540d12766239ae1a58443760c0e045ecbc9b1574d1ea"
+          }
+        }
+      ],
+      "controller": {
+        "bytes": 394676,
+        "path": "historical/canonical16/parking-timing-discriminator-prepared01/result/park-18/controller.npz",
+        "sha256": "bc654cb5e18323052da77a0b3ef2d25611654b17415a7e241ced7a0613eac246"
+      },
+      "park_ticks": 900,
+      "parking_seconds": 18,
+      "prefix_parity": {
+        "actions": true,
+        "balance_gain": true,
+        "gains": true,
+        "native_defects": true,
+        "offsets": true,
+        "park_gain": true,
+        "parking_target": true,
+        "states": true,
+        "terminal_root": true
+      },
+      "route_ticks": 600
+    },
+    {
+      "all11_pass": true,
+      "cases": [
+        {
+          "RNG_draws": 0,
+          "recording": {
+            "bytes": 410136,
+            "path": "historical/canonical16/parking-timing-discriminator-prepared01/result/park-19/saved-initial-3167110.npz",
+            "sha256": "fce5836be59007ab970a76f49d62c9d364f705fffcc393a7453603036dce2eb1"
+          },
+          "reset_count_after_initialization": 0,
+          "score": {
+            "complete": true,
+            "finite": true,
+            "float32_delivery_ok": true,
+            "force_ok": true,
+            "invalid_reason": null,
+            "longest_upright_seconds": 5.34,
+            "longest_upright_ticks": 267,
+            "maximum_cart_m": 1.942794376096454,
+            "rail_ok": true,
+            "success": true,
+            "ticks": 1500
+          },
+          "seed_label": 3167110,
+          "source_recording": {
+            "bytes": 410753,
+            "path": "historical/canonical16/controller-noisy10-original-prepared01/probe/episode-3167110.npz",
+            "sha256": "be63180ef2b06cbec14770f61a1f797d621f2c3de22cd41e0334c7e721a47522"
+          }
+        },
+        {
+          "RNG_draws": 0,
+          "recording": {
+            "bytes": 409971,
+            "path": "historical/canonical16/parking-timing-discriminator-prepared01/result/park-19/saved-initial-3167111.npz",
+            "sha256": "3906930449fd54fd7b33e4d3f715e523c76698288c264874516da5f5fc259e25"
+          },
+          "reset_count_after_initialization": 0,
+          "score": {
+            "complete": true,
+            "finite": true,
+            "float32_delivery_ok": true,
+            "force_ok": true,
+            "invalid_reason": null,
+            "longest_upright_seconds": 5.34,
+            "longest_upright_ticks": 267,
+            "maximum_cart_m": 1.9427945180036208,
+            "rail_ok": true,
+            "success": true,
+            "ticks": 1500
+          },
+          "seed_label": 3167111,
+          "source_recording": {
+            "bytes": 410705,
+            "path": "historical/canonical16/controller-noisy10-original-prepared01/probe/episode-3167111.npz",
+            "sha256": "be26df9bc9900513484427d8b784c5a2943de837da6b1dec954b9fde6709e753"
+          }
+        },
+        {
+          "RNG_draws": 0,
+          "recording": {
+            "bytes": 409995,
+            "path": "historical/canonical16/parking-timing-discriminator-prepared01/result/park-19/saved-initial-3167112.npz",
+            "sha256": "f62d6887e8b76c2119ad7ca8eb926bfea03af53f1d8a18969c82d78998bab11d"
+          },
+          "reset_count_after_initialization": 0,
+          "score": {
+            "complete": true,
+            "finite": true,
+            "float32_delivery_ok": true,
+            "force_ok": true,
+            "invalid_reason": null,
+            "longest_upright_seconds": 5.34,
+            "longest_upright_ticks": 267,
+            "maximum_cart_m": 1.942794642118224,
+            "rail_ok": true,
+            "success": true,
+            "ticks": 1500
+          },
+          "seed_label": 3167112,
+          "source_recording": {
+            "bytes": 410730,
+            "path": "historical/canonical16/controller-noisy10-original-prepared01/probe/episode-3167112.npz",
+            "sha256": "f46c3d6f965fbf80b49fcb8b71438852ea2c5c0c8fedc8fad75f30c79c013b7f"
+          }
+        },
+        {
+          "RNG_draws": 0,
+          "recording": {
+            "bytes": 410136,
+            "path": "historical/canonical16/parking-timing-discriminator-prepared01/result/park-19/saved-initial-3167113.npz",
+            "sha256": "41510aca93cbd824abc6a55fd7f2eed2e00d2e1f006f8f559cfd8615dff711ae"
+          },
+          "reset_count_after_initialization": 0,
+          "score": {
+            "complete": true,
+            "finite": true,
+            "float32_delivery_ok": true,
+            "force_ok": true,
+            "invalid_reason": null,
+            "longest_upright_seconds": 5.34,
+            "longest_upright_ticks": 267,
+            "maximum_cart_m": 1.9427942346191116,
+            "rail_ok": true,
+            "success": true,
+            "ticks": 1500
+          },
+          "seed_label": 3167113,
+          "source_recording": {
+            "bytes": 410649,
+            "path": "historical/canonical16/controller-noisy10-original-prepared01/probe/episode-3167113.npz",
+            "sha256": "b0e352c8a5b9a7f72c0b972f892adcdf53f61b430a22301fe023006cb3861243"
+          }
+        },
+        {
+          "RNG_draws": 0,
+          "recording": {
+            "bytes": 410051,
+            "path": "historical/canonical16/parking-timing-discriminator-prepared01/result/park-19/saved-initial-3167114.npz",
+            "sha256": "a207a1f4755138aea71e832369bd50100575bebd0cb7a443cbd35ccad496a899"
+          },
+          "reset_count_after_initialization": 0,
+          "score": {
+            "complete": true,
+            "finite": true,
+            "float32_delivery_ok": true,
+            "force_ok": true,
+            "invalid_reason": null,
+            "longest_upright_seconds": 5.34,
+            "longest_upright_ticks": 267,
+            "maximum_cart_m": 1.942794542736472,
+            "rail_ok": true,
+            "success": true,
+            "ticks": 1500
+          },
+          "seed_label": 3167114,
+          "source_recording": {
+            "bytes": 410651,
+            "path": "historical/canonical16/controller-noisy10-original-prepared01/probe/episode-3167114.npz",
+            "sha256": "7f8adb1b25c649d70579a1704c1e8c96b832a564cb331cac1b23764a1ce6c98f"
+          }
+        },
+        {
+          "RNG_draws": 0,
+          "recording": {
+            "bytes": 410084,
+            "path": "historical/canonical16/parking-timing-discriminator-prepared01/result/park-19/saved-initial-3167115.npz",
+            "sha256": "d3b2554324227450fa0bca966956cdff997c6482004b64c4257c58d17ff955d6"
+          },
+          "reset_count_after_initialization": 0,
+          "score": {
+            "complete": true,
+            "finite": true,
+            "float32_delivery_ok": true,
+            "force_ok": true,
+            "invalid_reason": null,
+            "longest_upright_seconds": 5.34,
+            "longest_upright_ticks": 267,
+            "maximum_cart_m": 1.942794454663289,
+            "rail_ok": true,
+            "success": true,
+            "ticks": 1500
+          },
+          "seed_label": 3167115,
+          "source_recording": {
+            "bytes": 410714,
+            "path": "historical/canonical16/controller-noisy10-original-prepared01/probe/episode-3167115.npz",
+            "sha256": "cc4b92be06c36a06fd4430278d893c1747e64b8c3298660e70bbb5cf06372c0b"
+          }
+        },
+        {
+          "RNG_draws": 0,
+          "recording": {
+            "bytes": 409953,
+            "path": "historical/canonical16/parking-timing-discriminator-prepared01/result/park-19/saved-initial-3167116.npz",
+            "sha256": "e10b6c747afff1a9e89799614e518d1f198a5230c9649299c2e7fc241d709b77"
+          },
+          "reset_count_after_initialization": 0,
+          "score": {
+            "complete": true,
+            "finite": true,
+            "float32_delivery_ok": true,
+            "force_ok": true,
+            "invalid_reason": null,
+            "longest_upright_seconds": 5.34,
+            "longest_upright_ticks": 267,
+            "maximum_cart_m": 1.9427945347961386,
+            "rail_ok": true,
+            "success": true,
+            "ticks": 1500
+          },
+          "seed_label": 3167116,
+          "source_recording": {
+            "bytes": 410660,
+            "path": "historical/canonical16/controller-noisy10-original-prepared01/probe/episode-3167116.npz",
+            "sha256": "ab9ba6f92ef185d01885117c25a02484763b2ade147644671b58eca056f176a5"
+          }
+        },
+        {
+          "RNG_draws": 0,
+          "recording": {
+            "bytes": 410016,
+            "path": "historical/canonical16/parking-timing-discriminator-prepared01/result/park-19/saved-initial-3167117.npz",
+            "sha256": "d4c4f29d2e41a9519ae764c7daaf4e5740ce640051fe38dbe2c12ac55619c36a"
+          },
+          "reset_count_after_initialization": 0,
+          "score": {
+            "complete": true,
+            "finite": true,
+            "float32_delivery_ok": true,
+            "force_ok": true,
+            "invalid_reason": null,
+            "longest_upright_seconds": 5.34,
+            "longest_upright_ticks": 267,
+            "maximum_cart_m": 1.9427942772865263,
+            "rail_ok": true,
+            "success": true,
+            "ticks": 1500
+          },
+          "seed_label": 3167117,
+          "source_recording": {
+            "bytes": 318323,
+            "path": "${SYNTHESIS}/data/16/noisy-original-failure.npz",
+            "sha256": "4d63eed07cf90140d780d2b6caff8e1cee36f53a26efb24062e0aecabea5daee"
+          }
+        },
+        {
+          "RNG_draws": 0,
+          "recording": {
+            "bytes": 410055,
+            "path": "historical/canonical16/parking-timing-discriminator-prepared01/result/park-19/saved-initial-3167118.npz",
+            "sha256": "fc615a82ccd5d5176e94db8f06202a8c9dc2376973e5905aa8bb5411d2a713f9"
+          },
+          "reset_count_after_initialization": 0,
+          "score": {
+            "complete": true,
+            "finite": true,
+            "float32_delivery_ok": true,
+            "force_ok": true,
+            "invalid_reason": null,
+            "longest_upright_seconds": 5.34,
+            "longest_upright_ticks": 267,
+            "maximum_cart_m": 1.942794582260361,
+            "rail_ok": true,
+            "success": true,
+            "ticks": 1500
+          },
+          "seed_label": 3167118,
+          "source_recording": {
+            "bytes": 410767,
+            "path": "historical/canonical16/controller-noisy10-original-prepared01/probe/episode-3167118.npz",
+            "sha256": "19cc53d6353b9a1aa0a1bf9ad853a1ee4673b695667f4079f2594c611a3f257a"
+          }
+        },
+        {
+          "RNG_draws": 0,
+          "recording": {
+            "bytes": 410085,
+            "path": "historical/canonical16/parking-timing-discriminator-prepared01/result/park-19/saved-initial-3167119.npz",
+            "sha256": "5d1a10dbaff56de47467d607f5754d797380058933737d4fe1f092c2e2993418"
+          },
+          "reset_count_after_initialization": 0,
+          "score": {
+            "complete": true,
+            "finite": true,
+            "float32_delivery_ok": true,
+            "force_ok": true,
+            "invalid_reason": null,
+            "longest_upright_seconds": 5.34,
+            "longest_upright_ticks": 267,
+            "maximum_cart_m": 1.9427947855357153,
+            "rail_ok": true,
+            "success": true,
+            "ticks": 1500
+          },
+          "seed_label": 3167119,
+          "source_recording": {
+            "bytes": 410700,
+            "path": "historical/canonical16/controller-noisy10-original-prepared01/probe/episode-3167119.npz",
+            "sha256": "6fca926513d577a97c8613b17172675e4d967997275184cc01b361496d4109cd"
+          }
+        },
+        {
+          "RNG_draws": 0,
+          "recording": {
+            "bytes": 409201,
+            "path": "historical/canonical16/parking-timing-discriminator-prepared01/result/park-19/saved-initial-3167106.npz",
+            "sha256": "5069772d772847e1122454b882e38631ed263f3f22cd13f903ee37dd71564b99"
+          },
+          "reset_count_after_initialization": 0,
+          "score": {
+            "complete": true,
+            "finite": true,
+            "float32_delivery_ok": true,
+            "force_ok": true,
+            "invalid_reason": null,
+            "longest_upright_seconds": 5.34,
+            "longest_upright_ticks": 267,
+            "maximum_cart_m": 1.9427944159266737,
+            "rail_ok": true,
+            "success": true,
+            "ticks": 1500
+          },
+          "seed_label": 3167106,
+          "source_recording": {
+            "bytes": 410290,
+            "path": "${SYNTHESIS}/data/16/probe07-exact.npz",
+            "sha256": "e5bdba54806815b45169540d12766239ae1a58443760c0e045ecbc9b1574d1ea"
+          }
+        }
+      ],
+      "controller": {
+        "bytes": 380726,
+        "path": "historical/canonical16/parking-timing-discriminator-prepared01/result/park-19/controller.npz",
+        "sha256": "22aab72cb16997e5e9a0a86046653b260a7a3969a0bf2e23e115cfe4bdf3dcfa"
+      },
+      "park_ticks": 950,
+      "parking_seconds": 19,
+      "prefix_parity": {
+        "actions": true,
+        "balance_gain": true,
+        "gains": true,
+        "native_defects": true,
+        "offsets": true,
+        "park_gain": true,
+        "parking_target": true,
+        "states": true,
+        "terminal_root": true
+      },
+      "route_ticks": 550
+    }
+  ],
+  "public_export": {
+    "changes": "portable path aliases; runtime inventories excluded; outcome/numeric fields preserved",
+    "historical_stage": "parking-timing-discriminator-prepared01/result/receipt.json",
+    "original_receipt_sha256": "c2aa6283faf29756dfc77f4c9f95269038b1b97e78121e1e2f2b2246265066f6"
+  },
+  "reserved_episodes": 0,
+  "schema": "rage_mill.canonical16_matched_parking_timing.v1",
+  "selected_parking_seconds": 17,
+  "selection": "shortest_parking_duration_with_all11_physical_passes",
+  "wall_seconds": 17.648904193018097
+}

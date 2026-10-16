@@ -1,0 +1,25 @@
+{
+  "schema": "pendulum-arena.synthesis-derivative-checkpoint.v1",
+  "n_links": 15,
+  "role": "New public numeric checkpoint evaluated using the original selected planning derivative provider; not a historical frozen artifact",
+  "reference": "physical-reference.npz",
+  "reference_sha256": "a2195c2b328d85a8f3d0e840c58266cf8115a4830826ec475d1770e906024cc4",
+  "derivatives_sha256": "22176a81448758d4202baac02f5ad2f9dc4b5ae5d113053a0e8bb50908e5acbd",
+  "original_model_receipt_sha256": "8167034e4b6153c355965dca45f2f13ddecb037951f9439dcb87a490d409ebf9",
+  "original_first_casadi_sha256": "b012695b971904ef4029d1569b95a0cee2bcad658d7190a702f3f11542b0e3e8",
+  "numpy": "2.5.2",
+  "casadi": "3.8.1",
+  "commands": 700,
+  "shapes": {
+    "A": [
+      32,
+      22400
+    ],
+    "B": [
+      32,
+      700
+    ]
+  },
+  "native_physics_calls": 0,
+  "reserved_episodes": 0
+}

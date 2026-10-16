@@ -1,0 +1,79 @@
+{
+  "checkpoint_comparison": {
+    "all_array_bytes_equal": true,
+    "fields": {
+      "A": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          34,
+          34
+        ]
+      },
+      "B": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          34,
+          1
+        ]
+      },
+      "P": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          34,
+          34
+        ]
+      },
+      "Q": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          34,
+          34
+        ]
+      },
+      "R": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": []
+      },
+      "gain": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          34
+        ]
+      }
+    }
+  },
+  "commands": [
+    [
+      "validation-work/runtime/bin/python",
+      "synthesis/original/16/scripts/probe_canonical16_parking.py",
+      "--out",
+      "validation-work/validation/parking16/native-hanging"
+    ],
+    [
+      "validation-work/runtime/bin/python",
+      "synthesis/original/16/scripts/probe_canonical16_settling_costs.py",
+      "--saved",
+      "validation-work/validation/parking16/native-hanging",
+      "--out",
+      "validation-work/validation/parking16/product"
+    ]
+  ],
+  "original_receipt": "validation-work/validation/parking16/product/receipt.json",
+  "public_adapter_wall_seconds": 17.32996425498277,
+  "publication_note": "New synthesis-export validation. Paths are portable aliases; original validation JSON hash is recorded separately.",
+  "reserved_episodes": 0,
+  "scope": "New design/diagnostic reproduction; no historical outcome or once-only label is replaced",
+  "stage": "16-parking"
+}

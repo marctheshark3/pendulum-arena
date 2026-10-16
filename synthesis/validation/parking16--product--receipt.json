@@ -1,0 +1,814 @@
+{
+  "CPU_seconds": 13.459235632,
+  "controller_qualified": false,
+  "development_gate_episodes": 0,
+  "fresh_random_draws": 0,
+  "profiles": [
+    {
+      "all_valid": true,
+      "angle_cost": 0.0,
+      "cases": [
+        {
+          "final_error_norm": 0.04531143585234149,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.09346915887982381,
+          "maximum_final_absolute_angle_error": 0.0047468060793285395,
+          "maximum_raw_command": 0.012618496693686901,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/incumbent-3167200.npz",
+            "sha256": "c3a0d133f192b7693420c05df3154e62e4de947e8a9c5eab5adb6a19218cb771"
+          },
+          "saved_seed": 3167200,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 0.017110819953152088,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.06921902301010213,
+          "maximum_final_absolute_angle_error": 0.016915779044261288,
+          "maximum_raw_command": 0.005132962714748095,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/incumbent-3167201.npz",
+            "sha256": "c6a009a48bf1ab6181682974e27a07b1d97885638beb45494be608c96b19d963"
+          },
+          "saved_seed": 3167201,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 0.014580034228841993,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.0762280103366971,
+          "maximum_final_absolute_angle_error": 0.019644567941419,
+          "maximum_raw_command": 0.007662120613681878,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/incumbent-3167202.npz",
+            "sha256": "d054ed90976b75fdadf6674197dfdaf2cdf841ae46a9d718af47719408dcc179"
+          },
+          "saved_seed": 3167202,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 0.013719651239889488,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.06586465764517045,
+          "maximum_final_absolute_angle_error": 0.002610127021764514,
+          "maximum_raw_command": 0.007364035226789277,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/incumbent-3167203.npz",
+            "sha256": "7352c62d3207b442195a1dc31630b1872423042397fe2fa97323a9bde1aa30b2"
+          },
+          "saved_seed": 3167203,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 0.0622099955713544,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.08240417640036383,
+          "maximum_final_absolute_angle_error": 0.05194210391175219,
+          "maximum_raw_command": 0.012753995069018939,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/incumbent-3167204.npz",
+            "sha256": "1c9f89aa63346e88d71b67c8f6fa37ad2f49446b9da42cda5924ff709901909b"
+          },
+          "saved_seed": 3167204,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 0.022807571774667766,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.06723155793386416,
+          "maximum_final_absolute_angle_error": 0.015761281894121095,
+          "maximum_raw_command": 0.00572247405746695,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/incumbent-3167205.npz",
+            "sha256": "e9f08b8462ab660c5e8facfe3494d8b981611e2437b7b3de7cdcf945f638c751"
+          },
+          "saved_seed": 3167205,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 0.0140006544855938,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.06397403803941071,
+          "maximum_final_absolute_angle_error": 0.004466399357328624,
+          "maximum_raw_command": 0.005347858284263549,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/incumbent-3167206.npz",
+            "sha256": "94f65c065818da394628d7bfc05e37f419a9e8b8687deb5c53acf5c89620c7ba"
+          },
+          "saved_seed": 3167206,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 0.025199166544391895,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.09524105057604253,
+          "maximum_final_absolute_angle_error": 0.013179787133037777,
+          "maximum_raw_command": 0.012411579924747696,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/incumbent-3167207.npz",
+            "sha256": "dd948414fce9238310200b8f44c73aa81777cd6620789285dc4e98b18de56a2a"
+          },
+          "saved_seed": 3167207,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 0.039992451565030285,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.10670695329000639,
+          "maximum_final_absolute_angle_error": 0.03364062117447955,
+          "maximum_raw_command": 0.013029038733375596,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/incumbent-3167208.npz",
+            "sha256": "732b79a52bca3c987f760b600a08705c9664ed45af5571d34ed8559471053055"
+          },
+          "saved_seed": 3167208,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 0.026066109092956584,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.08585582957131588,
+          "maximum_final_absolute_angle_error": 0.013392599729571065,
+          "maximum_raw_command": 0.008850262358034633,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/incumbent-3167209.npz",
+            "sha256": "ed45b3c220c57136ba626941ec181349b95f5be9e833acb2b1081e1ee5330832"
+          },
+          "saved_seed": 3167209,
+          "ticks": 800,
+          "valid": true
+        }
+      ],
+      "control_cost": 1000.0,
+      "gain_norm": 0.1387326818247172,
+      "median_error_ratio": 1.0,
+      "median_final_error_norm": 0.02400336915952983,
+      "passes_prospective_settling_screen": false,
+      "profile": "incumbent",
+      "rate_cost": 0.0,
+      "worst_final_absolute_angle_error": 0.05194210391175219
+    },
+    {
+      "all_valid": true,
+      "angle_cost": 10.0,
+      "cases": [
+        {
+          "final_error_norm": 4.958073916269093e-07,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.26505849666702036,
+          "maximum_final_absolute_angle_error": 8.53253476329942e-08,
+          "maximum_raw_command": 0.1613843425210042,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/angles10-3167200.npz",
+            "sha256": "584d9ae25433be9b7db9123154010c455be4bac020012e652b0137851a2e1561"
+          },
+          "saved_seed": 3167200,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 8.935972966681402e-08,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.0904526901547422,
+          "maximum_final_absolute_angle_error": 1.0690558185665633e-08,
+          "maximum_raw_command": 0.048489453715414264,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/angles10-3167201.npz",
+            "sha256": "058dcdeee8f63f07e701a315f01eea295e53a1e5361eb9b401a2773d367fd4eb"
+          },
+          "saved_seed": 3167201,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 1.709582996343811e-07,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.09300691252368674,
+          "maximum_final_absolute_angle_error": 3.05531016542472e-08,
+          "maximum_raw_command": 0.03270163333837686,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/angles10-3167202.npz",
+            "sha256": "7a03aff46a72b1a40fc5b56dd768106ee397fd9d58a52178691ee7f89a014e74"
+          },
+          "saved_seed": 3167202,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 9.627694002219391e-08,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.09905315395756495,
+          "maximum_final_absolute_angle_error": 8.395744773893251e-09,
+          "maximum_raw_command": 0.029824680893031908,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/angles10-3167203.npz",
+            "sha256": "d6c1d0b5294864570a7ce59fbf130a23efb7972970496c95dcff90ec0fa012f0"
+          },
+          "saved_seed": 3167203,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 1.0053055632699849e-07,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.1465515896835894,
+          "maximum_final_absolute_angle_error": 1.3962888312418184e-08,
+          "maximum_raw_command": 0.10989103403663894,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/angles10-3167204.npz",
+            "sha256": "c4ab9519f2516b808a8646ff739cc908ba013b2cdae8329b360cc39bec65c468"
+          },
+          "saved_seed": 3167204,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 2.1691365428342672e-07,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.09817832793793543,
+          "maximum_final_absolute_angle_error": 3.600408541747069e-08,
+          "maximum_raw_command": 0.08442397440123882,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/angles10-3167205.npz",
+            "sha256": "d16b6836297bcb58c976b42c6fd08b64dcbf2c29b3822a7b59cfb3dcfbd43c63"
+          },
+          "saved_seed": 3167205,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 1.644671834430344e-07,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.06885943279601378,
+          "maximum_final_absolute_angle_error": 2.9009483550278627e-08,
+          "maximum_raw_command": 0.015224982503658953,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/angles10-3167206.npz",
+            "sha256": "389894e3bec4926cc5f1dba1354af5bdbf2be9c95ddb80db61f1b18e4308b32d"
+          },
+          "saved_seed": 3167206,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 3.665457375751937e-07,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.17616473490857915,
+          "maximum_final_absolute_angle_error": 6.071312598475717e-08,
+          "maximum_raw_command": 0.18387572292511534,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/angles10-3167207.npz",
+            "sha256": "9f2446f6c2e8fe4769b00c5e1c6568ebfea54442312e3bc86b0c6639e42c7711"
+          },
+          "saved_seed": 3167207,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 1.3190967598238665e-07,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.18982695461246582,
+          "maximum_final_absolute_angle_error": 2.1890409231958114e-08,
+          "maximum_raw_command": 0.1122574262054791,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/angles10-3167208.npz",
+            "sha256": "8829b0ef2153543d8ba06e7aca7c6f47bc8b72f84a6b6ec5ac6fc9661a77a083"
+          },
+          "saved_seed": 3167208,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 3.4787424639762035e-07,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.144679172505825,
+          "maximum_final_absolute_angle_error": 4.784119854237489e-08,
+          "maximum_raw_command": 0.1397621287425779,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/angles10-3167209.npz",
+            "sha256": "dd9c057281a7ddf5c9106ecf6e0eb931ac3a3c6daec45ce3d2c2d1fd4a47c8c1"
+          },
+          "saved_seed": 3167209,
+          "ticks": 800,
+          "valid": true
+        }
+      ],
+      "control_cost": 1000.0,
+      "gain_norm": 1.630717537782941,
+      "median_error_ratio": 6.987050043852797e-06,
+      "median_final_error_norm": 1.6771274153870777e-07,
+      "passes_prospective_settling_screen": true,
+      "profile": "angles10",
+      "rate_cost": 1.0,
+      "worst_final_absolute_angle_error": 8.53253476329942e-08
+    },
+    {
+      "all_valid": true,
+      "angle_cost": 100.0,
+      "cases": [
+        {
+          "final_error_norm": 6.045062109677223e-05,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.4931885253318759,
+          "maximum_final_absolute_angle_error": 8.308467958073606e-06,
+          "maximum_raw_command": 0.14300743416589495,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/angles100-3167200.npz",
+            "sha256": "a8a44c792b78d520d72273ef612eac57b712c25b50a84ed3e17f2300cec6729f"
+          },
+          "saved_seed": 3167200,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 6.785177292374243e-06,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.15274401953913563,
+          "maximum_final_absolute_angle_error": 5.419209707646644e-07,
+          "maximum_raw_command": 0.11267078815468945,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/angles100-3167201.npz",
+            "sha256": "30be9cc86551b218bd1d8384779d3ab404bb99deaaa46ac618f8965db88c1814"
+          },
+          "saved_seed": 3167201,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 1.9719381114338793e-05,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.19859996033330193,
+          "maximum_final_absolute_angle_error": 2.744101168961066e-06,
+          "maximum_raw_command": 0.02608583900214173,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/angles100-3167202.npz",
+            "sha256": "3fdbe079bddfabde8d005b837d53830746639f1254669b320da8ec9261734e61"
+          },
+          "saved_seed": 3167202,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 1.7449820473188727e-05,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.09599311560476274,
+          "maximum_final_absolute_angle_error": 1.3616065865329336e-06,
+          "maximum_raw_command": 0.021292842003158105,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/angles100-3167203.npz",
+            "sha256": "a9b030ca79b51ccc6e653bf019650d90833a5f58a15349a68b49d622bb01223c"
+          },
+          "saved_seed": 3167203,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 1.4652651028342099e-05,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.2117754870528932,
+          "maximum_final_absolute_angle_error": 2.0086335306146452e-06,
+          "maximum_raw_command": 0.2413158220674678,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/angles100-3167204.npz",
+            "sha256": "4e155f9d94886096e5c8d4df5e4981bf5b742514f0e60d496186f28375784771"
+          },
+          "saved_seed": 3167204,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 1.9738461120713546e-05,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.1660083450777905,
+          "maximum_final_absolute_angle_error": 2.8004254621905034e-06,
+          "maximum_raw_command": 0.12359078432351225,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/angles100-3167205.npz",
+            "sha256": "978b74265f709d6f3a98665b586293504dd9ea58f33da906aa3c239d94f90e2b"
+          },
+          "saved_seed": 3167205,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 1.7561743697635027e-05,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.14405562585818588,
+          "maximum_final_absolute_angle_error": 2.4953373078950847e-06,
+          "maximum_raw_command": 0.01659070523120601,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/angles100-3167206.npz",
+            "sha256": "6cc9d4209ed63637c860e52f3717a871a404e14d8acb7184752af1b82e2f7d62"
+          },
+          "saved_seed": 3167206,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 4.552571830913137e-05,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.35598462870389297,
+          "maximum_final_absolute_angle_error": 6.228865737867295e-06,
+          "maximum_raw_command": 0.19336181279813847,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/angles100-3167207.npz",
+            "sha256": "8d24ff28cc4c2a6b66f1a888bc9a2f1f2e204b96f4d33a36644aac24c9ee70cc"
+          },
+          "saved_seed": 3167207,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 2.5539557817925433e-05,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.15558329453737454,
+          "maximum_final_absolute_angle_error": 3.086589223322278e-06,
+          "maximum_raw_command": 0.15942659489929337,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/angles100-3167208.npz",
+            "sha256": "70bce4fd9627925ea562af183932344e7ebe74c45f8054e2d1e6b02bfceef41f"
+          },
+          "saved_seed": 3167208,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 3.797219467287437e-05,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.18323986968779482,
+          "maximum_final_absolute_angle_error": 4.476880417048079e-06,
+          "maximum_raw_command": 0.26503174135751456,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/angles100-3167209.npz",
+            "sha256": "104c7f732005d4f1a36127474a2c646255d080d7bf336f6614c0ff525d5d2f48"
+          },
+          "saved_seed": 3167209,
+          "ticks": 800,
+          "valid": true
+        }
+      ],
+      "control_cost": 1000.0,
+      "gain_norm": 2.3187952968230703,
+      "median_error_ratio": 0.000821922996992836,
+      "median_final_error_norm": 1.972892111752617e-05,
+      "passes_prospective_settling_screen": true,
+      "profile": "angles100",
+      "rate_cost": 1.0,
+      "worst_final_absolute_angle_error": 8.308467958073606e-06
+    },
+    {
+      "all_valid": true,
+      "angle_cost": 100.0,
+      "cases": [
+        {
+          "final_error_norm": 5.5730071700508415e-05,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.5075785471637343,
+          "maximum_final_absolute_angle_error": 7.983309094239388e-06,
+          "maximum_raw_command": 0.2777183179636464,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/angles100_R100-3167200.npz",
+            "sha256": "9076736a2f3b4d1c4f1b75feb315a333b5270efb334e00ea005fa38a9fde87d9"
+          },
+          "saved_seed": 3167200,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 7.720144453093786e-06,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.1627316374890769,
+          "maximum_final_absolute_angle_error": 6.460314754264118e-07,
+          "maximum_raw_command": 0.28282248665933385,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/angles100_R100-3167201.npz",
+            "sha256": "87bf9f92f7d4ad03ff7649b8d56a4039a73e04a6a0e9e3eb23b73cb92f3350bb"
+          },
+          "saved_seed": 3167201,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 1.9147561938821896e-05,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.1985055097917222,
+          "maximum_final_absolute_angle_error": 2.4867432135700085e-06,
+          "maximum_raw_command": 0.03750837013914099,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/angles100_R100-3167202.npz",
+            "sha256": "1707d94307267cabe0bdb51217f82990c3df8179b16335e3d95b071fa4a0b6d2"
+          },
+          "saved_seed": 3167202,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 1.556529563233778e-05,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.09544993082016287,
+          "maximum_final_absolute_angle_error": 1.3289309446561804e-06,
+          "maximum_raw_command": 0.07044753102433353,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/angles100_R100-3167203.npz",
+            "sha256": "78c88ce34594aa392a8e3e2f3403e13044fcbdf8ef4f817082d159099ed79d7c"
+          },
+          "saved_seed": 3167203,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 1.557882124826133e-05,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.23171073199901632,
+          "maximum_final_absolute_angle_error": 2.231125547869084e-06,
+          "maximum_raw_command": 0.5782815503312696,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/angles100_R100-3167204.npz",
+            "sha256": "23082ee06ca2919f70f81572f8c265ad930170d2b14f09c50a885d9d985d8cd0"
+          },
+          "saved_seed": 3167204,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 1.7320767780290446e-05,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.15269726253082824,
+          "maximum_final_absolute_angle_error": 2.343467579546399e-06,
+          "maximum_raw_command": 0.29132641320528935,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/angles100_R100-3167205.npz",
+            "sha256": "e46086b440de912e2cd9986fb9647daea3ca0b8034223705ba688e7c7f5a6045"
+          },
+          "saved_seed": 3167205,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 1.6604342997567552e-05,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.14429880296945724,
+          "maximum_final_absolute_angle_error": 2.2927265570515942e-06,
+          "maximum_raw_command": 0.01749723000800127,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/angles100_R100-3167206.npz",
+            "sha256": "56148c8da223eb0e9809d959b949acaf7feeecf6cbe5f6723deab49fa20c056a"
+          },
+          "saved_seed": 3167206,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 4.2915089042080185e-05,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.37617799911917266,
+          "maximum_final_absolute_angle_error": 6.140383068675703e-06,
+          "maximum_raw_command": 0.39825854262918103,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/angles100_R100-3167207.npz",
+            "sha256": "102bb6e913187674adaa1d5c65981be326e7c4aa79648f4fd1bbcce644b02e74"
+          },
+          "saved_seed": 3167207,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 2.414942969618833e-05,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.14609909588193726,
+          "maximum_final_absolute_angle_error": 3.2121814390606573e-06,
+          "maximum_raw_command": 0.3596818485746831,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/angles100_R100-3167208.npz",
+            "sha256": "f0632e0eac6e43696179cab0ee13dd7484089ed1ac1e911cc85c82acbc06f50f"
+          },
+          "saved_seed": 3167208,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 2.9786532925253493e-05,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.14968636405942953,
+          "maximum_final_absolute_angle_error": 3.767807069454676e-06,
+          "maximum_raw_command": 0.6309796001436467,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/angles100_R100-3167209.npz",
+            "sha256": "95e54c2272f87a5a954f95e3f550b2b7394203e555f18699707e3bf465665355"
+          },
+          "saved_seed": 3167209,
+          "ticks": 800,
+          "valid": true
+        }
+      ],
+      "control_cost": 100.0,
+      "gain_norm": 5.326334471847954,
+      "median_error_ratio": 0.0007596502281979375,
+      "median_final_error_norm": 1.823416485955617e-05,
+      "passes_prospective_settling_screen": true,
+      "profile": "angles100_R100",
+      "rate_cost": 1.0,
+      "worst_final_absolute_angle_error": 7.983309094239388e-06
+    },
+    {
+      "all_valid": true,
+      "angle_cost": 100.0,
+      "cases": [
+        {
+          "final_error_norm": 5.567633059823575e-05,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.5119496572640249,
+          "maximum_final_absolute_angle_error": 7.991387944716877e-06,
+          "maximum_raw_command": 0.38097309877775437,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/angles100_R10-3167200.npz",
+            "sha256": "d25ad5bd1a8e407cc752afaf32ad899351ef1187322e52706734a15b679cdd63"
+          },
+          "saved_seed": 3167200,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 8.097374694086517e-06,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.1675949614136779,
+          "maximum_final_absolute_angle_error": 7.278865261639567e-07,
+          "maximum_raw_command": 0.4733509839015282,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/angles100_R10-3167201.npz",
+            "sha256": "456a1e4dba3fb0cf77d3e47419ea8e313a17ee12c7a01fd7906bfc7bf920564e"
+          },
+          "saved_seed": 3167201,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 1.9159490515726755e-05,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.19871662494584758,
+          "maximum_final_absolute_angle_error": 2.463997403889806e-06,
+          "maximum_raw_command": 0.04746438262150998,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/angles100_R10-3167202.npz",
+            "sha256": "064774dac31f50b626167a8291d50f9fdcab36df53f1de5d1f30e91c1d294710"
+          },
+          "saved_seed": 3167202,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 1.5263053639945417e-05,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.0942483759332942,
+          "maximum_final_absolute_angle_error": 1.3007029392347987e-06,
+          "maximum_raw_command": 0.15404490661191833,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/angles100_R10-3167203.npz",
+            "sha256": "29d4ff799ec16a2255778e898d5de0da11c0fae8cb54d8b467aa2f33586e664e"
+          },
+          "saved_seed": 3167203,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 1.6420879812620282e-05,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.23988059860573852,
+          "maximum_final_absolute_angle_error": 2.356725464114362e-06,
+          "maximum_raw_command": 0.9808995528089599,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/angles100_R10-3167204.npz",
+            "sha256": "efe4571f8e4b9f8920b6f837f7944cd328e8e73f0afb8ab55f24253d5bfcdf20"
+          },
+          "saved_seed": 3167204,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 1.668036359607238e-05,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.14678399937253275,
+          "maximum_final_absolute_angle_error": 2.2249131159668423e-06,
+          "maximum_raw_command": 0.4648635999143552,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/angles100_R10-3167205.npz",
+            "sha256": "8df098fd8fc290ea2f1770091f4e84185d2aaa308da47407759df9fd98ad194f"
+          },
+          "saved_seed": 3167205,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 1.6530429260992162e-05,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.14414624582656882,
+          "maximum_final_absolute_angle_error": 2.268778696024043e-06,
+          "maximum_raw_command": 0.023105857971366953,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/angles100_R10-3167206.npz",
+            "sha256": "5e4b1aa79c4a77a1a8eda22a31d1ca8d023b1393f1c110e9ace30d239cad671d"
+          },
+          "saved_seed": 3167206,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 4.3311238450706025e-05,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.3835459703177628,
+          "maximum_final_absolute_angle_error": 6.2116785559673815e-06,
+          "maximum_raw_command": 0.5555835674135845,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/angles100_R10-3167207.npz",
+            "sha256": "e3c83c4a942efcd35101758ed933569e1bba26a93ad1cdf1fde4a160b82c6894"
+          },
+          "saved_seed": 3167207,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 2.4543401579314085e-05,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.14220707242808028,
+          "maximum_final_absolute_angle_error": 3.2989450704512535e-06,
+          "maximum_raw_command": 0.5611946797486975,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/angles100_R10-3167208.npz",
+            "sha256": "bf04507d7c19f408905e0cd5c112e63684b6a0cc7ba9e12e55a0910a48d5f052"
+          },
+          "saved_seed": 3167208,
+          "ticks": 800,
+          "valid": true
+        },
+        {
+          "final_error_norm": 2.790220031847482e-05,
+          "invalid_reason": null,
+          "maximum_cart_m": 0.13393862605127077,
+          "maximum_final_absolute_angle_error": 3.5187478935050365e-06,
+          "maximum_raw_command": 1.02329172832058,
+          "recording": {
+            "path": "validation-work/validation/parking16/product/angles100_R10-3167209.npz",
+            "sha256": "a7aacd1ec1702c14ec2dc6ea0c599a152030b50f1c9df53de53447bdbeb094a3"
+          },
+          "saved_seed": 3167209,
+          "ticks": 800,
+          "valid": true
+        }
+      ],
+      "control_cost": 10.0,
+      "gain_norm": 8.579958274975878,
+      "median_error_ratio": 0.0007465588241717721,
+      "median_final_error_norm": 1.7919927055899568e-05,
+      "passes_prospective_settling_screen": true,
+      "profile": "angles100_R10",
+      "rate_cost": 1.0,
+      "worst_final_absolute_angle_error": 7.991387944716877e-06
+    }
+  ],
+  "publication_note": "New synthesis-export validation. Paths are portable aliases; original validation JSON hash is recorded separately.",
+  "reserved_episodes": 0,
+  "schema": "rage_mill.canonical16_saved_settling_cost_component.v1",
+  "selected_profile": "angles10",
+  "selection_rule": "all10valid inrail, median16s error<=.25incumbent, worstcumulativeangleerror<=.01; chooseminimalmedian amongpassing elsekeepincumbent",
+  "source_hashes": {
+    "synthesis/original/16/scripts/probe_canonical16_settling_costs.py": "b382fb9f9e640ac51ec1ffe07c18daefd15d855b564dca2079ad848fcf737ccc",
+    "validation-work/validation/parking16/native-hanging/design.npz": "0eb46b22a34f8dbd4a64e392048cba8450b93adf0eb24d73c779bbf9216a9efd",
+    "validation-work/validation/parking16/native-hanging/parking-3167200.npz": "4da47db46567eb8e8f98472fdc9db44598b8e74c52ef11f1034a921ebc37179f",
+    "validation-work/validation/parking16/native-hanging/parking-3167201.npz": "ed614a4cacab51ef0145920a5e7ed4704e2c7f30a621683cd757a9a93541bbff",
+    "validation-work/validation/parking16/native-hanging/parking-3167202.npz": "8fb2061b5db830b05796e21242bbc0443e53667a2e35680f82902818c0560944",
+    "validation-work/validation/parking16/native-hanging/parking-3167203.npz": "06973bf50e0089d22d582675e155420971d57d8c8a5c6b4917a9e733b32f0c44",
+    "validation-work/validation/parking16/native-hanging/parking-3167204.npz": "5f78bdd396520ce2d8d7b784c80349032085286b8217fae82931ddd66564074a",
+    "validation-work/validation/parking16/native-hanging/parking-3167205.npz": "d2934fc7003f41e174bba80f52b8eb9d310b47ec99535d084a4a82901ee3e977",
+    "validation-work/validation/parking16/native-hanging/parking-3167206.npz": "cfbb3dfe06108c7080e6038c97c5c9cf89f8f331f5c48be184b8ac6f5886bf8c",
+    "validation-work/validation/parking16/native-hanging/parking-3167207.npz": "50f2d6e1c920c9279d6a5b769e29cc6a45ac12e200143e37e78f756205979141",
+    "validation-work/validation/parking16/native-hanging/parking-3167208.npz": "2c900c87c90273464d07a5c9a33a007b7c691a2c3aa0340a1c025780e6b8cbc9",
+    "validation-work/validation/parking16/native-hanging/parking-3167209.npz": "c2af06af8ca1e53244e5748baa359a9cbabdf9bf7147d36eb0efdac1b8b64e64",
+    "validation-work/validation/parking16/native-hanging/receipt.json": "22c4cc2f71a7afd9e9a9875a7bb9d19a2883aa8e0a33b4e28e5b3839e4c41db3"
+  },
+  "source_hashes_unchanged": {
+    "synthesis/original/16/scripts/probe_canonical16_settling_costs.py": true,
+    "validation-work/validation/parking16/native-hanging/design.npz": true,
+    "validation-work/validation/parking16/native-hanging/parking-3167200.npz": true,
+    "validation-work/validation/parking16/native-hanging/parking-3167201.npz": true,
+    "validation-work/validation/parking16/native-hanging/parking-3167202.npz": true,
+    "validation-work/validation/parking16/native-hanging/parking-3167203.npz": true,
+    "validation-work/validation/parking16/native-hanging/parking-3167204.npz": true,
+    "validation-work/validation/parking16/native-hanging/parking-3167205.npz": true,
+    "validation-work/validation/parking16/native-hanging/parking-3167206.npz": true,
+    "validation-work/validation/parking16/native-hanging/parking-3167207.npz": true,
+    "validation-work/validation/parking16/native-hanging/parking-3167208.npz": true,
+    "validation-work/validation/parking16/native-hanging/parking-3167209.npz": true,
+    "validation-work/validation/parking16/native-hanging/receipt.json": true
+  },
+  "wall_seconds": 13.482211961993016
+}

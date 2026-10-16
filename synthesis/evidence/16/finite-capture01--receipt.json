@@ -1,0 +1,380 @@
+{
+  "CPU_seconds": 0.475884512,
+  "controller_qualified": false,
+  "development_gate_episodes": 0,
+  "profiles": [
+    {
+      "after_horizon_action": 0.0,
+      "all_four_local_cases_pass": false,
+      "cases": [
+        {
+          "complete": false,
+          "diagnostic_seed": 3167000,
+          "finite": true,
+          "float32_delivery_ok": true,
+          "force_ok": true,
+          "initial_amplitude": 1e-15,
+          "invalid_reason": "rail escape",
+          "local_capture_success": false,
+          "longest_upright_seconds": 0.52,
+          "longest_upright_ticks": 26,
+          "maximum_cart_m": 3.0039691608282233,
+          "maximum_raw_command": 58370114596.929474,
+          "rail_ok": false,
+          "recording": {
+            "path": "historical/canonical16/finite-capture01/infinite_baseline_250-3167000-1e-15.npz",
+            "sha256": "13b0b96e0ba31c43b876aa3d41f2a81b918c894b790a784e9a6fdfa42c9e10c5"
+          },
+          "ticks": 88
+        },
+        {
+          "complete": false,
+          "diagnostic_seed": 3167000,
+          "finite": true,
+          "float32_delivery_ok": true,
+          "force_ok": true,
+          "initial_amplitude": 1e-11,
+          "invalid_reason": "rail escape",
+          "local_capture_success": false,
+          "longest_upright_seconds": 0.04,
+          "longest_upright_ticks": 2,
+          "maximum_cart_m": 3.003779942930475,
+          "maximum_raw_command": 61884780398.97711,
+          "rail_ok": false,
+          "recording": {
+            "path": "historical/canonical16/finite-capture01/infinite_baseline_250-3167000-1e-11.npz",
+            "sha256": "ce91dea0ecbeca2623f1d8ad1eac304256998cc32f62dc99494ff4c78fbbb4d3"
+          },
+          "ticks": 64
+        },
+        {
+          "complete": false,
+          "diagnostic_seed": 3167001,
+          "finite": true,
+          "float32_delivery_ok": true,
+          "force_ok": true,
+          "initial_amplitude": 1e-15,
+          "invalid_reason": "rail escape",
+          "local_capture_success": false,
+          "longest_upright_seconds": 0.32,
+          "longest_upright_ticks": 16,
+          "maximum_cart_m": 3.0611257841178863,
+          "maximum_raw_command": 98943497448.35873,
+          "rail_ok": false,
+          "recording": {
+            "path": "historical/canonical16/finite-capture01/infinite_baseline_250-3167001-1e-15.npz",
+            "sha256": "6ad71a83029465e4d868fc30425d62c3a587bd091d3013e68f129eb89554f7de"
+          },
+          "ticks": 82
+        },
+        {
+          "complete": false,
+          "diagnostic_seed": 3167001,
+          "finite": true,
+          "float32_delivery_ok": true,
+          "force_ok": true,
+          "initial_amplitude": 1e-11,
+          "invalid_reason": "rail escape",
+          "local_capture_success": false,
+          "longest_upright_seconds": 0.04,
+          "longest_upright_ticks": 2,
+          "maximum_cart_m": 3.088027877664545,
+          "maximum_raw_command": 28800760796.527508,
+          "rail_ok": false,
+          "recording": {
+            "path": "historical/canonical16/finite-capture01/infinite_baseline_250-3167001-1e-11.npz",
+            "sha256": "ec7a4edae1e8abbb03bba7cac57fbb80f3aa223b39121986cff6ef564075a6a6"
+          },
+          "ticks": 72
+        }
+      ],
+      "controller_ticks": 250,
+      "initial_gain_norm": 25298127227.106724,
+      "maximum_gain": 12675985059.998205,
+      "profile": "infinite_baseline_250"
+    },
+    {
+      "after_horizon_action": 0.0,
+      "all_four_local_cases_pass": false,
+      "cases": [
+        {
+          "complete": false,
+          "diagnostic_seed": 3167000,
+          "finite": true,
+          "float32_delivery_ok": true,
+          "force_ok": true,
+          "initial_amplitude": 1e-15,
+          "invalid_reason": "rail escape",
+          "local_capture_success": false,
+          "longest_upright_seconds": 0.54,
+          "longest_upright_ticks": 27,
+          "maximum_cart_m": 3.087494683836401,
+          "maximum_raw_command": 56614446348.29885,
+          "rail_ok": false,
+          "recording": {
+            "path": "historical/canonical16/finite-capture01/finite250-3167000-1e-15.npz",
+            "sha256": "3fa65d36b4901d678a86f609a9fd2884c9354a56da421d3279dfb1bad179f85f"
+          },
+          "ticks": 90
+        },
+        {
+          "complete": false,
+          "diagnostic_seed": 3167000,
+          "finite": true,
+          "float32_delivery_ok": true,
+          "force_ok": true,
+          "initial_amplitude": 1e-11,
+          "invalid_reason": "rail escape",
+          "local_capture_success": false,
+          "longest_upright_seconds": 0.04,
+          "longest_upright_ticks": 2,
+          "maximum_cart_m": 3.0038026772490523,
+          "maximum_raw_command": 60895407518.51557,
+          "rail_ok": false,
+          "recording": {
+            "path": "historical/canonical16/finite-capture01/finite250-3167000-1e-11.npz",
+            "sha256": "2c1ef61a9149b5d51286a9c82a127323e0d5e819470c56f40a1511217572555e"
+          },
+          "ticks": 64
+        },
+        {
+          "complete": false,
+          "diagnostic_seed": 3167001,
+          "finite": true,
+          "float32_delivery_ok": true,
+          "force_ok": true,
+          "initial_amplitude": 1e-15,
+          "invalid_reason": "rail escape",
+          "local_capture_success": false,
+          "longest_upright_seconds": 0.32,
+          "longest_upright_ticks": 16,
+          "maximum_cart_m": 3.0165072636671906,
+          "maximum_raw_command": 29169193164.76249,
+          "rail_ok": false,
+          "recording": {
+            "path": "historical/canonical16/finite-capture01/finite250-3167001-1e-15.npz",
+            "sha256": "a91208113839fe524b4fe159b15b86f3309f1bbecf0d311e71ba85c7ad2373e1"
+          },
+          "ticks": 74
+        },
+        {
+          "complete": false,
+          "diagnostic_seed": 3167001,
+          "finite": true,
+          "float32_delivery_ok": true,
+          "force_ok": true,
+          "initial_amplitude": 1e-11,
+          "invalid_reason": "rail escape",
+          "local_capture_success": false,
+          "longest_upright_seconds": 0.04,
+          "longest_upright_ticks": 2,
+          "maximum_cart_m": 3.01582946621253,
+          "maximum_raw_command": 23701862240.74936,
+          "rail_ok": false,
+          "recording": {
+            "path": "historical/canonical16/finite-capture01/finite250-3167001-1e-11.npz",
+            "sha256": "f4cda43fc5fb3a2b22d07368c0947652d249b41e40f543ea2cf91433335853f2"
+          },
+          "ticks": 70
+        }
+      ],
+      "controller_ticks": 250,
+      "initial_gain_norm": 24977492604.53183,
+      "maximum_gain": 12513667914.091759,
+      "profile": "finite250"
+    },
+    {
+      "after_horizon_action": 0.0,
+      "all_four_local_cases_pass": false,
+      "cases": [
+        {
+          "complete": false,
+          "diagnostic_seed": 3167000,
+          "finite": true,
+          "float32_delivery_ok": true,
+          "force_ok": true,
+          "initial_amplitude": 1e-15,
+          "invalid_reason": "rail escape",
+          "local_capture_success": false,
+          "longest_upright_seconds": 0.52,
+          "longest_upright_ticks": 26,
+          "maximum_cart_m": 3.0977707139084067,
+          "maximum_raw_command": 19167969777.594902,
+          "rail_ok": false,
+          "recording": {
+            "path": "historical/canonical16/finite-capture01/finite300-3167000-1e-15.npz",
+            "sha256": "3e565ad32c10710fefd2fd12fd1a5fc4e8b546570c0fd0163fafdfbbb8f1b606"
+          },
+          "ticks": 84
+        },
+        {
+          "complete": false,
+          "diagnostic_seed": 3167000,
+          "finite": true,
+          "float32_delivery_ok": true,
+          "force_ok": true,
+          "initial_amplitude": 1e-11,
+          "invalid_reason": "rail escape",
+          "local_capture_success": false,
+          "longest_upright_seconds": 0.04,
+          "longest_upright_ticks": 2,
+          "maximum_cart_m": 3.0037992542892513,
+          "maximum_raw_command": 60958675351.59938,
+          "rail_ok": false,
+          "recording": {
+            "path": "historical/canonical16/finite-capture01/finite300-3167000-1e-11.npz",
+            "sha256": "19916510fa59c5d643819181a6c4c25e5294657be3c6bd455a0bc5628c7f5580"
+          },
+          "ticks": 64
+        },
+        {
+          "complete": false,
+          "diagnostic_seed": 3167001,
+          "finite": true,
+          "float32_delivery_ok": true,
+          "force_ok": true,
+          "initial_amplitude": 1e-15,
+          "invalid_reason": "rail escape",
+          "local_capture_success": false,
+          "longest_upright_seconds": 0.32,
+          "longest_upright_ticks": 16,
+          "maximum_cart_m": 3.056398985708937,
+          "maximum_raw_command": 38452588988.55243,
+          "rail_ok": false,
+          "recording": {
+            "path": "historical/canonical16/finite-capture01/finite300-3167001-1e-15.npz",
+            "sha256": "cd4ec5328534ea761e9cfb52aa68b678d0fa8f8316431b5d5eb4953f8630da44"
+          },
+          "ticks": 73
+        },
+        {
+          "complete": false,
+          "diagnostic_seed": 3167001,
+          "finite": true,
+          "float32_delivery_ok": true,
+          "force_ok": true,
+          "initial_amplitude": 1e-11,
+          "invalid_reason": "rail escape",
+          "local_capture_success": false,
+          "longest_upright_seconds": 0.04,
+          "longest_upright_ticks": 2,
+          "maximum_cart_m": 3.0114377350457477,
+          "maximum_raw_command": 27491305922.035408,
+          "rail_ok": false,
+          "recording": {
+            "path": "historical/canonical16/finite-capture01/finite300-3167001-1e-11.npz",
+            "sha256": "c35e4748dfd24ef0b869634a299261c384a160719f582c72a8c56794430df58b"
+          },
+          "ticks": 70
+        }
+      ],
+      "controller_ticks": 300,
+      "initial_gain_norm": 25021913978.79426,
+      "maximum_gain": 12536157315.017107,
+      "profile": "finite300"
+    },
+    {
+      "after_horizon_action": 0.0,
+      "all_four_local_cases_pass": false,
+      "cases": [
+        {
+          "complete": false,
+          "diagnostic_seed": 3167000,
+          "finite": true,
+          "float32_delivery_ok": true,
+          "force_ok": true,
+          "initial_amplitude": 1e-15,
+          "invalid_reason": "rail escape",
+          "local_capture_success": false,
+          "longest_upright_seconds": 1.48,
+          "longest_upright_ticks": 74,
+          "maximum_cart_m": 3.0024280708130116,
+          "maximum_raw_command": 22298998672.316177,
+          "rail_ok": false,
+          "recording": {
+            "path": "historical/canonical16/finite-capture01/receding100_for250-3167000-1e-15.npz",
+            "sha256": "21e85b7dadceadd63952723238a729a0dea81e9da9c6990ccd8d106c137ea993"
+          },
+          "ticks": 136
+        },
+        {
+          "complete": false,
+          "diagnostic_seed": 3167000,
+          "finite": true,
+          "float32_delivery_ok": true,
+          "force_ok": true,
+          "initial_amplitude": 1e-11,
+          "invalid_reason": "rail escape",
+          "local_capture_success": false,
+          "longest_upright_seconds": 0.04,
+          "longest_upright_ticks": 2,
+          "maximum_cart_m": 3.077764016230271,
+          "maximum_raw_command": 68138431706.03697,
+          "rail_ok": false,
+          "recording": {
+            "path": "historical/canonical16/finite-capture01/receding100_for250-3167000-1e-11.npz",
+            "sha256": "36a5f43d1342b715dfe7649e11d707e0d66b2c6ae1621db184486030b72b3d0c"
+          },
+          "ticks": 109
+        },
+        {
+          "complete": false,
+          "diagnostic_seed": 3167001,
+          "finite": true,
+          "float32_delivery_ok": true,
+          "force_ok": true,
+          "initial_amplitude": 1e-15,
+          "invalid_reason": "rail escape",
+          "local_capture_success": false,
+          "longest_upright_seconds": 0.76,
+          "longest_upright_ticks": 38,
+          "maximum_cart_m": 3.0049334072533855,
+          "maximum_raw_command": 24096936046.812687,
+          "rail_ok": false,
+          "recording": {
+            "path": "historical/canonical16/finite-capture01/receding100_for250-3167001-1e-15.npz",
+            "sha256": "c6d274e8b99988a5a935da8af54abc84c1473b891cca680d5183115dc54a9cb3"
+          },
+          "ticks": 100
+        },
+        {
+          "complete": false,
+          "diagnostic_seed": 3167001,
+          "finite": true,
+          "float32_delivery_ok": true,
+          "force_ok": true,
+          "initial_amplitude": 1e-11,
+          "invalid_reason": "rail escape",
+          "local_capture_success": false,
+          "longest_upright_seconds": 0.04,
+          "longest_upright_ticks": 2,
+          "maximum_cart_m": 3.004128322407131,
+          "maximum_raw_command": 24165638567.04339,
+          "rail_ok": false,
+          "recording": {
+            "path": "historical/canonical16/finite-capture01/receding100_for250-3167001-1e-11.npz",
+            "sha256": "7e1fcb4ce8380dd0714cb0c2a8e1c79a207fbc2fef77bb54963b904a44d5a02c"
+          },
+          "ticks": 64
+        }
+      ],
+      "controller_ticks": 250,
+      "initial_gain_norm": 10635776109.769987,
+      "maximum_gain": 5512791956.29095,
+      "profile": "receding100_for250"
+    }
+  ],
+  "public_export": {
+    "changes": "portable path aliases; runtime inventories excluded; outcome/numeric fields preserved",
+    "historical_stage": "finite-capture01/receipt.json",
+    "original_receipt_sha256": "b7a8cf74fd7a55b7a7357bd0eebf4fb338fb94ca08530b9d68ffec6d37fa8cdd"
+  },
+  "reserved_episodes": 0,
+  "schema": "rage_mill.canonical16_finite_capture_component.v1",
+  "scope": "Local upright matched initial states, finite maintenance then zero force; no hanging-start qualification",
+  "source_design": {
+    "path": "${SYNTHESIS}/data/16/design.npz",
+    "sha256": "68e73af89525c307fb05788f02c1e140be93dbdc47251a419b846e5a1ff30bdf"
+  },
+  "wall_seconds": 0.476728436013218
+}

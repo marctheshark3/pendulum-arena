@@ -1,0 +1,150 @@
+{
+  "checkpoint_comparison": {
+    "all_array_bytes_equal": true,
+    "fields": {
+      "Q": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          32,
+          32
+        ]
+      },
+      "actions": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          700
+        ]
+      },
+      "balance_gain": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          32
+        ]
+      },
+      "gains": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          700,
+          32
+        ]
+      },
+      "offsets": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          700
+        ]
+      },
+      "park_gain": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          32
+        ]
+      },
+      "residuals": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          701,
+          32
+        ]
+      },
+      "roots": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          701,
+          32,
+          32
+        ]
+      },
+      "states": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          701,
+          32
+        ]
+      },
+      "terminal_root": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          32,
+          32
+        ]
+      }
+    }
+  },
+  "commands": [
+    [
+      "validation-work/runtime/bin/python",
+      "synthesis/original/15/scripts/validate_canonical_candidate.py",
+      "--reference",
+      "synthesis/data/15/physical-reference.npz",
+      "--model",
+      "validation-work/validation/model15",
+      "--design",
+      "synthesis/data/15/design.npz",
+      "--out",
+      "validation-work/validation/prototype15/prototype",
+      "--seed",
+      "3156000",
+      "--episodes",
+      "1",
+      "--exact",
+      "--park-seconds",
+      "16",
+      "--cart-target",
+      "0",
+      "--tracking-cost",
+      "1000",
+      "--native-bias",
+      "--native-value",
+      "--lookahead",
+      "1",
+      "--optimizer",
+      "bounded",
+      "--parking-decay",
+      "1.2",
+      "--balance-after",
+      "1500",
+      "--riccati-precision",
+      "double",
+      "--joint-lookahead",
+      "2"
+    ],
+    [
+      "validation-work/runtime/bin/python",
+      "synthesis/original/15/scripts/prepare_canonical_controller.py",
+      "--prototype",
+      "validation-work/validation/prototype15/prototype",
+      "--design",
+      "synthesis/data/15/design.npz",
+      "--out",
+      "validation-work/validation/prototype15/product",
+      "--bounded-planning"
+    ]
+  ],
+  "original_receipt": null,
+  "public_adapter_wall_seconds": 11.964335035008844,
+  "publication_note": "New synthesis-export validation. Paths are portable aliases; original validation JSON hash is recorded separately.",
+  "reserved_episodes": 0,
+  "scope": "New design/diagnostic reproduction; no historical outcome or once-only label is replaced",
+  "stage": "15-prototype"
+}

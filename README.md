@@ -99,6 +99,17 @@ payload and byte-preserving benchmark source export. See [benchmark/README.md](b
 for inspection and native replay. The original private repository's unrelated
 history is not included in the export.
 
+## Reproduce the controller design
+
+The [fifteen/sixteen synthesis export](synthesis/README.md) includes original
+reference-generation source, orbit and parking construction, selected intermediate
+checkpoints, feedback/value regeneration and a fresh exact-hanging diagnostic.
+Its [detailed answers](synthesis/ANSWERS.md) explain the five-hertz orbit,
+700-to-650 feedback prefix, actual arithmetic and retained before/after evidence.
+The [stage recipes](synthesis/RECIPES.md) distinguish regenerated designs,
+optimizer feasibility and complete native episode success. This is an additive
+design export; historical qualification source and evidence remain preserved.
+
 ## Credits and protocol
 
 The task is derived from [Corben Sorenson's published cartpole work](https://github.com/corbensorenson/cartpole),
@@ -113,9 +124,9 @@ and the native [fifteen-link](dist/data/protocol-canonical15.json) and
 ## Hosting
 
 The static site is published through Sites. `.openai/hosting.json` retains its
-project identity and `dist/` output. Public GitHub source mirrors the exact
-deployed commit. No user credentials or submission secrets are shipped to the
-browser. GitHub issues and PRs are the public review queue; there is no pretend
+project identity and `dist/` output. Public GitHub source includes the deployed
+static assets and separate synthesis tooling. No user credentials or submission
+secrets are shipped to the browser. GitHub issues and PRs are the public review queue; there is no pretend
 upload service or background score submission.
 
 Website code is MIT. External source, media and evidence retain their own licenses.

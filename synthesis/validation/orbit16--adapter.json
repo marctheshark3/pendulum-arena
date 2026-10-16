@@ -1,0 +1,86 @@
+{
+  "checkpoint_comparison": {
+    "all_array_bytes_equal": true,
+    "fields": {
+      "actions": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          100
+        ]
+      },
+      "analytic_residuals": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          100,
+          34
+        ]
+      },
+      "gains": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          250,
+          34
+        ]
+      },
+      "harmonic_initializer": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          100,
+          34
+        ]
+      },
+      "native_residuals": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          100,
+          34
+        ]
+      },
+      "offsets": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          250
+        ]
+      },
+      "states": {
+        "array_bytes_equal": true,
+        "dtype": "float64",
+        "max_absolute_difference": 0.0,
+        "shape": [
+          101,
+          34
+        ]
+      }
+    }
+  },
+  "commands": [
+    [
+      "validation-work/runtime/bin/python",
+      "synthesis/original/16/scripts/probe_canonical16_dynamic_orbit.py",
+      "--model",
+      "validation-work/validation/model16",
+      "--design",
+      "synthesis/data/16/design.npz",
+      "--out",
+      "validation-work/validation/orbit16/product"
+    ]
+  ],
+  "original_receipt": "validation-work/validation/orbit16/product/receipt.json",
+  "public_adapter_wall_seconds": 2.424797151994426,
+  "publication_note": "New synthesis-export validation. Paths are portable aliases; original validation JSON hash is recorded separately.",
+  "reserved_episodes": 0,
+  "scope": "New design/diagnostic reproduction; no historical outcome or once-only label is replaced",
+  "stage": "16-orbit"
+}

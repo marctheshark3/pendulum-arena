@@ -1,0 +1,6 @@
+{
+  "commands": 800,
+  "exact_hanging": true,
+  "publication_note": "New synthesis-export validation. Paths are portable aliases; original validation JSON hash is recorded separately.",
+  "scope": "Reconstructed actual postparking input to bridge synthesis, not a full task episode"
+}

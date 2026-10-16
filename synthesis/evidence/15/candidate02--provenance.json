@@ -1,0 +1,20 @@
+{
+  "controller_qualified": false,
+  "design": "${SYNTHESIS}/data/15/design.npz",
+  "design_sha256": "e334b47835a978c04d035ca1b9d5921558a1b8261855c9650e7a39304e7f3ca9",
+  "method": "bounded native route planning from the observed hanging-settle state",
+  "model_receipt_sha256": "8167034e4b6153c355965dca45f2f13ddecb037951f9439dcb87a490d409ebf9",
+  "offline_riccati_precision": "double",
+  "parking_decay": 1.2,
+  "prototype": "historical/canonical15/physical-native-joint2-exact01",
+  "prototype_controller_sha256": "ef7f3e1271f0bb7578c141c4fd122fae68d5cdd37cbdfc15489223664e6380bb",
+  "prototype_receipt_sha256": "999f18082348f01264c700cd836b34205ce997cccdc3fb5f1d6f563d25e7ba6f",
+  "public_export": {
+    "changes": "portable path aliases; runtime inventories excluded; outcome/numeric fields preserved",
+    "historical_stage": "candidate02/provenance.json",
+    "original_receipt_sha256": "f200388e34b5deb918c2b44bd5b2e2bafd6ed17ab100f07fa2471fd4aacd9ab0"
+  },
+  "reference_sha256": "a2195c2b328d85a8f3d0e840c58266cf8115a4830826ec475d1770e906024cc4",
+  "reserved_episodes": 0,
+  "schema": "rage_mill.canonical15_controller.v1"
+}

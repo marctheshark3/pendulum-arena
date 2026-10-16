@@ -1,0 +1,6 @@
+# Selected design runtime; Linux/aarch64 Python 3.12.3 was used for the validation.
+numpy==2.5.2
+scipy==1.18.1
+mujoco==3.3.5
+casadi==3.8.1
+mpmath==1.3.0
