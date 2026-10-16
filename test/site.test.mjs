@@ -46,13 +46,48 @@ function fixture(t,counts=[15,16]){
     write('dist/assets/canonical16-im-still-standing.provenance.json',p);
     write('dist/index.html',readFileSync(join(root,'dist/index.html'),'utf8')+'\n<video src="/assets/canonical16-im-still-standing.mp4"></video>');
   };
-  return {root,write,mutate,music};
+  const telemetry=()=>{
+    const summary={video_sha256:sha('scientific held-out 16'),seed:216500,frames:1500,fps:50,seconds:30};
+    const manifest={files:[
+      {path:'reserved/video/episode-216500/tape.npz',sha256:sha('saved tape 16')},
+      {path:'reserved/video/episode-216500/receipt.json',sha256:sha('saved episode receipt 16')}
+    ]};
+    for(const [file,contents] of [['video.json',summary],['files.json',manifest]]){
+      write(`dist/evidence/canonical16/${file}`,contents);
+      mutate('dist/data/registry.json',r=>r.records[1].evidence.push({kind:'receipt',
+        url:`https://github.com/marctheshark3/pendulum-arena/releases/download/canonical16/${file}`,
+        sha256:sha(JSON.stringify(contents))}));
+    }
+    const p={schema:'pendulum_arena.telemetry_video.v1',video:'canonical16-telemetry.mp4',
+      video_sha256:sha('new 1080p branded pixels'),scientific_video:'canonical16.mp4',
+      scientific_video_sha256:sha('scientific held-out 16'),
+      source_recording_sha256:sha('saved tape 16'),source_receipt_sha256:sha('saved episode receipt 16'),
+      n_links:16,seed:216500,park_ticks:850,frames:1500,fps:50,duration_seconds:30,
+      dimensions:[1280,1080],state_samples:'post-command 1..1500',
+      new_simulation_or_controller_inference:false,complete:true};
+    write('dist/assets/canonical16-telemetry.mp4','new 1080p branded pixels');
+    write('dist/assets/canonical16-telemetry.provenance.json',p);
+    return p;
+  };
+  const telemetryMusic=()=>{
+    const p={schema:'rage_mill.canonical16_music_share.v1',video:'canonical16-telemetry-im-still-standing.mp4',
+      video_sha256:sha('music mux of new 1080p pixels'),original_video:'canonical16-telemetry.mp4',
+      original_video_sha256:sha('new 1080p branded pixels'),original_provenance:'canonical16-telemetry.provenance.json',
+      scientific_video:'canonical16.mp4',scientific_video_sha256:sha('scientific held-out 16'),
+      frames:1500,fps:50,duration_seconds:30,resolution:[1280,1080],complete:true,
+      video_stream_copied_without_reencoding:true,
+      independent_review:{all_1500_decoded_video_frames_and_timestamps_identical:true}};
+    write(`dist/assets/${p.video}`,'music mux of new 1080p pixels');
+    write('dist/assets/canonical16-telemetry-im-still-standing.provenance.json',p);
+    write('dist/index.html',readFileSync(join(root,'dist/index.html'),'utf8')+`\n<video src="/assets/${p.video}"></video>`);
+  };
+  return {root,write,mutate,music,telemetry,telemetryMusic};
 }
 const errors=f=>checkSite(f.root).problems.join('\n');
 
 test('all result counts and standalone protocols pass, including future counts',t=>{
   const f=fixture(t,[15,16,17]);
-  assert.deepEqual(checkSite(f.root),{problems:[],localAssets:3,protocols:3,scientificVideos:3,soundtrackDerivatives:0});
+  assert.deepEqual(checkSite(f.root),{problems:[],localAssets:3,protocols:3,scientificVideos:3,telemetryRenders:0,soundtrackDerivatives:0});
 });
 test('receipt lookup uses each result count rather than the fifteen directory',t=>{
   const f=fixture(t);f.write('dist/evidence/canonical16/audit.json',{links:16,qualified:false});
@@ -90,9 +125,9 @@ test('soundtrack original and derivative bytes must independently match provenan
 test('missing or relabeled soundtrack provenance cannot bypass its checks',t=>{
   const f=fixture(t);f.music();
   f.mutate('dist/assets/canonical16-im-still-standing.provenance.json',p=>p.schema='unrelated');
-  assert.match(errors(f),/Invalid soundtrack provenance schema/);
+  assert.match(errors(f),/Invalid soundtrack or telemetry provenance schema/);
   rmSync(join(f.root,'dist/assets/canonical16-im-still-standing.provenance.json'));
-  assert.match(errors(f),/Missing soundtrack provenance/);
+  assert.match(errors(f),/Missing soundtrack or telemetry provenance/);
 });
 test('incomplete frame-preservation review and count aliases are rejected',t=>{
   const f=fixture(t);f.music();
@@ -144,4 +179,78 @@ test('a second repository-hosted controller at the same count can use its own sc
   assert.equal(errors(f),'');
   f.write('dist/assets/canonical16-controller2.mp4','tampered');
   assert.match(errors(f),/Evidence bytes do not match registry: assets\/canonical16-controller2.mp4/);
+});
+
+test('telemetry and its music derivative preserve the scientific root while permitting new pixels',t=>{
+  const f=fixture(t);f.music();f.telemetry();f.telemetryMusic();
+  assert.equal(errors(f),'');
+  assert.equal(checkSite(f.root).telemetryRenders,1);
+  assert.equal(checkSite(f.root).soundtrackDerivatives,2);
+  assert.notEqual(sha('new 1080p branded pixels'),sha('scientific held-out 16'));
+});
+test('telemetry tape and episode receipt must match the exact registered seed manifest rows',async t=>{
+  for(const [field,value] of [['source_recording_sha256','a'.repeat(64)],
+                            ['source_receipt_sha256','b'.repeat(64)],['seed',216501]]){
+    await t.test(field,t=>{
+      const f=fixture(t);f.telemetry();
+      f.mutate('dist/assets/canonical16-telemetry.provenance.json',p=>p[field]=value);
+      assert.match(errors(f),/recording\/receipt is not in the registered manifest/);
+    });
+  }
+});
+test('telemetry cannot trust a forged or unregistered source manifest',t=>{
+  const f=fixture(t);f.telemetry();
+  f.mutate('dist/evidence/canonical16/files.json',p=>p.files[0].sha256='a'.repeat(64));
+  f.mutate('dist/assets/canonical16-telemetry.provenance.json',p=>p.source_recording_sha256='a'.repeat(64));
+  assert.match(errors(f),/Telemetry source summaries are not registered evidence/);
+  f.mutate('dist/data/registry.json',r=>r.records[1].evidence=r.records[1].evidence.filter(e=>!e.url.endsWith('/files.json')));
+  assert.match(errors(f),/Telemetry source summaries are not registered evidence/);
+});
+test('telemetry must include every post-command sample without new dynamics or altered timing',async t=>{
+  for(const [field,value] of [['frames',1499],['fps',25],['duration_seconds',29.98],
+      ['dimensions',[1280,720]],['dimensions',null],['state_samples','initial and selected states'],
+      ['new_simulation_or_controller_inference',true],['complete',false],['park_ticks',1501]]){
+    await t.test(`${field}=${JSON.stringify(value)}`,t=>{
+      const f=fixture(t);f.telemetry();
+      f.mutate('dist/assets/canonical16-telemetry.provenance.json',p=>p[field]=value);
+      assert.match(errors(f),/full-episode recorded-state render is incomplete/);
+    });
+  }
+});
+test('telemetry count aliases, scientific root substitution and changed render bytes are refused',t=>{
+  const f=fixture(t);f.telemetry();
+  f.mutate('dist/assets/canonical16-telemetry.provenance.json',p=>{
+    p.n_links=15;p.scientific_video_sha256='a'.repeat(64);
+  });
+  f.write('dist/assets/canonical16-telemetry.mp4','tampered render');
+  assert.match(errors(f),/Telemetry filenames\/count differ/);
+  assert.match(errors(f),/Telemetry source is not the registered scientific video/);
+  assert.match(errors(f),/Telemetry provenance bytes differ/);
+});
+test('music provenance follows its immediate telemetry parent, not the old pixel render',t=>{
+  const f=fixture(t);f.telemetry();f.telemetryMusic();
+  f.mutate('dist/assets/canonical16-telemetry-im-still-standing.provenance.json',p=>{
+    p.original_video_sha256=sha('scientific held-out 16');
+    p.original_provenance='../evidence/canonical16/video.json';
+    p.resolution=[1280,720];
+  });
+  assert.match(errors(f),/Soundtrack original is not the registered scientific video or a validated telemetry render/);
+  assert.match(errors(f),/original provenance points to a different video/);
+  assert.match(errors(f),/telemetry\/scientific lineage or timing differs/);
+});
+test('music cannot bypass invalid telemetry lineage or omit immediate-parent frame preservation',t=>{
+  const f=fixture(t);f.telemetry();f.telemetryMusic();
+  f.mutate('dist/assets/canonical16-telemetry.provenance.json',p=>p.source_recording_sha256='c'.repeat(64));
+  f.mutate('dist/assets/canonical16-telemetry-im-still-standing.provenance.json',p=>{
+    p.independent_review.all_1500_decoded_video_frames_and_timestamps_identical=false;
+  });
+  assert.match(errors(f),/Soundtrack original is not the registered scientific video or a validated telemetry render/);
+  assert.match(errors(f),/frame-preservation review is incomplete/);
+});
+test('missing or relabeled telemetry sidecars cannot turn presentation renders into scientific evidence',t=>{
+  const f=fixture(t);f.telemetry();
+  f.mutate('dist/assets/canonical16-telemetry.provenance.json',p=>p.schema='unrelated');
+  assert.match(errors(f),/Invalid soundtrack or telemetry provenance schema/);
+  rmSync(join(f.root,'dist/assets/canonical16-telemetry.provenance.json'));
+  assert.match(errors(f),/Missing soundtrack or telemetry provenance/);
 });

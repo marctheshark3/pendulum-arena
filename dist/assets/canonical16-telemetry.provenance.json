@@ -1,0 +1,57 @@
+{
+  "schema": "pendulum_arena.telemetry_video.v1",
+  "complete": true,
+  "video": "canonical16-telemetry.mp4",
+  "video_sha256": "b74426f199431125d2cb75ea0706a91e090737640bc929194e9a8defb6b40db0",
+  "video_bytes": 1179865,
+  "scientific_video": "canonical16.mp4",
+  "scientific_video_sha256": "b585c64607de3369b2ab6f18048555bb739f964d6e841f7269be3910cba119fc",
+  "source_recording_sha256": "1612ee824aec4871878a16a4f4b7d02e079b161585217d4f25f8579af9893c55",
+  "source_receipt_sha256": "bcdcb09f7df79cde08f0b80f6da1a19ded907c69f236b6ab9bf6763a1ea34c73",
+  "source_evidence_release": "https://github.com/marctheshark3/pendulum-arena/releases/tag/canonical16-20261016",
+  "source_recording_member": "canonical16-evidence/reserved/video/episode-216500/tape.npz",
+  "source_receipt_member": "canonical16-evidence/reserved/video/episode-216500/receipt.json",
+  "n_links": 16,
+  "seed": 216500,
+  "frames": 1500,
+  "fps": 50,
+  "duration_seconds": 30.0,
+  "dimensions": [
+    1280,
+    1080
+  ],
+  "state_samples": "post-command 1..1500",
+  "park_ticks": 850,
+  "new_simulation_or_controller_inference": false,
+  "render_receipt": {
+    "file": "canonical16-telemetry.render.json",
+    "sha256": "3de2679160587c0f698c7638765d5defc439f3c3093085cca02eaf72e52a8218"
+  },
+  "telemetry_rows": {
+    "file": "canonical16-telemetry.frames.json",
+    "sha256": "a73f570a42d9a76a058ded1a679967808c8cad3b4c7cef1b7d26f396c6fe65f5",
+    "rows": 1500
+  },
+  "renderer": {
+    "bytes": 21667,
+    "file": "scripts/render_telemetry_video.py",
+    "sha256": "52979a8b5b28c588fd6326027349ef723403008a013881f9397694dc1193eca8"
+  },
+  "reference_style": {
+    "historical_sources_modified": false,
+    "renderer": "original fifteen scripts/render_canonical_video.py",
+    "sha256": "550066d65d04d7b4cb7139680142883c004620cb4127163ecff4ce3b6e48101d"
+  },
+  "scope": "Additional presentation of the original qualified saved episode; original scientific video and qualification remain unchanged.",
+  "independent_review": {
+    "receipt": "canonical16-telemetry-im-still-standing.review.json",
+    "sha256": "57c591a0f37c62b251d50ebba9392df498f224762b808adfe6f3f0319a00e23c",
+    "all_1500_telemetry_rows_match_original_recording": true,
+    "recorded_state_mapping_verified": true
+  },
+  "fifteen_style_equivalence": {
+    "receipt": "canonical16-telemetry.standard-review.json",
+    "sha256": "4f5e0a4b41832d0d4988141942e2a2db97ae8ad883ca99f1c06a5ed67197c8cb",
+    "different_reference_rgb_pixels": 0
+  }
+}

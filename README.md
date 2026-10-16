@@ -67,13 +67,22 @@ Failed forecast summaries are retained; full unselected failed forecast state
 tapes were not saved. This differs from fifteen’s forecast retention and is
 disclosed in the result.
 
-The featured replay is the full thirty-second held-out recording from seed
-216500 with Elton John’s **“I’m Still Standing”** added for sharing. The
-[original silent recording](dist/assets/canonical16.mp4) remains the scientific
-video; the [soundtrack derivative](dist/assets/canonical16-im-still-standing.mp4)
-preserves all 1,500 frames. Music attribution and edit timing are recorded in
-[its provenance](dist/assets/canonical16-im-still-standing.provenance.json).
-Third-party music is outside the website’s MIT license.
+The featured replay uses our [standard video format](docs/video-standard.md),
+matching fifteen: a 1280×1080 fixed scene, cart position and applied force,
+wrapped absolute angle, upright streak, and Rage Industries / NeuralYogi footer.
+The [new sixteen-link telemetry video](dist/assets/canonical16-telemetry-im-still-standing.mp4)
+shows every recorded post-command state from seed 216500, once each, with
+Elton John’s **“I’m Still Standing”** soundtrack. The chorus cue coincides with
+the first frame of the final continuous upright hold.
+
+The [silent telemetry render](dist/assets/canonical16-telemetry.mp4) and
+[original qualification video](dist/assets/canonical16.mp4) are both available.
+The new presentation uses the same recorded trajectory; its different layout
+has its own [render provenance](dist/assets/canonical16-telemetry.provenance.json).
+The [music provenance](dist/assets/canonical16-telemetry-im-still-standing.provenance.json)
+binds the unchanged telemetry frames and reused soundtrack. Historical release
+assets and registry records remain unchanged. Third-party music is outside the
+website’s MIT license.
 
 ## First registered campaign
 

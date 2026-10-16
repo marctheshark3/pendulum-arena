@@ -1,0 +1,86 @@
+{
+  "H264_packet_payload_identical": true,
+  "all1500_decoded_video_frames_and_timestamps_identical": true,
+  "all1500_telemetry_rows_18000_fields_match_independent_expected": true,
+  "audio": {
+    "clipped_samples": 0,
+    "decoded_bytes": 21168128,
+    "decoded_pcm_f64le_sha256": "6b1ae98b8580d0a18665489859774f907b749cfa9d1118411e16625e39fe552f",
+    "decoded_samples_including_padding": 2646016,
+    "encoded_packet_payload_sha256": "6b92720f579715309ec021752d30412d40ccbbf5ac284efad614d0528f1a3458",
+    "encoded_payload_bytes": 735224,
+    "peak": 0.6391835808753967,
+    "rms": 0.1432133679947756
+  },
+  "audio_decoded_samples_identical_to_old_soundtrack": true,
+  "audio_encoded_packet_payload_identical_to_old_soundtrack": true,
+  "audio_packet_timestamps_durations_and_hashes_identical": true,
+  "audio_stream_metadata_identical": true,
+  "controller_calls": 0,
+  "evidence": {
+    "audio_packets": {
+      "new": {
+        "bytes": 278644,
+        "file": "new-audio-packets.json",
+        "sha256": "9c1129bac497c4b96ad19a672e996e689ebc58e05327ce85114f022e64aaaf64"
+      },
+      "old": {
+        "bytes": 278644,
+        "file": "old-audio-packets.json",
+        "sha256": "9c1129bac497c4b96ad19a672e996e689ebc58e05327ce85114f022e64aaaf64"
+      }
+    },
+    "ffprobe": {
+      "music": {
+        "bytes": 3687,
+        "file": "music-ffprobe.json",
+        "sha256": "3acae30b509bf699d747d3147cb44e37e9a2ff6cd1c6012bb08938c3612eb342"
+      },
+      "old-music": {
+        "bytes": 3629,
+        "file": "old-music-ffprobe.json",
+        "sha256": "f420ade62985e87d88a94adb5d95c3eb3795f1a94817f2ac2168c6e770ba610d"
+      },
+      "plain": {
+        "bytes": 2199,
+        "file": "plain-ffprobe.json",
+        "sha256": "5ff87b8826189fc46e35d890d22d2a474cb57aab38d773e700c092b014e21c4f"
+      }
+    },
+    "frame_hashes": {
+      "music": {
+        "bytes": 120217,
+        "file": "music.framemd5",
+        "sha256": "0c077108b865be2983e858638087f1f9d356838076687bf1a8f568468c45163b"
+      },
+      "plain": {
+        "bytes": 120217,
+        "file": "plain.framemd5",
+        "sha256": "0c077108b865be2983e858638087f1f9d356838076687bf1a8f568468c45163b"
+      }
+    }
+  },
+  "expected_telemetry_sha256": "1b029e5620aa00a156e579c88b4701c9ae06c5ff6ec4ddd152963bf59ebd6d03",
+  "final_frame_visual_review": "Published fifteen layout matches; sixteen title/seed, 30.00s, Cart -0.025m, Force +22.69N, angle0.07497rad and earned-hold badge are correct.",
+  "first_route_frame_visual_review": "Post851 shows17.02s, Cart -0.053m, Force -14.98N, zero upright streak.",
+  "fps": 50,
+  "frames": 1500,
+  "full_telemetry_byte_identical_to_passing_preview": true,
+  "height": 1080,
+  "historical_artifacts_modified": false,
+  "music_video_sha256": "dedda6538b6f91776c843a13b13dc094d6efe4bd055dcc926235ebc8b81c8cc2",
+  "old_soundtrack_video_sha256": "e3c8c52c286bc7ecc4a58c68d7eedd10e9e1a8a8d9e0605aca752e241fe46fd2",
+  "passed": true,
+  "physics_steps": 0,
+  "plain_video_sha256": "b74426f199431125d2cb75ea0706a91e090737640bc929194e9a8defb6b40db0",
+  "preview_and_final_fonts_and_camera": true,
+  "review_process_CPU_seconds": 0.908916864,
+  "review_wall_seconds": 10.67233763000695,
+  "schema": "rage_mill.telemetry_video_final_independent_review.v1",
+  "seconds": 30.0,
+  "source_renderer_sha256": "52979a8b5b28c588fd6326027349ef723403008a013881f9397694dc1193eca8",
+  "source_tape_receipt_and_renderer_unchanged": true,
+  "telemetry_sha256": "a73f570a42d9a76a058ded1a679967808c8cad3b4c7cef1b7d26f396c6fe65f5",
+  "video_packet_payload_sha256": "b07b13f532e49fbeb205d7431bbf64ba3867e17bae2c033257bc7dbbe989ad53",
+  "width": 1280
+}

@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "dimensions": [
+    1280,
+    1080
+  ],
+  "post_command": 1250,
+  "different_rgb_pixels": 0,
+  "reference_png_sha256": "67e6848ef8471efc9dea95a9e6e33b349096a56774d4f5ac69197d81b666d275",
+  "new_renderer_sha256": "52979a8b5b28c588fd6326027349ef723403008a013881f9397694dc1193eca8",
+  "new_physics_calls": 0,
+  "new_controller_calls": 0
+}

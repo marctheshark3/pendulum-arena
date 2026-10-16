@@ -1,0 +1,70 @@
+{
+  "schema": "rage_mill.canonical16_music_share.v1",
+  "created_at_utc": "2026-10-16T20:23:33.134722+00:00",
+  "scope": "Soundtrack share of the fifteen-style telemetry presentation; same original recorded states.",
+  "video": "canonical16-telemetry-im-still-standing.mp4",
+  "video_sha256": "dedda6538b6f91776c843a13b13dc094d6efe4bd055dcc926235ebc8b81c8cc2",
+  "video_bytes": 1936357,
+  "original_video": "canonical16-telemetry.mp4",
+  "original_video_sha256": "b74426f199431125d2cb75ea0706a91e090737640bc929194e9a8defb6b40db0",
+  "original_video_unchanged": true,
+  "original_provenance": "canonical16-telemetry.provenance.json",
+  "video_stream_copied_without_reencoding": true,
+  "video_stream_packet_payload_sha256": "b07b13f532e49fbeb205d7431bbf64ba3867e17bae2c033257bc7dbbe989ad53",
+  "fps": 50,
+  "frames": 1500,
+  "duration_seconds": 30.0,
+  "resolution": [
+    1280,
+    1080
+  ],
+  "new_simulation_or_controller_inference": false,
+  "music": {
+    "artist": "Elton John",
+    "title": "I'm Still Standing",
+    "source_url": "https://www.youtube.com/watch?v=ZHwVBirqD2s",
+    "excerpt_sha256": "9276ea2096e25c2caac30927c9418cad59389719e49fecc5ad36db4ab1e6355b",
+    "source_excerpt_start_seconds": 26.911,
+    "source_excerpt_end_seconds": 56.911,
+    "chorus_caption_cue_source_seconds": 49.571,
+    "chorus_caption_cue_video_seconds": 22.66,
+    "timing_precision": "Caption cue start; not word-level synchronization",
+    "volume": 0.6,
+    "fade_in_seconds": 0.75,
+    "fade_out_start_seconds": 28.75,
+    "fade_out_seconds": 1.25,
+    "codec": "aac",
+    "sample_rate": 44100,
+    "channels": 2,
+    "download_tool_version": "2026.08.19",
+    "source_timing_receipt_sha256": "555c88a1a740d4f229ef055a7571a4e83890d99afeec9233b337f11d2a72d8a9"
+  },
+  "audio_verification": {
+    "decoded_samples_including_aac_padding": 2646016,
+    "sample_peak": 0.6391835808753967,
+    "peak_dbfs": -3.887487791115281,
+    "rms_dbfs": -16.880328833943445,
+    "non_silent": true,
+    "clipped_samples": 0
+  },
+  "independent_review": {
+    "receipt": "canonical16-telemetry-im-still-standing.review.json",
+    "receipt_sha256": "57c591a0f37c62b251d50ebba9392df498f224762b808adfe6f3f0319a00e23c",
+    "all_1500_decoded_video_frames_and_timestamps_identical": true,
+    "audio_valid_non_silent_and_unclipped": true,
+    "encoded_audio_payload_decoded_samples_and_timing_identical_to_previous_soundtrack": true,
+    "review_scope": "Media and recorded telemetry review under the same project owner; not external benchmark reproduction."
+  },
+  "complete": true,
+  "music_license": "Third-party music remains under its own copyright and is outside the website MIT license.",
+  "original_provenance_sha256": "0de4539deca1975fc7dceeb650ad40632717f5046884cc7b5109b0307373a44e",
+  "scientific_video": "canonical16.mp4",
+  "scientific_video_sha256": "b585c64607de3369b2ab6f18048555bb739f964d6e841f7269be3910cba119fc",
+  "audio_stream_packet_payload_sha256": "6b92720f579715309ec021752d30412d40ccbbf5ac284efad614d0528f1a3458",
+  "audio_copied_without_reencoding": {
+    "video": "canonical16-im-still-standing.mp4",
+    "sha256": "e3c8c52c286bc7ecc4a58c68d7eedd10e9e1a8a8d9e0605aca752e241fe46fd2",
+    "packet_payload_identical": true
+  },
+  "finalized_at_utc": "2026-10-16T20:27:17.400048+00:00"
+}
