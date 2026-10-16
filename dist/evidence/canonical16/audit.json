@@ -1,0 +1,153 @@
+{
+  "actual_episodes": 262,
+  "all262_saved_metrics": {
+    "maximum_cart_abs_m": 1.9427948460034268,
+    "maximum_delivered_force_N": 64.49604988098145,
+    "minimum_upright_seconds": 7.34,
+    "native_physics_calls": 0,
+    "source_sha256": "236a9112fd93a0ab8ce1ae9d811fd273f86c978a636dc38f7027dc7a3e29f957"
+  },
+  "author_attested": true,
+  "cohorts": [
+    {
+      "episodes": 1,
+      "exact": true,
+      "gate": "calibration",
+      "receipt": {
+        "bytes": 7367,
+        "path": "calibration/episodes/receipt.json",
+        "sha256": "2f1769ec72ccc0a90c9b6b63d412c93e8b41af844a18e66fb13de1b1756add61"
+      },
+      "seed_start": 3167109,
+      "stage": "development",
+      "successes": 1
+    },
+    {
+      "episodes": 20,
+      "exact": false,
+      "gate": "development20",
+      "receipt": {
+        "bytes": 11981,
+        "path": "development20/episodes/receipt.json",
+        "sha256": "9cdee9c7faf74f8f1c00f544c8cc774c94023dfac2fe9e40897b5164727cddd6"
+      },
+      "seed_start": 3168000,
+      "stage": "development",
+      "successes": 20
+    },
+    {
+      "episodes": 100,
+      "exact": false,
+      "gate": "development100",
+      "receipt": {
+        "bytes": 31603,
+        "path": "development100/episodes/receipt.json",
+        "sha256": "2c7b66f4558788b085c4aa81c2ce683a9bfed8b357af7e9c1a8754ffe96db69d"
+      },
+      "seed_start": 3168100,
+      "stage": "development",
+      "successes": 100
+    },
+    {
+      "episodes": 20,
+      "exact": false,
+      "gate": "noisy20",
+      "receipt": {
+        "bytes": 12913,
+        "path": "reserved/noisy20/receipt.json",
+        "sha256": "b11d9a28e10edc0762a2122cc094d781d25b5e2e0117333f2c65817dc0df251c"
+      },
+      "seed_start": 216000,
+      "stage": "reserved",
+      "successes": 20
+    },
+    {
+      "episodes": 100,
+      "exact": false,
+      "gate": "noisy100",
+      "receipt": {
+        "bytes": 31497,
+        "path": "reserved/noisy100/receipt.json",
+        "sha256": "e4f7d435ce6390287d0630bfe28c715952e65c7c5aa845b9e358b49cc5d3cebc"
+      },
+      "seed_start": 216100,
+      "stage": "reserved",
+      "successes": 100
+    },
+    {
+      "episodes": 20,
+      "exact": true,
+      "gate": "exact20",
+      "receipt": {
+        "bytes": 12912,
+        "path": "reserved/exact20/receipt.json",
+        "sha256": "8ff11018f1d4d474535ef02ac64e7f492bcd52b495af6438b96cff03e878c5f5"
+      },
+      "seed_start": 216200,
+      "stage": "reserved",
+      "successes": 20
+    },
+    {
+      "episodes": 1,
+      "exact": false,
+      "gate": "video",
+      "receipt": {
+        "bytes": 8515,
+        "path": "reserved/video/receipt.json",
+        "sha256": "ea270121d190f85fd56b4f6a68425224868348c0c64a3337c563c052b2ba903a"
+      },
+      "seed_start": 216500,
+      "stage": "reserved",
+      "successes": 1
+    }
+  ],
+  "global_priority_established": false,
+  "heldout_causal_policy_proof": {
+    "bytes": 303587,
+    "path": "policy-proof/receipt.json",
+    "sha256": "008bd63032a979ff4c2e933443cb7b4f028e02b0bdf2a5effce613367dd09084"
+  },
+  "heldout_independent_policy_review": {
+    "bytes": 171617,
+    "path": "reviews/policy-proof.json",
+    "sha256": "c2cd68e9edd542d9bd6187bd7cd6f8286200900a5d7a26de844e117b41bef217"
+  },
+  "heldout_raw_F64_and_delivered_F32_commands_each_byte_proved": 211500,
+  "heldout_selected_shadow_suffixes_byte_proved": 141,
+  "latency": {
+    "launch_callback_CPU_max_seconds": 0.3108391199999989,
+    "launch_callback_CPU_median_seconds": 0.23598700800000216,
+    "launch_callback_wall_max_seconds": 0.31956467201234773,
+    "launch_callback_wall_median_seconds": 0.235820559959393
+  },
+  "native_audit_scope": "One complete exact calibration: 1,500 cold transitions and 1,500 continuous transitions. The public hash auditor executes no physics.",
+  "native_audited_commands": 1500,
+  "native_audited_episodes": 1,
+  "native_transition_evaluations": 3000,
+  "original_freeze_sha256": "28d97cd6dd8545bdaa5b6c4b9100903fd295e14342f32419cde73a791d1e9571",
+  "original_identity_sha256": "36076035602ee2cab11af5e777a977409823ad4a11b52eba0c998c853f93e607",
+  "passed": true,
+  "prior_fixed17_development100": {
+    "episodes": 100,
+    "failed_seeds": [
+      3166108,
+      3166172
+    ],
+    "passed": 98
+  },
+  "qualification": {
+    "bytes": 3826,
+    "path": "metadata/qualification.json",
+    "sha256": "48b865a129f6352e50cf850e750a7fd6f2199af64e6d500dcadc431568dd7c01"
+  },
+  "recorded_commands": 393000,
+  "schema": "pendulum_arena.canonical16_public_audit.v1",
+  "scope": "Published simulation benchmark; checks produced under the same owner; no hardware claim.",
+  "source_calibration": {
+    "bytes": 787,
+    "path": "calibration/source-calibration.json",
+    "sha256": "bb14e9c1a26a105d514ee367f2c4e0cd26bdebd155d116b3fe48070f57bf8c23"
+  },
+  "third_party_review": false,
+  "wall_clock_realtime_control_established": false
+}

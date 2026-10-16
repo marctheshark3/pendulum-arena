@@ -1,0 +1,199 @@
+{
+  "schema": "rage_mill.canonical16_music_derivative_independent_review.v1",
+  "generated_at": "2026-10-16T19:42:42.892964+00:00",
+  "reviewer": "/root/protocol_bottlenecks",
+  "passed": true,
+  "original_video_unchanged": {
+    "path": "/home/marctheshark/.t3/worktrees/rage-mill/t3-4e306016/docs/media/canonical-sixteen-pendulums.mp4",
+    "sha256": "b585c64607de3369b2ab6f18048555bb739f964d6e841f7269be3910cba119fc",
+    "bytes": 619336
+  },
+  "music_derivative_unchanged": {
+    "path": "/home/marctheshark/.t3/worktrees/rage-mill/t3-4e306016/docs/media/canonical-sixteen-pendulums-im-still-standing.mp4",
+    "sha256": "e3c8c52c286bc7ecc4a58c68d7eedd10e9e1a8a8d9e0605aca752e241fe46fd2",
+    "bytes": 1375804
+  },
+  "same_encoded_H264_packet_payload": true,
+  "encoded_H264_packet_payload_sha256": "e6d6d2bd2d6a25d5acdb70d9bfda867bc4bda2d256874a399ba3d6cc78d640ad",
+  "same_decoded_video_frames_and_timestamps": true,
+  "decoded_frames_compared": 1500,
+  "frame_rate": "50/1",
+  "duration_seconds": 30.0,
+  "dimensions": [
+    1280,
+    720
+  ],
+  "video_codec": "h264",
+  "audio_codec": "aac",
+  "audio": {
+    "decoded_pcm_sha256": "2f2d200fb759b8272d75aba242f60414ecd4f968ebf3d1f6d7bb8c81debe7c6d",
+    "sample_values": 2646016,
+    "samples_per_channel": 1323008,
+    "sample_rate": 44100,
+    "channels": 2,
+    "decoded_seconds": 30.00018140589569,
+    "finite": true,
+    "peak": 0.6391835808753967,
+    "peak_dBFS": -3.887487791115281,
+    "RMS": 0.1432133679947756,
+    "RMS_dBFS": -16.880328833943445,
+    "clipped_sample_values": 0,
+    "non_silent": true,
+    "decoder_errors": ""
+  },
+  "evidence": {
+    "original_ffprobe": {
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical16-elton-edit-20261016/review/original-ffprobe.json",
+      "sha256": "9fa16c85ec203bcb3c720ab02b386340016d00fcb240381a269a7e95b7dcc4a3",
+      "bytes": 2703
+    },
+    "derivative_ffprobe": {
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical16-elton-edit-20261016/review/derivative-ffprobe.json",
+      "sha256": "dcf75073fcd7dfc262744d5c8b44c46363cc521a2f4f0479eadb00a1a69829b4",
+      "bytes": 4539
+    },
+    "original_packet_payload": {
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical16-elton-edit-20261016/review/original-video-payload.sha256",
+      "sha256": "b110724934284272635aed3276c6caef1e3965decf9d69e9bb807e57b897eeb3",
+      "bytes": 72
+    },
+    "derivative_packet_payload": {
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical16-elton-edit-20261016/review/derivative-video-payload.sha256",
+      "sha256": "b110724934284272635aed3276c6caef1e3965decf9d69e9bb807e57b897eeb3",
+      "bytes": 72
+    },
+    "original_decoded_frames": {
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical16-elton-edit-20261016/review/original-decoded-frames.framemd5",
+      "sha256": "119d315e572277004cc1226e6347c28b8f6ec85b4cb250845eb7f18232d8a2a9",
+      "bytes": 120216
+    },
+    "derivative_decoded_frames": {
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical16-elton-edit-20261016/review/derivative-decoded-frames.framemd5",
+      "sha256": "119d315e572277004cc1226e6347c28b8f6ec85b4cb250845eb7f18232d8a2a9",
+      "bytes": 120216
+    }
+  },
+  "commands": [
+    [
+      "ffprobe",
+      "-v",
+      "error",
+      "-count_frames",
+      "-show_streams",
+      "-show_format",
+      "-of",
+      "json",
+      "/home/marctheshark/.t3/worktrees/rage-mill/t3-4e306016/docs/media/canonical-sixteen-pendulums.mp4"
+    ],
+    [
+      "ffprobe",
+      "-v",
+      "error",
+      "-count_frames",
+      "-show_streams",
+      "-show_format",
+      "-of",
+      "json",
+      "/home/marctheshark/.t3/worktrees/rage-mill/t3-4e306016/docs/media/canonical-sixteen-pendulums-im-still-standing.mp4"
+    ],
+    [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-threads",
+      "1",
+      "-i",
+      "/home/marctheshark/.t3/worktrees/rage-mill/t3-4e306016/docs/media/canonical-sixteen-pendulums.mp4",
+      "-map",
+      "0:v:0",
+      "-an",
+      "-c:v",
+      "copy",
+      "-f",
+      "hash",
+      "-hash",
+      "sha256",
+      "pipe:1"
+    ],
+    [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-threads",
+      "1",
+      "-i",
+      "/home/marctheshark/.t3/worktrees/rage-mill/t3-4e306016/docs/media/canonical-sixteen-pendulums-im-still-standing.mp4",
+      "-map",
+      "0:v:0",
+      "-an",
+      "-c:v",
+      "copy",
+      "-f",
+      "hash",
+      "-hash",
+      "sha256",
+      "pipe:1"
+    ],
+    [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-threads",
+      "1",
+      "-i",
+      "/home/marctheshark/.t3/worktrees/rage-mill/t3-4e306016/docs/media/canonical-sixteen-pendulums.mp4",
+      "-map",
+      "0:v:0",
+      "-an",
+      "-c:v",
+      "rawvideo",
+      "-threads",
+      "1",
+      "-f",
+      "framemd5",
+      "pipe:1"
+    ],
+    [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-threads",
+      "1",
+      "-i",
+      "/home/marctheshark/.t3/worktrees/rage-mill/t3-4e306016/docs/media/canonical-sixteen-pendulums-im-still-standing.mp4",
+      "-map",
+      "0:v:0",
+      "-an",
+      "-c:v",
+      "rawvideo",
+      "-threads",
+      "1",
+      "-f",
+      "framemd5",
+      "pipe:1"
+    ],
+    [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-threads",
+      "1",
+      "-i",
+      "/home/marctheshark/.t3/worktrees/rage-mill/t3-4e306016/docs/media/canonical-sixteen-pendulums-im-still-standing.mp4",
+      "-map",
+      "0:a:0",
+      "-vn",
+      "-c:a",
+      "pcm_f32le",
+      "-f",
+      "f32le",
+      "pipe:1"
+    ]
+  ],
+  "native_calls": 0,
+  "controller_calls": 0,
+  "benchmark_reset_draws": 0,
+  "scientific_files_modified": false,
+  "root_media_outputs_modified": false,
+  "scope": "Media-only review. New files are restricted to this review directory; original qualified video and scientific evidence remain unchanged."
+}

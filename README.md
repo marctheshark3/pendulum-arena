@@ -49,6 +49,32 @@ Existing results are retained. Retractions and supersessions are appended with
 reasons and sources. Source/credit corrections have a
 [dedicated form](https://github.com/marctheshark3/pendulum-arena/issues/new?template=correction.yml).
 
+## Sixteen links
+
+The sixteen-link Rage Mill campaign reports **141/141 frozen held-out passes**,
+each with a **7.34 s upright hold**, after disjoint noisy development sets of
+20 and 100. The exact native source calibration has zero dynamics defect and
+initial-state gap. Separate saved-policy checks reproduce all 211,500 held-out
+commands and the selected forecasts byte for byte. These are same-owner checks,
+so the registry entry is author-attested.
+
+The [sixteen-link evidence release](https://github.com/marctheshark3/pendulum-arena/releases/tag/canonical16-20261016)
+includes all 262 actual calibration, development and held-out recordings, their
+selected predictions and the frozen benchmark-specific source. See
+[the public inspection adapters](benchmark/canonical16/README.md) and
+[the exact sixteen-link protocol](dist/data/protocol-canonical16.json).
+Failed forecast summaries are retained; full unselected failed forecast state
+tapes were not saved. This differs from fifteen’s forecast retention and is
+disclosed in the result.
+
+The featured replay is the full thirty-second held-out recording from seed
+216500 with Elton John’s **“I’m Still Standing”** added for sharing. The
+[original silent recording](dist/assets/canonical16.mp4) remains the scientific
+video; the [soundtrack derivative](dist/assets/canonical16-im-still-standing.mp4)
+preserves all 1,500 frames. Music attribution and edit timing are recorded in
+[its provenance](dist/assets/canonical16-im-still-standing.provenance.json).
+Third-party music is outside the website’s MIT license.
+
 ## First registered campaign
 
 The fifteen-link Rage Mill campaign reports exact calibration, disjoint noisy
@@ -72,7 +98,8 @@ explain the historical record. [Corben's fourteen-link import](docs/corben14-imp
 records exactly what was inspected and what was not.
 
 Read the [registry contract](docs/registry.md), [JSON schema](schemas/registry.schema.json)
-and [native fifteen-link protocol](dist/data/protocol-canonical15.json).
+and the native [fifteen-link](dist/data/protocol-canonical15.json) and
+[sixteen-link](dist/data/protocol-canonical16.json) protocols.
 
 ## Hosting
 

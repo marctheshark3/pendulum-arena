@@ -19,7 +19,7 @@
         "uprightConsecutiveSteps": 250,
         "railLimitMeters": 3,
         "forceLimitNewtons": 80,
-        "calibrationTolerance": 1e-8,
+        "calibrationTolerance": 1e-08,
         "integration": {
           "engine": "MuJoCo",
           "engineVersion": "3.3.5",
@@ -103,6 +103,112 @@
             "required": 1,
             "seedStart": 215500,
             "seedEnd": 215500
+          }
+        ]
+      }
+    },
+    {
+      "id": "canonical16-v1",
+      "title": "Published uniform-chain task, sixteen links",
+      "linksMin": 16,
+      "linksMax": 16,
+      "source": {
+        "url": "https://github.com/corbensorenson/cartpole/tree/b84c6413974d5c0831cdf261ce15e58ba65cd3f5",
+        "commit": "b84c6413974d5c0831cdf261ce15e58ba65cd3f5"
+      },
+      "fingerprint": "3aae935e152f9b22f15ca2c3b9f59809bd3abfc56086fef7ea0d27aee5cfb9d3",
+      "requirements": {
+        "durationSeconds": 30,
+        "commandsPerEpisode": 1500,
+        "actionHz": 50,
+        "uprightAngleRad": 0.15,
+        "uprightConsecutiveSteps": 250,
+        "railLimitMeters": 3,
+        "forceLimitNewtons": 80,
+        "calibrationTolerance": 1e-08,
+        "integration": {
+          "engine": "MuJoCo",
+          "engineVersion": "3.3.5",
+          "precision": "binary64",
+          "integrator": "RK4",
+          "timestepSeconds": 0.005,
+          "substeps": 4
+        },
+        "mechanics": {
+          "cartMassKg": 1,
+          "totalLinkMassKg": 1,
+          "totalChainLengthMeters": 3,
+          "capsuleRadiusMeters": 0.025,
+          "armature": 0.0005,
+          "totalHingeDamping": 0.015,
+          "cartDamping": 0.02,
+          "frictionLoss": 0
+        },
+        "reset": {
+          "position": "relative [0, pi, 0, ...]",
+          "noiseStd": 0.05,
+          "cartPositionNoiseStd": 0,
+          "rngOrder": "cart position zero-scale draw; joint positions; all velocities; replacement cart velocity"
+        },
+        "acceptance": {
+          "angleConvention": "wrapped cumulative absolute",
+          "angleComparison": "strictly-less-than",
+          "samples": "post-command only",
+          "fullEpisodeRequired": true,
+          "stateOverwriteAfterInit": false,
+          "liveRetriesAllowed": false,
+          "allFiniteRequired": true
+        },
+        "cohorts": [
+          {
+            "id": "calibration",
+            "stage": "calibration",
+            "noise": "exact",
+            "required": 1
+          },
+          {
+            "id": "dev20",
+            "stage": "development",
+            "noise": "noisy",
+            "required": 20
+          },
+          {
+            "id": "dev100",
+            "stage": "development",
+            "noise": "noisy",
+            "required": 100
+          },
+          {
+            "id": "reserved-noisy20",
+            "stage": "reserved",
+            "noise": "noisy",
+            "required": 20,
+            "seedStart": 216000,
+            "seedEnd": 216019
+          },
+          {
+            "id": "reserved-noisy100",
+            "stage": "reserved",
+            "noise": "noisy",
+            "required": 100,
+            "seedStart": 216100,
+            "seedEnd": 216199
+          },
+          {
+            "id": "reserved-exact20",
+            "stage": "reserved",
+            "noise": "exact",
+            "required": 20,
+            "seedStart": 216200,
+            "seedEnd": 216219
+          },
+          {
+            "id": "video",
+            "stage": "video",
+            "noise": "noisy",
+            "required": 1,
+            "seedStart": 216500,
+            "seedEnd": 216500
           }
         ]
       }
@@ -321,6 +427,227 @@
         "A separate direct-MuJoCo scorer checked all 262 actual episodes and 393,000 commands. It was run by the same owner; external reproduction is not claimed.",
         "Public source is a byte-preserving export of benchmark-specific frozen files, with new portable inspection adapters. The original private repository history is outside this export.",
         "Reported execution timestamps were not recorded as an external timestamp authority. The controller-freeze time is an author declaration."
+      ]
+    },
+    {
+      "id": "rage-mill-canonical16-20261016",
+      "type": "result",
+      "protocolId": "canonical16-v1",
+      "protocolFingerprint": "3aae935e152f9b22f15ca2c3b9f59809bd3abfc56086fef7ea0d27aee5cfb9d3",
+      "links": 16,
+      "qualified": true,
+      "entrant": {
+        "id": "rage-industries",
+        "name": "Rage Industries / NeuralYogi",
+        "url": "https://neuralyogi.com"
+      },
+      "method": {
+        "name": "Frozen trajectory with bounded native launch forecasts",
+        "summary": "Full-state native-model control: 850 hanging-settle commands, then a retained 650-command trajectory feedback prefix. At the observed launch state, a fixed ordered search selects the first of at most 11 cart-error offsets whose native forecast completes the remaining episode and upright hold; the live episode executes once.",
+        "wallClockRealtime": false,
+        "usesObservedStateOnly": true,
+        "disclosures": [
+          "Simulation only. Exact native model and full-state feedback are used. Commands are delivered immediately as clipped float32 normalized actions; feedback arithmetic is binary64.",
+          "50 Hz is simulated action cadence, not a wall-clock realtime guarantee. At most 11 internal 650-command forecasts (7,150 forecast command attempts) are permitted at launch, with no physical state overwrite or additional live reset.",
+          "The 650 retained gains and offsets are a prefix of the original 700-step zero-terminal design; they were not recomputed with a zero value at step 650.",
+          "DEV100 selected the +0.000001 m cart-error profile in two cases; its other 98 cases and all 141 held-out cases selected zero offset. Every selected shadow matched the actual complete suffix byte for byte.",
+          "No hardware, post-initialization disturbance, wall-clock realtime, numerical portability, third-party reproduction, or global-priority claim."
+        ]
+      },
+      "source": {
+        "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical16-20261016/canonical16-source.tar.gz",
+        "sha256": "2214ec1879417cb3b0908a94584185629209261e20273e7eb33bb588877aa083",
+        "commit": "d06e1478834519f797d28fc57a1b8bad09c61d67"
+      },
+      "model": {
+        "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical16-20261016/model.xml",
+        "sha256": "6351ddc4468533786231ac988cb9707f3bec8e327c46e2c5036cb2f041289639"
+      },
+      "runtime": {
+        "engine": "MuJoCo",
+        "engineVersion": "3.3.5",
+        "language": "Python",
+        "languageVersion": "3.12.3",
+        "os": "Linux",
+        "architecture": "aarch64",
+        "precision": "binary64",
+        "dependencies": {
+          "numpy": "2.5.2"
+        }
+      },
+      "timestamps": {
+        "runAt": null,
+        "frozenAt": "2026-10-16T18:41:00Z",
+        "firstPublicAt": "2026-10-16T20:08:18Z",
+        "registeredAt": "2026-10-16T20:08:18.932Z"
+      },
+      "evidence": [
+        {
+          "id": "audit",
+          "kind": "receipt",
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical16-20261016/audit.json",
+          "sha256": "d43a73905b960b659778129cc6a3341e0572db201c6b33bae5baa7b08a7b97de",
+          "publishedAt": "2026-10-16T20:08:18Z"
+        },
+        {
+          "id": "freeze",
+          "kind": "receipt",
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical16-20261016/freeze.json",
+          "sha256": "28d97cd6dd8545bdaa5b6c4b9100903fd295e14342f32419cde73a791d1e9571",
+          "publishedAt": "2026-10-16T20:08:18Z"
+        },
+        {
+          "id": "calibration",
+          "kind": "receipt",
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical16-20261016/calibration.json",
+          "sha256": "661093ab0c45c180995cb80cd611ee131eaf5e307776324d8d05a94cd611fc10",
+          "publishedAt": "2026-10-16T20:08:18Z"
+        },
+        {
+          "id": "development",
+          "kind": "receipt",
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical16-20261016/development.json",
+          "sha256": "f3675813f6b257096274c5e627e10db981546e62d42f47f29e717a037516fd5b",
+          "publishedAt": "2026-10-16T20:08:18Z"
+        },
+        {
+          "id": "reserved",
+          "kind": "receipt",
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical16-20261016/reserved.json",
+          "sha256": "93e08c03e1d958e240022dcefcc1543a3019d637b45682917e66fe139c08257a",
+          "publishedAt": "2026-10-16T20:08:18Z"
+        },
+        {
+          "id": "video",
+          "kind": "receipt",
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical16-20261016/video.json",
+          "sha256": "7bd2162a3d387c1d602460a56adc0e84e93f708666722fd20ccc95405dab63ac",
+          "publishedAt": "2026-10-16T20:08:18Z"
+        },
+        {
+          "id": "heldout-replay",
+          "kind": "video",
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical16-20261016/canonical16.mp4",
+          "sha256": "b585c64607de3369b2ab6f18048555bb739f964d6e841f7269be3910cba119fc",
+          "publishedAt": "2026-10-16T20:08:18Z"
+        },
+        {
+          "id": "full-trajectories-and-forecasts",
+          "kind": "trajectory",
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical16-20261016/canonical16-evidence.tar.gz",
+          "sha256": "3f87079284573ac472329af41de8a223aad532675d006b05f6c4144fc6282811",
+          "publishedAt": "2026-10-16T20:08:18Z"
+        },
+        {
+          "id": "file-manifest",
+          "kind": "receipt",
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical16-20261016/files.json",
+          "sha256": "2caafd9fe7e56af6a74b005d907c56b85e1582b7d5cb83234764e8ac2a47bff1",
+          "publishedAt": "2026-10-16T20:08:18Z"
+        }
+      ],
+      "cohorts": [
+        {
+          "id": "calibration",
+          "stage": "calibration",
+          "noise": "exact",
+          "required": 1,
+          "attempted": 1,
+          "passed": 1,
+          "seedStart": 3167109,
+          "seedEnd": 3167109,
+          "evidenceId": "calibration"
+        },
+        {
+          "id": "dev20",
+          "stage": "development",
+          "noise": "noisy",
+          "required": 20,
+          "attempted": 20,
+          "passed": 20,
+          "seedStart": 3168000,
+          "seedEnd": 3168019,
+          "evidenceId": "development"
+        },
+        {
+          "id": "dev100",
+          "stage": "development",
+          "noise": "noisy",
+          "required": 100,
+          "attempted": 100,
+          "passed": 100,
+          "seedStart": 3168100,
+          "seedEnd": 3168199,
+          "evidenceId": "development"
+        },
+        {
+          "id": "reserved-noisy20",
+          "stage": "reserved",
+          "noise": "noisy",
+          "required": 20,
+          "attempted": 20,
+          "passed": 20,
+          "seedStart": 216000,
+          "seedEnd": 216019,
+          "evidenceId": "reserved"
+        },
+        {
+          "id": "reserved-noisy100",
+          "stage": "reserved",
+          "noise": "noisy",
+          "required": 100,
+          "attempted": 100,
+          "passed": 100,
+          "seedStart": 216100,
+          "seedEnd": 216199,
+          "evidenceId": "reserved"
+        },
+        {
+          "id": "reserved-exact20",
+          "stage": "reserved",
+          "noise": "exact",
+          "required": 20,
+          "attempted": 20,
+          "passed": 20,
+          "seedStart": 216200,
+          "seedEnd": 216219,
+          "evidenceId": "reserved"
+        },
+        {
+          "id": "video",
+          "stage": "video",
+          "noise": "noisy",
+          "required": 1,
+          "attempted": 1,
+          "passed": 1,
+          "seedStart": 216500,
+          "seedEnd": 216500,
+          "evidenceId": "reserved"
+        }
+      ],
+      "metrics": {
+        "commandsPerEpisode": 1500,
+        "secondsPerEpisode": 30,
+        "minUprightSeconds": 7.34,
+        "maxCartMeters": 1.9427948460034268,
+        "maxNativeDefect": 0,
+        "maxInitialGap": 0,
+        "auditedEpisodes": 1,
+        "auditedCommands": 1500
+      },
+      "verification": {
+        "level": "author-attested"
+      },
+      "notes": [
+        "All 262 actual calibration/development/reserved episodes and 393,000 recorded commands were rescored from hash-verified saved tapes. The 7.34-second minimum and cart maximum cover all 262, not only held-out cases.",
+        "Native defect and initial-gap metrics cover the complete exact source-calibration episode: 1,500 cold transitions and a separate 1,500-command continuous native replay, both exact. They do not claim a cold native audit of all 393,000 commands.",
+        "An additional causal policy replay proved all 211,500 held-out raw binary64 and delivered float32 commands plus every selected 650-command shadow/live suffix, including final states, byte for byte. This is separate from native calibration coverage.",
+        "Selected forecast arrays are retained; rejected launch forecasts retain summaries rather than complete forecast arrays. Planning forecasts do not count as additional benchmark episodes or native audit coverage.",
+        "The previous static 17-second candidate failed 2 of 100 development cases before this profile-selector candidate was frozen. That negative cohort is preserved and is not counted toward this result.",
+        "The frozenAt value is the recorded author/committer timestamp of author-generated source snapshot d06e1478834519f797d28fc57a1b8bad09c61d67, which binds the controller/configuration/identity and precedes reserved evaluation. The later gate-freeze JSON has no UTC creation clock. This is not an externally certified experiment timestamp; runAt is unknown.",
+        "Checks and peer reviews were produced under the entrant's ownership. The entry is author-attested; no independent third-party reproduction is asserted.",
+        "The public source archive preserves curated frozen controller, configuration and evaluation bytes, alongside new relocation and hash-checking adapters. The source commit names the original frozen snapshot; its private Git history and native runtime binaries are excluded from the public export.",
+        "The protocol and source lineage credit corbensorenson/cartpole at b84c6413974d5c0831cdf261ce15e58ba65cd3f5 and its earlier fourteen-link route. Different earlier demonstrations remain distinct protocols."
       ]
     }
   ]

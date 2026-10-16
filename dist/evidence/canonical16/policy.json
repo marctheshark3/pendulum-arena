@@ -1,0 +1,83 @@
+{
+  "author_attested": true,
+  "configuration": {
+    "bytes": 2517,
+    "path": "payload/configuration.json",
+    "sha256": "3e8150c964f829022adcc2386f5d064c46b80f6706658376ce383e3f5bc502f8"
+  },
+  "controller": {
+    "bytes": 408657,
+    "path": "payload/controller.npz",
+    "sha256": "de5afbb5db053a5094e01bd913bf0f7d2f4b17abd1a2679d3821f341e60ffcdb"
+  },
+  "global_priority_established": false,
+  "native_xml_sha256": "6351ddc4468533786231ac988cb9707f3bec8e327c46e2c5036cb2f041289639",
+  "parameters": {
+    "align_launch_branches": false,
+    "base_factory": "rage_mill.canonical16_fixed_timing_policy.controller_factory",
+    "cart_error_offsets_m": [
+      0.0,
+      1e-06,
+      -1e-06,
+      1e-05,
+      -1e-05,
+      0.0001,
+      -0.0001,
+      0.001,
+      -0.001,
+      0.01,
+      -0.01
+    ],
+    "design_origin_controller_sha256": "d71eec45605803395859c780a965497dcd2fbf78fb8857f908012a4bb5522507",
+    "dot_scope": "float64",
+    "factory": "rage_mill.canonical16_profile_policy.controller_factory",
+    "forecast_horizon_ticks": 650,
+    "forecast_reset_draws": 0,
+    "forecast_state": "current_observed_native_q_v_only",
+    "maximum_forecast_commands": 7150,
+    "original_feedback_horizon_ticks": 700,
+    "park_ticks": 850,
+    "physical_state_modifications": 0,
+    "post_route": "zero",
+    "retained_feedback_prefix_ticks": 650,
+    "route_ticks": 650,
+    "selection": "first_complete_in_rail_native_forecast_with_250_postcommand_upright_ticks",
+    "selection_tick": 850,
+    "state_coordinates": "native_relative_q17_v17",
+    "table": "registered_shortest_all11_timing_17s_exact_prefix",
+    "terminal_root_provenance": "original700_step_zero_terminal_design_not_recomputed_at650"
+  },
+  "protocol": {
+    "capsule_radius_m": 0.025,
+    "cart_damping": 0.02,
+    "cart_mass_kg": 1.0,
+    "episode_seconds": 30.0,
+    "force_limit_N": 80.0,
+    "frame_skip": 4,
+    "joint_armature": 0.0005,
+    "n_links": 16,
+    "physics_dt_s": 0.005,
+    "rail_limit_m": 3.0,
+    "required_hold_seconds": 5.0,
+    "reset_noise_std": 0.05,
+    "total_hinge_damping": 0.015,
+    "total_length_m": 3.0,
+    "total_mass_kg": 1.0,
+    "upright_limit_rad": 0.15
+  },
+  "runtime": {
+    "executable": "/usr/bin/python3.12",
+    "mujoco": "3.3.5",
+    "numpy": "2.5.2",
+    "platform": "Linux-6.17.0-1014-nvidia-aarch64-with-glibc2.39",
+    "python": "3.12.3",
+    "threads": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1"
+    }
+  },
+  "schema": "pendulum_arena.canonical16_policy.v1",
+  "scope": "Published simulation benchmark; checks produced under the same owner; no hardware claim.",
+  "third_party_review": false,
+  "wall_clock_realtime_control_established": false
+}

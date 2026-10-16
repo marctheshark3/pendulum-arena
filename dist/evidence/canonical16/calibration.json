@@ -1,0 +1,19 @@
+{
+  "exact_episodes": 1,
+  "initial_state_gap": 0.0,
+  "maximum_dynamics_defect": 0.0,
+  "native_proof": {
+    "bytes": 2009,
+    "path": "calibration/native-proof/receipt.json",
+    "sha256": "0c0cdc322fb9d94e3964f5e71b335c98fe67bfb56f117614d4a3fc9c1c443357"
+  },
+  "native_transition_scope": "1,500 cold transitions and 1,500 continuous transitions on one exact calibration episode; no claim of a native transition audit across all 262 episodes.",
+  "passed": true,
+  "schema": "pendulum_arena.canonical16_calibration.v1",
+  "seed": 3167109,
+  "source_calibration": {
+    "bytes": 787,
+    "path": "calibration/source-calibration.json",
+    "sha256": "bb14e9c1a26a105d514ee367f2c4e0cd26bdebd155d116b3fe48070f57bf8c23"
+  }
+}

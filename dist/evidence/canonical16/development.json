@@ -1,0 +1,34 @@
+{
+  "cohorts": [
+    {
+      "episodes": 20,
+      "exact": false,
+      "gate": "development20",
+      "receipt": {
+        "bytes": 11981,
+        "path": "development20/episodes/receipt.json",
+        "sha256": "9cdee9c7faf74f8f1c00f544c8cc774c94023dfac2fe9e40897b5164727cddd6"
+      },
+      "seed_start": 3168000,
+      "stage": "development",
+      "successes": 20
+    },
+    {
+      "episodes": 100,
+      "exact": false,
+      "gate": "development100",
+      "receipt": {
+        "bytes": 31603,
+        "path": "development100/episodes/receipt.json",
+        "sha256": "2c7b66f4558788b085c4aa81c2ce683a9bfed8b357af7e9c1a8754ffe96db69d"
+      },
+      "seed_start": 3168100,
+      "stage": "development",
+      "successes": 100
+    }
+  ],
+  "failed_unselected_forecast_retention": "Summaries and command counts retained; complete state arrays from unselected failed shadow forecasts were not persisted.",
+  "passed": true,
+  "schema": "pendulum_arena.canonical16_development.v1",
+  "selected_shadow_live_fullsuffix_parity": true
+}

@@ -1,0 +1,23 @@
+{
+  "extra_held_frames": 0,
+  "fps": 50,
+  "frames": 1500,
+  "initial_frame_included": false,
+  "original_render_receipt": {
+    "bytes": 2104,
+    "path": "render/receipt.json",
+    "sha256": "cf4a85af633e237465ace4f309ab5fd9d00305c13b95d1311fff0d459b896e1a"
+  },
+  "passed": true,
+  "schema": "pendulum_arena.canonical16_video.v1",
+  "seconds": 30.0,
+  "seed": 216500,
+  "soundtrack_is_separate_derivative": true,
+  "source_receipt": {
+    "bytes": 8515,
+    "path": "reserved/video/receipt.json",
+    "sha256": "ea270121d190f85fd56b4f6a68425224868348c0c64a3337c563c052b2ba903a"
+  },
+  "video_bytes": 619336,
+  "video_sha256": "b585c64607de3369b2ab6f18048555bb739f964d6e841f7269be3910cba119fc"
+}
