@@ -1,0 +1,102 @@
+{
+  "source_repository": "https://github.com/corbensorenson/cartpole",
+  "source_commit": "b84c6413974d5c0831cdf261ce15e58ba65cd3f5",
+  "frozen_fourteen_source_commit": "3277b4173a9333819bf35acb848e384f52a227ec",
+  "source_configuration": "configs/swingup16_uniform.yaml",
+  "source_configuration_sha256": "0dab577850c6aa8dac89a647990046d4ee0e93c24d15ffd57d39b3f605f44a57",
+  "native_runtime_mujoco": "3.3.5",
+  "protocol": {
+    "n_links": 16,
+    "total_length_m": 3.0,
+    "total_mass_kg": 1.0,
+    "cart_mass_kg": 1.0,
+    "force_limit_N": 80.0,
+    "rail_limit_m": 3.0,
+    "physics_dt_s": 0.005,
+    "frame_skip": 4,
+    "episode_seconds": 30.0,
+    "upright_limit_rad": 0.15,
+    "required_hold_seconds": 5.0,
+    "cart_damping": 0.02,
+    "total_hinge_damping": 0.015,
+    "joint_armature": 0.0005,
+    "capsule_radius_m": 0.025,
+    "reset_noise_std": 0.05
+  },
+  "action_delivery": "normalized float32, clipped to [-1,1], multiplied by 80 N and immediately held for four native 5 ms RK4 steps",
+  "initialization": "relative qpos [0,pi,0,...], zero cart position noise, independent normal 0.05 relative joint/rate noise in the exact published RNG order",
+  "success": "complete all 1500 commands with finite valid integration, no reset after initialization and no rail escape; all wrapped cumulative absolute link angles strictly below 0.15 rad for at least 250 consecutive post-command samples anywhere in the episode",
+  "development_gates": [
+    {
+      "name": "noisy20",
+      "seed_start": 3166000,
+      "episodes": 20,
+      "exact": false,
+      "required_successes": 20
+    },
+    {
+      "name": "noisy100",
+      "seed_start": 3166100,
+      "episodes": 100,
+      "exact": false,
+      "required_successes": 100
+    }
+  ],
+  "reserved_gates": [
+    {
+      "name": "noisy20",
+      "seed_start": 216000,
+      "episodes": 20,
+      "exact": false,
+      "required_successes": 20
+    },
+    {
+      "name": "noisy100",
+      "seed_start": 216100,
+      "episodes": 100,
+      "exact": false,
+      "required_successes": 100
+    },
+    {
+      "name": "exact20",
+      "seed_start": 216200,
+      "episodes": 20,
+      "exact": true,
+      "required_successes": 20
+    },
+    {
+      "name": "video",
+      "seed_start": 216500,
+      "episodes": 1,
+      "exact": false,
+      "required_successes": 1
+    }
+  ],
+  "release_requirements": [
+    "The source controller passes exact hanging-start full-episode calibration with success and trajectory_integrity, feasible final trajectory diagnostics, and finite native maximum dynamics defect and initial-state gap each at most 1e-8 before the release freeze",
+    "Both disjoint noisy development cohorts pass completely under the same controller/config/XML/gains/parameters before the release freeze",
+    "Freeze controller, complete clean source bundle and fresh clone, generated XML, resolved configuration, gains, all policy parameters and actual runtime before any reserved evaluation",
+    "All 141 reserved episodes pass without tuning or replacing failed attempts; retain every consumed attempt and failed prefix",
+    "Verify frozen identities, full physical tapes and a video rendered only from the actual held-out 1500 post-command states at 50 fps"
+  ],
+  "claim_scope": "matched published simulation benchmark only; plant parity does not qualify a controller; global priority is unverified",
+  "schema": "rage_mill.canonical16_execution_policy.v1",
+  "status": "diagnostic_synthesis",
+  "previous_preparation": {
+    "path": "configs/canonical16.json",
+    "sha256": "ca7c6f0d60a344333e57cd9ebc694033a6c187ae396d6416cec22444c485e677"
+  },
+  "execution_schedule": {
+    "user_instruction": "do not return until16 is done with a video",
+    "lower_count_qualification_required": false,
+    "reason": "Independent count-sixteen published calibration, development and release requirements are unchanged; prior15-first scheduling no longer blocks16 synthesis",
+    "seventeen_active": false
+  },
+  "activation": {
+    "diagnostic_synthesis_active": true,
+    "development_gate_episodes_consumed": 0,
+    "reserved_episodes_consumed": 0,
+    "reserved_campaign_active": false,
+    "requires": "Sixteen exact physical calibration and both disjoint noisy development cohorts, then full frozen source/controller/runtime and once-only claims before any reserved use"
+  }
+}

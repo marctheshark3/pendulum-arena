@@ -1,0 +1,41 @@
+[project]
+name = "rage-sim"
+version = "0.0.1"
+description = "Rage Sim — Spark GPU mill. Not dingsim. Not sim2real."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Rage Industries" }]
+dependencies = [
+  "numpy>=1.26",
+  "pyyaml>=6.0",
+  "jsonschema>=4.23",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+mujoco = ["mujoco>=3.2"]
+jepa = ["torch>=2.5,<3"]
+control = ["casadi>=3.8,<4", "mpmath>=1.3,<2"]
+solvers = ["scipy>=1.13,<2"]
+render = ["pillow>=10"]
+# transfer / mill extras land in later PRs. Do not pull isaac.
+
+[project.scripts]
+rage-jepa = "rage_mill.jepa_train:main"
+rage-jepa-demo = "rage_mill.jepa_demo:main"
+rage-control-demo = "rage_mill.control_demo:main"
+
+[project.urls]
+Repository = "https://github.com/marctheshark3/rage-mill"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/rage_mill"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
