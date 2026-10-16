@@ -95,6 +95,7 @@
     },
     "metrics": {
       "type":"object","additionalProperties":false,"required":["commandsPerEpisode","secondsPerEpisode","minUprightSeconds","maxCartMeters","maxNativeDefect","maxInitialGap","auditedEpisodes","auditedCommands"],
+      "description":"Native audit counters describe declared actual coverage, not automatic full-cohort audits. Qualified claims must include complete source calibration; cold audits of additional development/reserved transitions are optional extra evidence. Defect and initial-gap maxima describe the audited scope. Aggregate counts alone do not authenticate which calibration commands were checked.",
       "properties":{"commandsPerEpisode":{"$ref":"#/$defs/positiveCount"},"secondsPerEpisode":{"$ref":"#/$defs/positive"},"minUprightSeconds":{"$ref":"#/$defs/nonnegative"},"maxCartMeters":{"$ref":"#/$defs/nonnegative"},"maxNativeDefect":{"$ref":"#/$defs/nonnegative"},"maxInitialGap":{"$ref":"#/$defs/nonnegative"},"auditedEpisodes":{"$ref":"#/$defs/count"},"auditedCommands":{"$ref":"#/$defs/count"}}
     },
     "verification": {

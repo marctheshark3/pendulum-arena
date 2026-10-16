@@ -120,11 +120,26 @@ test('entrant-selected development labels are permitted but must remain disjoint
   assert.match(validateRegistry(value).join('\n'), /actual cohort seed ranges must be disjoint/);
 });
 
-test('the full actual audited command count is distinct from forecasts', () => {
-  rejects((_v, r) => { r.metrics.auditedEpisodes = 261; }, /every actual episode and command audited/);
-  rejects((_v, r) => { r.metrics.auditedCommands--; }, /every actual episode and command audited/);
+test('declared native audit coverage is bounded by actual episodes and excludes forecasts', () => {
+  const value = fixture();
+  value.records[0].metrics.auditedEpisodes = 261;
+  value.records[0].metrics.auditedCommands = 391500;
+  assert.deepEqual(validateRegistry(value), []);
   rejects((_v, r) => { r.metrics.auditedEpisodes = 263; }, /cannot exceed actual cohort attempts/);
   rejects((_v, r) => { r.metrics.auditedCommands = 400000; }, /exceeds audited episode command total/);
+});
+
+test('qualification requires complete native calibration but not cold audits of all cohorts', () => {
+  const value = fixture();
+  value.records[0].metrics.auditedEpisodes = 1;
+  value.records[0].metrics.auditedCommands = 1500;
+  assert.deepEqual(validateRegistry(value), []);
+  value.records[0].metrics.auditedEpisodes = 0;
+  value.records[0].metrics.auditedCommands = 0;
+  assert.match(validateRegistry(value).join('\n'), /complete native calibration audit coverage/);
+  value.records[0].metrics.auditedEpisodes = 1;
+  value.records[0].metrics.auditedCommands = 450;
+  assert.match(validateRegistry(value).join('\n'), /complete native calibration audit coverage/);
 });
 
 test('finite metrics, complete duration, hold, rail and calibration tolerances are enforced', () => {

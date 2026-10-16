@@ -14,6 +14,11 @@ the record in a pull request after reading [the registry contract](docs/registry
    reserved episode, including failures.
 3. Provide full state/action recordings and receipts for exact calibration,
    both development cohorts, every reserved cohort and the held-out video.
+   Native defect and initial-gap checks must cover complete source calibration.
+   Cold native audits of additional development/reserved commands are optional
+   extra evidence; report their actual coverage without changing the task's
+   required cohort pass criteria. A partial calibration witness cannot establish
+   a complete calibration episode.
    Disclose planning forecasts separately, seed access, model access, runtime
    differences, control time, retries, retuning and limitations.
 4. Keep run, freeze, first-public and registry timestamps distinct. Unknown is

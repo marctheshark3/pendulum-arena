@@ -118,8 +118,23 @@ record must contain every protocol cohort. Each cohort repeats the protocol's
 stage, noise, required size and reserved seed range, records actual attempted
 and passed counts, and binds an evidence ID. A result may set `qualified:false`
 for a partial or failed campaign. Such a record is not a qualified leaderboard
-entry. `auditedEpisodes` counts actual episodes, excluding planning forecasts;
-`auditedCommands` is the audited actual command count.
+entry. `auditedEpisodes` and `auditedCommands` describe the actual native audit
+coverage, excluding planning forecasts. An episode with a partial audit is not
+silently counted as a full episode of audited commands. `maxNativeDefect` and
+`maxInitialGap` report finite maxima over that declared audited scope.
+
+Published qualification requires complete source calibration with finite native
+dynamics defect and initial-state gap no greater than the protocol's calibration
+tolerance. It also requires the complete development and reserved cohort pass
+proofs under the frozen release. It does **not** require a cold native re-audit
+of every development and reserved transition. Audit coverage must include the
+complete calibration cohort: for this protocol, at least one actual episode and
+all 1,500 of its commands. A 450-command witness is partial evidence, not a
+1,500-command calibration. The validator checks aggregate coverage bounds;
+reviewers must inspect the linked calibration receipt to establish its scope.
+Rage Mill additionally reports a cold native audit of all 262 actual episodes /
+393,000 commands. That is extra evidence, not a new published qualification gate,
+and same-owner checks remain author-attested.
 
 Calibration and development gates may omit fixed seed ranges in the protocol:
 entrants then declare their own fresh ranges in their result. Every declared

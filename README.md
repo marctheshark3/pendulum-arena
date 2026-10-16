@@ -3,6 +3,8 @@
 One cart. Many pendulums. An open benchmark registry with evidence you can inspect,
 publication timestamps, and a browser challenge you can play.
 
+Live at **[arena.neuralyogi.com](https://arena.neuralyogi.com)**.
+
 Built by Rage Industries / [NeuralYogi](https://neuralyogi.com).
 
 ## What belongs here
