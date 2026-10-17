@@ -51,6 +51,11 @@ reasons and sources. Source/credit corrections have a
 
 ## Seventeen links
 
+Public evidence was first released on **16 October 2026 at 23:25:50 UTC**.
+The registry preserves its original prepublication entry and appends a corrected
+publication record with the [verified release metadata](dist/evidence/canonical17/publication-status.json).
+Active records appear before superseded history. The qualification bytes are unchanged.
+
 The seventeen-link campaign passes **141/141 frozen held-out episodes**, each
 completing 1,500 commands and a **7.36 s upright hold**. Exact source calibration
 and fresh disjoint development20+100 pass under the same policy. Separate saved

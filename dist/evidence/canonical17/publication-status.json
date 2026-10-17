@@ -1,0 +1,291 @@
+{
+  "schema": "pendulum_arena.canonical17_publication_status.v1",
+  "verified_UTC": "2026-10-17T01:01:36.344524+00:00",
+  "release_api_url": "https://api.github.com/repos/marctheshark3/pendulum-arena/releases/tags/canonical17-20261016",
+  "release": {
+    "id": 415452725,
+    "tag_name": "canonical17-20261016",
+    "html_url": "https://github.com/marctheshark3/pendulum-arena/releases/tag/canonical17-20261016",
+    "published_at": "2026-10-16T23:25:50Z",
+    "draft": false,
+    "target_commitish": "45326b078c54fff1265f5dfa4d48408a74ca4a6c"
+  },
+  "asset_count": 27,
+  "all_asset_hashes_sizes_and_states_match_original_manifest": true,
+  "original_release_asset_manifest_sha256": "ae43cee43975ac0334e7470e4ef5a1203692e8529ea8e4711c32586bc066f0d1",
+  "assets": [
+    {
+      "id": 648903219,
+      "name": "audit.json",
+      "size": 16019,
+      "digest": "sha256:7dd0a825e2f7fb7bfe0f0df57c31c9181caf7da16d3e79fbb7d5b43a1314298a",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/audit.json",
+      "created_at": "2026-10-16T23:12:58Z",
+      "updated_at": "2026-10-16T23:12:58Z"
+    },
+    {
+      "id": 648903213,
+      "name": "calibration.json",
+      "size": 309,
+      "digest": "sha256:224d24cb0f14c352eb59456bb9bd779018be45907d3badfdddd4ac122da147ef",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/calibration.json",
+      "created_at": "2026-10-16T23:12:58Z",
+      "updated_at": "2026-10-16T23:12:58Z"
+    },
+    {
+      "id": 648903211,
+      "name": "canonical17-evidence.tar.gz",
+      "size": 512066480,
+      "digest": "sha256:b38fd7b5029f66fa3d1b8064901332bcfa0f039d5b2ab1264716d970773044e9",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/canonical17-evidence.tar.gz",
+      "created_at": "2026-10-16T23:12:58Z",
+      "updated_at": "2026-10-16T23:25:49Z"
+    },
+    {
+      "id": 648903221,
+      "name": "canonical17-media-review.json",
+      "size": 4257,
+      "digest": "sha256:3699b35c431da444de2aff95e6066bf1ab04e03592a08dfc736c06317e535d1d",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/canonical17-media-review.json",
+      "created_at": "2026-10-16T23:12:58Z",
+      "updated_at": "2026-10-16T23:12:58Z"
+    },
+    {
+      "id": 648903222,
+      "name": "canonical17-poster.webp",
+      "size": 44334,
+      "digest": "sha256:5a2ef461ec7bafb45d84b28c2e67d49cdc64a04108a2ab1e37643d58aa7f3fe9",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/canonical17-poster.webp",
+      "created_at": "2026-10-16T23:12:58Z",
+      "updated_at": "2026-10-16T23:12:58Z"
+    },
+    {
+      "id": 648903264,
+      "name": "canonical17-source.tar.gz",
+      "size": 14899912,
+      "digest": "sha256:6341bcbbfdc2c76837f3e38bd0b609827fdae19efb431e56d6668b8c2bd14322",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/canonical17-source.tar.gz",
+      "created_at": "2026-10-16T23:12:59Z",
+      "updated_at": "2026-10-16T23:13:47Z"
+    },
+    {
+      "id": 648903260,
+      "name": "canonical17-telemetry-rising-tide.mp4",
+      "size": 1977926,
+      "digest": "sha256:62f97711dd1594fbf957e30a51873e53034eae2f4c85980d48bdd842c01b4ec4",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/canonical17-telemetry-rising-tide.mp4",
+      "created_at": "2026-10-16T23:12:59Z",
+      "updated_at": "2026-10-16T23:13:03Z"
+    },
+    {
+      "id": 648903278,
+      "name": "canonical17-telemetry-rising-tide.provenance.json",
+      "size": 3981,
+      "digest": "sha256:aca743cce0370091effaf1fd06adc88e256722bbcd15a50bc60d24ba5e281b1b",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/canonical17-telemetry-rising-tide.provenance.json",
+      "created_at": "2026-10-16T23:12:59Z",
+      "updated_at": "2026-10-16T23:13:00Z"
+    },
+    {
+      "id": 648903275,
+      "name": "canonical17-telemetry.frames.json",
+      "size": 656540,
+      "digest": "sha256:a3d53e224e9df889a00854b4355226e2c4679b8ebee8a823f605bf5764a57563",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/canonical17-telemetry.frames.json",
+      "created_at": "2026-10-16T23:12:59Z",
+      "updated_at": "2026-10-16T23:13:01Z"
+    },
+    {
+      "id": 648903333,
+      "name": "canonical17-telemetry.mp4",
+      "size": 1229461,
+      "digest": "sha256:5d712fc3d6819b3a50814751b98423e4a5ce6d290cd5311f1580897bce8bbab1",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/canonical17-telemetry.mp4",
+      "created_at": "2026-10-16T23:13:01Z",
+      "updated_at": "2026-10-16T23:13:07Z"
+    },
+    {
+      "id": 648903430,
+      "name": "canonical17-telemetry.provenance.json",
+      "size": 2471,
+      "digest": "sha256:b3b67e1f15c664b67c7cee3b52ffd6b6644eb019c1ead021c8abd0124e31f909",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/canonical17-telemetry.provenance.json",
+      "created_at": "2026-10-16T23:13:03Z",
+      "updated_at": "2026-10-16T23:13:04Z"
+    },
+    {
+      "id": 648903565,
+      "name": "canonical17-telemetry.render.json",
+      "size": 4563,
+      "digest": "sha256:5190988f353cb0cafaf181b849999f40a3ee84c49b9876a1b90b42c22b1783cc",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/canonical17-telemetry.render.json",
+      "created_at": "2026-10-16T23:13:07Z",
+      "updated_at": "2026-10-16T23:13:09Z"
+    },
+    {
+      "id": 648903634,
+      "name": "canonical17.mp4",
+      "size": 656562,
+      "digest": "sha256:80169fa50e54fbc98bd2901429a1ed5b7dbccf4bd92211b769173cb549cc1554",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/canonical17.mp4",
+      "created_at": "2026-10-16T23:13:09Z",
+      "updated_at": "2026-10-16T23:13:13Z"
+    },
+    {
+      "id": 648903694,
+      "name": "development.json",
+      "size": 823,
+      "digest": "sha256:15531c406189f8b0a69e55d162d7ba8cd5857b9e3865a247c107d560236a0aa4",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/development.json",
+      "created_at": "2026-10-16T23:13:11Z",
+      "updated_at": "2026-10-16T23:13:11Z"
+    },
+    {
+      "id": 648903821,
+      "name": "files.json",
+      "size": 560067,
+      "digest": "sha256:cf781e68def10fbe2301245d76e3c0043f2e383e5ff04744d03d2d2a9e56eb6f",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/files.json",
+      "created_at": "2026-10-16T23:13:14Z",
+      "updated_at": "2026-10-16T23:13:16Z"
+    },
+    {
+      "id": 648903902,
+      "name": "freeze.json",
+      "size": 183227,
+      "digest": "sha256:02b2360d66705f70e77423ebb1dbb2c6cbe17e535155b27bfb16a7e8d9219f26",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/freeze.json",
+      "created_at": "2026-10-16T23:13:15Z",
+      "updated_at": "2026-10-16T23:13:17Z"
+    },
+    {
+      "id": 648903913,
+      "name": "measured-preparation-costs.json",
+      "size": 10046,
+      "digest": "sha256:ff87856c918ccaa7859c1815be6e802501e86b1bd9840315a81baa0e42df022b",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/measured-preparation-costs.json",
+      "created_at": "2026-10-16T23:13:16Z",
+      "updated_at": "2026-10-16T23:13:16Z"
+    },
+    {
+      "id": 648903979,
+      "name": "media-handoff.json",
+      "size": 8008,
+      "digest": "sha256:8533cac6a0b4e85e39e709cc8cb260f2f41bec65be87fa11b397efb16327a1f8",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/media-handoff.json",
+      "created_at": "2026-10-16T23:13:18Z",
+      "updated_at": "2026-10-16T23:13:18Z"
+    },
+    {
+      "id": 648904013,
+      "name": "media-review.json",
+      "size": 20246,
+      "digest": "sha256:5dc15688216007be8eed0922e30fe9ed4751f6892f9425eb7426f8eefe7b73c9",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/media-review.json",
+      "created_at": "2026-10-16T23:13:19Z",
+      "updated_at": "2026-10-16T23:13:20Z"
+    },
+    {
+      "id": 648904083,
+      "name": "model.xml",
+      "size": 4851,
+      "digest": "sha256:6850e9194902d5a03f9e209f2449f5d3a92310524723eb1bc8b8f5c02b7f483a",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/model.xml",
+      "created_at": "2026-10-16T23:13:21Z",
+      "updated_at": "2026-10-16T23:13:21Z"
+    },
+    {
+      "id": 648904102,
+      "name": "owner-costs.json",
+      "size": 66768,
+      "digest": "sha256:a96d7c0693291d8914cd4def33696e54b758ac06bc71c93233bf37447dc7fe4f",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/owner-costs.json",
+      "created_at": "2026-10-16T23:13:21Z",
+      "updated_at": "2026-10-16T23:13:21Z"
+    },
+    {
+      "id": 648904132,
+      "name": "qualification.json",
+      "size": 231826,
+      "digest": "sha256:b07cc6ea04b12178f77e3ff2ed523bd90cbdd64498895dae8740670df1a0e2d4",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/qualification.json",
+      "created_at": "2026-10-16T23:13:22Z",
+      "updated_at": "2026-10-16T23:13:23Z"
+    },
+    {
+      "id": 648904172,
+      "name": "reserved.json",
+      "size": 1543,
+      "digest": "sha256:2a31c08e3184cb8827927eef5324b2942a9c6a4d3dc5e213e8fef8a3ec966721",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/reserved.json",
+      "created_at": "2026-10-16T23:13:23Z",
+      "updated_at": "2026-10-16T23:13:24Z"
+    },
+    {
+      "id": 648904289,
+      "name": "SHA256SUMS",
+      "size": 2321,
+      "digest": "sha256:481ee4290c9cb50544751d6f82619e6b29f325a58e80b802f83df8f3f8294bc7",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/SHA256SUMS",
+      "created_at": "2026-10-16T23:13:27Z",
+      "updated_at": "2026-10-16T23:13:28Z"
+    },
+    {
+      "id": 648904186,
+      "name": "source-freeze-clock.json",
+      "size": 1696,
+      "digest": "sha256:d3c61a15995381324bdcea7baa1217f0d2f119da2fd770899e324b636018f992",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/source-freeze-clock.json",
+      "created_at": "2026-10-16T23:13:24Z",
+      "updated_at": "2026-10-16T23:13:24Z"
+    },
+    {
+      "id": 648904253,
+      "name": "telemetry-source-check.json",
+      "size": 4523,
+      "digest": "sha256:224893b930c4bbacb0a0a77ced3ea1021a99080f962930c29807a9f92e5e28ad",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/telemetry-source-check.json",
+      "created_at": "2026-10-16T23:13:26Z",
+      "updated_at": "2026-10-16T23:13:26Z"
+    },
+    {
+      "id": 648904275,
+      "name": "video.json",
+      "size": 699,
+      "digest": "sha256:6310c781e5fdaeac192ee3484bf9096bda65115f299e31a7ac43208e26a4d0b1",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/video.json",
+      "created_at": "2026-10-16T23:13:26Z",
+      "updated_at": "2026-10-16T23:13:27Z"
+    }
+  ],
+  "scope": "Public release metadata verification and registry clock correction only. No qualification, controller, model, episode, recording, source/runtime identity or permanent claim changed.",
+  "new_physical_episodes": 0,
+  "native_commands": 0
+}

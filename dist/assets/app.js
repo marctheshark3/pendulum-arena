@@ -19,7 +19,7 @@ function renderRegistry() {
   const verification = $('verification-filter').value;
   const disposition = new Map(registry.records.filter(r => r.type !== 'result').map(r => [r.targetId,r]));
   const results = registry.records.filter(r => r.type === 'result' && (links === 'all' || r.links === Number(links)) && (verification === 'all' || r.verification.level === verification));
-  results.sort((a,b) => b.links-a.links || a.timestamps.registeredAt.localeCompare(b.timestamps.registeredAt));
+  results.sort((a,b) => b.links-a.links || Number(disposition.has(a.id))-Number(disposition.has(b.id)) || a.timestamps.registeredAt.localeCompare(b.timestamps.registeredAt));
   $('result-count').textContent = results.filter(r=>r.qualified&&!disposition.has(r.id)).length;
   if (!results.length) { $('registry').innerHTML = '<p class="empty-state">No entries at this evidence level yet. The next reproducible result can be yours.</p>'; return; }
   const groups = new Map();
