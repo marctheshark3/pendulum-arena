@@ -1,0 +1,193 @@
+{
+  "schema": "rage_mill.canonical17_orbit_component.v1",
+  "n_links": 17,
+  "profiles": [
+    {
+      "initializer": "discrete held-input (exp(i*omega*.02)I-A)^-1 B",
+      "frequency_Hz": 2.5,
+      "period_ticks": 20,
+      "repeats": 5,
+      "harmonic_force_amplitude_normalized": 0.13059884772888056,
+      "harmonic_absolute_angle_amplitude": 0.08,
+      "harmonic_cart_amplitude": 0.03775692239157832,
+      "harmonic_spatial_angle_amplitude_variation": 0.07999966546472698,
+      "profile_index": 0,
+      "closure_pass": true,
+      "maximum_native_gap": 1.7475743074868433e-12,
+      "maximum_analytic_gap": 2.493366624278792e-12,
+      "maximum_gain_norm": 1741234677.1940448,
+      "newton": {
+        "history": [
+          {
+            "iteration": 0,
+            "original_max": 0.01936240228937844,
+            "mean_cart_gauge": 1.457167719820518e-18,
+            "alpha": 1.0,
+            "modified_merit": 5.678437655531887e-06
+          },
+          {
+            "iteration": 1,
+            "original_max": 5.678437655531887e-06,
+            "mean_cart_gauge": -6.938893903907229e-20,
+            "alpha": 1.0,
+            "modified_merit": 2.493366624278792e-12
+          },
+          {
+            "iteration": 2,
+            "original_max": 2.493366624278792e-12,
+            "mean_cart_gauge": 6.938893903907229e-20
+          }
+        ],
+        "value_maps": 6,
+        "first_maps": 2,
+        "dropped_row_index": 3564,
+        "dropped_original_cart_row": -2.2468138460851605e-14,
+        "mean_cart_gauge": 6.938893903907229e-20,
+        "all_original_rows_closed": true
+      },
+      "artifact_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/orbit-component-prepared01/output/frequency-2.5.npz",
+      "artifact_sha256": "04f3010f5bc75b5dfc7faaa2cbc51a2baa5ad4f42a57c6e89ffadea295bdd833"
+    },
+    {
+      "initializer": "discrete held-input (exp(i*omega*.02)I-A)^-1 B",
+      "frequency_Hz": 5.0,
+      "period_ticks": 10,
+      "repeats": 10,
+      "harmonic_force_amplitude_normalized": 0.3460449990401191,
+      "harmonic_absolute_angle_amplitude": 0.08,
+      "harmonic_cart_amplitude": 0.025802084512590025,
+      "harmonic_spatial_angle_amplitude_variation": 0.0799999995184947,
+      "profile_index": 1,
+      "closure_pass": true,
+      "maximum_native_gap": 1.322258968983192e-11,
+      "maximum_analytic_gap": 1.2544021377181025e-11,
+      "maximum_gain_norm": 287981433.98173046,
+      "newton": {
+        "history": [
+          {
+            "iteration": 0,
+            "original_max": 0.07373047238347175,
+            "mean_cart_gauge": 1.2836953722228372e-18,
+            "alpha": 1.0,
+            "modified_merit": 3.355613890093645e-05
+          },
+          {
+            "iteration": 1,
+            "original_max": 3.355613890093645e-05,
+            "mean_cart_gauge": -1.0581813203458523e-17,
+            "alpha": 1.0,
+            "modified_merit": 1.2544021377181025e-11
+          },
+          {
+            "iteration": 2,
+            "original_max": 1.2544021377181025e-11,
+            "mean_cart_gauge": 1.0408340855860842e-19
+          }
+        ],
+        "value_maps": 6,
+        "first_maps": 2,
+        "dropped_row_index": 3564,
+        "dropped_original_cart_row": 4.3739317723279214e-14,
+        "mean_cart_gauge": 1.0408340855860842e-19,
+        "all_original_rows_closed": true
+      },
+      "artifact_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/orbit-component-prepared01/output/frequency-5.npz",
+      "artifact_sha256": "bd1a23e7951574be7c8c8e119551477f031d7297ab72af68462b1ee2a895d872"
+    },
+    {
+      "initializer": "discrete held-input (exp(i*omega*.02)I-A)^-1 B",
+      "frequency_Hz": 6.25,
+      "period_ticks": 8,
+      "repeats": 12,
+      "harmonic_force_amplitude_normalized": 0.5,
+      "harmonic_absolute_angle_amplitude": 0.07969791783572755,
+      "harmonic_cart_amplitude": 0.023797846432570012,
+      "harmonic_spatial_angle_amplitude_variation": 0.07969791634782789,
+      "profile_index": 2,
+      "closure_pass": true,
+      "maximum_native_gap": 2.122024778117293e-11,
+      "maximum_analytic_gap": 2.2477797401165844e-11,
+      "maximum_gain_norm": 595840865.2495371,
+      "newton": {
+        "history": [
+          {
+            "iteration": 0,
+            "original_max": 0.11226264527426033,
+            "mean_cart_gauge": 0.0,
+            "alpha": 1.0,
+            "modified_merit": 4.1416657266979406e-05
+          },
+          {
+            "iteration": 1,
+            "original_max": 4.1416657266979406e-05,
+            "mean_cart_gauge": -5.782411586589357e-18,
+            "alpha": 1.0,
+            "modified_merit": 2.2477797401165844e-11
+          },
+          {
+            "iteration": 2,
+            "original_max": 2.2477797401165844e-11,
+            "mean_cart_gauge": -2.3129646346357427e-18
+          }
+        ],
+        "value_maps": 6,
+        "first_maps": 2,
+        "dropped_row_index": 3420,
+        "dropped_original_cart_row": -1.4616780008580577e-13,
+        "mean_cart_gauge": -2.3129646346357427e-18,
+        "all_original_rows_closed": true
+      },
+      "artifact_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/orbit-component-prepared01/output/frequency-6.25.npz",
+      "artifact_sha256": "1b02b719209f1928e05fe18b7a0704228f6d35ac8bfddb07cd1448e589439f4e"
+    }
+  ],
+  "cases": [
+    {
+      "diagnostic_label": 3171010,
+      "epsilon": 1e-15,
+      "success": false,
+      "complete": false,
+      "finite": true,
+      "force_ok": true,
+      "float32_delivery_ok": true,
+      "rail_ok": false,
+      "ticks": 114,
+      "longest_upright_ticks": 42,
+      "longest_upright_seconds": 0.84,
+      "maximum_cart_m": 3.063937121857701,
+      "invalid_reason": null,
+      "first250_hold": false,
+      "recording_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/orbit-component-prepared01/output/local-3171010.npz",
+      "recording_sha256": "7f24a99f59fa91e50bed594fb900316e67571d84f5b1e8f0d1e9e4d54fcae6a4"
+    },
+    {
+      "diagnostic_label": 3171011,
+      "epsilon": 1e-11,
+      "success": false,
+      "complete": false,
+      "finite": true,
+      "force_ok": true,
+      "float32_delivery_ok": true,
+      "rail_ok": false,
+      "ticks": 71,
+      "longest_upright_ticks": 24,
+      "longest_upright_seconds": 0.48,
+      "maximum_cart_m": 3.046429595305295,
+      "invalid_reason": null,
+      "first250_hold": false,
+      "recording_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/orbit-component-prepared01/output/local-3171011.npz",
+      "recording_sha256": "4500123869a7eaeb035b23065be11abfb71ed8012136e0b01f6b5e6a94913907"
+    }
+  ],
+  "selected_profile_index": 1,
+  "static_finite250_maximum_gain_norm": 179649038642.43115,
+  "selection_rule": "minimum maximum finite250 gain norm among own-count native closed profiles",
+  "native_orbit_map_commands": 296,
+  "local_only": true,
+  "full_hanging_episodes": 0,
+  "controller_qualified": false,
+  "development_episodes": 0,
+  "reserved_episodes": 0,
+  "CPU_seconds": 1.376940368,
+  "wall_seconds": 1.3775678009842522
+}

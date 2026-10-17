@@ -51,6 +51,11 @@ reasons and sources. Source/credit corrections have a
 
 ## Seventeen links
 
+The [hybrid-construction response](docs/hybrid-construction-response.md) and
+[seventeen synthesis supplement](synthesis/seventeen/README.md) share the original
+orbit/bridge workers, exact settings, manual selections and retained search
+comparisons, including failures.
+
 Public evidence was first released on **16 October 2026 at 23:25:50 UTC**.
 The registry preserves its original prepublication entry and appends a corrected
 publication record with the [verified release metadata](dist/evidence/canonical17/publication-status.json).

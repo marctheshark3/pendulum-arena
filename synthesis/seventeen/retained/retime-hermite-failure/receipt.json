@@ -1,0 +1,32 @@
+{
+  "schema": "rage_mill.canonical17_candidate_diagnostic.v1",
+  "n_links": 17,
+  "diagnostic_only": true,
+  "controller_qualified": false,
+  "development_episodes": 0,
+  "reserved_episodes": 0,
+  "cases": [
+    {
+      "seed": 3171032,
+      "exact": true,
+      "success": false,
+      "complete": false,
+      "finite": true,
+      "force_ok": true,
+      "float32_delivery_ok": true,
+      "rail_ok": false,
+      "ticks": 1157,
+      "longest_upright_ticks": 0,
+      "longest_upright_seconds": 0.0,
+      "maximum_cart_m": 3.031454994460664,
+      "invalid_reason": null,
+      "recording_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/retime440-hermite-exact-prepared01/output/episode-3171032.npz",
+      "recording_sha256": "f580e6534c402484949a36b28f1bd7d12f1ddecfbb44fd1bd969eae1d5517172"
+    }
+  ],
+  "controller_sha256": "f69f88a212c34158a21cf1f405a472d0370e4e530d2ac2c762ae12d246b9e00a",
+  "cart_error_offsets_m": null,
+  "all_success": false,
+  "CPU_seconds": 0.463448576,
+  "wall_seconds": 0.47966669604647905
+}
