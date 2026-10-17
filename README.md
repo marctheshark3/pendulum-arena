@@ -80,12 +80,16 @@ representations of an unchanged strict tick count; all other checks remain.
 Marc’s original soundtrack wording, “super star by queen”, was clarified to
 **Queen — “Don’t Stop Me Now”**, with YouTube accepted. His follow-up requests
 one benchmark MP4 with the music mixed in. The [single-video view](https://arena.neuralyogi.com/queen-eighteen)
-and [download](dist/assets/canonical18-telemetry-dont-stop-me-now.mp4) use that
-same combined file. The [official recording](https://www.youtube.com/watch?v=HgzGwKwLmgM)
-is credited in the [soundtrack provenance](dist/assets/canonical18-telemetry-dont-stop-me-now.provenance.json)
-and [full credits](dist/assets/canonical18-soundtrack-CREDITS.md). All1500video
+and [download](dist/assets/canonical18-telemetry-dont-stop-me-now-timed.mp4) use that
+same combined file. The song window17.12..47.12s aligns the measured musical
+energy entrance at video17.002s with the first active swing-up frame at17.000s
+(cue ambiguity approximately±0.2s). The next strong accent falls at19.392s during
+the larger swing. Audio pitch/tempo and every video packet/frame/time remain
+unchanged; this is source-window alignment. The [official recording](https://www.youtube.com/watch?v=HgzGwKwLmgM)
+is credited in the [soundtrack provenance](dist/assets/canonical18-telemetry-dont-stop-me-now-timed.provenance.json)
+and [full credits](dist/assets/canonical18-timed-soundtrack-CREDITS.md). All1500video
 packets, decoded frames and timings match the original silent telemetry;
-[independent review](dist/assets/canonical18-soundtrack-review.json) also verifies
+[independent review](dist/assets/canonical18-timed-soundtrack-review.json) also verifies
 finite, non-silent, unclipped stereo audio. The music remains outside the
 website’s MIT license; no formal license grant is asserted. The
 [original paired view](dist/history/canonical18-paired-20261017.html) and

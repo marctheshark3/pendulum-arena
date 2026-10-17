@@ -1,0 +1,174 @@
+{
+  "schema": "rage_mill.canonical18_music_share.v1",
+  "complete": true,
+  "assembledAt": "2026-10-17T13:33:36.355321+00:00",
+  "soundtrack_first_public_at": null,
+  "clock_scope": "Timed-derivative metadata assembly time is separate from scientific source/freeze, original release, earlier untimed soundtrack and eventual timed publication. No absolute mux clock is inferred from file mtimes.",
+  "video": "canonical18-telemetry-dont-stop-me-now-timed.mp4",
+  "video_sha256": "c4a42771c1edd83e85e2168547ad33e5039e2cc11c4ccef39f5d6ff9719742d0",
+  "video_bytes": 1957100,
+  "original_video": "canonical18-telemetry.mp4",
+  "original_video_sha256": "b198f901032b6293091cee90f3ffd2f54978a887b938af38dd5b1588bdecdf06",
+  "original_provenance": "canonical18-telemetry.provenance.json",
+  "original_provenance_sha256": "a16a3dff1b1d8565f7a9354bcf0b214569fbcea0854ff94af77b650b1c8c891a",
+  "scientific_video": "canonical18.mp4",
+  "scientific_video_sha256": "281153a908a9879136534dfcd2082c25b63db1430a64c98e43bc50a139b202d1",
+  "frames": 1500,
+  "fps": 50,
+  "duration_seconds": 30,
+  "resolution": [
+    1280,
+    1080
+  ],
+  "video_stream_copied_without_reencoding": true,
+  "new_simulation_or_controller_inference": false,
+  "music": {
+    "title": "Don't Stop Me Now",
+    "artist": "Queen",
+    "official_recording_title": "Queen - Don't Stop Me Now (Official Video Remastered 4K)",
+    "official_channel": "Queen Official",
+    "official_source": "https://www.youtube.com/watch?v=HgzGwKwLmgM",
+    "user_selected_song_reference": "https://share.google/TVQnQhTlYCsfHExSh",
+    "source_audio": {
+      "bytes": 1133377,
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-soundtrack-timing-20261017/audio-source01/queen-intro.m4a",
+      "sha256": "11d0c758dc14872fd1566e0a795d37125a6996e014ffc6a36bf2848b79f2eea3",
+      "file": "queen-intro.m4a"
+    },
+    "source_instruction": {
+      "bytes": 3690,
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-soundtrack-timing-20261017/mux-inputs01/user-source-instruction.json",
+      "sha256": "8686b56347d4b92cd80172203190c27099ecba5bc6d67552df003f270f52964b"
+    },
+    "retrieved_original_source_excerpt_seconds": [
+      0,
+      70
+    ],
+    "mixed_original_source_excerpt_seconds": [
+      17.12,
+      47.12
+    ],
+    "retrieved_file_excerpt_start_seconds": 17.12,
+    "retrieved_file_excerpt_end_seconds": 47.12,
+    "retrieved_file_duration_seconds": 70.008163,
+    "volume_multiplier": 0.35,
+    "fade_in_seconds": 0,
+    "fade_out_start_seconds": 29,
+    "fade_out_duration_seconds": 1,
+    "fade_out_curve": "linear",
+    "encoder": "AAC",
+    "target_bitrate_bps": 192000,
+    "sample_rate_hz": 48000,
+    "channels": 2,
+    "audio_tempo_speed": 1,
+    "audio_pitch_changed": false
+  },
+  "music_license": "Third-party copyright; no Creative Commons or project MIT audio license asserted.",
+  "license_grant_asserted": false,
+  "legal_rights_clearance_asserted": false,
+  "actual_user_source_instruction_recorded": true,
+  "credit": "Queen \u2014 Don\u2019t Stop Me Now. Queen Official source linked above; recording/composition retain their respective third-party rights outside the project code MIT license. Marc / Rage Industries; canonical benchmark Corben Sorenson; inspiration Kache / @yacineMTB. Full attribution is preserved in canonical18-timed-soundtrack-CREDITS.md.",
+  "credits_file": "canonical18-timed-soundtrack-CREDITS.md",
+  "credits_sha256": "c3a49225bdbb439ba247812f2a5ccfe56c84cf56fd1bef767649ca2142d6a858",
+  "changes": "Continuous nominal source0..70s; selected17.12..47.12s aligns measured energy cue at video17.002s with first active frame17.000s, cue ambiguity\u00b10.2s. Gain0.35, linear fade29..30s, AAC192kbit/s48kHzstereo. No tempo/pitch/video-speed change; video stream copied without reencoding.",
+  "exact_audio_filters": "atrim=start=17.12:end=47.12,asetpts=PTS-STARTPTS,volume=0.35,afade=t=out:st=29:d=1:curve=tri",
+  "audio_verification": {
+    "all_samples_finite": true,
+    "audible_RMS_threshold": 0.005,
+    "channels": 2,
+    "clipped_samples": 0,
+    "peak_absolute": 0.28539586067199707,
+    "rms": 0.0435191540888409,
+    "rms_dBFS": -27.226391098053693,
+    "sample_frames": 1440000,
+    "selected_source_gain035_last1s_fade_correlation": 0.9982954570509962,
+    "selected_source_gain035_last1s_fade_relative_RMSE": 0.058588869938492584,
+    "codec": "aac",
+    "target_bitrate_bps": 192000,
+    "sample_rate_hz": 48000,
+    "stream_duration_seconds": 30,
+    "finite_non_silent_and_unclipped": true,
+    "decoded_sample_frames": 1440000
+  },
+  "independent_review": {
+    "receipt": "canonical18-timed-soundtrack-review.json",
+    "receipt_sha256": "31980e31ea63831dae6669bc880814e402c18ba433907f9ff7bdab6edf607f1b",
+    "review_scope": "Separate saved-media verification implementation within the author project; not third-party benchmark reproduction.",
+    "all_1500_decoded_video_frames_and_timestamps_identical": true,
+    "all_1500_encoded_video_packet_payload_hashes_and_pts_dts_durations_identical": true,
+    "video_extradata_and_timebase_identical": true,
+    "audio_valid_non_silent_and_unclipped": true,
+    "source_audio_selected_offset_reset_to_zero_PTS": true,
+    "selected_source_gain_fade_correlation": 0.9982954570509962
+  },
+  "mux_receipt": {
+    "bytes": 6234,
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-soundtrack-timing-20261017/mux-owner01/receipt.json",
+    "sha256": "51fa34d13fa3197fcef79e4622cc70505c02aedcfc44626114e14b12d55b14e2"
+  },
+  "original_draft_provenance": {
+    "bytes": 68705,
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-soundtrack-timing-20261017/mux-owner01/music-provenance-draft.json",
+    "sha256": "fb64e15e118b16ff8d27973ac66ba2525991242372b078935b73a2d0ad89f762"
+  },
+  "original_credits": {
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-soundtrack-correction-20261017/arena-source01/dist/assets/canonical18-CREDITS.md",
+    "sha256": "ff06f09f5f783164eaaa68425bfb85aeb7b8a92342a323192a2698eb534d200a",
+    "bytes": 3160
+  },
+  "native_commands": 0,
+  "controller_calls": 0,
+  "reset_RNG_draws": 0,
+  "new_physical_resets": 0,
+  "new_reserved_labels": 0,
+  "qualification_awarded": false,
+  "publication_authority": false,
+  "timing_alignment": {
+    "chosen_before_mux": true,
+    "selection": {
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-soundtrack-timing-20261017/mux-inputs01/timing-choice.json",
+      "sha256": "c6773de8d79d953ddeb109cfb419ee562c158017fec8f6fe79dff07d7521c8ef",
+      "bytes": 1245
+    },
+    "audio_measurement_review": {
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-soundtrack-timing-20261017/audio-timing-review01/report.json",
+      "sha256": "7c2ec20e0f4be4a9c09b6ac90ded233676a185b72ab2d508c5112525560b913e",
+      "bytes": 6684
+    },
+    "recorded_motion_timeline_review": {
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-soundtrack-timing-20261017/timeline-review01/receipt.json",
+      "sha256": "b5275781089357aa6f8f1d0ef231207d01f6353ced41686739cc0c6a434affc6",
+      "bytes": 38592
+    },
+    "actual_audio_video_start_timestamp_review": {
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-soundtrack-timing-20261017/independent-media-review01/timestamp-alignment-check.json",
+      "sha256": "1a3546b42a89ef8342cab942ae8c9a2cb5b57488db7c2e950242416e7a824275",
+      "bytes": 1466
+    },
+    "target_video_first_active_PTS_seconds": 17.0,
+    "target_post_command": 851,
+    "overlay_simulation_seconds": 17.02,
+    "measured_energy_onset_original_song_seconds": 34.122,
+    "estimated_energy_onset_video_seconds": 17.002,
+    "nominal_alignment_error_seconds": 0.002,
+    "estimated_musical_cue_uncertainty_seconds": 0.2,
+    "additional_accent_original_song_seconds": 36.512,
+    "additional_accent_video_seconds": 19.392,
+    "buildup_entry_video_seconds": 12.83,
+    "claim_scope": "Measured audio energy/high-band/spectral-flux transition aligned by source trim. No claim of an exact downbeat, instrument entrance, perfect tempo grid or sample-accurate perceptual cue.",
+    "video_speed": 1,
+    "audio_tempo_speed": 1,
+    "audio_pitch_changed": false,
+    "video_packets_and_frame_timing_changed": false
+  },
+  "previous_soundtrack_derivative": {
+    "video": "canonical18-telemetry-dont-stop-me-now.mp4",
+    "sha256": "6dbcf44854fb350942bd94eb0acbd2f95de224bc719e9f9cbd7ff27883c3dfdc",
+    "provenance": {
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-soundtrack-correction-20261017/publication-media01/canonical18-telemetry-dont-stop-me-now.provenance.json",
+      "sha256": "1650608d1d6796d2a8c59a426abee80940194f4f61b873dc3e5c9a0fa22a4728",
+      "bytes": 6074
+    },
+    "retained_unchanged": true
+  }
+}

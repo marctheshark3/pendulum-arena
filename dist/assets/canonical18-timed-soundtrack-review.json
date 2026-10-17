@@ -1,0 +1,315 @@
+{
+  "CPU_seconds_including_children": 17.310671000000003,
+  "all_1500_decoded_video_frames_and_timestamps_identical": true,
+  "all_1500_encoded_video_packets_payload_hashes_PTS_DTS_durations_identical": true,
+  "all_original_pins_unchanged": true,
+  "audio_source": {
+    "bytes": 1133377,
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-soundtrack-timing-20261017/audio-source01/queen-intro.m4a",
+    "sha256": "11d0c758dc14872fd1566e0a795d37125a6996e014ffc6a36bf2848b79f2eea3"
+  },
+  "benchmark_resets": 0,
+  "commands": [
+    {
+      "argv": [
+        "/usr/bin/ffprobe",
+        "-v",
+        "error",
+        "-protocol_whitelist",
+        "file",
+        "-show_data_hash",
+        "sha256",
+        "-of",
+        "json",
+        "-show_streams",
+        "-show_format",
+        "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-soundtrack-timing-20261017/audio-source01/queen-intro.m4a"
+      ],
+      "name": "audio-source-streams",
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "/usr/bin/ffprobe",
+        "-v",
+        "error",
+        "-protocol_whitelist",
+        "file",
+        "-show_data_hash",
+        "sha256",
+        "-of",
+        "json",
+        "-show_streams",
+        "-show_format",
+        "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/telemetry-render-owner02/result/canonical18-telemetry.mp4"
+      ],
+      "name": "original-streams",
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "/usr/bin/ffprobe",
+        "-v",
+        "error",
+        "-protocol_whitelist",
+        "file",
+        "-show_data_hash",
+        "sha256",
+        "-of",
+        "json",
+        "-show_streams",
+        "-show_format",
+        "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-soundtrack-timing-20261017/mux-owner01/canonical18-telemetry-dont-stop-me-now-timed.mp4"
+      ],
+      "name": "target-streams",
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "/usr/bin/ffprobe",
+        "-v",
+        "error",
+        "-protocol_whitelist",
+        "file",
+        "-show_data_hash",
+        "sha256",
+        "-of",
+        "json",
+        "-select_streams",
+        "v:0",
+        "-show_packets",
+        "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/telemetry-render-owner02/result/canonical18-telemetry.mp4"
+      ],
+      "name": "original-packets",
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "/usr/bin/ffprobe",
+        "-v",
+        "error",
+        "-protocol_whitelist",
+        "file",
+        "-show_data_hash",
+        "sha256",
+        "-of",
+        "json",
+        "-select_streams",
+        "v:0",
+        "-show_packets",
+        "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-soundtrack-timing-20261017/mux-owner01/canonical18-telemetry-dont-stop-me-now-timed.mp4"
+      ],
+      "name": "target-packets",
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "/usr/bin/ffmpeg",
+        "-v",
+        "error",
+        "-nostdin",
+        "-threads",
+        "1",
+        "-copyts",
+        "-protocol_whitelist",
+        "file",
+        "-i",
+        "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/telemetry-render-owner02/result/canonical18-telemetry.mp4",
+        "-map",
+        "0:v:0",
+        "-an",
+        "-fps_mode",
+        "passthrough",
+        "-f",
+        "framemd5",
+        "-hash",
+        "sha256",
+        "-"
+      ],
+      "name": "original-frames",
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "/usr/bin/ffmpeg",
+        "-v",
+        "error",
+        "-nostdin",
+        "-threads",
+        "1",
+        "-copyts",
+        "-protocol_whitelist",
+        "file",
+        "-i",
+        "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-soundtrack-timing-20261017/mux-owner01/canonical18-telemetry-dont-stop-me-now-timed.mp4",
+        "-map",
+        "0:v:0",
+        "-an",
+        "-fps_mode",
+        "passthrough",
+        "-f",
+        "framemd5",
+        "-hash",
+        "sha256",
+        "-"
+      ],
+      "name": "target-frames",
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "/usr/bin/ffmpeg",
+        "-v",
+        "error",
+        "-nostdin",
+        "-threads",
+        "1",
+        "-protocol_whitelist",
+        "file",
+        "-i",
+        "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-soundtrack-timing-20261017/mux-owner01/canonical18-telemetry-dont-stop-me-now-timed.mp4",
+        "-map",
+        "0:a:0",
+        "-vn",
+        "-t",
+        "30",
+        "-ar",
+        "48000",
+        "-ac",
+        "2",
+        "-c:a",
+        "pcm_f32le",
+        "-f",
+        "f32le",
+        "-"
+      ],
+      "name": "target-audio-PCM",
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "/usr/bin/ffmpeg",
+        "-v",
+        "error",
+        "-nostdin",
+        "-threads",
+        "1",
+        "-protocol_whitelist",
+        "file",
+        "-i",
+        "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-soundtrack-timing-20261017/audio-source01/queen-intro.m4a",
+        "-map",
+        "0:a:0",
+        "-vn",
+        "-af",
+        "atrim=start=17.12:end=47.12,asetpts=PTS-STARTPTS",
+        "-t",
+        "30",
+        "-ar",
+        "48000",
+        "-ac",
+        "2",
+        "-c:a",
+        "pcm_f32le",
+        "-f",
+        "f32le",
+        "-"
+      ],
+      "name": "source-selected-offset-audio-PCM",
+      "returncode": 0
+    }
+  ],
+  "controller_calls": 0,
+  "decoded_audio": {
+    "all_samples_finite": true,
+    "audible_RMS_threshold": 0.005,
+    "channels": 2,
+    "clipped_samples": 0,
+    "peak_absolute": 0.28539586067199707,
+    "rms": 0.0435191540888409,
+    "rms_dBFS": -27.226391098053693,
+    "sample_frames": 1440000,
+    "selected_source_gain035_last1s_fade_correlation": 0.9982954570509962,
+    "selected_source_gain035_last1s_fade_relative_RMSE": 0.058588869938492584
+  },
+  "draft_provenance": {
+    "bytes": 68705,
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-soundtrack-timing-20261017/mux-owner01/music-provenance-draft.json",
+    "sha256": "fb64e15e118b16ff8d27973ac66ba2525991242372b078935b73a2d0ad89f762"
+  },
+  "fps": 50,
+  "frames": 1500,
+  "gain": 0.35,
+  "independent_review_flags": {
+    "all_1500_decoded_video_frames_and_timestamps_identical": true,
+    "all_1500_video_packets_identical": true,
+    "audio_finite_audible_unclipped": true,
+    "passed": true
+  },
+  "last_second_fade": [
+    29,
+    30
+  ],
+  "media_tools_executed": 9,
+  "music_video": {
+    "bytes": 1957100,
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-soundtrack-timing-20261017/mux-owner01/canonical18-telemetry-dont-stop-me-now-timed.mp4",
+    "sha256": "c4a42771c1edd83e85e2168547ad33e5039e2cc11c4ccef39f5d6ff9719742d0"
+  },
+  "mux_receipt": {
+    "bytes": 6234,
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-soundtrack-timing-20261017/mux-owner01/receipt.json",
+    "sha256": "51fa34d13fa3197fcef79e4622cc70505c02aedcfc44626114e14b12d55b14e2"
+  },
+  "native_benchmark_calls": 0,
+  "new_reserved_labels": 0,
+  "original_silent": {
+    "bytes": 1209424,
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/telemetry-render-owner02/result/canonical18-telemetry.mp4",
+    "sha256": "b198f901032b6293091cee90f3ffd2f54978a887b938af38dd5b1588bdecdf06"
+  },
+  "passed": true,
+  "producer_source": {
+    "bytes": 15787,
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-soundtrack-timing-20261017/independent-media-review01/audit_media_v2.py",
+    "sha256": "2e9b0d068c9de1513d316b63eeab4f031c456c766ec3c5a0bca7262fafe68cdf"
+  },
+  "publication_authority": false,
+  "resolution": [
+    1280,
+    1080
+  ],
+  "rights_metadata": {
+    "actual_user_source_instruction_recorded": true,
+    "legal_rights_clearance_asserted": false,
+    "license_grant_asserted": false,
+    "third_party_Queen_rights_outside_MIT": true
+  },
+  "schema": "rage_mill.canonical18_independent_timed_music_media_review.v1",
+  "selected_audio_offset_seconds": 17.12,
+  "selected_source_excerpt_seconds": [
+    17.12,
+    47.120000000000005
+  ],
+  "source_audio_selected_offset_reset_to_zero_PTS": true,
+  "source_instruction": {
+    "bytes": 3690,
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-soundtrack-timing-20261017/mux-inputs01/user-source-instruction.json",
+    "sha256": "8686b56347d4b92cd80172203190c27099ecba5bc6d67552df003f270f52964b"
+  },
+  "streams": {
+    "audio": 1,
+    "audio_channels": 2,
+    "audio_codec": "aac",
+    "audio_sample_rate_hz": 48000,
+    "video": 1
+  },
+  "tool_manifest": {
+    "bytes": 92504,
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-soundtrack-timing-20261017/mux-preparation01/tools.json",
+    "sha256": "20791f06502d2f01a0f52b8d252e6c01e15c9d05cd26b15ae615bef29aaef121"
+  },
+  "video_and_audio_and_container_duration_seconds": 30,
+  "video_codec_extradata_timebase_identical": true,
+  "wall_seconds": 13.045858828001656
+}

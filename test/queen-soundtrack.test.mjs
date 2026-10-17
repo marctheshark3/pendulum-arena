@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 
-const media='/assets/canonical18-telemetry-dont-stop-me-now.mp4';
+const media='/assets/canonical18-telemetry-dont-stop-me-now-timed.mp4';
 for(const page of ['index.html','queen-eighteen.html']){
   test(`${page} offers one native benchmark video with its soundtrack`,async()=>{
     const html=await readFile(new URL(`../dist/${page}`,import.meta.url),'utf8');
