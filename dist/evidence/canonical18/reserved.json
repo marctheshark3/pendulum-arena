@@ -1,0 +1,22 @@
+{
+  "exact20": {
+    "bytes": 25750,
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/canonical18-release01/reserved/exact20/receipt.json",
+    "sha256": "cf5e5f37b833fdb043c181663fcb4ad2522162ee98302a70703a00adcdd7f49c"
+  },
+  "noisy100": {
+    "bytes": 44415,
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/canonical18-release01/reserved/noisy100/receipt.json",
+    "sha256": "a22ee49d6dc85f2618d42a56907bfee2c28d7f00d46da0762d7e5f8a35809f86"
+  },
+  "noisy20": {
+    "bytes": 25751,
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/canonical18-release01/reserved/noisy20/receipt.json",
+    "sha256": "7a3b12a9f6235a7b2dfe4e9b0740a785d18f8074c7ed45942e265117e29f3bba"
+  },
+  "video": {
+    "bytes": 21334,
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/canonical18-release01/reserved/video/receipt.json",
+    "sha256": "8e532c1125684d2e7fa28f338796f79fb6ab85c88fe59c9632ce0d32910b3668"
+  }
+}

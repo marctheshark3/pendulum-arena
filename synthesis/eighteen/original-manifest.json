@@ -1,0 +1,1229 @@
+{
+  "JEPA_policy_or_progress": false,
+  "created_UTC": "2026-10-17T02:11:32.179646+00:00",
+  "external_imports_not_vendored": [
+    "argparse",
+    "ast",
+    "bz2",
+    "casadi",
+    "copy",
+    "dataclasses",
+    "hashlib",
+    "importlib",
+    "importlib.metadata",
+    "importlib.util",
+    "io",
+    "json",
+    "lzma",
+    "math",
+    "mujoco",
+    "numpy",
+    "numpy.random",
+    "os",
+    "pathlib",
+    "platform",
+    "re",
+    "runpy",
+    "scipy",
+    "scipy.linalg",
+    "scipy.sparse.linalg",
+    "sys",
+    "sysconfig",
+    "time",
+    "types",
+    "typing",
+    "warnings",
+    "xml.etree.ElementTree",
+    "yaml",
+    "zipfile"
+  ],
+  "files": [
+    {
+      "archive_path": "original/scripts/audit_canonical18_native_value_episode_saved.py",
+      "bytes": 25912,
+      "frozen_clone_relative_path": "scripts/audit_canonical18_native_value_episode_saved.py",
+      "original_path": "/home/marctheshark/.t3/worktrees/rage-mill/t3-canonical18-swingup/scripts/audit_canonical18_native_value_episode_saved.py",
+      "packet": "source",
+      "sha256": "64e1f75b11063046aecdfe9ce448e069537e1f87ec8954de2c871071557b2628"
+    },
+    {
+      "archive_path": "original/scripts/audit_canonical18_saved_model.py",
+      "bytes": 14485,
+      "frozen_clone_relative_path": "scripts/audit_canonical18_saved_model.py",
+      "original_path": "/home/marctheshark/.t3/worktrees/rage-mill/t3-canonical18-swingup/scripts/audit_canonical18_saved_model.py",
+      "packet": "source",
+      "sha256": "389328bbaabf65cada76c4fb11a6276f2ba58d442245546bad8db198a0db7003"
+    },
+    {
+      "archive_path": "original/scripts/audit_canonical18_saved_model_v2.py",
+      "bytes": 15307,
+      "frozen_clone_relative_path": "scripts/audit_canonical18_saved_model_v2.py",
+      "original_path": "/home/marctheshark/.t3/worktrees/rage-mill/t3-canonical18-swingup/scripts/audit_canonical18_saved_model_v2.py",
+      "packet": "source",
+      "sha256": "d4647e4506c936f2e56ce5b0caaa562ffdf64b02e588ac6844eb29da657e7b22"
+    },
+    {
+      "archive_path": "original/scripts/prepare_canonical18_component.py",
+      "bytes": 6381,
+      "frozen_clone_relative_path": "scripts/prepare_canonical18_component.py",
+      "original_path": "/home/marctheshark/.t3/worktrees/rage-mill/t3-canonical18-swingup/scripts/prepare_canonical18_component.py",
+      "packet": "source",
+      "sha256": "75679b1e213e7fb53af373a14c7c8af759342f096802d62f591622057d6ea00e"
+    },
+    {
+      "archive_path": "original/scripts/prepare_canonical18_diagnostic.py",
+      "bytes": 4716,
+      "frozen_clone_relative_path": "scripts/prepare_canonical18_diagnostic.py",
+      "original_path": "/home/marctheshark/.t3/worktrees/rage-mill/t3-canonical18-swingup/scripts/prepare_canonical18_diagnostic.py",
+      "packet": "source",
+      "sha256": "2e9b9ab1e0efec8018af550399bf81fff4f50e52bd577034e22d29e45fdfac30"
+    },
+    {
+      "archive_path": "original/scripts/prepare_canonical18_native_value_candidate.py",
+      "bytes": 17029,
+      "frozen_clone_relative_path": "scripts/prepare_canonical18_native_value_candidate.py",
+      "original_path": "/home/marctheshark/.t3/worktrees/rage-mill/t3-canonical18-swingup/scripts/prepare_canonical18_native_value_candidate.py",
+      "packet": "source",
+      "sha256": "46e1ac51319ac219b7f22f133863ef8d4d64914fa2bb4f264971d708c3114bfe"
+    },
+    {
+      "archive_path": "original/scripts/probe_canonical18_native_value_episode.py",
+      "bytes": 8920,
+      "frozen_clone_relative_path": "scripts/probe_canonical18_native_value_episode.py",
+      "original_path": "/home/marctheshark/.t3/worktrees/rage-mill/t3-canonical18-swingup/scripts/probe_canonical18_native_value_episode.py",
+      "packet": "source",
+      "sha256": "2254691fbd77d519e1228c24fe1a3ab2d69306a4500154788a772ca569288bc3"
+    },
+    {
+      "archive_path": "original/scripts/synthesize_canonical18.py",
+      "bytes": 19751,
+      "frozen_clone_relative_path": "scripts/synthesize_canonical18.py",
+      "original_path": "/home/marctheshark/.t3/worktrees/rage-mill/t3-canonical18-swingup/scripts/synthesize_canonical18.py",
+      "packet": "source",
+      "sha256": "87fe1b16357a6d28d67f8f8b9ae4de468a84f1940f1e44e2a1e6fc890c13922f"
+    },
+    {
+      "archive_path": "original/scripts/verify_canonical18_benchmark.py",
+      "bytes": 23061,
+      "frozen_clone_relative_path": "scripts/verify_canonical18_benchmark.py",
+      "original_path": "/home/marctheshark/.t3/worktrees/rage-mill/t3-canonical18-swingup/scripts/verify_canonical18_benchmark.py",
+      "packet": "source",
+      "sha256": "9df76793114cfacea215af765b036077152ab160edf7aafd8ac85c3b62945184"
+    },
+    {
+      "archive_path": "original/src/rage_mill/__init__.py",
+      "bytes": 104,
+      "frozen_clone_relative_path": "src/rage_mill/__init__.py",
+      "original_path": "/home/marctheshark/.t3/worktrees/rage-mill/t3-canonical18-swingup/src/rage_mill/__init__.py",
+      "packet": "source",
+      "sha256": "bb4e7534c26cb339b6b42a4a7acd684866d33b699d7ff705569e2cce91cd237c"
+    },
+    {
+      "archive_path": "original/src/rage_mill/canonical16_affine_feedback.py",
+      "bytes": 3609,
+      "frozen_clone_relative_path": "src/rage_mill/canonical16_affine_feedback.py",
+      "original_path": "/home/marctheshark/.t3/worktrees/rage-mill/t3-canonical18-swingup/src/rage_mill/canonical16_affine_feedback.py",
+      "packet": "source",
+      "sha256": "693caed8e4113d5d72bb40e3a8fa38ebf314eb4d1ca5142832dfb5f0dcebcecc"
+    },
+    {
+      "archive_path": "original/src/rage_mill/canonical16_dynamic_orbit.py",
+      "bytes": 1770,
+      "frozen_clone_relative_path": "src/rage_mill/canonical16_dynamic_orbit.py",
+      "original_path": "/home/marctheshark/.t3/worktrees/rage-mill/t3-canonical18-swingup/src/rage_mill/canonical16_dynamic_orbit.py",
+      "packet": "source",
+      "sha256": "8f7d95e1015dbfe1a4aea606fb93a3bd10a7ac60ce871ce32666e28588b155cc"
+    },
+    {
+      "archive_path": "original/src/rage_mill/canonical16_orbit.py",
+      "bytes": 5870,
+      "frozen_clone_relative_path": "src/rage_mill/canonical16_orbit.py",
+      "original_path": "/home/marctheshark/.t3/worktrees/rage-mill/t3-canonical18-swingup/src/rage_mill/canonical16_orbit.py",
+      "packet": "source",
+      "sha256": "f2b45224dffef9419a67736163397a2db6aba489267881bb0d5ef22b5b2292f9"
+    },
+    {
+      "archive_path": "original/src/rage_mill/canonical16_orbit_bridge.py",
+      "bytes": 2877,
+      "frozen_clone_relative_path": "src/rage_mill/canonical16_orbit_bridge.py",
+      "original_path": "/home/marctheshark/.t3/worktrees/rage-mill/t3-canonical18-swingup/src/rage_mill/canonical16_orbit_bridge.py",
+      "packet": "source",
+      "sha256": "54f95ba9d358755734f80824ce155a341ddfd36e454d572963e89b312b23df87"
+    },
+    {
+      "archive_path": "original/src/rage_mill/canonical16_predictive_tracking.py",
+      "bytes": 7401,
+      "frozen_clone_relative_path": "src/rage_mill/canonical16_predictive_tracking.py",
+      "original_path": "/home/marctheshark/.t3/worktrees/rage-mill/t3-canonical18-swingup/src/rage_mill/canonical16_predictive_tracking.py",
+      "packet": "source",
+      "sha256": "7cceb3106dfec45d011437d6f8045966a4f6cb7275e6d88796628cf0a5abcab0"
+    },
+    {
+      "archive_path": "original/src/rage_mill/canonical16_trajectory.py",
+      "bytes": 4675,
+      "frozen_clone_relative_path": "src/rage_mill/canonical16_trajectory.py",
+      "original_path": "/home/marctheshark/.t3/worktrees/rage-mill/t3-canonical18-swingup/src/rage_mill/canonical16_trajectory.py",
+      "packet": "source",
+      "sha256": "97ab15dad55fe77930e4e95ec732f3441269e2dea7ad3d9e29b5c8b250a6628a"
+    },
+    {
+      "archive_path": "original/src/rage_mill/canonical18_controller.py",
+      "bytes": 3006,
+      "frozen_clone_relative_path": "src/rage_mill/canonical18_controller.py",
+      "original_path": "/home/marctheshark/.t3/worktrees/rage-mill/t3-canonical18-swingup/src/rage_mill/canonical18_controller.py",
+      "packet": "source",
+      "sha256": "c0a0306e5410a0e07610e2f26d8c7f1cbca0cedb8bb7d53520d861e4d8ec6fa2"
+    },
+    {
+      "archive_path": "original/src/rage_mill/canonical18_native_value.py",
+      "bytes": 2746,
+      "frozen_clone_relative_path": "src/rage_mill/canonical18_native_value.py",
+      "original_path": "/home/marctheshark/.t3/worktrees/rage-mill/t3-canonical18-swingup/src/rage_mill/canonical18_native_value.py",
+      "packet": "source",
+      "sha256": "5e4a5ef701c400bf3c14e64b6a327bb35a76f4a7ea07903cfa7614633f919b45"
+    },
+    {
+      "archive_path": "original/src/rage_mill/canonical18_native_value_episode.py",
+      "bytes": 11312,
+      "frozen_clone_relative_path": "src/rage_mill/canonical18_native_value_episode.py",
+      "original_path": "/home/marctheshark/.t3/worktrees/rage-mill/t3-canonical18-swingup/src/rage_mill/canonical18_native_value_episode.py",
+      "packet": "source",
+      "sha256": "9ce65e6a33e563416ed1605daaeff38fac39d651f5fb40f5a46ab990f02c661c"
+    },
+    {
+      "archive_path": "original/src/rage_mill/canonical18_native_value_policy.py",
+      "bytes": 7510,
+      "frozen_clone_relative_path": "src/rage_mill/canonical18_native_value_policy.py",
+      "original_path": "/home/marctheshark/.t3/worktrees/rage-mill/t3-canonical18-swingup/src/rage_mill/canonical18_native_value_policy.py",
+      "packet": "source",
+      "sha256": "44b3a38ab1f75151238b92a2b2666266434f29b7251847040cf17e70e8cc9f3d"
+    },
+    {
+      "archive_path": "original/src/rage_mill/canonical_benchmark.py",
+      "bytes": 10079,
+      "frozen_clone_relative_path": "src/rage_mill/canonical_benchmark.py",
+      "original_path": "/home/marctheshark/.t3/worktrees/rage-mill/t3-canonical18-swingup/src/rage_mill/canonical_benchmark.py",
+      "packet": "source",
+      "sha256": "4b597725057d041277cd96b893a07c15f810bb96d0675e1c61706416d1859d8b"
+    },
+    {
+      "archive_path": "original/src/rage_mill/canonical_dynamics.py",
+      "bytes": 5191,
+      "frozen_clone_relative_path": "src/rage_mill/canonical_dynamics.py",
+      "original_path": "/home/marctheshark/.t3/worktrees/rage-mill/t3-canonical18-swingup/src/rage_mill/canonical_dynamics.py",
+      "packet": "source",
+      "sha256": "989c91b59e1642ef07b268d121ba7a3a9d2a0f3948a7bbbdba8156bdb49a5765"
+    },
+    {
+      "archive_path": "original/src/rage_mill/canonical_evaluation.py",
+      "bytes": 18491,
+      "frozen_clone_relative_path": "src/rage_mill/canonical_evaluation.py",
+      "original_path": "/home/marctheshark/.t3/worktrees/rage-mill/t3-canonical18-swingup/src/rage_mill/canonical_evaluation.py",
+      "packet": "source",
+      "sha256": "89e74089f10f3f804b9e68004f1df3d57cabe216e532a6494b87b93a6726aa70"
+    },
+    {
+      "archive_path": "original/src/rage_mill/canonical_profile_policy.py",
+      "bytes": 4568,
+      "frozen_clone_relative_path": "src/rage_mill/canonical_profile_policy.py",
+      "original_path": "/home/marctheshark/.t3/worktrees/rage-mill/t3-canonical18-swingup/src/rage_mill/canonical_profile_policy.py",
+      "packet": "source",
+      "sha256": "f75c17dcd460cf819547f7b566cf96948a72c3e69193d9b98cf562b439830eb6"
+    },
+    {
+      "archive_path": "original/src/rage_mill/canonical_runtime_closure.py",
+      "bytes": 2972,
+      "frozen_clone_relative_path": "src/rage_mill/canonical_runtime_closure.py",
+      "original_path": "/home/marctheshark/.t3/worktrees/rage-mill/t3-canonical18-swingup/src/rage_mill/canonical_runtime_closure.py",
+      "packet": "source",
+      "sha256": "a2080fe1323bd296634b52592dd14874f49026fea3a20a37d8d8f811ed66479a"
+    },
+    {
+      "archive_path": "original/src/rage_mill/canonical_runtime_manifest.py",
+      "bytes": 3653,
+      "frozen_clone_relative_path": "src/rage_mill/canonical_runtime_manifest.py",
+      "original_path": "/home/marctheshark/.t3/worktrees/rage-mill/t3-canonical18-swingup/src/rage_mill/canonical_runtime_manifest.py",
+      "packet": "source",
+      "sha256": "48f0557359476f13fc232e5019bebf9a38a4d5073ddbacb7cf045aca649cd917"
+    },
+    {
+      "archive_path": "retained/model/completion.json",
+      "bytes": 464618,
+      "component_owner": "planning-model-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/planning-model-prepared01/completion.json",
+      "packet": "retained",
+      "sha256": "9a343b5b95118a5a7cfd32161d6fb1d8f80d4fa01a9d6cd3d59a33e6a1057001"
+    },
+    {
+      "archive_path": "retained/model/launch.json",
+      "bytes": 655946,
+      "component_owner": "planning-model-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/planning-model-prepared01/launch.json",
+      "packet": "retained",
+      "sha256": "13c8df8ec87d6426a00bc2a71648026d47a51b2c8ce66d1ef0b43364a4e29031"
+    },
+    {
+      "archive_path": "retained/model/output/design.npz",
+      "bytes": 12799,
+      "component_owner": "planning-model-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/planning-model-prepared01/output/design.npz",
+      "packet": "retained",
+      "sha256": "20c58bf39e0af4fd332a8d4234a6c32487a32c59295996bbbeb7b8fffa2a7e71"
+    },
+    {
+      "archive_path": "retained/model/output/lifted-initializer.npz",
+      "bytes": 132597,
+      "component_owner": "planning-model-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/planning-model-prepared01/output/lifted-initializer.npz",
+      "packet": "retained",
+      "sha256": "d71bba5eca739c2c3863af31af7415d2dddc381ce5c43bb3541883c3431bc86e"
+    },
+    {
+      "archive_path": "retained/model/output/receipt.json",
+      "bytes": 3100,
+      "component_owner": "planning-model-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/planning-model-prepared01/output/receipt.json",
+      "packet": "retained",
+      "sha256": "4908696af8a0093a27497c0ada2145f04c765e50d6607c29eb5e9f7e9b89730d"
+    },
+    {
+      "archive_path": "retained/model/preparation.json",
+      "bytes": 910,
+      "component_owner": "planning-model-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/planning-model-prepared01/preparation.json",
+      "packet": "retained",
+      "sha256": "e540ac8fcaea5f30c20d4da9e0f44f49422ea4fa721eb297b94fce8983ebaa14"
+    },
+    {
+      "archive_path": "retained/model/runtime-closure.json",
+      "bytes": 761367,
+      "component_owner": "planning-model-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/planning-model-prepared01/runtime-closure.json",
+      "packet": "retained",
+      "sha256": "d5f357928a6012745c3e794855fc9485725117ae7e443bc0324ab9718c58b645"
+    },
+    {
+      "archive_path": "retained/model/worker.log",
+      "bytes": 2666,
+      "component_owner": "planning-model-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/planning-model-prepared01/worker.log",
+      "packet": "retained",
+      "sha256": "f3f68657ee837e262bdf7a6276f29e7da2eca63fdfc18cbacd17aaba0ef9aa74"
+    },
+    {
+      "archive_path": "retained/orbit/completion.json",
+      "bytes": 465601,
+      "component_owner": "orbit-component-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/orbit-component-prepared01/completion.json",
+      "packet": "retained",
+      "sha256": "4d274cdd78babe34550cb8a9d9fb24de7848a89a9c527f75c4a6854e98ddb63a"
+    },
+    {
+      "archive_path": "retained/orbit/launch.json",
+      "bytes": 657363,
+      "component_owner": "orbit-component-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/orbit-component-prepared01/launch.json",
+      "packet": "retained",
+      "sha256": "053e7dbce6228ff2c2c1a5f9dcaabd70641ad567de4902199d24edd9d1aba3c4"
+    },
+    {
+      "archive_path": "retained/orbit/output/orbit.npz",
+      "bytes": 139179,
+      "component_owner": "orbit-component-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/orbit-component-prepared01/output/orbit.npz",
+      "packet": "retained",
+      "sha256": "1261396e0823ec16e7fdbfc77458875b5353c3f6b94ff16fb1214c90f0d0de23"
+    },
+    {
+      "archive_path": "retained/orbit/output/receipt.json",
+      "bytes": 2487,
+      "component_owner": "orbit-component-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/orbit-component-prepared01/output/receipt.json",
+      "packet": "retained",
+      "sha256": "34ad5d305a85ad5b09feea66167e3f863f4b68212dfeb7e8b7d5b1c053124936"
+    },
+    {
+      "archive_path": "retained/orbit/preparation.json",
+      "bytes": 904,
+      "component_owner": "orbit-component-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/orbit-component-prepared01/preparation.json",
+      "packet": "retained",
+      "sha256": "ecfee19383c0558231742815d7c3dba6581193e93a0b9376381ee2d759991765"
+    },
+    {
+      "archive_path": "retained/orbit/runtime-closure.json",
+      "bytes": 763162,
+      "component_owner": "orbit-component-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/orbit-component-prepared01/runtime-closure.json",
+      "packet": "retained",
+      "sha256": "8ba0db05f9f7300693cf0d0ac657f6a3f3eb0fb7973eedc82de77434e826c901"
+    },
+    {
+      "archive_path": "retained/orbit/worker.log",
+      "bytes": 1881,
+      "component_owner": "orbit-component-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/orbit-component-prepared01/worker.log",
+      "packet": "retained",
+      "sha256": "a933c28e04800624134407d00e0f970e5b13c62f750fb821ce24291e992f2a5f"
+    },
+    {
+      "archive_path": "retained/parking/completion.json",
+      "bytes": 465616,
+      "component_owner": "parking-component-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/parking-component-prepared01/completion.json",
+      "packet": "retained",
+      "sha256": "ed19ff114efbd4e7f81dc014280762f81ca2c9b57b56b949704d13f0afaf64a5"
+    },
+    {
+      "archive_path": "retained/parking/launch.json",
+      "bytes": 657404,
+      "component_owner": "parking-component-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/parking-component-prepared01/launch.json",
+      "packet": "retained",
+      "sha256": "4168294a7601cedf747b8d78534a36c8e58609254973ca31d03a25f672b7d421"
+    },
+    {
+      "archive_path": "retained/parking/output/design.npz",
+      "bytes": 20556,
+      "component_owner": "parking-component-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/parking-component-prepared01/output/design.npz",
+      "packet": "retained",
+      "sha256": "0ea6f79e451aba077ecbd9dc1a5df07d392fb7d5386c0f7cede071ab57fe9680"
+    },
+    {
+      "archive_path": "retained/parking/output/parking-3181020.npz",
+      "bytes": 262041,
+      "component_owner": "parking-component-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/parking-component-prepared01/output/parking-3181020.npz",
+      "packet": "retained",
+      "sha256": "a6b1348a2132517c0944dffa397f81c0bccba0d33c75f125d04f69b9aad0a09e"
+    },
+    {
+      "archive_path": "retained/parking/output/parking-3181021.npz",
+      "bytes": 262303,
+      "component_owner": "parking-component-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/parking-component-prepared01/output/parking-3181021.npz",
+      "packet": "retained",
+      "sha256": "39b4b647df26deee9af99a8c868d2cde9e2beff4298def4c843da1e35741b3ba"
+    },
+    {
+      "archive_path": "retained/parking/output/parking-3181022.npz",
+      "bytes": 262164,
+      "component_owner": "parking-component-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/parking-component-prepared01/output/parking-3181022.npz",
+      "packet": "retained",
+      "sha256": "9a24797cde025f429d3dfec90de00972db108bed2af6b287d98a45c58da01756"
+    },
+    {
+      "archive_path": "retained/parking/output/receipt.json",
+      "bytes": 1651,
+      "component_owner": "parking-component-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/parking-component-prepared01/output/receipt.json",
+      "packet": "retained",
+      "sha256": "23b5d8c318cfe0b37a675affa756baeaa158a1bf5edf8f15ea374c3d3c2d06a8"
+    },
+    {
+      "archive_path": "retained/parking/preparation.json",
+      "bytes": 907,
+      "component_owner": "parking-component-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/parking-component-prepared01/preparation.json",
+      "packet": "retained",
+      "sha256": "14cfe31359960efbf8bcabdcc081f36e35f15a948647ccd4bfeddbde30f98afb"
+    },
+    {
+      "archive_path": "retained/parking/runtime-closure.json",
+      "bytes": 763162,
+      "component_owner": "parking-component-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/parking-component-prepared01/runtime-closure.json",
+      "packet": "retained",
+      "sha256": "8ba0db05f9f7300693cf0d0ac657f6a3f3eb0fb7973eedc82de77434e826c901"
+    },
+    {
+      "archive_path": "retained/parking/worker.log",
+      "bytes": 1465,
+      "component_owner": "parking-component-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/parking-component-prepared01/worker.log",
+      "packet": "retained",
+      "sha256": "bb636bc41e7676fdf2ee3a6cdbe57bba466e4c506ea5226804318528c14d952b"
+    },
+    {
+      "archive_path": "retained/bridge/completion.json",
+      "bytes": 467374,
+      "component_owner": "stronger-orbit-bridge-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/stronger-orbit-bridge-prepared01/completion.json",
+      "packet": "retained",
+      "sha256": "244ccde347633185762c2e2653f72ba00eae50f03717fecdb4c02630ad75045e"
+    },
+    {
+      "archive_path": "retained/bridge/launch.json",
+      "bytes": 660353,
+      "component_owner": "stronger-orbit-bridge-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/stronger-orbit-bridge-prepared01/launch.json",
+      "packet": "retained",
+      "sha256": "a60bdb32caeafd6a7202bec752886d11bdb44bb4bb322e06e0e668f01edf29e9"
+    },
+    {
+      "archive_path": "retained/bridge/output/combined-controller.npz",
+      "bytes": 5273170,
+      "component_owner": "stronger-orbit-bridge-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/stronger-orbit-bridge-prepared01/output/combined-controller.npz",
+      "packet": "retained",
+      "sha256": "e25b893d814f9f324af5072c7e9932c8e18347ee42e2ee7a33b2de940aa1ee52"
+    },
+    {
+      "archive_path": "retained/bridge/output/controller.npz",
+      "bytes": 451320,
+      "component_owner": "stronger-orbit-bridge-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/stronger-orbit-bridge-prepared01/output/controller.npz",
+      "packet": "retained",
+      "sha256": "60f125456d5c98c629d0103dc656cad20c95925434456445e4ea9119087e1c2e"
+    },
+    {
+      "archive_path": "retained/bridge/output/full-affine-feedback.npz",
+      "bytes": 4568418,
+      "component_owner": "stronger-orbit-bridge-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/stronger-orbit-bridge-prepared01/output/full-affine-feedback.npz",
+      "packet": "retained",
+      "sha256": "c8bdf7e71e9171072631d99268c3b857ec144bd4f9a527b5c61262d760a23719"
+    },
+    {
+      "archive_path": "retained/bridge/output/initializer.npz",
+      "bytes": 134285,
+      "component_owner": "stronger-orbit-bridge-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/stronger-orbit-bridge-prepared01/output/initializer.npz",
+      "packet": "retained",
+      "sha256": "d06f95f4e7cbd3e1613be767cafd8e803ad8f7a3498de11d104c974084dfc993"
+    },
+    {
+      "archive_path": "retained/bridge/output/raw-solver.npz",
+      "bytes": 135909,
+      "component_owner": "stronger-orbit-bridge-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/stronger-orbit-bridge-prepared01/output/raw-solver.npz",
+      "packet": "retained",
+      "sha256": "20bdeeb5676850757e7b353461987e5bc29aca7734dabfc5186df758ca38a0f8"
+    },
+    {
+      "archive_path": "retained/bridge/output/receipt.json",
+      "bytes": 1175,
+      "component_owner": "stronger-orbit-bridge-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/stronger-orbit-bridge-prepared01/output/receipt.json",
+      "packet": "retained",
+      "sha256": "d15b3bc6d45d55edf03292684789f1508c32f9d324e4c21fcbdbcc03258cea30"
+    },
+    {
+      "archive_path": "retained/bridge/output/reference.npz",
+      "bytes": 465232,
+      "component_owner": "stronger-orbit-bridge-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/stronger-orbit-bridge-prepared01/output/reference.npz",
+      "packet": "retained",
+      "sha256": "8383590451ec88323a0feab2b05a19f5498f288db9a59fc424a142a75d332dab"
+    },
+    {
+      "archive_path": "retained/bridge/output/verified-native-defects.npz",
+      "bytes": 98587,
+      "component_owner": "stronger-orbit-bridge-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/stronger-orbit-bridge-prepared01/output/verified-native-defects.npz",
+      "packet": "retained",
+      "sha256": "4ff34a80c57feee076aaf284443c7e2268ff2897bdd62239254fd8d1d83bd087"
+    },
+    {
+      "archive_path": "retained/bridge/preparation.json",
+      "bytes": 916,
+      "component_owner": "stronger-orbit-bridge-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/stronger-orbit-bridge-prepared01/preparation.json",
+      "packet": "retained",
+      "sha256": "4add337643dfe73a389c032d928c8652cd90c77133136a05fed4979574200125"
+    },
+    {
+      "archive_path": "retained/bridge/runtime-closure.json",
+      "bytes": 766359,
+      "component_owner": "stronger-orbit-bridge-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/stronger-orbit-bridge-prepared01/runtime-closure.json",
+      "packet": "retained",
+      "sha256": "40ba02a77393e6fc0c0c7a4388f3440e67971f551440f2d70fedefe1d23b0ce6"
+    },
+    {
+      "archive_path": "retained/bridge/worker.log",
+      "bytes": 16961,
+      "component_owner": "stronger-orbit-bridge-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/stronger-orbit-bridge-prepared01/worker.log",
+      "packet": "retained",
+      "sha256": "c57bd35b7969f1c03bbd591dd67abb0f378e2680b3328afbd6daa6cb8e250510"
+    },
+    {
+      "archive_path": "retained/plant-native-checks/completion.json",
+      "bytes": 57350,
+      "component_owner": "plant-parity-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/plant-parity-prepared01/completion.json",
+      "packet": "retained",
+      "sha256": "27be7000516826c4822a10db47a607a203d65e43fd6e6dfd060a641866135e5b"
+    },
+    {
+      "archive_path": "retained/plant-native-checks/inputs.json",
+      "bytes": 86216,
+      "component_owner": "plant-parity-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/plant-parity-prepared01/inputs.json",
+      "packet": "retained",
+      "sha256": "c27e8164dd22e132f80d6a75b1bfca7f6bc742be56da104604ae1cf963c9bc60"
+    },
+    {
+      "archive_path": "retained/plant-native-checks/launch.json",
+      "bytes": 87335,
+      "component_owner": "plant-parity-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/plant-parity-prepared01/launch.json",
+      "packet": "retained",
+      "sha256": "d9d18dd0b82f8e38d611d8b4a26441dd6abd952fae51eaa900d03ce3b2c4bcb4"
+    },
+    {
+      "archive_path": "retained/plant-native-checks/output/arrays.npz",
+      "bytes": 208777,
+      "component_owner": "plant-parity-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/plant-parity-prepared01/output/arrays.npz",
+      "packet": "retained",
+      "sha256": "d5d2710310536cdce0badbcb729812aa5d755ea31e2e59d3ceb93e4735b2e3f1"
+    },
+    {
+      "archive_path": "retained/plant-native-checks/output/receipt.json",
+      "bytes": 64028,
+      "component_owner": "plant-parity-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/plant-parity-prepared01/output/receipt.json",
+      "packet": "retained",
+      "sha256": "8e6c500dec5f8dd63d4c4c9a38c7a01fde0c9baac3e367747ff06bdc67eb5fa6"
+    },
+    {
+      "archive_path": "retained/plant-native-checks/worker.log",
+      "bytes": 291,
+      "component_owner": "plant-parity-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/plant-parity-prepared01/worker.log",
+      "packet": "retained",
+      "sha256": "bad45cd102d84919c635d5f130013a5f4a963e8467944cc34882afaca12fb3f1"
+    },
+    {
+      "archive_path": "retained/runtime-audit-failure/completion.json",
+      "bytes": 465366,
+      "component_owner": "saved-model-audit-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/saved-model-audit-prepared01/completion.json",
+      "packet": "retained",
+      "sha256": "0cc6e41d8133c6158ddfa573519b5956c1026837bec299447b162a442066cede"
+    },
+    {
+      "archive_path": "retained/runtime-audit-failure/inputs.json",
+      "bytes": 676578,
+      "component_owner": "saved-model-audit-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/saved-model-audit-prepared01/inputs.json",
+      "packet": "retained",
+      "sha256": "09a736f9e5c3a797f0dee7ff6a16a429a0d126bc6ee2ec16c018336d45d7bc5b"
+    },
+    {
+      "archive_path": "retained/runtime-audit-failure/launch.json",
+      "bytes": 677694,
+      "component_owner": "saved-model-audit-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/saved-model-audit-prepared01/launch.json",
+      "packet": "retained",
+      "sha256": "186b35e9a6cf79890fdd98978e6ec07f5d77659d75066f106c14f13d99b67dbe"
+    },
+    {
+      "archive_path": "retained/runtime-audit-failure/preparation.json",
+      "bytes": 875,
+      "component_owner": "saved-model-audit-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/saved-model-audit-prepared01/preparation.json",
+      "packet": "retained",
+      "sha256": "bd01e40c10f8276109d9b8ea0c7019583c748c763c41c476bff4a8ac25414661"
+    },
+    {
+      "archive_path": "retained/runtime-audit-failure/runtime-closure.json",
+      "bytes": 878388,
+      "component_owner": "saved-model-audit-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/saved-model-audit-prepared01/runtime-closure.json",
+      "packet": "retained",
+      "sha256": "28e1ee8dc2f1b15913229e819bbc9cd68776ebb2682edd56e76f5ed6165e3a99"
+    },
+    {
+      "archive_path": "retained/runtime-audit-failure/worker.log",
+      "bytes": 863,
+      "component_owner": "saved-model-audit-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/saved-model-audit-prepared01/worker.log",
+      "packet": "retained",
+      "sha256": "0cbe3d502490eb886245e4b50865462c2e342358140dc2460bb5e32810134b5a"
+    },
+    {
+      "archive_path": "retained/runtime-audit-corrected/completion.json",
+      "bytes": 465920,
+      "component_owner": "saved-model-audit-prepared02",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/saved-model-audit-prepared02/completion.json",
+      "packet": "retained",
+      "sha256": "318675b135f31976c6844ccafb7bd318cae3d68f6c8ca5d6a1b8a38b9334954f"
+    },
+    {
+      "archive_path": "retained/runtime-audit-corrected/inputs.json",
+      "bytes": 677381,
+      "component_owner": "saved-model-audit-prepared02",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/saved-model-audit-prepared02/inputs.json",
+      "packet": "retained",
+      "sha256": "03243eada90f53773203ee9fbfffa9e386330290384c8f190dc5db13b1a9c8eb"
+    },
+    {
+      "archive_path": "retained/runtime-audit-corrected/launch.json",
+      "bytes": 678500,
+      "component_owner": "saved-model-audit-prepared02",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/saved-model-audit-prepared02/launch.json",
+      "packet": "retained",
+      "sha256": "2593a62fc636d18e6cba93eab08d34ed83f675581793f018574d2911dbc5057d"
+    },
+    {
+      "archive_path": "retained/runtime-audit-corrected/output/arrays.npz",
+      "bytes": 100124,
+      "component_owner": "saved-model-audit-prepared02",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/saved-model-audit-prepared02/output/arrays.npz",
+      "packet": "retained",
+      "sha256": "abb6c0833785474647583506022d02cb30517213dc03a239abe5b521e89a6c8a"
+    },
+    {
+      "archive_path": "retained/runtime-audit-corrected/output/receipt.json",
+      "bytes": 508911,
+      "component_owner": "saved-model-audit-prepared02",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/saved-model-audit-prepared02/output/receipt.json",
+      "packet": "retained",
+      "sha256": "836becd7cdb0601296633d14c076ede663ff49d87ada189e092f05a2d6bc13f0"
+    },
+    {
+      "archive_path": "retained/runtime-audit-corrected/preparation.json",
+      "bytes": 2931,
+      "component_owner": "saved-model-audit-prepared02",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/saved-model-audit-prepared02/preparation.json",
+      "packet": "retained",
+      "sha256": "374d63c3ee803258d1dcc8541833a9dad16c5f3566e5ac2c41538aaea6ad187e"
+    },
+    {
+      "archive_path": "retained/runtime-audit-corrected/runtime-closure.json",
+      "bytes": 879435,
+      "component_owner": "saved-model-audit-prepared02",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/saved-model-audit-prepared02/runtime-closure.json",
+      "packet": "retained",
+      "sha256": "5bb910482262aa153d8769b085d41ddd359756e8ae7054746cd0d3ac881ed3f5"
+    },
+    {
+      "archive_path": "retained/runtime-audit-corrected/worker.log",
+      "bytes": 80,
+      "component_owner": "saved-model-audit-prepared02",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/saved-model-audit-prepared02/worker.log",
+      "packet": "retained",
+      "sha256": "f5bb21994588063d4366812ed508aeb4fa2c5b57fc81b727934759316f37be97"
+    },
+    {
+      "archive_path": "retained/diagnostic/completion.json",
+      "bytes": 121210,
+      "component_owner": "native-value-exact-hanging-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/native-value-exact-hanging-prepared01/completion.json",
+      "packet": "retained",
+      "sha256": "ed458c036395d9640b4453d48910d9f95977a777755533837215291d1b2cf159"
+    },
+    {
+      "archive_path": "retained/diagnostic/launch.json",
+      "bytes": 190824,
+      "component_owner": "native-value-exact-hanging-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/native-value-exact-hanging-prepared01/launch.json",
+      "packet": "retained",
+      "sha256": "0cc495079de86e785e1643630411702c1b49fe70994cd1957761d76f3864c06e"
+    },
+    {
+      "archive_path": "retained/diagnostic/output/episode-3181040-candidate-errors.json",
+      "bytes": 3,
+      "component_owner": "native-value-exact-hanging-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/native-value-exact-hanging-prepared01/output/episode-3181040-candidate-errors.json",
+      "packet": "retained",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "archive_path": "retained/diagnostic/output/episode-3181040-candidate-ledger.npz",
+      "bytes": 4435330,
+      "component_owner": "native-value-exact-hanging-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/native-value-exact-hanging-prepared01/output/episode-3181040-candidate-ledger.npz",
+      "packet": "retained",
+      "sha256": "21c874bd713c5c6bb1507ccc17ecf66ea25fc1ae08858033b768122f4fbcf3f0"
+    },
+    {
+      "archive_path": "retained/diagnostic/output/episode-3181040.npz",
+      "bytes": 665408,
+      "component_owner": "native-value-exact-hanging-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/native-value-exact-hanging-prepared01/output/episode-3181040.npz",
+      "packet": "retained",
+      "sha256": "964d30fa3a86aebc5a5307786f37e21420a1581dad8046dfe6714afb262222ba"
+    },
+    {
+      "archive_path": "retained/diagnostic/output/receipt.json",
+      "bytes": 291549,
+      "component_owner": "native-value-exact-hanging-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/native-value-exact-hanging-prepared01/output/receipt.json",
+      "packet": "retained",
+      "sha256": "29ce186c06f3f32b980032e0b2ddf5a468c9116fca3ec23eb17d214280511c5d"
+    },
+    {
+      "archive_path": "retained/diagnostic/output/runtime-coverage.json",
+      "bytes": 38074,
+      "component_owner": "native-value-exact-hanging-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/native-value-exact-hanging-prepared01/output/runtime-coverage.json",
+      "packet": "retained",
+      "sha256": "92b63cfe06957ba80b1827aa8e60a01b40038ce13984ecffff3ebf5f006cf760"
+    },
+    {
+      "archive_path": "retained/diagnostic/preparation.json",
+      "bytes": 896,
+      "component_owner": "native-value-exact-hanging-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/native-value-exact-hanging-prepared01/preparation.json",
+      "packet": "retained",
+      "sha256": "bb6c2f52459c05ad793bb4700e4d4f0964320ab5ef98a8b3c79598312becf983"
+    },
+    {
+      "archive_path": "retained/diagnostic/runtime-closure.json",
+      "bytes": 226793,
+      "component_owner": "native-value-exact-hanging-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/native-value-exact-hanging-prepared01/runtime-closure.json",
+      "packet": "retained",
+      "sha256": "90c6086f49ad2009aa43321f364e6aca8b67904d7ca5f19757348dd5ad8422ed"
+    },
+    {
+      "archive_path": "retained/diagnostic/worker.log",
+      "bytes": 198065,
+      "component_owner": "native-value-exact-hanging-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/native-value-exact-hanging-prepared01/worker.log",
+      "packet": "retained",
+      "sha256": "bdaa33d0720520bc0076beeb65ae1a77d73171ccfa62e39d40c85552ad0544c2"
+    },
+    {
+      "archive_path": "retained/diagnostic-saved-audit/completion.json",
+      "bytes": 123280,
+      "component_owner": "native-value-diagnostic-saved-audit-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/native-value-diagnostic-saved-audit-prepared01/completion.json",
+      "packet": "retained",
+      "sha256": "602f383b64d33cc544b0ee85b4bda1528f4ed5c65b38773d7d242923d504a4f2"
+    },
+    {
+      "archive_path": "retained/diagnostic-saved-audit/inputs.json",
+      "bytes": 191799,
+      "component_owner": "native-value-diagnostic-saved-audit-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/native-value-diagnostic-saved-audit-prepared01/inputs.json",
+      "packet": "retained",
+      "sha256": "dad288465d269f2bb3a6028e7c13124d3c31501f72c2b8d4e0e4565ebbd24f01"
+    },
+    {
+      "archive_path": "retained/diagnostic-saved-audit/launch.json",
+      "bytes": 193521,
+      "component_owner": "native-value-diagnostic-saved-audit-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/native-value-diagnostic-saved-audit-prepared01/launch.json",
+      "packet": "retained",
+      "sha256": "9dd38de4fe77fdbd2505e9ec4a1adfa91e14fbd333f55ff3be207cb1d258661b"
+    },
+    {
+      "archive_path": "retained/diagnostic-saved-audit/preparation.json",
+      "bytes": 1150,
+      "component_owner": "native-value-diagnostic-saved-audit-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/native-value-diagnostic-saved-audit-prepared01/preparation.json",
+      "packet": "retained",
+      "sha256": "e4baf5a3795f08cc5fffa67c2dac4ee29ec8e9e7e1052cf7c85cc6f78bac9310"
+    },
+    {
+      "archive_path": "retained/diagnostic-saved-audit/result/audit-runtime-coverage.json",
+      "bytes": 42441,
+      "component_owner": "native-value-diagnostic-saved-audit-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/native-value-diagnostic-saved-audit-prepared01/result/audit-runtime-coverage.json",
+      "packet": "retained",
+      "sha256": "f9efbc4ed05f65b5581c775427356119281c1419628e1721d543450117b0f569"
+    },
+    {
+      "archive_path": "retained/diagnostic-saved-audit/result/receipt.json",
+      "bytes": 124971,
+      "component_owner": "native-value-diagnostic-saved-audit-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/native-value-diagnostic-saved-audit-prepared01/result/receipt.json",
+      "packet": "retained",
+      "sha256": "e072227df8517fc6f6f49f7b20af7dff68ddf7209b6df2ca72deca92bc056477"
+    },
+    {
+      "archive_path": "retained/diagnostic-saved-audit/runtime-closure.json",
+      "bytes": 229922,
+      "component_owner": "native-value-diagnostic-saved-audit-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/native-value-diagnostic-saved-audit-prepared01/runtime-closure.json",
+      "packet": "retained",
+      "sha256": "e83149d3798f2cde620786c2f7141178a6018defa6f8ee45806960dd536ee2b8"
+    },
+    {
+      "archive_path": "retained/diagnostic-saved-audit/verified-completion.json",
+      "bytes": 1981,
+      "component_owner": "native-value-diagnostic-saved-audit-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/native-value-diagnostic-saved-audit-prepared01/verified-completion.json",
+      "packet": "retained",
+      "sha256": "a025a34dab3ddd1d64f5fb8f1000b1e13e2f8af95cd71bbf8f12693b16e163aa"
+    },
+    {
+      "archive_path": "retained/diagnostic-saved-audit/worker.log",
+      "bytes": 349,
+      "component_owner": "native-value-diagnostic-saved-audit-prepared01",
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/native-value-diagnostic-saved-audit-prepared01/worker.log",
+      "packet": "retained",
+      "sha256": "e2247c414a10fac810d73ed8e866d68861257d365e82946638502cab0b7a9831"
+    },
+    {
+      "archive_path": "retained/declarations/declaration01.json",
+      "bytes": 1939,
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/declaration01.json",
+      "packet": "retained",
+      "sha256": "7ad24f55b9dc4c8dc1f60498223e3d014a026eb8170d3a5f684bf1a366b9ac5c"
+    },
+    {
+      "archive_path": "retained/declarations/native-value-design01.json",
+      "bytes": 4873,
+      "original_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/native-value-design01.json",
+      "packet": "retained",
+      "sha256": "dce1df9fec52a068b7c3a18ff9053a2caaf9b2c6f9728c9f3c058bca153b8b8a"
+    }
+  ],
+  "frozen_clone_role": "byte inventory only; never portable execution identity",
+  "model_constructions": 0,
+  "n_links": 18,
+  "native_commands": 0,
+  "new_claims": 0,
+  "new_episodes": 0,
+  "offline_gap_not_feasibility": true,
+  "offline_native_gap": 2.66998884557168e-07,
+  "online_qualified_candidate_unchanged": true,
+  "original_execution_root": "/home/marctheshark/.t3/worktrees/rage-mill/t3-canonical18-swingup",
+  "reset_RNG_draws": 0,
+  "schema": "rage_mill.canonical18_public_synthesis_source_inventory.v1",
+  "scientific_scope": "retained offline synthesis and own18 diagnostic evidence; not replacement qualification",
+  "source_commit": "b2411f9896b6332dc00f97f462fc9278f3ade9bc",
+  "source_freeze": {
+    "bytes": 205765,
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/canonical18-release01/freeze.json",
+    "sha256": "2cbfb193ed550749c1db519fdf1c968131714a1d104249183ae4f8d104cdb66e"
+  },
+  "source_import_edges": [
+    {
+      "dependency": "src/rage_mill/__init__.py",
+      "kind": "static_import",
+      "source": "scripts/verify_canonical18_benchmark.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical_benchmark.py",
+      "kind": "static_import",
+      "source": "scripts/verify_canonical18_benchmark.py"
+    },
+    {
+      "dependency": "src/rage_mill/__init__.py",
+      "kind": "static_import",
+      "source": "scripts/verify_canonical18_benchmark.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical_dynamics.py",
+      "kind": "static_import",
+      "source": "scripts/verify_canonical18_benchmark.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical_benchmark.py",
+      "kind": "static_import",
+      "source": "scripts/audit_canonical18_native_value_episode_saved.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical_runtime_manifest.py",
+      "kind": "static_import",
+      "source": "scripts/audit_canonical18_native_value_episode_saved.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical_runtime_closure.py",
+      "kind": "static_import",
+      "source": "src/rage_mill/canonical_runtime_manifest.py"
+    },
+    {
+      "dependency": "src/rage_mill/__init__.py",
+      "kind": "static_import",
+      "source": "scripts/audit_canonical18_saved_model_v2.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical_benchmark.py",
+      "kind": "static_import",
+      "source": "scripts/audit_canonical18_saved_model_v2.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical_dynamics.py",
+      "kind": "static_import",
+      "source": "scripts/audit_canonical18_saved_model_v2.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical_runtime_manifest.py",
+      "kind": "static_import",
+      "source": "scripts/audit_canonical18_saved_model_v2.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical_benchmark.py",
+      "kind": "static_import",
+      "source": "scripts/audit_canonical18_saved_model_v2.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical_dynamics.py",
+      "kind": "static_import",
+      "source": "scripts/audit_canonical18_saved_model_v2.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical_runtime_closure.py",
+      "kind": "static_import",
+      "source": "scripts/audit_canonical18_saved_model_v2.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical_runtime_manifest.py",
+      "kind": "static_import",
+      "source": "scripts/audit_canonical18_saved_model_v2.py"
+    },
+    {
+      "dependency": "src/rage_mill/__init__.py",
+      "kind": "static_import",
+      "source": "scripts/audit_canonical18_saved_model.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical_benchmark.py",
+      "kind": "static_import",
+      "source": "scripts/audit_canonical18_saved_model.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical_dynamics.py",
+      "kind": "static_import",
+      "source": "scripts/audit_canonical18_saved_model.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical_runtime_manifest.py",
+      "kind": "static_import",
+      "source": "scripts/audit_canonical18_saved_model.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical_benchmark.py",
+      "kind": "static_import",
+      "source": "scripts/audit_canonical18_saved_model.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical_dynamics.py",
+      "kind": "static_import",
+      "source": "scripts/audit_canonical18_saved_model.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical_runtime_closure.py",
+      "kind": "static_import",
+      "source": "scripts/audit_canonical18_saved_model.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical_runtime_manifest.py",
+      "kind": "static_import",
+      "source": "scripts/audit_canonical18_saved_model.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical_benchmark.py",
+      "kind": "static_import",
+      "source": "scripts/prepare_canonical18_native_value_candidate.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical18_native_value_policy.py",
+      "kind": "static_import",
+      "source": "scripts/prepare_canonical18_native_value_candidate.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical_evaluation.py",
+      "kind": "static_import",
+      "source": "scripts/prepare_canonical18_native_value_candidate.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical_runtime_manifest.py",
+      "kind": "static_import",
+      "source": "scripts/prepare_canonical18_native_value_candidate.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical_benchmark.py",
+      "kind": "static_import",
+      "source": "src/rage_mill/canonical_evaluation.py"
+    },
+    {
+      "dependency": "src/rage_mill/__init__.py",
+      "kind": "static_import",
+      "source": "src/rage_mill/canonical18_native_value_policy.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical16_affine_feedback.py",
+      "kind": "static_import",
+      "source": "src/rage_mill/canonical18_native_value_policy.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical16_predictive_tracking.py",
+      "kind": "static_import",
+      "source": "src/rage_mill/canonical18_native_value_policy.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical18_controller.py",
+      "kind": "static_import",
+      "source": "src/rage_mill/canonical18_native_value_policy.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical18_native_value.py",
+      "kind": "static_import",
+      "source": "src/rage_mill/canonical18_native_value_policy.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical18_native_value_episode.py",
+      "kind": "static_import",
+      "source": "src/rage_mill/canonical18_native_value_policy.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical_profile_policy.py",
+      "kind": "static_import",
+      "source": "src/rage_mill/canonical18_native_value_policy.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical_evaluation.py",
+      "kind": "static_import",
+      "source": "src/rage_mill/canonical18_native_value_policy.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical_benchmark.py",
+      "kind": "static_import",
+      "source": "src/rage_mill/canonical_profile_policy.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical16_affine_feedback.py",
+      "kind": "static_import",
+      "source": "src/rage_mill/canonical18_native_value_episode.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical18_controller.py",
+      "kind": "static_import",
+      "source": "src/rage_mill/canonical18_native_value_episode.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical18_native_value.py",
+      "kind": "static_import",
+      "source": "src/rage_mill/canonical18_native_value_episode.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical_benchmark.py",
+      "kind": "static_import",
+      "source": "src/rage_mill/canonical18_native_value.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical16_affine_feedback.py",
+      "kind": "static_import",
+      "source": "src/rage_mill/canonical18_native_value.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical16_predictive_tracking.py",
+      "kind": "static_import",
+      "source": "src/rage_mill/canonical18_native_value.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical16_affine_feedback.py",
+      "kind": "static_import",
+      "source": "src/rage_mill/canonical16_predictive_tracking.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical16_affine_feedback.py",
+      "kind": "static_import",
+      "source": "scripts/probe_canonical18_native_value_episode.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical18_controller.py",
+      "kind": "static_import",
+      "source": "scripts/probe_canonical18_native_value_episode.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical18_native_value_episode.py",
+      "kind": "static_import",
+      "source": "scripts/probe_canonical18_native_value_episode.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical_benchmark.py",
+      "kind": "static_import",
+      "source": "scripts/probe_canonical18_native_value_episode.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical_runtime_closure.py",
+      "kind": "static_import",
+      "source": "scripts/probe_canonical18_native_value_episode.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical_runtime_manifest.py",
+      "kind": "static_import",
+      "source": "scripts/probe_canonical18_native_value_episode.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical_evaluation.py",
+      "kind": "static_import",
+      "source": "scripts/prepare_canonical18_diagnostic.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical_runtime_manifest.py",
+      "kind": "static_import",
+      "source": "scripts/prepare_canonical18_diagnostic.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical_evaluation.py",
+      "kind": "static_import",
+      "source": "scripts/prepare_canonical18_component.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical_runtime_manifest.py",
+      "kind": "static_import",
+      "source": "scripts/prepare_canonical18_component.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical_benchmark.py",
+      "kind": "static_import",
+      "source": "scripts/synthesize_canonical18.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical_dynamics.py",
+      "kind": "static_import",
+      "source": "scripts/synthesize_canonical18.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical16_trajectory.py",
+      "kind": "static_import",
+      "source": "scripts/synthesize_canonical18.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical16_dynamic_orbit.py",
+      "kind": "static_import",
+      "source": "scripts/synthesize_canonical18.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical16_orbit.py",
+      "kind": "static_import",
+      "source": "scripts/synthesize_canonical18.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical16_affine_feedback.py",
+      "kind": "static_import",
+      "source": "scripts/synthesize_canonical18.py"
+    },
+    {
+      "dependency": "src/rage_mill/canonical16_orbit_bridge.py",
+      "kind": "static_import",
+      "source": "scripts/synthesize_canonical18.py"
+    },
+    {
+      "dependency": "scripts/synthesize_canonical18.py",
+      "kind": "explicit_computed_runpy_path",
+      "source": "scripts/prepare_canonical18_component.py"
+    },
+    {
+      "dependency": "scripts/probe_canonical18_native_value_episode.py",
+      "kind": "explicit_computed_runpy_path",
+      "source": "scripts/prepare_canonical18_diagnostic.py"
+    }
+  ],
+  "source_license": "MIT; included LICENSE; third-party packages and original upstream inputs are not vendored",
+  "source_roots": [
+    "scripts/synthesize_canonical18.py",
+    "scripts/prepare_canonical18_component.py",
+    "scripts/prepare_canonical18_diagnostic.py",
+    "scripts/probe_canonical18_native_value_episode.py",
+    "scripts/prepare_canonical18_native_value_candidate.py",
+    "scripts/audit_canonical18_saved_model.py",
+    "scripts/audit_canonical18_saved_model_v2.py",
+    "scripts/audit_canonical18_native_value_episode_saved.py",
+    "scripts/verify_canonical18_benchmark.py"
+  ],
+  "state_dimension": 38
+}

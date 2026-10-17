@@ -1,748 +1,823 @@
 {
-  "schemaVersion": 1,
   "protocols": [
     {
-      "id": "canonical15-v1",
-      "title": "Published uniform-chain task, fifteen links",
-      "linksMin": 15,
-      "linksMax": 15,
-      "source": {
-        "url": "https://github.com/corbensorenson/cartpole/tree/b84c6413974d5c0831cdf261ce15e58ba65cd3f5",
-        "commit": "b84c6413974d5c0831cdf261ce15e58ba65cd3f5"
-      },
       "fingerprint": "cf4987abf008e8dc5f7b744e55f00e920f23f5ebc18cb209e73a842ed4237808",
+      "id": "canonical15-v1",
+      "linksMax": 15,
+      "linksMin": 15,
       "requirements": {
-        "durationSeconds": 30,
-        "commandsPerEpisode": 1500,
-        "actionHz": 50,
-        "uprightAngleRad": 0.15,
-        "uprightConsecutiveSteps": 250,
-        "railLimitMeters": 3,
-        "forceLimitNewtons": 80,
-        "calibrationTolerance": 1e-08,
-        "integration": {
-          "engine": "MuJoCo",
-          "engineVersion": "3.3.5",
-          "precision": "binary64",
-          "integrator": "RK4",
-          "timestepSeconds": 0.005,
-          "substeps": 4
-        },
-        "mechanics": {
-          "cartMassKg": 1,
-          "totalLinkMassKg": 1,
-          "totalChainLengthMeters": 3,
-          "capsuleRadiusMeters": 0.025,
-          "armature": 0.0005,
-          "totalHingeDamping": 0.015,
-          "cartDamping": 0.02,
-          "frictionLoss": 0
-        },
-        "reset": {
-          "position": "relative [0, pi, 0, ...]",
-          "noiseStd": 0.05,
-          "cartPositionNoiseStd": 0,
-          "rngOrder": "cart position zero-scale draw; joint positions; all velocities; replacement cart velocity"
-        },
         "acceptance": {
-          "angleConvention": "wrapped cumulative absolute",
+          "allFiniteRequired": true,
           "angleComparison": "strictly-less-than",
-          "samples": "post-command only",
+          "angleConvention": "wrapped cumulative absolute",
           "fullEpisodeRequired": true,
-          "stateOverwriteAfterInit": false,
           "liveRetriesAllowed": false,
-          "allFiniteRequired": true
+          "samples": "post-command only",
+          "stateOverwriteAfterInit": false
         },
+        "actionHz": 50,
+        "calibrationTolerance": 1e-08,
         "cohorts": [
           {
             "id": "calibration",
-            "stage": "calibration",
             "noise": "exact",
-            "required": 1
+            "required": 1,
+            "stage": "calibration"
           },
           {
             "id": "dev20",
-            "stage": "development",
             "noise": "noisy",
-            "required": 20
+            "required": 20,
+            "stage": "development"
           },
           {
             "id": "dev100",
-            "stage": "development",
             "noise": "noisy",
-            "required": 100
+            "required": 100,
+            "stage": "development"
           },
           {
             "id": "reserved-noisy20",
-            "stage": "reserved",
             "noise": "noisy",
             "required": 20,
+            "seedEnd": 215019,
             "seedStart": 215000,
-            "seedEnd": 215019
+            "stage": "reserved"
           },
           {
             "id": "reserved-noisy100",
-            "stage": "reserved",
             "noise": "noisy",
             "required": 100,
+            "seedEnd": 215199,
             "seedStart": 215100,
-            "seedEnd": 215199
+            "stage": "reserved"
           },
           {
             "id": "reserved-exact20",
-            "stage": "reserved",
             "noise": "exact",
             "required": 20,
+            "seedEnd": 215219,
             "seedStart": 215200,
-            "seedEnd": 215219
+            "stage": "reserved"
           },
           {
             "id": "video",
-            "stage": "video",
             "noise": "noisy",
             "required": 1,
+            "seedEnd": 215500,
             "seedStart": 215500,
-            "seedEnd": 215500
+            "stage": "video"
           }
-        ]
-      }
+        ],
+        "commandsPerEpisode": 1500,
+        "durationSeconds": 30,
+        "forceLimitNewtons": 80,
+        "integration": {
+          "engine": "MuJoCo",
+          "engineVersion": "3.3.5",
+          "integrator": "RK4",
+          "precision": "binary64",
+          "substeps": 4,
+          "timestepSeconds": 0.005
+        },
+        "mechanics": {
+          "armature": 0.0005,
+          "capsuleRadiusMeters": 0.025,
+          "cartDamping": 0.02,
+          "cartMassKg": 1,
+          "frictionLoss": 0,
+          "totalChainLengthMeters": 3,
+          "totalHingeDamping": 0.015,
+          "totalLinkMassKg": 1
+        },
+        "railLimitMeters": 3,
+        "reset": {
+          "cartPositionNoiseStd": 0,
+          "noiseStd": 0.05,
+          "position": "relative [0, pi, 0, ...]",
+          "rngOrder": "cart position zero-scale draw; joint positions; all velocities; replacement cart velocity"
+        },
+        "uprightAngleRad": 0.15,
+        "uprightConsecutiveSteps": 250
+      },
+      "source": {
+        "commit": "b84c6413974d5c0831cdf261ce15e58ba65cd3f5",
+        "url": "https://github.com/corbensorenson/cartpole/tree/b84c6413974d5c0831cdf261ce15e58ba65cd3f5"
+      },
+      "title": "Published uniform-chain task, fifteen links"
     },
     {
-      "id": "canonical16-v1",
-      "title": "Published uniform-chain task, sixteen links",
-      "linksMin": 16,
-      "linksMax": 16,
-      "source": {
-        "url": "https://github.com/corbensorenson/cartpole/tree/b84c6413974d5c0831cdf261ce15e58ba65cd3f5",
-        "commit": "b84c6413974d5c0831cdf261ce15e58ba65cd3f5"
-      },
       "fingerprint": "3aae935e152f9b22f15ca2c3b9f59809bd3abfc56086fef7ea0d27aee5cfb9d3",
+      "id": "canonical16-v1",
+      "linksMax": 16,
+      "linksMin": 16,
       "requirements": {
-        "durationSeconds": 30,
-        "commandsPerEpisode": 1500,
-        "actionHz": 50,
-        "uprightAngleRad": 0.15,
-        "uprightConsecutiveSteps": 250,
-        "railLimitMeters": 3,
-        "forceLimitNewtons": 80,
-        "calibrationTolerance": 1e-08,
-        "integration": {
-          "engine": "MuJoCo",
-          "engineVersion": "3.3.5",
-          "precision": "binary64",
-          "integrator": "RK4",
-          "timestepSeconds": 0.005,
-          "substeps": 4
-        },
-        "mechanics": {
-          "cartMassKg": 1,
-          "totalLinkMassKg": 1,
-          "totalChainLengthMeters": 3,
-          "capsuleRadiusMeters": 0.025,
-          "armature": 0.0005,
-          "totalHingeDamping": 0.015,
-          "cartDamping": 0.02,
-          "frictionLoss": 0
-        },
-        "reset": {
-          "position": "relative [0, pi, 0, ...]",
-          "noiseStd": 0.05,
-          "cartPositionNoiseStd": 0,
-          "rngOrder": "cart position zero-scale draw; joint positions; all velocities; replacement cart velocity"
-        },
         "acceptance": {
-          "angleConvention": "wrapped cumulative absolute",
+          "allFiniteRequired": true,
           "angleComparison": "strictly-less-than",
-          "samples": "post-command only",
+          "angleConvention": "wrapped cumulative absolute",
           "fullEpisodeRequired": true,
-          "stateOverwriteAfterInit": false,
           "liveRetriesAllowed": false,
-          "allFiniteRequired": true
+          "samples": "post-command only",
+          "stateOverwriteAfterInit": false
         },
+        "actionHz": 50,
+        "calibrationTolerance": 1e-08,
         "cohorts": [
           {
             "id": "calibration",
-            "stage": "calibration",
             "noise": "exact",
-            "required": 1
+            "required": 1,
+            "stage": "calibration"
           },
           {
             "id": "dev20",
-            "stage": "development",
             "noise": "noisy",
-            "required": 20
+            "required": 20,
+            "stage": "development"
           },
           {
             "id": "dev100",
-            "stage": "development",
             "noise": "noisy",
-            "required": 100
+            "required": 100,
+            "stage": "development"
           },
           {
             "id": "reserved-noisy20",
-            "stage": "reserved",
             "noise": "noisy",
             "required": 20,
+            "seedEnd": 216019,
             "seedStart": 216000,
-            "seedEnd": 216019
+            "stage": "reserved"
           },
           {
             "id": "reserved-noisy100",
-            "stage": "reserved",
             "noise": "noisy",
             "required": 100,
+            "seedEnd": 216199,
             "seedStart": 216100,
-            "seedEnd": 216199
+            "stage": "reserved"
           },
           {
             "id": "reserved-exact20",
-            "stage": "reserved",
             "noise": "exact",
             "required": 20,
+            "seedEnd": 216219,
             "seedStart": 216200,
-            "seedEnd": 216219
+            "stage": "reserved"
           },
           {
             "id": "video",
-            "stage": "video",
             "noise": "noisy",
             "required": 1,
+            "seedEnd": 216500,
             "seedStart": 216500,
-            "seedEnd": 216500
+            "stage": "video"
           }
-        ]
-      }
+        ],
+        "commandsPerEpisode": 1500,
+        "durationSeconds": 30,
+        "forceLimitNewtons": 80,
+        "integration": {
+          "engine": "MuJoCo",
+          "engineVersion": "3.3.5",
+          "integrator": "RK4",
+          "precision": "binary64",
+          "substeps": 4,
+          "timestepSeconds": 0.005
+        },
+        "mechanics": {
+          "armature": 0.0005,
+          "capsuleRadiusMeters": 0.025,
+          "cartDamping": 0.02,
+          "cartMassKg": 1,
+          "frictionLoss": 0,
+          "totalChainLengthMeters": 3,
+          "totalHingeDamping": 0.015,
+          "totalLinkMassKg": 1
+        },
+        "railLimitMeters": 3,
+        "reset": {
+          "cartPositionNoiseStd": 0,
+          "noiseStd": 0.05,
+          "position": "relative [0, pi, 0, ...]",
+          "rngOrder": "cart position zero-scale draw; joint positions; all velocities; replacement cart velocity"
+        },
+        "uprightAngleRad": 0.15,
+        "uprightConsecutiveSteps": 250
+      },
+      "source": {
+        "commit": "b84c6413974d5c0831cdf261ce15e58ba65cd3f5",
+        "url": "https://github.com/corbensorenson/cartpole/tree/b84c6413974d5c0831cdf261ce15e58ba65cd3f5"
+      },
+      "title": "Published uniform-chain task, sixteen links"
     },
     {
-      "id": "canonical17-v1",
-      "title": "Published uniform-chain task, seventeen links",
-      "linksMin": 17,
-      "linksMax": 17,
-      "source": {
-        "url": "https://github.com/corbensorenson/cartpole/tree/b84c6413974d5c0831cdf261ce15e58ba65cd3f5",
-        "commit": "b84c6413974d5c0831cdf261ce15e58ba65cd3f5"
-      },
       "fingerprint": "0db28677d5dda6576ff0b73cd0c5eac74742d05d7311f787cd8e06e709784d5f",
+      "id": "canonical17-v1",
+      "linksMax": 17,
+      "linksMin": 17,
       "requirements": {
-        "durationSeconds": 30,
-        "commandsPerEpisode": 1500,
-        "actionHz": 50,
-        "uprightAngleRad": 0.15,
-        "uprightConsecutiveSteps": 250,
-        "railLimitMeters": 3,
-        "forceLimitNewtons": 80,
-        "calibrationTolerance": 1e-08,
-        "integration": {
-          "engine": "MuJoCo",
-          "engineVersion": "3.3.5",
-          "precision": "binary64",
-          "integrator": "RK4",
-          "timestepSeconds": 0.005,
-          "substeps": 4
-        },
-        "mechanics": {
-          "cartMassKg": 1,
-          "totalLinkMassKg": 1,
-          "totalChainLengthMeters": 3,
-          "capsuleRadiusMeters": 0.025,
-          "armature": 0.0005,
-          "totalHingeDamping": 0.015,
-          "cartDamping": 0.02,
-          "frictionLoss": 0
-        },
-        "reset": {
-          "position": "relative [0, pi, 0, ...]",
-          "noiseStd": 0.05,
-          "cartPositionNoiseStd": 0,
-          "rngOrder": "cart position zero-scale draw; joint positions; all velocities; replacement cart velocity"
-        },
         "acceptance": {
-          "angleConvention": "wrapped cumulative absolute",
+          "allFiniteRequired": true,
           "angleComparison": "strictly-less-than",
-          "samples": "post-command only",
+          "angleConvention": "wrapped cumulative absolute",
           "fullEpisodeRequired": true,
-          "stateOverwriteAfterInit": false,
           "liveRetriesAllowed": false,
-          "allFiniteRequired": true
+          "samples": "post-command only",
+          "stateOverwriteAfterInit": false
         },
+        "actionHz": 50,
+        "calibrationTolerance": 1e-08,
         "cohorts": [
           {
             "id": "calibration",
-            "stage": "calibration",
             "noise": "exact",
-            "required": 1
+            "required": 1,
+            "stage": "calibration"
           },
           {
             "id": "dev20",
-            "stage": "development",
             "noise": "noisy",
-            "required": 20
+            "required": 20,
+            "stage": "development"
           },
           {
             "id": "dev100",
-            "stage": "development",
             "noise": "noisy",
-            "required": 100
+            "required": 100,
+            "stage": "development"
           },
           {
             "id": "reserved-noisy20",
-            "stage": "reserved",
             "noise": "noisy",
             "required": 20,
+            "seedEnd": 217019,
             "seedStart": 217000,
-            "seedEnd": 217019
+            "stage": "reserved"
           },
           {
             "id": "reserved-noisy100",
-            "stage": "reserved",
             "noise": "noisy",
             "required": 100,
+            "seedEnd": 217199,
             "seedStart": 217100,
-            "seedEnd": 217199
+            "stage": "reserved"
           },
           {
             "id": "reserved-exact20",
-            "stage": "reserved",
             "noise": "exact",
             "required": 20,
+            "seedEnd": 217219,
             "seedStart": 217200,
-            "seedEnd": 217219
+            "stage": "reserved"
           },
           {
             "id": "video",
-            "stage": "video",
             "noise": "noisy",
             "required": 1,
+            "seedEnd": 217500,
             "seedStart": 217500,
-            "seedEnd": 217500
+            "stage": "video"
           }
-        ]
-      }
+        ],
+        "commandsPerEpisode": 1500,
+        "durationSeconds": 30,
+        "forceLimitNewtons": 80,
+        "integration": {
+          "engine": "MuJoCo",
+          "engineVersion": "3.3.5",
+          "integrator": "RK4",
+          "precision": "binary64",
+          "substeps": 4,
+          "timestepSeconds": 0.005
+        },
+        "mechanics": {
+          "armature": 0.0005,
+          "capsuleRadiusMeters": 0.025,
+          "cartDamping": 0.02,
+          "cartMassKg": 1,
+          "frictionLoss": 0,
+          "totalChainLengthMeters": 3,
+          "totalHingeDamping": 0.015,
+          "totalLinkMassKg": 1
+        },
+        "railLimitMeters": 3,
+        "reset": {
+          "cartPositionNoiseStd": 0,
+          "noiseStd": 0.05,
+          "position": "relative [0, pi, 0, ...]",
+          "rngOrder": "cart position zero-scale draw; joint positions; all velocities; replacement cart velocity"
+        },
+        "uprightAngleRad": 0.15,
+        "uprightConsecutiveSteps": 250
+      },
+      "source": {
+        "commit": "b84c6413974d5c0831cdf261ce15e58ba65cd3f5",
+        "url": "https://github.com/corbensorenson/cartpole/tree/b84c6413974d5c0831cdf261ce15e58ba65cd3f5"
+      },
+      "title": "Published uniform-chain task, seventeen links"
+    },
+    {
+      "fingerprint": "7f9be38fe2163ad2eeb83ed7ad759c0f943a0c49251f4cc8384c46a8b10d18db",
+      "id": "canonical18-v1",
+      "linksMax": 18,
+      "linksMin": 18,
+      "requirements": {
+        "acceptance": {
+          "allFiniteRequired": true,
+          "angleComparison": "strictly-less-than",
+          "angleConvention": "wrapped cumulative absolute",
+          "fullEpisodeRequired": true,
+          "liveRetriesAllowed": false,
+          "samples": "post-command only",
+          "stateOverwriteAfterInit": false
+        },
+        "actionHz": 50,
+        "calibrationTolerance": 1e-08,
+        "cohorts": [
+          {
+            "id": "calibration",
+            "noise": "exact",
+            "required": 1,
+            "stage": "calibration"
+          },
+          {
+            "id": "dev20",
+            "noise": "noisy",
+            "required": 20,
+            "stage": "development"
+          },
+          {
+            "id": "dev100",
+            "noise": "noisy",
+            "required": 100,
+            "stage": "development"
+          },
+          {
+            "id": "reserved-noisy20",
+            "noise": "noisy",
+            "required": 20,
+            "seedEnd": 218019,
+            "seedStart": 218000,
+            "stage": "reserved"
+          },
+          {
+            "id": "reserved-noisy100",
+            "noise": "noisy",
+            "required": 100,
+            "seedEnd": 218199,
+            "seedStart": 218100,
+            "stage": "reserved"
+          },
+          {
+            "id": "reserved-exact20",
+            "noise": "exact",
+            "required": 20,
+            "seedEnd": 218219,
+            "seedStart": 218200,
+            "stage": "reserved"
+          },
+          {
+            "id": "video",
+            "noise": "noisy",
+            "required": 1,
+            "seedEnd": 218500,
+            "seedStart": 218500,
+            "stage": "video"
+          }
+        ],
+        "commandsPerEpisode": 1500,
+        "durationSeconds": 30,
+        "forceLimitNewtons": 80,
+        "integration": {
+          "engine": "MuJoCo",
+          "engineVersion": "3.3.5",
+          "integrator": "RK4",
+          "precision": "binary64",
+          "substeps": 4,
+          "timestepSeconds": 0.005
+        },
+        "mechanics": {
+          "armature": 0.0005,
+          "capsuleRadiusMeters": 0.025,
+          "cartDamping": 0.02,
+          "cartMassKg": 1,
+          "frictionLoss": 0,
+          "totalChainLengthMeters": 3,
+          "totalHingeDamping": 0.015,
+          "totalLinkMassKg": 1
+        },
+        "railLimitMeters": 3,
+        "reset": {
+          "cartPositionNoiseStd": 0,
+          "noiseStd": 0.05,
+          "position": "native relative q19/v19 (38 states): hanging q=[0, pi, 0, ...], v=[0, ...]",
+          "rngOrder": "cart position zero-scale draw; joint positions; all velocities; replacement cart velocity"
+        },
+        "uprightAngleRad": 0.15,
+        "uprightConsecutiveSteps": 250
+      },
+      "source": {
+        "commit": "b84c6413974d5c0831cdf261ce15e58ba65cd3f5",
+        "url": "https://github.com/corbensorenson/cartpole/tree/b84c6413974d5c0831cdf261ce15e58ba65cd3f5"
+      },
+      "title": "Published uniform-chain task, eighteen links"
     }
   ],
   "records": [
     {
-      "id": "rage-mill-canonical15-20261016",
-      "type": "result",
-      "protocolId": "canonical15-v1",
-      "protocolFingerprint": "cf4987abf008e8dc5f7b744e55f00e920f23f5ebc18cb209e73a842ed4237808",
-      "links": 15,
-      "qualified": true,
+      "cohorts": [
+        {
+          "attempted": 1,
+          "evidenceId": "calibration",
+          "id": "calibration",
+          "noise": "exact",
+          "passed": 1,
+          "required": 1,
+          "seedEnd": 3156000,
+          "seedStart": 3156000,
+          "stage": "calibration"
+        },
+        {
+          "attempted": 20,
+          "evidenceId": "development",
+          "id": "dev20",
+          "noise": "noisy",
+          "passed": 20,
+          "required": 20,
+          "seedEnd": 3156219,
+          "seedStart": 3156200,
+          "stage": "development"
+        },
+        {
+          "attempted": 100,
+          "evidenceId": "development",
+          "id": "dev100",
+          "noise": "noisy",
+          "passed": 100,
+          "required": 100,
+          "seedEnd": 3156399,
+          "seedStart": 3156300,
+          "stage": "development"
+        },
+        {
+          "attempted": 20,
+          "evidenceId": "reserved",
+          "id": "reserved-noisy20",
+          "noise": "noisy",
+          "passed": 20,
+          "required": 20,
+          "seedEnd": 215019,
+          "seedStart": 215000,
+          "stage": "reserved"
+        },
+        {
+          "attempted": 100,
+          "evidenceId": "reserved",
+          "id": "reserved-noisy100",
+          "noise": "noisy",
+          "passed": 100,
+          "required": 100,
+          "seedEnd": 215199,
+          "seedStart": 215100,
+          "stage": "reserved"
+        },
+        {
+          "attempted": 20,
+          "evidenceId": "reserved",
+          "id": "reserved-exact20",
+          "noise": "exact",
+          "passed": 20,
+          "required": 20,
+          "seedEnd": 215219,
+          "seedStart": 215200,
+          "stage": "reserved"
+        },
+        {
+          "attempted": 1,
+          "evidenceId": "reserved",
+          "id": "video",
+          "noise": "noisy",
+          "passed": 1,
+          "required": 1,
+          "seedEnd": 215500,
+          "seedStart": 215500,
+          "stage": "video"
+        }
+      ],
       "entrant": {
         "id": "rage-industries",
         "name": "Rage Industries / NeuralYogi",
         "url": "https://neuralyogi.com"
-      },
-      "method": {
-        "name": "Bounded native route planning",
-        "summary": "Full-state native-model controller: sixteen seconds of hanging settle, then a frozen ordered search over at most 32 native forecast profiles. The first passing forecast is executed once in the live episode; all internal forecasts are retained.",
-        "wallClockRealtime": false,
-        "usesObservedStateOnly": true,
-        "disclosures": [
-          "Simulation only. Exact native model and full-state feedback are used.",
-          "A 50 Hz simulated action cadence is not a wall-clock realtime guarantee. Development episode control time: median 4.25 s; maximum 34.12 s.",
-          "No post-initialization disturbance, hardware, numerical portability, or global-priority claim."
-        ]
-      },
-      "source": {
-        "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical15-20261016/canonical15-source.tar.gz",
-        "commit": "886267f09ce67d7215c166c92e14a0adaca8e34f",
-        "sha256": "0ae9a9f27eee159f95240c4654162b0eabba2f788c9ae5b69a98e88c92fb95d0"
-      },
-      "model": {
-        "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical15-20261016/model.xml",
-        "sha256": "73876177ae2950fe42752878f79f72d5334a4344a177d0b619b21af668b349d7"
-      },
-      "runtime": {
-        "engine": "MuJoCo",
-        "engineVersion": "3.3.5",
-        "language": "Python",
-        "languageVersion": "3.12.3",
-        "os": "Linux",
-        "architecture": "aarch64",
-        "precision": "binary64",
-        "dependencies": {
-          "numpy": "2.5.2",
-          "scipy": "1.18.1"
-        }
-      },
-      "timestamps": {
-        "runAt": null,
-        "frozenAt": "2026-10-16T17:54:52.208417Z",
-        "firstPublicAt": "2026-10-16T18:58:00Z",
-        "registeredAt": "2026-10-16T18:58:46.153Z"
       },
       "evidence": [
         {
           "id": "audit",
           "kind": "receipt",
-          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical15-20261016/audit.json",
+          "publishedAt": "2026-10-16T18:58:00Z",
           "sha256": "f13945b629125fc165581c367e5c046da6fe1ed50fc6c9f5a3f7b1abfc03e218",
-          "publishedAt": "2026-10-16T18:58:00Z"
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical15-20261016/audit.json"
         },
         {
           "id": "freeze",
           "kind": "receipt",
-          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical15-20261016/freeze.json",
+          "publishedAt": "2026-10-16T18:58:00Z",
           "sha256": "874cac1d6ba42af1c9483e20e92a90cbbb78555bdb94412c4b7308d6055172a5",
-          "publishedAt": "2026-10-16T18:58:00Z"
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical15-20261016/freeze.json"
         },
         {
           "id": "calibration",
           "kind": "receipt",
-          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical15-20261016/calibration.json",
+          "publishedAt": "2026-10-16T18:58:00Z",
           "sha256": "780556dd3d696de9923621e4e20f597cac7150c0c91e8fb5d62462a40ebbaf00",
-          "publishedAt": "2026-10-16T18:58:00Z"
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical15-20261016/calibration.json"
         },
         {
           "id": "development",
           "kind": "receipt",
-          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical15-20261016/development.json",
+          "publishedAt": "2026-10-16T18:58:00Z",
           "sha256": "1cdb770ad514e74fb45d54acf4f3a63ab5cff8a381c2014d6c2ea7630e021f31",
-          "publishedAt": "2026-10-16T18:58:00Z"
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical15-20261016/development.json"
         },
         {
           "id": "reserved",
           "kind": "receipt",
-          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical15-20261016/reserved.json",
+          "publishedAt": "2026-10-16T18:58:00Z",
           "sha256": "9a14861620db8ed0ae66b8321e7d95f3835c9d8f6250cff84453164a72198735",
-          "publishedAt": "2026-10-16T18:58:00Z"
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical15-20261016/reserved.json"
         },
         {
           "id": "video",
           "kind": "receipt",
-          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical15-20261016/video.json",
+          "publishedAt": "2026-10-16T18:58:00Z",
           "sha256": "7d1072fa5f2db880695f8a4b2f2f1ac2499f011d0e76729f1379100b80180fa8",
-          "publishedAt": "2026-10-16T18:58:00Z"
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical15-20261016/video.json"
         },
         {
           "id": "heldout-replay",
           "kind": "video",
-          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical15-20261016/canonical15.mp4",
+          "publishedAt": "2026-10-16T18:58:00Z",
           "sha256": "87d56006cb9a6ee285a9490857cd762a9e176eb374059ef1716ba9f14335bc7f",
-          "publishedAt": "2026-10-16T18:58:00Z"
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical15-20261016/canonical15.mp4"
         },
         {
           "id": "full-trajectories-and-forecasts",
           "kind": "trajectory",
-          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical15-20261016/canonical15-evidence.tar.gz",
+          "publishedAt": "2026-10-16T18:58:00Z",
           "sha256": "1f70a657ddcd50d21cb0620e5551a4fc3c3ff461807a8fcaadbd55a33972be2a",
-          "publishedAt": "2026-10-16T18:58:00Z"
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical15-20261016/canonical15-evidence.tar.gz"
         },
         {
           "id": "file-manifest",
           "kind": "receipt",
-          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical15-20261016/files.json",
+          "publishedAt": "2026-10-16T18:58:00Z",
           "sha256": "da41a9b4362f6454502b96389982c99e77069258759c28ab915ed817a4e11e64",
-          "publishedAt": "2026-10-16T18:58:00Z"
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical15-20261016/files.json"
         }
       ],
-      "cohorts": [
-        {
-          "id": "calibration",
-          "stage": "calibration",
-          "noise": "exact",
-          "required": 1,
-          "attempted": 1,
-          "passed": 1,
-          "evidenceId": "calibration",
-          "seedStart": 3156000,
-          "seedEnd": 3156000
-        },
-        {
-          "id": "dev20",
-          "stage": "development",
-          "noise": "noisy",
-          "required": 20,
-          "attempted": 20,
-          "passed": 20,
-          "evidenceId": "development",
-          "seedStart": 3156200,
-          "seedEnd": 3156219
-        },
-        {
-          "id": "dev100",
-          "stage": "development",
-          "noise": "noisy",
-          "required": 100,
-          "attempted": 100,
-          "passed": 100,
-          "evidenceId": "development",
-          "seedStart": 3156300,
-          "seedEnd": 3156399
-        },
-        {
-          "id": "reserved-noisy20",
-          "stage": "reserved",
-          "noise": "noisy",
-          "required": 20,
-          "seedStart": 215000,
-          "seedEnd": 215019,
-          "attempted": 20,
-          "passed": 20,
-          "evidenceId": "reserved"
-        },
-        {
-          "id": "reserved-noisy100",
-          "stage": "reserved",
-          "noise": "noisy",
-          "required": 100,
-          "seedStart": 215100,
-          "seedEnd": 215199,
-          "attempted": 100,
-          "passed": 100,
-          "evidenceId": "reserved"
-        },
-        {
-          "id": "reserved-exact20",
-          "stage": "reserved",
-          "noise": "exact",
-          "required": 20,
-          "seedStart": 215200,
-          "seedEnd": 215219,
-          "attempted": 20,
-          "passed": 20,
-          "evidenceId": "reserved"
-        },
-        {
-          "id": "video",
-          "stage": "video",
-          "noise": "noisy",
-          "required": 1,
-          "seedStart": 215500,
-          "seedEnd": 215500,
-          "attempted": 1,
-          "passed": 1,
-          "evidenceId": "reserved"
-        }
-      ],
-      "metrics": {
-        "commandsPerEpisode": 1500,
-        "secondsPerEpisode": 30,
-        "minUprightSeconds": 6.38,
-        "maxCartMeters": 2.7244540435262334,
-        "maxNativeDefect": 0,
-        "maxInitialGap": 0,
-        "auditedEpisodes": 262,
-        "auditedCommands": 393000
+      "id": "rage-mill-canonical15-20261016",
+      "links": 15,
+      "method": {
+        "disclosures": [
+          "Simulation only. Exact native model and full-state feedback are used.",
+          "A 50 Hz simulated action cadence is not a wall-clock realtime guarantee. Development episode control time: median 4.25 s; maximum 34.12 s.",
+          "No post-initialization disturbance, hardware, numerical portability, or global-priority claim."
+        ],
+        "name": "Bounded native route planning",
+        "summary": "Full-state native-model controller: sixteen seconds of hanging settle, then a frozen ordered search over at most 32 native forecast profiles. The first passing forecast is executed once in the live episode; all internal forecasts are retained.",
+        "usesObservedStateOnly": true,
+        "wallClockRealtime": false
       },
-      "verification": {
-        "level": "author-attested"
+      "metrics": {
+        "auditedCommands": 393000,
+        "auditedEpisodes": 262,
+        "commandsPerEpisode": 1500,
+        "maxCartMeters": 2.7244540435262334,
+        "maxInitialGap": 0,
+        "maxNativeDefect": 0,
+        "minUprightSeconds": 6.38,
+        "secondsPerEpisode": 30
+      },
+      "model": {
+        "sha256": "73876177ae2950fe42752878f79f72d5334a4344a177d0b619b21af668b349d7",
+        "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical15-20261016/model.xml"
       },
       "notes": [
         "A separate direct-MuJoCo scorer checked all 262 actual episodes and 393,000 commands. It was run by the same owner; external reproduction is not claimed.",
         "Public source is a byte-preserving export of benchmark-specific frozen files, with new portable inspection adapters. The original private repository history is outside this export.",
         "Reported execution timestamps were not recorded as an external timestamp authority. The controller-freeze time is an author declaration."
-      ]
+      ],
+      "protocolFingerprint": "cf4987abf008e8dc5f7b744e55f00e920f23f5ebc18cb209e73a842ed4237808",
+      "protocolId": "canonical15-v1",
+      "qualified": true,
+      "runtime": {
+        "architecture": "aarch64",
+        "dependencies": {
+          "numpy": "2.5.2",
+          "scipy": "1.18.1"
+        },
+        "engine": "MuJoCo",
+        "engineVersion": "3.3.5",
+        "language": "Python",
+        "languageVersion": "3.12.3",
+        "os": "Linux",
+        "precision": "binary64"
+      },
+      "source": {
+        "commit": "886267f09ce67d7215c166c92e14a0adaca8e34f",
+        "sha256": "0ae9a9f27eee159f95240c4654162b0eabba2f788c9ae5b69a98e88c92fb95d0",
+        "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical15-20261016/canonical15-source.tar.gz"
+      },
+      "timestamps": {
+        "firstPublicAt": "2026-10-16T18:58:00Z",
+        "frozenAt": "2026-10-16T17:54:52.208417Z",
+        "registeredAt": "2026-10-16T18:58:46.153Z",
+        "runAt": null
+      },
+      "type": "result",
+      "verification": {
+        "level": "author-attested"
+      }
     },
     {
-      "id": "rage-mill-canonical16-20261016",
-      "type": "result",
-      "protocolId": "canonical16-v1",
-      "protocolFingerprint": "3aae935e152f9b22f15ca2c3b9f59809bd3abfc56086fef7ea0d27aee5cfb9d3",
-      "links": 16,
-      "qualified": true,
+      "cohorts": [
+        {
+          "attempted": 1,
+          "evidenceId": "calibration",
+          "id": "calibration",
+          "noise": "exact",
+          "passed": 1,
+          "required": 1,
+          "seedEnd": 3167109,
+          "seedStart": 3167109,
+          "stage": "calibration"
+        },
+        {
+          "attempted": 20,
+          "evidenceId": "development",
+          "id": "dev20",
+          "noise": "noisy",
+          "passed": 20,
+          "required": 20,
+          "seedEnd": 3168019,
+          "seedStart": 3168000,
+          "stage": "development"
+        },
+        {
+          "attempted": 100,
+          "evidenceId": "development",
+          "id": "dev100",
+          "noise": "noisy",
+          "passed": 100,
+          "required": 100,
+          "seedEnd": 3168199,
+          "seedStart": 3168100,
+          "stage": "development"
+        },
+        {
+          "attempted": 20,
+          "evidenceId": "reserved",
+          "id": "reserved-noisy20",
+          "noise": "noisy",
+          "passed": 20,
+          "required": 20,
+          "seedEnd": 216019,
+          "seedStart": 216000,
+          "stage": "reserved"
+        },
+        {
+          "attempted": 100,
+          "evidenceId": "reserved",
+          "id": "reserved-noisy100",
+          "noise": "noisy",
+          "passed": 100,
+          "required": 100,
+          "seedEnd": 216199,
+          "seedStart": 216100,
+          "stage": "reserved"
+        },
+        {
+          "attempted": 20,
+          "evidenceId": "reserved",
+          "id": "reserved-exact20",
+          "noise": "exact",
+          "passed": 20,
+          "required": 20,
+          "seedEnd": 216219,
+          "seedStart": 216200,
+          "stage": "reserved"
+        },
+        {
+          "attempted": 1,
+          "evidenceId": "reserved",
+          "id": "video",
+          "noise": "noisy",
+          "passed": 1,
+          "required": 1,
+          "seedEnd": 216500,
+          "seedStart": 216500,
+          "stage": "video"
+        }
+      ],
       "entrant": {
         "id": "rage-industries",
         "name": "Rage Industries / NeuralYogi",
         "url": "https://neuralyogi.com"
       },
+      "evidence": [
+        {
+          "id": "audit",
+          "kind": "receipt",
+          "publishedAt": "2026-10-16T20:08:18Z",
+          "sha256": "d43a73905b960b659778129cc6a3341e0572db201c6b33bae5baa7b08a7b97de",
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical16-20261016/audit.json"
+        },
+        {
+          "id": "freeze",
+          "kind": "receipt",
+          "publishedAt": "2026-10-16T20:08:18Z",
+          "sha256": "28d97cd6dd8545bdaa5b6c4b9100903fd295e14342f32419cde73a791d1e9571",
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical16-20261016/freeze.json"
+        },
+        {
+          "id": "calibration",
+          "kind": "receipt",
+          "publishedAt": "2026-10-16T20:08:18Z",
+          "sha256": "661093ab0c45c180995cb80cd611ee131eaf5e307776324d8d05a94cd611fc10",
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical16-20261016/calibration.json"
+        },
+        {
+          "id": "development",
+          "kind": "receipt",
+          "publishedAt": "2026-10-16T20:08:18Z",
+          "sha256": "f3675813f6b257096274c5e627e10db981546e62d42f47f29e717a037516fd5b",
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical16-20261016/development.json"
+        },
+        {
+          "id": "reserved",
+          "kind": "receipt",
+          "publishedAt": "2026-10-16T20:08:18Z",
+          "sha256": "93e08c03e1d958e240022dcefcc1543a3019d637b45682917e66fe139c08257a",
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical16-20261016/reserved.json"
+        },
+        {
+          "id": "video",
+          "kind": "receipt",
+          "publishedAt": "2026-10-16T20:08:18Z",
+          "sha256": "7bd2162a3d387c1d602460a56adc0e84e93f708666722fd20ccc95405dab63ac",
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical16-20261016/video.json"
+        },
+        {
+          "id": "heldout-replay",
+          "kind": "video",
+          "publishedAt": "2026-10-16T20:08:18Z",
+          "sha256": "b585c64607de3369b2ab6f18048555bb739f964d6e841f7269be3910cba119fc",
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical16-20261016/canonical16.mp4"
+        },
+        {
+          "id": "full-trajectories-and-forecasts",
+          "kind": "trajectory",
+          "publishedAt": "2026-10-16T20:08:18Z",
+          "sha256": "3f87079284573ac472329af41de8a223aad532675d006b05f6c4144fc6282811",
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical16-20261016/canonical16-evidence.tar.gz"
+        },
+        {
+          "id": "file-manifest",
+          "kind": "receipt",
+          "publishedAt": "2026-10-16T20:08:18Z",
+          "sha256": "2caafd9fe7e56af6a74b005d907c56b85e1582b7d5cb83234764e8ac2a47bff1",
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical16-20261016/files.json"
+        }
+      ],
+      "id": "rage-mill-canonical16-20261016",
+      "links": 16,
       "method": {
-        "name": "Frozen trajectory with bounded native launch forecasts",
-        "summary": "Full-state native-model control: 850 hanging-settle commands, then a retained 650-command trajectory feedback prefix. At the observed launch state, a fixed ordered search selects the first of at most 11 cart-error offsets whose native forecast completes the remaining episode and upright hold; the live episode executes once.",
-        "wallClockRealtime": false,
-        "usesObservedStateOnly": true,
         "disclosures": [
           "Simulation only. Exact native model and full-state feedback are used. Commands are delivered immediately as clipped float32 normalized actions; feedback arithmetic is binary64.",
           "50 Hz is simulated action cadence, not a wall-clock realtime guarantee. At most 11 internal 650-command forecasts (7,150 forecast command attempts) are permitted at launch, with no physical state overwrite or additional live reset.",
           "The 650 retained gains and offsets are a prefix of the original 700-step zero-terminal design; they were not recomputed with a zero value at step 650.",
           "DEV100 selected the +0.000001 m cart-error profile in two cases; its other 98 cases and all 141 held-out cases selected zero offset. Every selected shadow matched the actual complete suffix byte for byte.",
           "No hardware, post-initialization disturbance, wall-clock realtime, numerical portability, third-party reproduction, or global-priority claim."
-        ]
+        ],
+        "name": "Frozen trajectory with bounded native launch forecasts",
+        "summary": "Full-state native-model control: 850 hanging-settle commands, then a retained 650-command trajectory feedback prefix. At the observed launch state, a fixed ordered search selects the first of at most 11 cart-error offsets whose native forecast completes the remaining episode and upright hold; the live episode executes once.",
+        "usesObservedStateOnly": true,
+        "wallClockRealtime": false
       },
-      "source": {
-        "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical16-20261016/canonical16-source.tar.gz",
-        "sha256": "2214ec1879417cb3b0908a94584185629209261e20273e7eb33bb588877aa083",
-        "commit": "d06e1478834519f797d28fc57a1b8bad09c61d67"
+      "metrics": {
+        "auditedCommands": 1500,
+        "auditedEpisodes": 1,
+        "commandsPerEpisode": 1500,
+        "maxCartMeters": 1.9427948460034268,
+        "maxInitialGap": 0,
+        "maxNativeDefect": 0,
+        "minUprightSeconds": 7.34,
+        "secondsPerEpisode": 30
       },
       "model": {
-        "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical16-20261016/model.xml",
-        "sha256": "6351ddc4468533786231ac988cb9707f3bec8e327c46e2c5036cb2f041289639"
-      },
-      "runtime": {
-        "engine": "MuJoCo",
-        "engineVersion": "3.3.5",
-        "language": "Python",
-        "languageVersion": "3.12.3",
-        "os": "Linux",
-        "architecture": "aarch64",
-        "precision": "binary64",
-        "dependencies": {
-          "numpy": "2.5.2"
-        }
-      },
-      "timestamps": {
-        "runAt": null,
-        "frozenAt": "2026-10-16T18:41:00Z",
-        "firstPublicAt": "2026-10-16T20:08:18Z",
-        "registeredAt": "2026-10-16T20:08:18.932Z"
-      },
-      "evidence": [
-        {
-          "id": "audit",
-          "kind": "receipt",
-          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical16-20261016/audit.json",
-          "sha256": "d43a73905b960b659778129cc6a3341e0572db201c6b33bae5baa7b08a7b97de",
-          "publishedAt": "2026-10-16T20:08:18Z"
-        },
-        {
-          "id": "freeze",
-          "kind": "receipt",
-          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical16-20261016/freeze.json",
-          "sha256": "28d97cd6dd8545bdaa5b6c4b9100903fd295e14342f32419cde73a791d1e9571",
-          "publishedAt": "2026-10-16T20:08:18Z"
-        },
-        {
-          "id": "calibration",
-          "kind": "receipt",
-          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical16-20261016/calibration.json",
-          "sha256": "661093ab0c45c180995cb80cd611ee131eaf5e307776324d8d05a94cd611fc10",
-          "publishedAt": "2026-10-16T20:08:18Z"
-        },
-        {
-          "id": "development",
-          "kind": "receipt",
-          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical16-20261016/development.json",
-          "sha256": "f3675813f6b257096274c5e627e10db981546e62d42f47f29e717a037516fd5b",
-          "publishedAt": "2026-10-16T20:08:18Z"
-        },
-        {
-          "id": "reserved",
-          "kind": "receipt",
-          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical16-20261016/reserved.json",
-          "sha256": "93e08c03e1d958e240022dcefcc1543a3019d637b45682917e66fe139c08257a",
-          "publishedAt": "2026-10-16T20:08:18Z"
-        },
-        {
-          "id": "video",
-          "kind": "receipt",
-          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical16-20261016/video.json",
-          "sha256": "7bd2162a3d387c1d602460a56adc0e84e93f708666722fd20ccc95405dab63ac",
-          "publishedAt": "2026-10-16T20:08:18Z"
-        },
-        {
-          "id": "heldout-replay",
-          "kind": "video",
-          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical16-20261016/canonical16.mp4",
-          "sha256": "b585c64607de3369b2ab6f18048555bb739f964d6e841f7269be3910cba119fc",
-          "publishedAt": "2026-10-16T20:08:18Z"
-        },
-        {
-          "id": "full-trajectories-and-forecasts",
-          "kind": "trajectory",
-          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical16-20261016/canonical16-evidence.tar.gz",
-          "sha256": "3f87079284573ac472329af41de8a223aad532675d006b05f6c4144fc6282811",
-          "publishedAt": "2026-10-16T20:08:18Z"
-        },
-        {
-          "id": "file-manifest",
-          "kind": "receipt",
-          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical16-20261016/files.json",
-          "sha256": "2caafd9fe7e56af6a74b005d907c56b85e1582b7d5cb83234764e8ac2a47bff1",
-          "publishedAt": "2026-10-16T20:08:18Z"
-        }
-      ],
-      "cohorts": [
-        {
-          "id": "calibration",
-          "stage": "calibration",
-          "noise": "exact",
-          "required": 1,
-          "attempted": 1,
-          "passed": 1,
-          "seedStart": 3167109,
-          "seedEnd": 3167109,
-          "evidenceId": "calibration"
-        },
-        {
-          "id": "dev20",
-          "stage": "development",
-          "noise": "noisy",
-          "required": 20,
-          "attempted": 20,
-          "passed": 20,
-          "seedStart": 3168000,
-          "seedEnd": 3168019,
-          "evidenceId": "development"
-        },
-        {
-          "id": "dev100",
-          "stage": "development",
-          "noise": "noisy",
-          "required": 100,
-          "attempted": 100,
-          "passed": 100,
-          "seedStart": 3168100,
-          "seedEnd": 3168199,
-          "evidenceId": "development"
-        },
-        {
-          "id": "reserved-noisy20",
-          "stage": "reserved",
-          "noise": "noisy",
-          "required": 20,
-          "attempted": 20,
-          "passed": 20,
-          "seedStart": 216000,
-          "seedEnd": 216019,
-          "evidenceId": "reserved"
-        },
-        {
-          "id": "reserved-noisy100",
-          "stage": "reserved",
-          "noise": "noisy",
-          "required": 100,
-          "attempted": 100,
-          "passed": 100,
-          "seedStart": 216100,
-          "seedEnd": 216199,
-          "evidenceId": "reserved"
-        },
-        {
-          "id": "reserved-exact20",
-          "stage": "reserved",
-          "noise": "exact",
-          "required": 20,
-          "attempted": 20,
-          "passed": 20,
-          "seedStart": 216200,
-          "seedEnd": 216219,
-          "evidenceId": "reserved"
-        },
-        {
-          "id": "video",
-          "stage": "video",
-          "noise": "noisy",
-          "required": 1,
-          "attempted": 1,
-          "passed": 1,
-          "seedStart": 216500,
-          "seedEnd": 216500,
-          "evidenceId": "reserved"
-        }
-      ],
-      "metrics": {
-        "commandsPerEpisode": 1500,
-        "secondsPerEpisode": 30,
-        "minUprightSeconds": 7.34,
-        "maxCartMeters": 1.9427948460034268,
-        "maxNativeDefect": 0,
-        "maxInitialGap": 0,
-        "auditedEpisodes": 1,
-        "auditedCommands": 1500
-      },
-      "verification": {
-        "level": "author-attested"
+        "sha256": "6351ddc4468533786231ac988cb9707f3bec8e327c46e2c5036cb2f041289639",
+        "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical16-20261016/model.xml"
       },
       "notes": [
         "All 262 actual calibration/development/reserved episodes and 393,000 recorded commands were rescored from hash-verified saved tapes. The 7.34-second minimum and cart maximum cover all 262, not only held-out cases.",
@@ -754,465 +829,730 @@
         "Checks and peer reviews were produced under the entrant's ownership. The entry is author-attested; no independent third-party reproduction is asserted.",
         "The public source archive preserves curated frozen controller, configuration and evaluation bytes, alongside new relocation and hash-checking adapters. The source commit names the original frozen snapshot; its private Git history and native runtime binaries are excluded from the public export.",
         "The protocol and source lineage credit corbensorenson/cartpole at b84c6413974d5c0831cdf261ce15e58ba65cd3f5 and its earlier fourteen-link route. Different earlier demonstrations remain distinct protocols."
-      ]
-    },
-    {
-      "id": "rage-mill-canonical17-20261016",
-      "type": "result",
-      "protocolId": "canonical17-v1",
-      "protocolFingerprint": "0db28677d5dda6576ff0b73cd0c5eac74742d05d7311f787cd8e06e709784d5f",
-      "links": 17,
+      ],
+      "protocolFingerprint": "3aae935e152f9b22f15ca2c3b9f59809bd3abfc56086fef7ea0d27aee5cfb9d3",
+      "protocolId": "canonical16-v1",
       "qualified": true,
-      "entrant": {
-        "id": "rage-industries",
-        "name": "Rage Industries / NeuralYogi",
-        "url": "https://neuralyogi.com"
-      },
-      "method": {
-        "name": "Frozen trajectory with bounded native affine-value action search",
-        "summary": "Observed 36-state feedback with a 700-command affine value horizon, 850 settling commands and a 650-command route. One complete launch forecast and at most 16 native float32 candidates per active command.",
-        "wallClockRealtime": false,
-        "usesObservedStateOnly": true,
-        "disclosures": [
-          "Classical control with the native model and observed state feedback. A separate bounded JEPA investigation failed its declared gate and was not adopted.",
-          "The declared cap is 22,950 native maps per physical episode. The 50 Hz cadence is simulated. Actual-owner CPU and wall times are measured; exact native candidate counts are reconstructed by a separate causal saved-policy replay, with its own measured owner time.",
-          "Simulation only. No hardware, disturbance robustness, numerical portability, third-party reproduction or global-priority claim. Original reserved inner candidate ledgers were not retained; counts in the saved-policy proofs are reconstructed rather than original actual-run counters."
-        ]
-      },
-      "source": {
-        "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/canonical17-source.tar.gz",
-        "sha256": "6341bcbbfdc2c76837f3e38bd0b609827fdae19efb431e56d6668b8c2bd14322",
-        "commit": "461dff89e2a824aa6771b927e5da0b67a3184f71"
-      },
-      "model": {
-        "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/model.xml",
-        "sha256": "6850e9194902d5a03f9e209f2449f5d3a92310524723eb1bc8b8f5c02b7f483a"
-      },
       "runtime": {
+        "architecture": "aarch64",
+        "dependencies": {
+          "numpy": "2.5.2"
+        },
         "engine": "MuJoCo",
         "engineVersion": "3.3.5",
         "language": "Python",
         "languageVersion": "3.12.3",
         "os": "Linux",
-        "architecture": "aarch64",
-        "precision": "binary64",
-        "dependencies": {
-          "numpy": "2.5.2"
-        }
+        "precision": "binary64"
+      },
+      "source": {
+        "commit": "d06e1478834519f797d28fc57a1b8bad09c61d67",
+        "sha256": "2214ec1879417cb3b0908a94584185629209261e20273e7eb33bb588877aa083",
+        "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical16-20261016/canonical16-source.tar.gz"
       },
       "timestamps": {
-        "runAt": null,
-        "frozenAt": "2026-10-16T22:08:44+00:00",
-        "firstPublicAt": null,
-        "registeredAt": "2026-10-16T23:05:40.794441+00:00"
+        "firstPublicAt": "2026-10-16T20:08:18Z",
+        "frozenAt": "2026-10-16T18:41:00Z",
+        "registeredAt": "2026-10-16T20:08:18.932Z",
+        "runAt": null
+      },
+      "type": "result",
+      "verification": {
+        "level": "author-attested"
+      }
+    },
+    {
+      "cohorts": [
+        {
+          "attempted": 1,
+          "evidenceId": "calibration",
+          "id": "calibration",
+          "noise": "exact",
+          "passed": 1,
+          "required": 1,
+          "seedEnd": 3177001,
+          "seedStart": 3177001,
+          "stage": "calibration"
+        },
+        {
+          "attempted": 20,
+          "evidenceId": "development",
+          "id": "dev20",
+          "noise": "noisy",
+          "passed": 20,
+          "required": 20,
+          "seedEnd": 3178019,
+          "seedStart": 3178000,
+          "stage": "development"
+        },
+        {
+          "attempted": 100,
+          "evidenceId": "development",
+          "id": "dev100",
+          "noise": "noisy",
+          "passed": 100,
+          "required": 100,
+          "seedEnd": 3178199,
+          "seedStart": 3178100,
+          "stage": "development"
+        },
+        {
+          "attempted": 20,
+          "evidenceId": "reserved",
+          "id": "reserved-noisy20",
+          "noise": "noisy",
+          "passed": 20,
+          "required": 20,
+          "seedEnd": 217019,
+          "seedStart": 217000,
+          "stage": "reserved"
+        },
+        {
+          "attempted": 100,
+          "evidenceId": "reserved",
+          "id": "reserved-noisy100",
+          "noise": "noisy",
+          "passed": 100,
+          "required": 100,
+          "seedEnd": 217199,
+          "seedStart": 217100,
+          "stage": "reserved"
+        },
+        {
+          "attempted": 20,
+          "evidenceId": "reserved",
+          "id": "reserved-exact20",
+          "noise": "exact",
+          "passed": 20,
+          "required": 20,
+          "seedEnd": 217219,
+          "seedStart": 217200,
+          "stage": "reserved"
+        },
+        {
+          "attempted": 1,
+          "evidenceId": "reserved",
+          "id": "video",
+          "noise": "noisy",
+          "passed": 1,
+          "required": 1,
+          "seedEnd": 217500,
+          "seedStart": 217500,
+          "stage": "video"
+        }
+      ],
+      "entrant": {
+        "id": "rage-industries",
+        "name": "Rage Industries / NeuralYogi",
+        "url": "https://neuralyogi.com"
       },
       "evidence": [
         {
           "id": "calibration",
           "kind": "receipt",
-          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/calibration.json",
+          "publishedAt": null,
           "sha256": "224d24cb0f14c352eb59456bb9bd779018be45907d3badfdddd4ac122da147ef",
-          "publishedAt": null
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/calibration.json"
         },
         {
           "id": "development",
           "kind": "receipt",
-          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/development.json",
+          "publishedAt": null,
           "sha256": "15531c406189f8b0a69e55d162d7ba8cd5857b9e3865a247c107d560236a0aa4",
-          "publishedAt": null
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/development.json"
         },
         {
           "id": "reserved",
           "kind": "receipt",
-          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/reserved.json",
+          "publishedAt": null,
           "sha256": "2a31c08e3184cb8827927eef5324b2942a9c6a4d3dc5e213e8fef8a3ec966721",
-          "publishedAt": null
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/reserved.json"
         },
         {
           "id": "video",
           "kind": "receipt",
-          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/video.json",
+          "publishedAt": null,
           "sha256": "6310c781e5fdaeac192ee3484bf9096bda65115f299e31a7ac43208e26a4d0b1",
-          "publishedAt": null
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/video.json"
         },
         {
           "id": "audit",
           "kind": "receipt",
-          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/audit.json",
+          "publishedAt": null,
           "sha256": "7dd0a825e2f7fb7bfe0f0df57c31c9181caf7da16d3e79fbb7d5b43a1314298a",
-          "publishedAt": null
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/audit.json"
         },
         {
           "id": "freeze",
           "kind": "receipt",
-          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/freeze.json",
+          "publishedAt": null,
           "sha256": "02b2360d66705f70e77423ebb1dbb2c6cbe17e535155b27bfb16a7e8d9219f26",
-          "publishedAt": null
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/freeze.json"
         },
         {
           "id": "files",
           "kind": "receipt",
-          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/files.json",
+          "publishedAt": null,
           "sha256": "cf781e68def10fbe2301245d76e3c0043f2e383e5ff04744d03d2d2a9e56eb6f",
-          "publishedAt": null
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/files.json"
         },
         {
           "id": "heldout-replay",
           "kind": "video",
-          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/canonical17.mp4",
+          "publishedAt": null,
           "sha256": "80169fa50e54fbc98bd2901429a1ed5b7dbccf4bd92211b769173cb549cc1554",
-          "publishedAt": null
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/canonical17.mp4"
         },
         {
           "id": "full-trajectories-and-proofs",
           "kind": "trajectory",
-          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/canonical17-evidence.tar.gz",
+          "publishedAt": null,
           "sha256": "b38fd7b5029f66fa3d1b8064901332bcfa0f039d5b2ab1264716d970773044e9",
-          "publishedAt": null
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/canonical17-evidence.tar.gz"
         }
       ],
-      "cohorts": [
-        {
-          "id": "calibration",
-          "stage": "calibration",
-          "noise": "exact",
-          "required": 1,
-          "attempted": 1,
-          "passed": 1,
-          "seedStart": 3177001,
-          "seedEnd": 3177001,
-          "evidenceId": "calibration"
-        },
-        {
-          "id": "dev20",
-          "stage": "development",
-          "noise": "noisy",
-          "required": 20,
-          "attempted": 20,
-          "passed": 20,
-          "seedStart": 3178000,
-          "seedEnd": 3178019,
-          "evidenceId": "development"
-        },
-        {
-          "id": "dev100",
-          "stage": "development",
-          "noise": "noisy",
-          "required": 100,
-          "attempted": 100,
-          "passed": 100,
-          "seedStart": 3178100,
-          "seedEnd": 3178199,
-          "evidenceId": "development"
-        },
-        {
-          "id": "reserved-noisy20",
-          "stage": "reserved",
-          "noise": "noisy",
-          "required": 20,
-          "seedStart": 217000,
-          "seedEnd": 217019,
-          "attempted": 20,
-          "passed": 20,
-          "evidenceId": "reserved"
-        },
-        {
-          "id": "reserved-noisy100",
-          "stage": "reserved",
-          "noise": "noisy",
-          "required": 100,
-          "seedStart": 217100,
-          "seedEnd": 217199,
-          "attempted": 100,
-          "passed": 100,
-          "evidenceId": "reserved"
-        },
-        {
-          "id": "reserved-exact20",
-          "stage": "reserved",
-          "noise": "exact",
-          "required": 20,
-          "seedStart": 217200,
-          "seedEnd": 217219,
-          "attempted": 20,
-          "passed": 20,
-          "evidenceId": "reserved"
-        },
-        {
-          "id": "video",
-          "stage": "video",
-          "noise": "noisy",
-          "required": 1,
-          "seedStart": 217500,
-          "seedEnd": 217500,
-          "attempted": 1,
-          "passed": 1,
-          "evidenceId": "reserved"
-        }
-      ],
-      "metrics": {
-        "commandsPerEpisode": 1500,
-        "secondsPerEpisode": 30,
-        "minUprightSeconds": 7.36,
-        "maxCartMeters": 1.9403198840436762,
-        "maxNativeDefect": 0.0,
-        "maxInitialGap": 0.0,
-        "auditedEpisodes": 142,
-        "auditedCommands": 213000
+      "id": "rage-mill-canonical17-20261016",
+      "links": 17,
+      "method": {
+        "disclosures": [
+          "Classical control with the native model and observed state feedback. A separate bounded JEPA investigation failed its declared gate and was not adopted.",
+          "The declared cap is 22,950 native maps per physical episode. The 50 Hz cadence is simulated. Actual-owner CPU and wall times are measured; exact native candidate counts are reconstructed by a separate causal saved-policy replay, with its own measured owner time.",
+          "Simulation only. No hardware, disturbance robustness, numerical portability, third-party reproduction or global-priority claim. Original reserved inner candidate ledgers were not retained; counts in the saved-policy proofs are reconstructed rather than original actual-run counters."
+        ],
+        "name": "Frozen trajectory with bounded native affine-value action search",
+        "summary": "Observed 36-state feedback with a 700-command affine value horizon, 850 settling commands and a 650-command route. One complete launch forecast and at most 16 native float32 candidates per active command.",
+        "usesObservedStateOnly": true,
+        "wallClockRealtime": false
       },
-      "verification": {
-        "level": "author-attested"
+      "metrics": {
+        "auditedCommands": 213000,
+        "auditedEpisodes": 142,
+        "commandsPerEpisode": 1500,
+        "maxCartMeters": 1.9403198840436762,
+        "maxInitialGap": 0.0,
+        "maxNativeDefect": 0.0,
+        "minUprightSeconds": 7.36,
+        "secondsPerEpisode": 30
+      },
+      "model": {
+        "sha256": "6850e9194902d5a03f9e209f2449f5d3a92310524723eb1bc8b8f5c02b7f483a",
+        "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/model.xml"
       },
       "notes": [
         "Complete exact source calibration and all 141 actual reserved tapes have cold and continuous saved native proofs. The 120 development episodes are rescored from tape and are not counted as native-audited episodes.",
         "The complete original candidate02 source inventory is nested unchanged. This final wrapper binds the actual completed release separately.",
         "Original absolute runtime paths remain provenance. The public loading view does not establish a portable execution identity."
-      ]
-    },
-    {
-      "id": "rage-mill-canonical17-20261016-published",
-      "type": "result",
-      "protocolId": "canonical17-v1",
+      ],
       "protocolFingerprint": "0db28677d5dda6576ff0b73cd0c5eac74742d05d7311f787cd8e06e709784d5f",
-      "links": 17,
+      "protocolId": "canonical17-v1",
       "qualified": true,
-      "entrant": {
-        "id": "rage-industries",
-        "name": "Rage Industries / NeuralYogi",
-        "url": "https://neuralyogi.com"
-      },
-      "method": {
-        "name": "Frozen trajectory with bounded native affine-value action search",
-        "summary": "Observed 36-state feedback with a 700-command affine value horizon, 850 settling commands and a 650-command route. One complete launch forecast and at most 16 native float32 candidates per active command.",
-        "wallClockRealtime": false,
-        "usesObservedStateOnly": true,
-        "disclosures": [
-          "Classical control with the native model and observed state feedback. A separate bounded JEPA investigation failed its declared gate and was not adopted.",
-          "The declared cap is 22,950 native maps per physical episode. The 50 Hz cadence is simulated. Actual-owner CPU and wall times are measured; exact native candidate counts are reconstructed by a separate causal saved-policy replay, with its own measured owner time.",
-          "Simulation only. No hardware, disturbance robustness, numerical portability, third-party reproduction or global-priority claim. Original reserved inner candidate ledgers were not retained; counts in the saved-policy proofs are reconstructed rather than original actual-run counters."
-        ]
-      },
-      "source": {
-        "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/canonical17-source.tar.gz",
-        "sha256": "6341bcbbfdc2c76837f3e38bd0b609827fdae19efb431e56d6668b8c2bd14322",
-        "commit": "461dff89e2a824aa6771b927e5da0b67a3184f71"
-      },
-      "model": {
-        "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/model.xml",
-        "sha256": "6850e9194902d5a03f9e209f2449f5d3a92310524723eb1bc8b8f5c02b7f483a"
-      },
       "runtime": {
+        "architecture": "aarch64",
+        "dependencies": {
+          "numpy": "2.5.2"
+        },
         "engine": "MuJoCo",
         "engineVersion": "3.3.5",
         "language": "Python",
         "languageVersion": "3.12.3",
         "os": "Linux",
-        "architecture": "aarch64",
-        "precision": "binary64",
-        "dependencies": {
-          "numpy": "2.5.2"
-        }
+        "precision": "binary64"
+      },
+      "source": {
+        "commit": "461dff89e2a824aa6771b927e5da0b67a3184f71",
+        "sha256": "6341bcbbfdc2c76837f3e38bd0b609827fdae19efb431e56d6668b8c2bd14322",
+        "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/canonical17-source.tar.gz"
       },
       "timestamps": {
-        "runAt": null,
+        "firstPublicAt": null,
         "frozenAt": "2026-10-16T22:08:44+00:00",
-        "firstPublicAt": "2026-10-16T23:25:50Z",
-        "registeredAt": "2026-10-17T01:01:36.344524+00:00"
+        "registeredAt": "2026-10-16T23:05:40.794441+00:00",
+        "runAt": null
+      },
+      "type": "result",
+      "verification": {
+        "level": "author-attested"
+      }
+    },
+    {
+      "cohorts": [
+        {
+          "attempted": 1,
+          "evidenceId": "calibration",
+          "id": "calibration",
+          "noise": "exact",
+          "passed": 1,
+          "required": 1,
+          "seedEnd": 3177001,
+          "seedStart": 3177001,
+          "stage": "calibration"
+        },
+        {
+          "attempted": 20,
+          "evidenceId": "development",
+          "id": "dev20",
+          "noise": "noisy",
+          "passed": 20,
+          "required": 20,
+          "seedEnd": 3178019,
+          "seedStart": 3178000,
+          "stage": "development"
+        },
+        {
+          "attempted": 100,
+          "evidenceId": "development",
+          "id": "dev100",
+          "noise": "noisy",
+          "passed": 100,
+          "required": 100,
+          "seedEnd": 3178199,
+          "seedStart": 3178100,
+          "stage": "development"
+        },
+        {
+          "attempted": 20,
+          "evidenceId": "reserved",
+          "id": "reserved-noisy20",
+          "noise": "noisy",
+          "passed": 20,
+          "required": 20,
+          "seedEnd": 217019,
+          "seedStart": 217000,
+          "stage": "reserved"
+        },
+        {
+          "attempted": 100,
+          "evidenceId": "reserved",
+          "id": "reserved-noisy100",
+          "noise": "noisy",
+          "passed": 100,
+          "required": 100,
+          "seedEnd": 217199,
+          "seedStart": 217100,
+          "stage": "reserved"
+        },
+        {
+          "attempted": 20,
+          "evidenceId": "reserved",
+          "id": "reserved-exact20",
+          "noise": "exact",
+          "passed": 20,
+          "required": 20,
+          "seedEnd": 217219,
+          "seedStart": 217200,
+          "stage": "reserved"
+        },
+        {
+          "attempted": 1,
+          "evidenceId": "reserved",
+          "id": "video",
+          "noise": "noisy",
+          "passed": 1,
+          "required": 1,
+          "seedEnd": 217500,
+          "seedStart": 217500,
+          "stage": "video"
+        }
+      ],
+      "entrant": {
+        "id": "rage-industries",
+        "name": "Rage Industries / NeuralYogi",
+        "url": "https://neuralyogi.com"
       },
       "evidence": [
         {
           "id": "calibration",
           "kind": "receipt",
-          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/calibration.json",
+          "publishedAt": "2026-10-16T23:25:50Z",
           "sha256": "224d24cb0f14c352eb59456bb9bd779018be45907d3badfdddd4ac122da147ef",
-          "publishedAt": "2026-10-16T23:25:50Z"
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/calibration.json"
         },
         {
           "id": "development",
           "kind": "receipt",
-          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/development.json",
+          "publishedAt": "2026-10-16T23:25:50Z",
           "sha256": "15531c406189f8b0a69e55d162d7ba8cd5857b9e3865a247c107d560236a0aa4",
-          "publishedAt": "2026-10-16T23:25:50Z"
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/development.json"
         },
         {
           "id": "reserved",
           "kind": "receipt",
-          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/reserved.json",
+          "publishedAt": "2026-10-16T23:25:50Z",
           "sha256": "2a31c08e3184cb8827927eef5324b2942a9c6a4d3dc5e213e8fef8a3ec966721",
-          "publishedAt": "2026-10-16T23:25:50Z"
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/reserved.json"
         },
         {
           "id": "video",
           "kind": "receipt",
-          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/video.json",
+          "publishedAt": "2026-10-16T23:25:50Z",
           "sha256": "6310c781e5fdaeac192ee3484bf9096bda65115f299e31a7ac43208e26a4d0b1",
-          "publishedAt": "2026-10-16T23:25:50Z"
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/video.json"
         },
         {
           "id": "audit",
           "kind": "receipt",
-          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/audit.json",
+          "publishedAt": "2026-10-16T23:25:50Z",
           "sha256": "7dd0a825e2f7fb7bfe0f0df57c31c9181caf7da16d3e79fbb7d5b43a1314298a",
-          "publishedAt": "2026-10-16T23:25:50Z"
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/audit.json"
         },
         {
           "id": "freeze",
           "kind": "receipt",
-          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/freeze.json",
+          "publishedAt": "2026-10-16T23:25:50Z",
           "sha256": "02b2360d66705f70e77423ebb1dbb2c6cbe17e535155b27bfb16a7e8d9219f26",
-          "publishedAt": "2026-10-16T23:25:50Z"
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/freeze.json"
         },
         {
           "id": "files",
           "kind": "receipt",
-          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/files.json",
+          "publishedAt": "2026-10-16T23:25:50Z",
           "sha256": "cf781e68def10fbe2301245d76e3c0043f2e383e5ff04744d03d2d2a9e56eb6f",
-          "publishedAt": "2026-10-16T23:25:50Z"
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/files.json"
         },
         {
           "id": "heldout-replay",
           "kind": "video",
-          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/canonical17.mp4",
+          "publishedAt": "2026-10-16T23:25:50Z",
           "sha256": "80169fa50e54fbc98bd2901429a1ed5b7dbccf4bd92211b769173cb549cc1554",
-          "publishedAt": "2026-10-16T23:25:50Z"
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/canonical17.mp4"
         },
         {
           "id": "full-trajectories-and-proofs",
           "kind": "trajectory",
-          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/canonical17-evidence.tar.gz",
+          "publishedAt": "2026-10-16T23:25:50Z",
           "sha256": "b38fd7b5029f66fa3d1b8064901332bcfa0f039d5b2ab1264716d970773044e9",
-          "publishedAt": "2026-10-16T23:25:50Z"
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/canonical17-evidence.tar.gz"
         },
         {
           "id": "publication-status",
           "kind": "receipt",
-          "url": "https://arena.neuralyogi.com/evidence/canonical17/publication-status.json",
+          "publishedAt": null,
           "sha256": "6d0bc0e34319ed86d6c3b3acad1c4404b41b52ef2a05bad1f31916463ec3d94d",
-          "publishedAt": null
+          "url": "https://arena.neuralyogi.com/evidence/canonical17/publication-status.json"
         }
       ],
-      "cohorts": [
-        {
-          "id": "calibration",
-          "stage": "calibration",
-          "noise": "exact",
-          "required": 1,
-          "attempted": 1,
-          "passed": 1,
-          "seedStart": 3177001,
-          "seedEnd": 3177001,
-          "evidenceId": "calibration"
-        },
-        {
-          "id": "dev20",
-          "stage": "development",
-          "noise": "noisy",
-          "required": 20,
-          "attempted": 20,
-          "passed": 20,
-          "seedStart": 3178000,
-          "seedEnd": 3178019,
-          "evidenceId": "development"
-        },
-        {
-          "id": "dev100",
-          "stage": "development",
-          "noise": "noisy",
-          "required": 100,
-          "attempted": 100,
-          "passed": 100,
-          "seedStart": 3178100,
-          "seedEnd": 3178199,
-          "evidenceId": "development"
-        },
-        {
-          "id": "reserved-noisy20",
-          "stage": "reserved",
-          "noise": "noisy",
-          "required": 20,
-          "seedStart": 217000,
-          "seedEnd": 217019,
-          "attempted": 20,
-          "passed": 20,
-          "evidenceId": "reserved"
-        },
-        {
-          "id": "reserved-noisy100",
-          "stage": "reserved",
-          "noise": "noisy",
-          "required": 100,
-          "seedStart": 217100,
-          "seedEnd": 217199,
-          "attempted": 100,
-          "passed": 100,
-          "evidenceId": "reserved"
-        },
-        {
-          "id": "reserved-exact20",
-          "stage": "reserved",
-          "noise": "exact",
-          "required": 20,
-          "seedStart": 217200,
-          "seedEnd": 217219,
-          "attempted": 20,
-          "passed": 20,
-          "evidenceId": "reserved"
-        },
-        {
-          "id": "video",
-          "stage": "video",
-          "noise": "noisy",
-          "required": 1,
-          "seedStart": 217500,
-          "seedEnd": 217500,
-          "attempted": 1,
-          "passed": 1,
-          "evidenceId": "reserved"
-        }
-      ],
-      "metrics": {
-        "commandsPerEpisode": 1500,
-        "secondsPerEpisode": 30,
-        "minUprightSeconds": 7.36,
-        "maxCartMeters": 1.9403198840436762,
-        "maxNativeDefect": 0.0,
-        "maxInitialGap": 0.0,
-        "auditedEpisodes": 142,
-        "auditedCommands": 213000
+      "id": "rage-mill-canonical17-20261016-published",
+      "links": 17,
+      "method": {
+        "disclosures": [
+          "Classical control with the native model and observed state feedback. A separate bounded JEPA investigation failed its declared gate and was not adopted.",
+          "The declared cap is 22,950 native maps per physical episode. The 50 Hz cadence is simulated. Actual-owner CPU and wall times are measured; exact native candidate counts are reconstructed by a separate causal saved-policy replay, with its own measured owner time.",
+          "Simulation only. No hardware, disturbance robustness, numerical portability, third-party reproduction or global-priority claim. Original reserved inner candidate ledgers were not retained; counts in the saved-policy proofs are reconstructed rather than original actual-run counters."
+        ],
+        "name": "Frozen trajectory with bounded native affine-value action search",
+        "summary": "Observed 36-state feedback with a 700-command affine value horizon, 850 settling commands and a 650-command route. One complete launch forecast and at most 16 native float32 candidates per active command.",
+        "usesObservedStateOnly": true,
+        "wallClockRealtime": false
       },
-      "verification": {
-        "level": "author-attested"
+      "metrics": {
+        "auditedCommands": 213000,
+        "auditedEpisodes": 142,
+        "commandsPerEpisode": 1500,
+        "maxCartMeters": 1.9403198840436762,
+        "maxInitialGap": 0.0,
+        "maxNativeDefect": 0.0,
+        "minUprightSeconds": 7.36,
+        "secondsPerEpisode": 30
+      },
+      "model": {
+        "sha256": "6850e9194902d5a03f9e209f2449f5d3a92310524723eb1bc8b8f5c02b7f483a",
+        "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/model.xml"
       },
       "notes": [
         "Complete exact source calibration and all 141 actual reserved tapes have cold and continuous saved native proofs. The 120 development episodes are rescored from tape and are not counted as native-audited episodes.",
         "The complete original candidate02 source inventory is nested unchanged. This final wrapper binds the actual completed release separately.",
         "Original absolute runtime paths remain provenance. The public loading view does not establish a portable execution identity.",
         "Publication-clock correction only: the original prepublication registry record is preserved. GitHub published all 27 verified release assets at 2026-10-16T23:25:50Z. Qualification, source, runtime, cohorts, numerical evidence and verification level are unchanged."
-      ]
+      ],
+      "protocolFingerprint": "0db28677d5dda6576ff0b73cd0c5eac74742d05d7311f787cd8e06e709784d5f",
+      "protocolId": "canonical17-v1",
+      "qualified": true,
+      "runtime": {
+        "architecture": "aarch64",
+        "dependencies": {
+          "numpy": "2.5.2"
+        },
+        "engine": "MuJoCo",
+        "engineVersion": "3.3.5",
+        "language": "Python",
+        "languageVersion": "3.12.3",
+        "os": "Linux",
+        "precision": "binary64"
+      },
+      "source": {
+        "commit": "461dff89e2a824aa6771b927e5da0b67a3184f71",
+        "sha256": "6341bcbbfdc2c76837f3e38bd0b609827fdae19efb431e56d6668b8c2bd14322",
+        "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical17-20261016/canonical17-source.tar.gz"
+      },
+      "timestamps": {
+        "firstPublicAt": "2026-10-16T23:25:50Z",
+        "frozenAt": "2026-10-16T22:08:44+00:00",
+        "registeredAt": "2026-10-17T01:01:36.344524+00:00",
+        "runAt": null
+      },
+      "type": "result",
+      "verification": {
+        "level": "author-attested"
+      }
     },
     {
-      "id": "publish-canonical17-20261016",
-      "type": "supersession",
-      "targetId": "rage-mill-canonical17-20261016",
-      "replacementId": "rage-mill-canonical17-20261016-published",
-      "reason": "Record the verified public release timestamp after publication. The original entry was assembled before the release and left its publication clock unknown; no scientific result or qualification evidence changes.",
-      "timestamps": {
-        "registeredAt": "2026-10-17T01:01:36.344524+00:00"
+      "authority": {
+        "id": "rage-industries",
+        "name": "Rage Industries / NeuralYogi",
+        "url": "https://neuralyogi.com"
       },
       "evidence": [
         {
           "id": "publication-status",
           "kind": "receipt",
-          "url": "https://arena.neuralyogi.com/evidence/canonical17/publication-status.json",
+          "publishedAt": null,
           "sha256": "6d0bc0e34319ed86d6c3b3acad1c4404b41b52ef2a05bad1f31916463ec3d94d",
-          "publishedAt": null
+          "url": "https://arena.neuralyogi.com/evidence/canonical17/publication-status.json"
         }
       ],
-      "authority": {
+      "id": "publish-canonical17-20261016",
+      "reason": "Record the verified public release timestamp after publication. The original entry was assembled before the release and left its publication clock unknown; no scientific result or qualification evidence changes.",
+      "replacementId": "rage-mill-canonical17-20261016-published",
+      "targetId": "rage-mill-canonical17-20261016",
+      "timestamps": {
+        "registeredAt": "2026-10-17T01:01:36.344524+00:00"
+      },
+      "type": "supersession"
+    },
+    {
+      "cohorts": [
+        {
+          "attempted": 1,
+          "evidenceId": "calibration",
+          "id": "calibration",
+          "noise": "exact",
+          "passed": 1,
+          "required": 1,
+          "seedEnd": 3187000,
+          "seedStart": 3187000,
+          "stage": "calibration"
+        },
+        {
+          "attempted": 20,
+          "evidenceId": "development",
+          "id": "dev20",
+          "noise": "noisy",
+          "passed": 20,
+          "required": 20,
+          "seedEnd": 3188019,
+          "seedStart": 3188000,
+          "stage": "development"
+        },
+        {
+          "attempted": 100,
+          "evidenceId": "development",
+          "id": "dev100",
+          "noise": "noisy",
+          "passed": 100,
+          "required": 100,
+          "seedEnd": 3188199,
+          "seedStart": 3188100,
+          "stage": "development"
+        },
+        {
+          "attempted": 20,
+          "evidenceId": "reserved",
+          "id": "reserved-noisy20",
+          "noise": "noisy",
+          "passed": 20,
+          "required": 20,
+          "seedEnd": 218019,
+          "seedStart": 218000,
+          "stage": "reserved"
+        },
+        {
+          "attempted": 100,
+          "evidenceId": "reserved",
+          "id": "reserved-noisy100",
+          "noise": "noisy",
+          "passed": 100,
+          "required": 100,
+          "seedEnd": 218199,
+          "seedStart": 218100,
+          "stage": "reserved"
+        },
+        {
+          "attempted": 20,
+          "evidenceId": "reserved",
+          "id": "reserved-exact20",
+          "noise": "exact",
+          "passed": 20,
+          "required": 20,
+          "seedEnd": 218219,
+          "seedStart": 218200,
+          "stage": "reserved"
+        },
+        {
+          "attempted": 1,
+          "evidenceId": "reserved",
+          "id": "video",
+          "noise": "noisy",
+          "passed": 1,
+          "required": 1,
+          "seedEnd": 218500,
+          "seedStart": 218500,
+          "stage": "video"
+        }
+      ],
+      "entrant": {
         "id": "rage-industries",
         "name": "Rage Industries / NeuralYogi",
         "url": "https://neuralyogi.com"
+      },
+      "evidence": [
+        {
+          "id": "source-inventory",
+          "kind": "source",
+          "publishedAt": "2026-10-17T03:34:09Z",
+          "sha256": "49371bc85ea633126d06484e951d16657a87981d376a44b29fd2145ccd6f4cfc",
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical18-20261017/canonical18-source.tar.gz"
+        },
+        {
+          "id": "model",
+          "kind": "model",
+          "publishedAt": "2026-10-17T03:34:09Z",
+          "sha256": "6f2c30ae3b6c6c46915609a50ff26590b5a9797a51fc7cddee8734ea49dc16e7",
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical18-20261017/model.xml"
+        },
+        {
+          "id": "calibration",
+          "kind": "receipt",
+          "publishedAt": "2026-10-17T03:34:09Z",
+          "sha256": "3947b5a22f2fc56b3639eda7981ef82e061129fb25615843391f9cdb81f99bd8",
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical18-20261017/calibration.json"
+        },
+        {
+          "id": "development",
+          "kind": "receipt",
+          "publishedAt": "2026-10-17T03:34:09Z",
+          "sha256": "76c4894623052186d7bdce48a616469b727c116651758359d31d1ec48b7c5133",
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical18-20261017/development.json"
+        },
+        {
+          "id": "reserved",
+          "kind": "receipt",
+          "publishedAt": "2026-10-17T03:34:09Z",
+          "sha256": "5439a8540887c328f8cd4529fcb99b45d048469e97904f0bc36f3600f62f5a68",
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical18-20261017/reserved.json"
+        },
+        {
+          "id": "audit",
+          "kind": "receipt",
+          "publishedAt": "2026-10-17T03:34:09Z",
+          "sha256": "62237da6c52c92c207c1e3f1699baa9d98697efd371584e88abe4cde99e7652a",
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical18-20261017/audit.json"
+        },
+        {
+          "id": "freeze",
+          "kind": "receipt",
+          "publishedAt": "2026-10-17T03:34:09Z",
+          "sha256": "2cbfb193ed550749c1db519fdf1c968131714a1d104249183ae4f8d104cdb66e",
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical18-20261017/freeze.json"
+        },
+        {
+          "id": "files",
+          "kind": "receipt",
+          "publishedAt": "2026-10-17T03:34:09Z",
+          "sha256": "130e191d0b3eaf26ce9fd8af60b825549678ec8e955b74f0a19faf601a5753ee",
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical18-20261017/files.json"
+        },
+        {
+          "id": "heldout-replay",
+          "kind": "video",
+          "publishedAt": "2026-10-17T03:34:09Z",
+          "sha256": "281153a908a9879136534dfcd2082c25b63db1430a64c98e43bc50a139b202d1",
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical18-20261017/canonical18.mp4"
+        },
+        {
+          "id": "silent-telemetry",
+          "kind": "video",
+          "publishedAt": "2026-10-17T03:34:09Z",
+          "sha256": "b198f901032b6293091cee90f3ffd2f54978a887b938af38dd5b1588bdecdf06",
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical18-20261017/canonical18-telemetry.mp4"
+        },
+        {
+          "id": "full-trajectories-and-proofs",
+          "kind": "trajectory",
+          "publishedAt": "2026-10-17T03:34:09Z",
+          "sha256": "9f1db3f25b86858890a2e24666dacaa7b19d183f717a92e8f8cfa59e6acee834",
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical18-20261017/canonical18-evidence.tar.gz"
+        },
+        {
+          "id": "heldout-video-provenance",
+          "kind": "receipt",
+          "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical18-20261017/video.json",
+          "sha256": "a2b83899b89aa92fbfa501a5d5d8e2f467ad480392feff659b03b05529aeb226",
+          "publishedAt": "2026-10-17T03:34:09Z"
+        }
+      ],
+      "id": "rage-mill-canonical18-20261016-published",
+      "links": 18,
+      "method": {
+        "disclosures": [
+          "Classical control using the native model and observed-state feedback. No learned controller was adopted for eighteen.",
+          "50 Hz is simulated cadence. Original reserved live inner candidate counters were not retained. Causal saved-policy proof counts are separately measured reconstruction work, not original live counters.",
+          "Simulation only. No hardware, 20 ms wall-time, numerical portability, third-party reproduction or global-priority claim. Original absolute paths remain execution provenance."
+        ],
+        "name": "Frozen trajectory with bounded native affine-value action search",
+        "summary": "Observed 38-state feedback with an own eighteen-link 700-command affine-value design, 850 settling commands and a 650-command route. One causal full launch forecast and at most 16 distinct delivered float32 native candidates per active command.",
+        "usesObservedStateOnly": true,
+        "wallClockRealtime": false
+      },
+      "metrics": {
+        "auditedCommands": 393000,
+        "auditedEpisodes": 262,
+        "commandsPerEpisode": 1500,
+        "maxCartMeters": 1.934454214966265,
+        "maxInitialGap": 0.0,
+        "maxNativeDefect": 0.0,
+        "minUprightSeconds": 8.040000000000001,
+        "secondsPerEpisode": 30
+      },
+      "model": {
+        "sha256": "6f2c30ae3b6c6c46915609a50ff26590b5a9797a51fc7cddee8734ea49dc16e7",
+        "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical18-20261017/model.xml"
+      },
+      "notes": [
+        "All 262 actual episodes have checked cold and continuous native replay proofs. All 141 reserved labels were consumed once and retain byte-exact causal raw/F32 command, selected native-pair and complete suffix/final-state proofs.",
+        "FrozenAt is the original source-freeze Git clock. Source commit and later release-host tag checkpoint are separate. Run time is unknown; publication time comes from verified GitHub release metadata.",
+        "Scientific and silent telemetry videos use only the actual qualified218500 recording. Original soundtrack wording \u201csuper star by queen\u201d was subsequently clarified as Queen \u201cDon\u2019t Stop Me Now\u201d; paired playback uses the official YouTube player https://www.youtube.com/watch?v=HgzGwKwLmgM. No Queen audio is extracted or rehosted."
+      ],
+      "protocolFingerprint": "7f9be38fe2163ad2eeb83ed7ad759c0f943a0c49251f4cc8384c46a8b10d18db",
+      "protocolId": "canonical18-v1",
+      "qualified": true,
+      "runtime": {
+        "architecture": "aarch64",
+        "dependencies": {
+          "numpy": "2.5.2"
+        },
+        "engine": "MuJoCo",
+        "engineVersion": "3.3.5",
+        "language": "Python",
+        "languageVersion": "3.12.3",
+        "os": "Linux",
+        "precision": "binary64"
+      },
+      "source": {
+        "commit": "b2411f9896b6332dc00f97f462fc9278f3ade9bc",
+        "sha256": "49371bc85ea633126d06484e951d16657a87981d376a44b29fd2145ccd6f4cfc",
+        "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical18-20261017/canonical18-source.tar.gz"
+      },
+      "timestamps": {
+        "firstPublicAt": "2026-10-17T03:34:09Z",
+        "frozenAt": "2026-10-17T01:44:48Z",
+        "registeredAt": "2026-10-17T03:41:34.228392+00:00",
+        "runAt": null
+      },
+      "type": "result",
+      "verification": {
+        "level": "author-attested"
       }
     }
-  ]
+  ],
+  "schemaVersion": 1
 }

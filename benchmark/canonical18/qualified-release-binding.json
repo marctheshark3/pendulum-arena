@@ -1,0 +1,21 @@
+{
+  "original_identity": {
+    "bytes": 19416,
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/native-value-candidate01/identity.json",
+    "sha256": "34aa4bafd3f50d577c54a13ce3c518185a287a2da40d14b549c8a2bda81cf220"
+  },
+  "verified_release": {
+    "bytes": 2370,
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/canonical18-release01/verified-release.json",
+    "sha256": "074d91ac63e4cf111eca54efc27d390c94276c1c671e78604c80d74d200a60b9"
+  },
+  "combined_qualification": {
+    "bytes": 54809,
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/physics-qualification-all141-v2-01/result/receipt.json",
+    "sha256": "4a3f21b4ef63e1390e8536410b66faae1ff3bf15bc72ae4fd423c080cae0648c"
+  },
+  "evidence_files_sha256": "130e191d0b3eaf26ce9fd8af60b825549678ec8e955b74f0a19faf601a5753ee",
+  "native_audited_episodes": 262,
+  "original_absolute_execution_paths_immutable": true,
+  "local_inventory_is_execution_identity": false
+}

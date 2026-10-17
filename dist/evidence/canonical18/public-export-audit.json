@@ -1,0 +1,199 @@
+{
+  "CPU_seconds": 6.042496672,
+  "actual_episodes": 262,
+  "all_original_pins_unchanged": true,
+  "archive_audits": [
+    {
+      "archive": {
+        "bytes": 16373757,
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/public-export02/canonical18-source.tar.gz",
+        "sha256": "49371bc85ea633126d06484e951d16657a87981d376a44b29fd2145ccd6f4cfc"
+      },
+      "every_member_matches_qualified_staging": true,
+      "extracted": false,
+      "files": 87,
+      "uncompressed_bytes": 18086890
+    },
+    {
+      "archive": {
+        "bytes": 617292432,
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/public-export02/canonical18-evidence.tar.gz",
+        "sha256": "9f1db3f25b86858890a2e24666dacaa7b19d183f717a92e8f8cfa59e6acee834"
+      },
+      "every_member_matches_qualified_staging": true,
+      "extracted": false,
+      "files": 3157,
+      "uncompressed_bytes": 1018979791
+    },
+    {
+      "archive": {
+        "bytes": 2069793,
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/public-export02/canonical18-media.tar.gz",
+        "sha256": "b6b281b0f20ce0acd3204b2c4a556330ae9c95a4932793df705f575869744326"
+      },
+      "every_member_matches_qualified_staging": true,
+      "extracted": false,
+      "files": 43,
+      "uncompressed_bytes": 3730424
+    }
+  ],
+  "archives_extracted": false,
+  "clone_inventory_executed": false,
+  "combined_qualification": {
+    "bytes": 54809,
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/physics-qualification-all141-v2-01/result/receipt.json",
+    "sha256": "4a3f21b4ef63e1390e8536410b66faae1ff3bf15bc72ae4fd423c080cae0648c"
+  },
+  "controller_calls": 0,
+  "export_receipt": {
+    "bytes": 3649,
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/public-export02/receipt.json",
+    "sha256": "b4efc42c7b6a4546b92a1a7c810969b0e1f3427c3f811d6e38adfa70a387ec24"
+  },
+  "exporter": {
+    "bytes": 45537,
+    "path": "/home/marctheshark/.t3/worktrees/rage-mill/t3-canonical18-swingup/scripts/export_canonical18_public_evidence_v2.py",
+    "sha256": "f4d14f0b64719cbff2b4d226aace3aa86dc7b2c6b2469823666bc92d93bcd079"
+  },
+  "freeze": {
+    "bytes": 205765,
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/canonical18-release01/freeze.json",
+    "sha256": "2cbfb193ed550749c1db519fdf1c968131714a1d104249183ae4f8d104cdb66e"
+  },
+  "generated_auditors": [
+    {
+      "bytes": 6663,
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/public-export02/source/benchmark/canonical18/audit_source.py",
+      "sha256": "ab1019b221bc41403bfc7979f36f004a0191f0a91557a087ea663a9c3e76f453"
+    },
+    {
+      "bytes": 6663,
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/public-export02/source/benchmark/canonical18/audit_saved.py",
+      "sha256": "ab1019b221bc41403bfc7979f36f004a0191f0a91557a087ea663a9c3e76f453"
+    },
+    {
+      "bytes": 6663,
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/public-export02/canonical18-evidence/audit_saved.py",
+      "sha256": "ab1019b221bc41403bfc7979f36f004a0191f0a91557a087ea663a9c3e76f453"
+    },
+    {
+      "bytes": 6663,
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/public-export02/canonical18-media/audit_saved.py",
+      "sha256": "ab1019b221bc41403bfc7979f36f004a0191f0a91557a087ea663a9c3e76f453"
+    }
+  ],
+  "generated_audits": [
+    {
+      "argv": [
+        "/home/marctheshark/.t3/worktrees/rage-mill/t3-canonical18-swingup/.venv/bin/python",
+        "-I",
+        "-S",
+        "-B",
+        "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/public-export02/source/benchmark/canonical18/audit_source.py",
+        "--root",
+        "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/public-export02/source/benchmark/canonical18",
+        "--expected-files-sha256",
+        "c1b1a8a0a3f25ff96dc79a02092917afb2ab0f539a023d044054c804c7deb44d"
+      ],
+      "kind": "source",
+      "report": {
+        "bytes": 18070740,
+        "controller_calls": 0,
+        "external_reproduction": false,
+        "files": 86,
+        "native_calls": 0,
+        "new_reserved_labels": 0,
+        "original_identity_is_portable": false,
+        "passed": true,
+        "qualification_reexecuted": false,
+        "reset_RNG_draws": 0,
+        "schema": "pendulum_arena.canonical18_public_saved_hash_audit.v1"
+      },
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/home/marctheshark/.t3/worktrees/rage-mill/t3-canonical18-swingup/.venv/bin/python",
+        "-I",
+        "-S",
+        "-B",
+        "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/public-export02/canonical18-evidence/audit_saved.py",
+        "--root",
+        "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/public-export02/canonical18-evidence",
+        "--expected-files-sha256",
+        "130e191d0b3eaf26ce9fd8af60b825549678ec8e955b74f0a19faf601a5753ee"
+      ],
+      "kind": "evidence",
+      "report": {
+        "bytes": 1018395322,
+        "controller_calls": 0,
+        "external_reproduction": false,
+        "files": 3156,
+        "native_calls": 0,
+        "new_reserved_labels": 0,
+        "original_identity_is_portable": false,
+        "passed": true,
+        "qualification_reexecuted": false,
+        "reset_RNG_draws": 0,
+        "schema": "pendulum_arena.canonical18_public_saved_hash_audit.v1"
+      },
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/home/marctheshark/.t3/worktrees/rage-mill/t3-canonical18-swingup/.venv/bin/python",
+        "-I",
+        "-S",
+        "-B",
+        "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/public-export02/canonical18-media/audit_saved.py",
+        "--root",
+        "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/public-export02/canonical18-media",
+        "--expected-files-sha256",
+        "8cfc02a412303bc5570eb6aa9cff339068c95dd88246e31566016495dc271028"
+      ],
+      "kind": "media",
+      "report": {
+        "bytes": 3722798,
+        "controller_calls": 0,
+        "external_reproduction": false,
+        "files": 42,
+        "native_calls": 0,
+        "new_reserved_labels": 0,
+        "original_identity_is_portable": false,
+        "passed": true,
+        "qualification_reexecuted": false,
+        "reset_RNG_draws": 0,
+        "schema": "pendulum_arena.canonical18_public_saved_hash_audit.v1"
+      },
+      "stderr": ""
+    }
+  ],
+  "identity": {
+    "bytes": 19416,
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/native-value-candidate01/identity.json",
+    "sha256": "34aa4bafd3f50d577c54a13ce3c518185a287a2da40d14b549c8a2bda81cf220"
+  },
+  "native_audited_commands": 393000,
+  "native_audited_episodes": 262,
+  "native_commands": 0,
+  "new_episodes": 0,
+  "new_reserved_labels": 0,
+  "original_evidence_files_mapped": 3099,
+  "original_source_files_mapped": 81,
+  "passed": true,
+  "prospective_files": 7108,
+  "qualification_reexecuted": false,
+  "recorded_commands": 393000,
+  "release": {
+    "bytes": 2370,
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/canonical18-release01/verified-release.json",
+    "sha256": "074d91ac63e4cf111eca54efc27d390c94276c1c671e78604c80d74d200a60b9"
+  },
+  "reset_RNG_draws": 0,
+  "reset_identity_reconstructions": 0,
+  "runtime_coverage_complete": true,
+  "runtime_loaded_files": 74,
+  "schema": "rage_mill.canonical18_independent_public_export_audit.v1",
+  "scientific_source_imported": false,
+  "wall_seconds": 7.025841470982414
+}

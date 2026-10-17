@@ -1,0 +1,279 @@
+{
+  "schema": "pendulum_arena.canonical18_public_audit.v1",
+  "passed": true,
+  "controller_qualified": true,
+  "author_attested": true,
+  "actual_episodes": 262,
+  "recorded_commands": 393000,
+  "reserved_episodes": 141,
+  "once_only_label_claims": 141,
+  "heldout_selected_shadow_suffixes_byte_proved": 141,
+  "heldout_raw_F64_commands_byte_proved": 211500,
+  "heldout_delivered_F32_commands_byte_proved": 211500,
+  "heldout_selected_native_next_state_delivery_pairs_byte_proved": 91650,
+  "all262_saved_metrics": {
+    "minimum_upright_seconds": 8.040000000000001,
+    "maximum_cart_abs_m": 1.934454214966265,
+    "maximum_delivered_force_N": 69.54938411712646
+  },
+  "native_audited_episodes": 262,
+  "native_audited_commands": 393000,
+  "native_development_episodes": 120,
+  "maximum_dynamics_defect": 0.0,
+  "calibration_initial_state_gap": 0.0,
+  "owner_costs": {
+    "calibration": {
+      "aggregate_child_CPU_seconds": 11.376619,
+      "wall_seconds": 11.788804057054222,
+      "owner": {
+        "completion": {
+          "bytes": 473384,
+          "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/native-value-calibration01/completion.json",
+          "sha256": "5b543483542594ad01828d6ebbd26bd8b2f5f4f4fa852276a0cd44a872d55b3e"
+        },
+        "launch": {
+          "bytes": 678242,
+          "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/native-value-calibration01/launch.json",
+          "sha256": "6f20e7d25c9375b3f2f66da07a458552b480b1ee637c3dc13b70df171759428b"
+        },
+        "runtime_receipt": {
+          "bytes": 42696,
+          "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/native-value-calibration01/result/runtime-receipt.json",
+          "sha256": "51ffef2fd51f8fb0d91786198bbdeaf9afb88c307dc091e029e08e269dd6d4e5"
+        }
+      }
+    },
+    "development20": {
+      "aggregate_child_CPU_seconds": 189.422979,
+      "wall_seconds": 190.45686060201842,
+      "owner": {
+        "completion": {
+          "bytes": 475564,
+          "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/native-value-development20-01/completion.json",
+          "sha256": "adc5d9443657bcee0d970144f6b4825734ac1c2f260f98c86adec7b009d1dcdb"
+        },
+        "launch": {
+          "bytes": 681565,
+          "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/native-value-development20-01/launch.json",
+          "sha256": "43c463c0ac8bdc3a6b814fc990439878db08fa98744c57d206b3cdfe84efaf3e"
+        },
+        "runtime_receipt": {
+          "bytes": 45078,
+          "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/native-value-development20-01/result/runtime-receipt.json",
+          "sha256": "f77573029e0b8e9621a8ecb1ca5996b1654e637a669057ab9fe3eed746d0d4d1"
+        }
+      }
+    },
+    "development100": {
+      "aggregate_child_CPU_seconds": 973.2687510000001,
+      "wall_seconds": 976.7552794259973,
+      "owner": {
+        "completion": {
+          "bytes": 491466,
+          "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/native-value-development100-01/completion.json",
+          "sha256": "26c3aa90856d760b19b58afce3bd110608e7e7811df5b6b1ccf5cdb007ef7b9b"
+        },
+        "launch": {
+          "bytes": 703971,
+          "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/native-value-development100-01/launch.json",
+          "sha256": "8189129ddb6d271002f779cc193eaf47edc5b22ddf7d0a99bbc796febbfc632b"
+        },
+        "runtime_receipt": {
+          "bytes": 45079,
+          "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/native-value-development100-01/result/runtime-receipt.json",
+          "sha256": "285e53cd0f9caba1bbf81ec94dd738aa4ffbe87273e7252d24a616d414aa7973"
+        }
+      }
+    },
+    "noisy20": {
+      "aggregate_child_CPU_seconds": 212.535052,
+      "wall_seconds": 214.27644082601182,
+      "owner": {
+        "completion": {
+          "bytes": 926402,
+          "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/reserved-noisy20-owner01/completion.json",
+          "sha256": "bde8fd95cbb977261e257ca6a5118c87e0b20a6ed54230a0f9962ad0d2816ff6"
+        },
+        "launch": {
+          "bytes": 1286702,
+          "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/reserved-noisy20-owner01/launch.json",
+          "sha256": "4b600822e66a9af060e56d3fb23914280491288cd433eb33b4deb677d173c7a7"
+        },
+        "runtime_receipt": {
+          "bytes": 49481,
+          "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/canonical18-release01/reserved/noisy20/runtime-receipt.json",
+          "sha256": "1febe68898fc8f1642891776b85ae0e543e55d68053116b5354ca85b5180d668"
+        }
+      }
+    },
+    "noisy20-proof": {
+      "aggregate_child_CPU_seconds": 201.226374,
+      "wall_seconds": 202.93929269601358,
+      "owner": {
+        "completion": {
+          "bytes": 942182,
+          "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/reserved-noisy20-proof01/completion.json",
+          "sha256": "2d2a77de57eb6d356a5c68c4cc4765eae5e4d7793b9f4c24b41abd3eb31efd0d"
+        },
+        "launch": {
+          "bytes": 1309671,
+          "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/reserved-noisy20-proof01/launch.json",
+          "sha256": "9d38c6efb377640a361b862db5fee7c7224de878f5fee5a226e7d79a2ccfaf66"
+        },
+        "runtime_receipt": {
+          "bytes": 42093,
+          "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/reserved-noisy20-proof01/result/runtime-receipt.json",
+          "sha256": "98c90427e501bf88ef74f407f270ed5a830c7565c889ef79bb6dd98f39b6dd62"
+        }
+      }
+    },
+    "noisy100": {
+      "aggregate_child_CPU_seconds": 976.000954,
+      "wall_seconds": 980.694640022004,
+      "owner": {
+        "completion": {
+          "bytes": 942184,
+          "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/reserved-noisy100-owner01/completion.json",
+          "sha256": "2f6454c283dbe549ac02550519c180bd921752f43cfcbcb8288360210a75b490"
+        },
+        "launch": {
+          "bytes": 1309105,
+          "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/reserved-noisy100-owner01/launch.json",
+          "sha256": "8e87ecb65d421a6dd908566d9c87bac8b092c914f6bfa510ad899083eabbd959"
+        },
+        "runtime_receipt": {
+          "bytes": 68141,
+          "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/canonical18-release01/reserved/noisy100/runtime-receipt.json",
+          "sha256": "3f34ba5e0e04e016542729e49dac0183c302593decd72af53fa03b6f8b9ae070"
+        }
+      }
+    },
+    "noisy100-proof": {
+      "aggregate_child_CPU_seconds": 997.703705,
+      "wall_seconds": 1002.1034868930001,
+      "owner": {
+        "completion": {
+          "bytes": 1017097,
+          "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/reserved-noisy100-proof01/completion.json",
+          "sha256": "9dcd6c1a5c8333dabd81ed1fa9819829555d95bbbe2c9060847520fcb9b3a2b4"
+        },
+        "launch": {
+          "bytes": 1413552,
+          "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/reserved-noisy100-proof01/launch.json",
+          "sha256": "110b39520c63f9d477ac7287a7f7d1a42b890fa83079b2cb481ad1977320d200"
+        },
+        "runtime_receipt": {
+          "bytes": 42095,
+          "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/reserved-noisy100-proof01/result/runtime-receipt.json",
+          "sha256": "e3d3262060f5fa636c4b081c5d0bf14f67260c5f2422bcccb498bdadc2044d61"
+        }
+      }
+    },
+    "exact20": {
+      "aggregate_child_CPU_seconds": 214.38236899999998,
+      "wall_seconds": 215.91995629301528,
+      "owner": {
+        "completion": {
+          "bytes": 1017101,
+          "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/reserved-exact20-owner01/completion.json",
+          "sha256": "6332041258c108a710cff4dca6ec44670714024082ebe0a33f2d9697416bc3aa"
+        },
+        "launch": {
+          "bytes": 1412953,
+          "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/reserved-exact20-owner01/launch.json",
+          "sha256": "0a6c8cb07a49b5f6e78632f6ee0d28910e15886edf817446aeefb1af84214dba"
+        },
+        "runtime_receipt": {
+          "bytes": 49481,
+          "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/canonical18-release01/reserved/exact20/runtime-receipt.json",
+          "sha256": "2df670ec401cbb9cb905ff13397901d2a86de07947d91c6cddcc54c35fad6f5e"
+        }
+      }
+    },
+    "exact20-proof": {
+      "aggregate_child_CPU_seconds": 201.374886,
+      "wall_seconds": 203.1668993269559,
+      "owner": {
+        "completion": {
+          "bytes": 1032716,
+          "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/reserved-exact20-proof01/completion.json",
+          "sha256": "6cc922075160cd5251c4b5985dc088e48b830f9bf1825cebee4220efc18e2e76"
+        },
+        "launch": {
+          "bytes": 1435720,
+          "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/reserved-exact20-proof01/launch.json",
+          "sha256": "86a15fb223f70eec14a6a04c873c19ba301bf3baa9ff05ea6f2e228bfd57a1f5"
+        },
+        "runtime_receipt": {
+          "bytes": 42093,
+          "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/reserved-exact20-proof01/result/runtime-receipt.json",
+          "sha256": "8602b2733293058090a3667eda2e370016899229304c0fdd5ea336ecd0e13cb5"
+        }
+      }
+    },
+    "video": {
+      "aggregate_child_CPU_seconds": 32.023416,
+      "wall_seconds": 32.89090753096389,
+      "owner": {
+        "completion": {
+          "bytes": 1032710,
+          "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/reserved-video-owner01/completion.json",
+          "sha256": "e4a0d9a4eceb84fc26e376b90f151a8b66c9e337a3ae5731ab2c9b85f45418c6"
+        },
+        "launch": {
+          "bytes": 1435116,
+          "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/reserved-video-owner01/launch.json",
+          "sha256": "eee1e537fa66e6c9233911fa9ed06e481807d3723cc763975a34f28afd1a5769"
+        },
+        "runtime_receipt": {
+          "bytes": 45071,
+          "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/canonical18-release01/reserved/video/runtime-receipt.json",
+          "sha256": "e60811caa22ee050b4cef840f5d2efce48c4087168842aa0295f8989a8badbc3"
+        }
+      }
+    },
+    "video-proof": {
+      "aggregate_child_CPU_seconds": 10.63531,
+      "wall_seconds": 11.52821668802062,
+      "owner": {
+        "completion": {
+          "bytes": 1034327,
+          "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/reserved-video-proof01/completion.json",
+          "sha256": "bbf9d40c49f307f57c6542ebb7eff003b78715a82b6e3a1f788bcf9dccff544f"
+        },
+        "launch": {
+          "bytes": 1438539,
+          "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/reserved-video-proof01/launch.json",
+          "sha256": "a38168e67d1311d46706f1cb9b865dc4d8a99cd0b45d32702dbbb86160521772"
+        },
+        "runtime_receipt": {
+          "bytes": 42091,
+          "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/reserved-video-proof01/result/runtime-receipt.json",
+          "sha256": "ccc0470865010ab8e6d869dfede6fb934aadc9ebfeb064e13434f844ace19790"
+        }
+      }
+    }
+  },
+  "aggregate_child_CPU_seconds": 4019.9504150000002,
+  "sum_owner_wall_seconds": 4042.520784361055,
+  "owner_wall_times_may_overlap": true,
+  "owner_cost_scope": "Source calibration,development120,reserved141 and reserved saved-policy proofs only; other engineering/failure/preparation/render/review costs remain separate.",
+  "actual_inner_candidate_counts_available": false,
+  "candidate_count_scope": "Saved-policy causal reconstruction counts are separate proof work, not original generic recorder counters.",
+  "original_identity_sha256": "34aa4bafd3f50d577c54a13ce3c518185a287a2da40d14b549c8a2bda81cf220",
+  "timestamps": {
+    "firstPublicAt": null,
+    "frozenAt": "2026-10-17T01:44:48Z",
+    "registeredAt": null,
+    "runAt": null
+  },
+  "physics_steps_by_export": 0,
+  "controller_calls_by_export": 0,
+  "new_reserved_labels_by_export": 0,
+  "original_absolute_paths_preserved": true,
+  "portable_execution_identity": false,
+  "learned_controller": false,
+  "hardware_result": false,
+  "wall_clock_realtime": false,
+  "global_priority_claim": false
+}

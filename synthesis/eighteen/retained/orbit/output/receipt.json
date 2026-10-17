@@ -1,0 +1,83 @@
+{
+  "schema": "rage_mill.canonical18_orbit_component.v1",
+  "n_links": 18,
+  "profiles": [
+    {
+      "profile_index": 0,
+      "frequency_Hz": 6.25,
+      "nominal_maximum_angle_rad": 0.14,
+      "force_amplitude_normalized": 0.8682956085537173,
+      "closure_pass": true,
+      "maximum_native_gap": 9.607092898988867e-12,
+      "maximum_analytic_gap": 7.225997578075294e-12,
+      "actual_orbit_maximum_angle_rad": 0.12321868442726887,
+      "maximum_gain_norm": 332527546.8865201,
+      "newton_history": [
+        {
+          "iteration": 0,
+          "maximum_original_gap": 0.5776969130074625,
+          "alpha": 1.0
+        },
+        {
+          "iteration": 1,
+          "maximum_original_gap": 0.0015525694573090831,
+          "alpha": 1.0
+        },
+        {
+          "iteration": 2,
+          "maximum_original_gap": 6.942683183908116e-08,
+          "alpha": 1.0
+        },
+        {
+          "iteration": 3,
+          "maximum_original_gap": 2.0126567079614688e-11,
+          "alpha": 1.0
+        },
+        {
+          "iteration": 4,
+          "maximum_original_gap": 1.3272605237091284e-11,
+          "alpha": 0.25
+        },
+        {
+          "iteration": 5,
+          "maximum_original_gap": 1.1838752200787894e-11,
+          "alpha": 0.25
+        },
+        {
+          "iteration": 6,
+          "maximum_original_gap": 1.0983769449524061e-11,
+          "alpha": 0.0625
+        },
+        {
+          "iteration": 7,
+          "maximum_original_gap": 9.210188167685374e-12,
+          "alpha": 0.03125
+        },
+        {
+          "iteration": 8,
+          "maximum_original_gap": 7.258194045789423e-12,
+          "alpha": 0.015625
+        },
+        {
+          "iteration": 9,
+          "maximum_original_gap": 7.225997578075294e-12,
+          "line_search_failed": true
+        }
+      ],
+      "artifact_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/orbit-component-prepared01/output/orbit.npz",
+      "artifact_sha256": "1261396e0823ec16e7fdbfc77458875b5353c3f6b94ff16fb1214c90f0d0de23"
+    }
+  ],
+  "selected_profile_index": 0,
+  "selection_rule": "single prospective own-count 6.25Hz/.14 profile; original native closure required",
+  "native_orbit_map_commands": 96,
+  "local_physical_episodes": 0,
+  "full_hanging_episodes": 0,
+  "local_only": true,
+  "passed": true,
+  "controller_qualified": false,
+  "development_episodes": 0,
+  "reserved_episodes": 0,
+  "CPU_seconds": 1.329942816,
+  "wall_seconds": 1.3306007540086284
+}

@@ -1,0 +1,80 @@
+{
+  "schema": "rage_mill.canonical18_public_evidence_assembly.v1",
+  "passed": true,
+  "actual_release": {
+    "bytes": 2370,
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/canonical18-release01/verified-release.json",
+    "sha256": "074d91ac63e4cf111eca54efc27d390c94276c1c671e78604c80d74d200a60b9"
+  },
+  "combined_qualification": {
+    "bytes": 54809,
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/physics-qualification-all141-v2-01/result/receipt.json",
+    "sha256": "4a3f21b4ef63e1390e8536410b66faae1ff3bf15bc72ae4fd423c080cae0648c"
+  },
+  "source_manifest": {
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/public-export02/source/benchmark/canonical18/files.json",
+    "sha256": "c1b1a8a0a3f25ff96dc79a02092917afb2ab0f539a023d044054c804c7deb44d",
+    "bytes": 16150
+  },
+  "evidence_manifest": {
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/public-export02/canonical18-evidence/files.json",
+    "sha256": "130e191d0b3eaf26ce9fd8af60b825549678ec8e955b74f0a19faf601a5753ee",
+    "bytes": 584469
+  },
+  "media_manifest": {
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/public-export02/canonical18-media/files.json",
+    "sha256": "8cfc02a412303bc5570eb6aa9cff339068c95dd88246e31566016495dc271028",
+    "bytes": 7626
+  },
+  "source_archive": {
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/public-export02/canonical18-source.tar.gz",
+    "sha256": "49371bc85ea633126d06484e951d16657a87981d376a44b29fd2145ccd6f4cfc",
+    "bytes": 16373757
+  },
+  "evidence_archive": {
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/public-export02/canonical18-evidence.tar.gz",
+    "sha256": "9f1db3f25b86858890a2e24666dacaa7b19d183f717a92e8f8cfa59e6acee834",
+    "bytes": 617292432
+  },
+  "media_archive": {
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/public-export02/canonical18-media.tar.gz",
+    "sha256": "b6b281b0f20ce0acd3204b2c4a556330ae9c95a4932793df705f575869744326",
+    "bytes": 2069793
+  },
+  "actual_episodes": 262,
+  "recorded_commands": 393000,
+  "reserved_episodes": 141,
+  "native_audited_episodes": 262,
+  "native_audited_commands": 393000,
+  "all262_saved_metrics": {
+    "minimum_upright_seconds": 8.040000000000001,
+    "maximum_cart_abs_m": 1.934454214966265,
+    "maximum_delivered_force_N": 69.54938411712646
+  },
+  "scientific_video": {
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/public-export02/canonical18-media/canonical18.mp4",
+    "sha256": "281153a908a9879136534dfcd2082c25b63db1430a64c98e43bc50a139b202d1",
+    "bytes": 632881
+  },
+  "silent_telemetry_video": {
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/public-export02/canonical18-media/canonical18-telemetry.mp4",
+    "sha256": "b198f901032b6293091cee90f3ffd2f54978a887b938af38dd5b1588bdecdf06",
+    "bytes": 1209424
+  },
+  "music_included": false,
+  "assembledAt": "2026-10-17T03:12:57.782644+00:00",
+  "timestamps": {
+    "firstPublicAt": null,
+    "frozenAt": "2026-10-17T01:44:48Z",
+    "registeredAt": null,
+    "runAt": null
+  },
+  "private_Git_or_runtime_binaries_copied": false,
+  "original_candidate_export_modified": false,
+  "Site_files_modified": false,
+  "external_writes": 0,
+  "physics_steps": 0,
+  "controller_calls": 0,
+  "new_reserved_labels": 0,
+  "scope": "Qualified original-path evidence staged only. Generic saved tape guards may reconstruct recorded reset identities; no physical reset, native dynamics or controller inference occurs."
+}

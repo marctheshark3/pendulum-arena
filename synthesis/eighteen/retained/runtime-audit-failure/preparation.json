@@ -1,0 +1,21 @@
+{
+  "metadata_only": true,
+  "launch": {
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/saved-model-audit-prepared01/launch.json",
+    "sha256": "186b35e9a6cf79890fdd98978e6ec07f5d77659d75066f106c14f13d99b67dbe"
+  },
+  "inputs": {
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/saved-model-audit-prepared01/inputs.json",
+    "sha256": "09a736f9e5c3a797f0dee7ff6a16a429a0d126bc6ee2ec16c018336d45d7bc5b"
+  },
+  "runtime_closure": {
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/saved-model-audit-prepared01/runtime-closure.json",
+    "sha256": "28e1ee8dc2f1b15913229e819bbc9cd68776ebb2682edd56e76f5ed6165e3a99"
+  },
+  "source_files": 3408,
+  "native_commands": 0,
+  "graph_evaluations": 0,
+  "reset_draws": 0,
+  "CPU_seconds": 1.2111311359999999,
+  "wall_seconds": 1.2252390480134636
+}

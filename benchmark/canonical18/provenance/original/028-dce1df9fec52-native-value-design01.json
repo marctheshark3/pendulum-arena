@@ -1,0 +1,107 @@
+{
+  "schema": "rage_mill.canonical18.native_value_design.v1",
+  "n_links": 18,
+  "prospective_declaration": {
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/declaration01.json",
+    "sha256": "7ad24f55b9dc4c8dc1f60498223e3d014a026eb8170d3a5f684bf1a366b9ac5c",
+    "bytes": 1939
+  },
+  "source_calibration_is_separate": true,
+  "candidate_structure": {
+    "orbit_Hz": 6.25,
+    "orbit_nominal_angle_rad": 0.14,
+    "bridge_commands": 450,
+    "park_commands": 850,
+    "live_commands": 650,
+    "finite_value_design_commands": 700,
+    "terminal_root": "zero",
+    "control_R": 1000.0,
+    "active_route_start": 0,
+    "cart_offset_m": 0.0,
+    "maximum_distinct_f32_candidates": 16,
+    "outer_launch_profiles": [
+      0.0
+    ]
+  },
+  "own_count_sources": {
+    "controller.npz": {
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/stronger-orbit-bridge-prepared01/output/controller.npz",
+      "sha256": "60f125456d5c98c629d0103dc656cad20c95925434456445e4ea9119087e1c2e",
+      "bytes": 451320
+    },
+    "reference.npz": {
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/stronger-orbit-bridge-prepared01/output/reference.npz",
+      "sha256": "8383590451ec88323a0feab2b05a19f5498f288db9a59fc424a142a75d332dab",
+      "bytes": 465232
+    },
+    "full-affine-feedback.npz": {
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/stronger-orbit-bridge-prepared01/output/full-affine-feedback.npz",
+      "sha256": "c8bdf7e71e9171072631d99268c3b857ec144bd4f9a527b5c61262d760a23719",
+      "bytes": 4568418
+    },
+    "verified-native-defects.npz": {
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/stronger-orbit-bridge-prepared01/output/verified-native-defects.npz",
+      "sha256": "4ff34a80c57feee076aaf284443c7e2268ff2897bdd62239254fd8d1d83bd087",
+      "bytes": 98587
+    }
+  },
+  "own_count_component_receipts": [
+    {
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/plant-parity-prepared01/output/receipt.json",
+      "sha256": "8e6c500dec5f8dd63d4c4c9a38c7a01fde0c9baac3e367747ff06bdc67eb5fa6",
+      "bytes": 64028
+    },
+    {
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/planning-model-prepared01/output/receipt.json",
+      "sha256": "4908696af8a0093a27497c0ada2145f04c765e50d6607c29eb5e9f7e9b89730d",
+      "bytes": 3100
+    },
+    {
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/saved-model-audit-prepared02/output/receipt.json",
+      "sha256": "836becd7cdb0601296633d14c076ede663ff49d87ada189e092f05a2d6bc13f0",
+      "bytes": 508911
+    },
+    {
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/orbit-component-prepared01/output/receipt.json",
+      "sha256": "34ad5d305a85ad5b09feea66167e3f863f4b68212dfeb7e8b7d5b1c053124936",
+      "bytes": 2487
+    },
+    {
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/parking-component-prepared01/output/receipt.json",
+      "sha256": "23b5d8c318cfe0b37a675affa756baeaa158a1bf5edf8f15ea374c3d3c2d06a8",
+      "bytes": 1651
+    },
+    {
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/stronger-orbit-bridge-prepared01/output/receipt.json",
+      "sha256": "d15b3bc6d45d55edf03292684789f1508c32f9d324e4c21fcbdbcc03258cea30",
+      "bytes": 1175
+    }
+  ],
+  "synthesis_code": {
+    "path": "/home/marctheshark/.t3/worktrees/rage-mill/t3-canonical18-swingup/scripts/synthesize_canonical18.py",
+    "sha256": "87fe1b16357a6d28d67f8f8b9ae4de468a84f1940f1e44e2a1e6fc890c13922f",
+    "bytes": 19751
+  },
+  "actual_diagnostic": {
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/native-value-exact-hanging-prepared01/output/receipt.json",
+    "sha256": "29ce186c06f3f32b980032e0b2ddf5a468c9116fca3ec23eb17d214280511c5d",
+    "bytes": 291549
+  },
+  "actual_diagnostic_owner": {
+    "launch.json": {
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/native-value-exact-hanging-prepared01/launch.json",
+      "sha256": "0cc495079de86e785e1643630411702c1b49fe70994cd1957761d76f3864c06e",
+      "bytes": 190824
+    },
+    "completion.json": {
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/native-value-exact-hanging-prepared01/completion.json",
+      "sha256": "ed458c036395d9640b4453d48910d9f95977a777755533837215291d1b2cf159",
+      "bytes": 121210
+    }
+  },
+  "offline_reference_feasible": false,
+  "offline_reference_maximum_native_gap": 2.6699888456e-07,
+  "adoption_rule": "First predeclared structure passes actual exact hanging diagnostic, unchanged. Formal exact calibration/native proof and fresh DEV20+100 remain required.",
+  "learning_used": false,
+  "qualification_authority": false
+}

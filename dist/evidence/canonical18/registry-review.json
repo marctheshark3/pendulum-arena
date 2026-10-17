@@ -1,0 +1,194 @@
+{
+  "schema": "rage_mill.canonical18_applied_registry_independent_review.v1",
+  "passed": true,
+  "reviewedAt": "2026-10-17T03:44:54Z",
+  "reviewer": "/root/music_source",
+  "scope": "Independent read-only saved-metadata review within the same author team. No Arena edit, hosting/publication action, network request, dynamics, policy, renderer, reset or qualification run was performed.",
+  "application_receipt": {
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/arena18-registry-apply01/receipt.json",
+    "sha256": "bb17994494ddafc9476db876608c97c70a1bd6f8c5bd804037589a9f4981b79e",
+    "bytes": 3402
+  },
+  "immutable_base": {
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/arena18-registry-base01/registry.json",
+    "sha256": "26332db3157c424f9c7428669ea2d5057cb4b9a811422adfbb599280ad0c14ab",
+    "bytes": 47366
+  },
+  "base_snapshot_receipt": {
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/arena18-registry-base01/receipt.json",
+    "sha256": "f04741332544cf21cdc5eee1c5df06bc028bb819fe880b8cd38f19e2f8020d47",
+    "bytes": 1295
+  },
+  "builder_proposal": {
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/arena18-registry-owner01/result/proposedregistry.json",
+    "sha256": "1018f13b4d339560a3191aa44d2177d737c9341ecb81f41c0f37aadb0dc70f95",
+    "bytes": 43446
+  },
+  "builder_receipt": {
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/arena18-registry-owner01/result/receipt.json",
+    "sha256": "a386b5c63677e94beddd1b1cb43f67623a281373565b3d478adc67dfc21b3f7f",
+    "bytes": 69433
+  },
+  "builder_launch": {
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/arena18-registry-owner01/launch.json",
+    "sha256": "725b386dd66ebdf5b9c230b452253d5f30610c0fafdfdf086cfebbdccaf6997c",
+    "bytes": 1780126
+  },
+  "builder_completion": {
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/arena18-registry-owner01/completion.json",
+    "sha256": "e1fabf63e76903ade078efb59ad7481b192633d33cebf9e36c0234173310832a",
+    "bytes": 1281143
+  },
+  "applied_registry": {
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/arena18-registry-apply01/registry.json",
+    "sha256": "26d8f0f3fe671ce8b1b008402639a2e1855faa020e3d336998f8d5a9956b551f",
+    "bytes": 60474
+  },
+  "observed_Arena_registry": {
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/arena18-authoritative01/dist/data/registry.json",
+    "sha256": "26d8f0f3fe671ce8b1b008402639a2e1855faa020e3d336998f8d5a9956b551f",
+    "bytes": 60474
+  },
+  "published_HTTP_receipt": {
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/publication18-http-owner01/result/receipt.json",
+    "sha256": "71feebb2bca79d41b7ecc783360a3948e6f320c1c66ae736e9ae1a7d98d7b1af",
+    "bytes": 38686
+  },
+  "public_asset_count": 43,
+  "independently_preserved_old_protocols": 3,
+  "independently_preserved_old_records": 5,
+  "protocols": 4,
+  "records": 6,
+  "historical_protocols_records_and_order_canonical_deep_equal": true,
+  "existing_top_level_values_unchanged": true,
+  "exact_difference_from_builder_proposal": "One exact published video.json receipt appended to own18 evidence; all other canonical JSON values equal.",
+  "appended_evidence": {
+    "id": "heldout-video-provenance",
+    "kind": "receipt",
+    "url": "https://github.com/marctheshark3/pendulum-arena/releases/download/canonical18-20261017/video.json",
+    "sha256": "a2b83899b89aa92fbfa501a5d5d8e2f467ad480392feff659b03b05529aeb226",
+    "publishedAt": "2026-10-17T03:34:09Z"
+  },
+  "new_result_id": "rage-mill-canonical18-20261016-published",
+  "new_protocol_id": "canonical18-v1",
+  "protocol_fingerprint": "7f9be38fe2163ad2eeb83ed7ad759c0f943a0c49251f4cc8384c46a8b10d18db",
+  "source_protocol": {
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/arena18-protocol-source01/protocol-canonical18.json",
+    "sha256": "77179a6ebab7bee475a29acaa8f07d0a43fa1052c0d420bfe8009072cfeb8eb9",
+    "bytes": 2815
+  },
+  "new_row_evidence_count": 12,
+  "all12_evidence_urls_hashes_and_publication_times_match_actual_HTTP_assets": true,
+  "video_summary": {
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/publication18-assets-inputs01/summaries/video.json",
+    "sha256": "a2b83899b89aa92fbfa501a5d5d8e2f467ad480392feff659b03b05529aeb226",
+    "bytes": 2040
+  },
+  "video_summary_matches_actual218500_and_registered_files_manifest": true,
+  "source_commit": "b2411f9896b6332dc00f97f462fc9278f3ade9bc",
+  "source_Git_clock_independently_read": true,
+  "timestamps": {
+    "firstPublicAt": "2026-10-17T03:34:09Z",
+    "frozenAt": "2026-10-17T01:44:48Z",
+    "registeredAt": "2026-10-17T03:41:34.228392+00:00",
+    "runAt": null
+  },
+  "original_run_time_unknown_preserved": true,
+  "publication_and_registry_and_freeze_clocks_separate": true,
+  "cohort_ids": [
+    "calibration",
+    "dev20",
+    "dev100",
+    "reserved-noisy20",
+    "reserved-noisy100",
+    "reserved-exact20",
+    "video"
+  ],
+  "cohort_total_episodes": 262,
+  "reserved_label_total": 141,
+  "expected_seed_ranges": {
+    "calibration": [
+      3187000,
+      3187000
+    ],
+    "dev20": [
+      3188000,
+      3188019
+    ],
+    "dev100": [
+      3188100,
+      3188199
+    ],
+    "reserved-noisy20": [
+      218000,
+      218019
+    ],
+    "reserved-noisy100": [
+      218100,
+      218199
+    ],
+    "reserved-exact20": [
+      218200,
+      218219
+    ],
+    "video": [
+      218500,
+      218500
+    ]
+  },
+  "all_cohort_required_attempted_passed_counts_and_seeds_exact": true,
+  "saved_metrics": {
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/public-export02/canonical18-evidence/episode-metrics.json",
+    "sha256": "c5e0557ac38e06d7d4b0af451f8312486f9795dde9ab97390e3526272dfcfa2c",
+    "bytes": 195288
+  },
+  "saved_public_audit": {
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/public-export02/canonical18-evidence/audit.json",
+    "sha256": "62237da6c52c92c207c1e3f1699baa9d98697efd371584e88abe4cde99e7652a",
+    "bytes": 12747
+  },
+  "all262_saved_scores_match_registry_metrics": true,
+  "saved_episodes": 262,
+  "saved_commands": 393000,
+  "native_audited_episodes": 262,
+  "native_audited_commands": 393000,
+  "all_saved_episodes_complete_finite_in_rail_with1500_commands_and402_strict_ticks": true,
+  "old17_publication_status": {
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/arena18-authoritative01/dist/evidence/canonical17/publication-status.json",
+    "sha256": "6d0bc0e34319ed86d6c3b3acad1c4404b41b52ef2a05bad1f31916463ec3d94d",
+    "bytes": 13026
+  },
+  "old17_expected_sha256": "6d0bc0e34319ed86d6c3b3acad1c4404b41b52ef2a05bad1f31916463ec3d94d",
+  "builder_naturally_closed_zero": true,
+  "builder_reaped": true,
+  "builder_all8896_current_pins_rehashed_unchanged": true,
+  "builder_CPU_seconds": 0.09590199999999999,
+  "builder_wall_seconds": 1.1827751589589752,
+  "retained_pre_owner_preparation_stop": {
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/arena18-registry-inputs01/preparation-stopped.json",
+    "sha256": "06aa823dcf4c25608666750520d28a07fb267487754166d301760e1d656fa8ec",
+    "bytes": 661
+  },
+  "blockers": [],
+  "findings": [
+    "Existing3protocols/5records and their array order remain canonically identical to the immutable reconciled8230GitHub/Sites base.",
+    "Exactly one count18 protocol and author-attested result are appended. No old result, claimant, proof, source or timestamp was rewritten.",
+    "The one additional kindreceipt video.json entry uses the exact verified public URL/fullSHA/actual publication clock. It resolves the unchanged telemetry checker evidence-registration requirement.",
+    "All7calibration/development/reserved/video cohorts and262saved metrics match the published actual qualification/export evidence. Source/model hashes and runtime disclosures match the reviewed publication assets.",
+    "FrozenAt matches the actual b2411f source Git object clock; firstPublicAt matches actual GitHub metadata, registeredAt is later andrunAt remainsunknown.",
+    "Original17publication-status proof retains exact6d0... bytes. CurrentArena registry equals the immutable applied snapshot26d8...."
+  ],
+  "final_Sites_deployment_verification_claimed": false,
+  "native_commands": 0,
+  "controller_calls": 0,
+  "benchmark_reset_RNG_draws": 0,
+  "new_physical_episodes": 0,
+  "new_reserved_labels": 0,
+  "network_requests": 0,
+  "new_media_commands": 0,
+  "metadata_check_process_CPU_seconds": 1.011301264,
+  "metadata_check_wall_seconds": 1.0243780399905518,
+  "metadata_git_child_CPU_seconds": null,
+  "other_readonly_review_CPU_seconds": null,
+  "other_readonly_review_wall_seconds": null
+}

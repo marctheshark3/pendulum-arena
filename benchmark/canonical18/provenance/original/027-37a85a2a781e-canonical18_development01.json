@@ -1,0 +1,16 @@
+{
+  "schema": "rage_mill.canonical18_development_declaration.v1",
+  "n_links": 18,
+  "exact_calibration_seed": 3187000,
+  "development20": {
+    "seed_start": 3188000,
+    "episodes": 20,
+    "exact": false
+  },
+  "development100": {
+    "seed_start": 3188100,
+    "episodes": 100,
+    "exact": false
+  },
+  "reason": "Own-count18 first candidate; prospective initial inventory/declaration01 precedes diagnostics. No cohorts initialized yet."
+}

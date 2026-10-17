@@ -1,0 +1,310 @@
+{
+  "schema": "pendulum_arena.official_youtube_paired_view.v1",
+  "complete": true,
+  "n_links": 18,
+  "seed": 218500,
+  "page": "/queen-eighteen.html",
+  "requested_wording": "super star by queen",
+  "confirmed_artist": "Queen",
+  "confirmed_title": "Don't Stop Me Now",
+  "user_source_preference": "youtube is fine",
+  "source": {
+    "platform": "YouTube",
+    "video_id": "HgzGwKwLmgM",
+    "official_url": "https://www.youtube.com/watch?v=HgzGwKwLmgM",
+    "embed_url": "https://www.youtube.com/embed/HgzGwKwLmgM",
+    "delivery": "Visible official YouTube player with official controls and branding; streamed separately by YouTube."
+  },
+  "playback": {
+    "user_gesture_required": true,
+    "autoplay_before_gesture": false,
+    "audio_start_seconds": 0,
+    "replay_duration_seconds": 30,
+    "pause_or_replay_end_pauses_Queen": true,
+    "synchronization": "Best-effort coordination of separate browser players; no sample-accurate alignment claim.",
+    "blocked_player_fallback": "Official YouTube link and replay-only playback remain available.",
+    "resume_cue": "current replay time"
+  },
+  "edits": {
+    "audio_extracted": false,
+    "audio_downloaded": false,
+    "audio_rehosted": false,
+    "audio_remixed": false,
+    "standalone_audio_derivative_created": false,
+    "saved_MP4_modified": false,
+    "video_reencoded_for_pairing": false,
+    "scientific_and_silent_downloads_preserved": true
+  },
+  "legal_scope": "Embedding is a separate official-player presentation. User preference and provenance do not grant a standalone audio redistribution license.",
+  "official_player_docs": [
+    "https://developers.google.com/youtube/iframe_api_reference",
+    "https://developers.google.com/youtube/player_parameters",
+    "https://developers.google.com/youtube/terms/required-minimum-functionality"
+  ],
+  "telemetry_video": {
+    "file": "canonical18-telemetry.mp4",
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/telemetry-render-owner02/result/canonical18-telemetry.mp4",
+    "sha256": "b198f901032b6293091cee90f3ffd2f54978a887b938af38dd5b1588bdecdf06",
+    "bytes": 1209424
+  },
+  "scientific_video": {
+    "file": "canonical18.mp4",
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/scientific-render-owner01/result/episode.mp4",
+    "sha256": "281153a908a9879136534dfcd2082c25b63db1430a64c98e43bc50a139b202d1",
+    "bytes": 632881
+  },
+  "telemetry_provenance": {
+    "file": "canonical18-telemetry.provenance.json",
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/public-media-provenance01/canonical18-telemetry.provenance.json",
+    "sha256": "a16a3dff1b1d8565f7a9354bcf0b214569fbcea0854ff94af77b650b1c8c891a",
+    "bytes": 10976
+  },
+  "staged_UI_sources": {
+    "canonical18-queen-eighteen.html": {
+      "file": "canonical18-queen-eighteen.html",
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/paired-view-source01/queen-eighteen.html",
+      "sha256": "150f6eb81d79f95dbbdeba946a4cb98dfee4388eeeb03298df19252839f3d518",
+      "bytes": 5406
+    },
+    "canonical18-queen-paired.js": {
+      "file": "canonical18-queen-paired.js",
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/paired-view-source01/assets/queen-paired.js",
+      "sha256": "8c1377e730c9368703b6c8acbbcb9d6760c8cb6c1528b2c16966d627d9c8d49a",
+      "bytes": 3018
+    },
+    "canonical18-queen-paired-controller.js": {
+      "file": "canonical18-queen-paired-controller.js",
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/paired-view-source01/assets/queen-paired-controller.js",
+      "sha256": "d4890deb220e89e5b59e77c71b495d6cbd8580e036cdfb6fc961e6e2adde7d67",
+      "bytes": 8623
+    },
+    "canonical18-queen-paired.css": {
+      "file": "canonical18-queen-paired.css",
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/paired-view-source01/assets/queen-paired.css",
+      "sha256": "8d672003ab181748f24dcfa97e11b484e995dfdba9ba21ba502a567fa56f5d28",
+      "bytes": 5100
+    }
+  },
+  "UI_review_scope": "Current final UI source pins, 37 source tests and actual desktop/mobile/natural30second playback receipts. Earlier staging provenance remains immutable history.",
+  "deployment_status": {
+    "final_UI_staged": true,
+    "paired_playback_browser_QA_pass": true,
+    "public_deployment_verified": false,
+    "scope": "Actual Sites source and public response/CSP receipts are subsequent and separate."
+  },
+  "source_files": {
+    "canonical18-render-scientific-saved-only.py": {
+      "file": "canonical18-render-scientific-saved-only.py",
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/media-source01/render_scientific_saved_only.py",
+      "sha256": "5753d698039a67d73f2fe620b24d255900aef88db612658f70bdf7f76982426e",
+      "bytes": 6645
+    },
+    "canonical18-scientific-renderer.py": {
+      "file": "canonical18-scientific-renderer.py",
+      "path": "/home/marctheshark/.t3/worktrees/rage-mill/t3-canonical18-swingup/src/rage_mill/canonical_video.py",
+      "sha256": "c2ba28234e9b3c632031c7d456b10c7e20e63d5e175097545e719adb01185556",
+      "bytes": 5779
+    },
+    "canonical18-render-telemetry-video-v2.py": {
+      "file": "canonical18-render-telemetry-video-v2.py",
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/arena18-authoritative01/scripts/render_telemetry_video_v2.py",
+      "sha256": "48a144d4ac3df4049f6f1592fcf55f4a79560b92b203353c88a6a3a6d7e3ebb0",
+      "bytes": 21729
+    },
+    "canonical18-audit-silent-media.py": {
+      "file": "canonical18-audit-silent-media.py",
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/media-source01/audit_silent_media.py",
+      "sha256": "bc82ae4767cb21a705d50a42d343041e4a90b0f617ffc8f13d5bfefdcca74ade",
+      "bytes": 14696
+    },
+    "canonical18-poster-from-silent.py": {
+      "file": "canonical18-poster-from-silent.py",
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/media-source02/poster_from_silent.py",
+      "sha256": "445d30c0dc4f3b714f67ea6245def40f9bcdf29c61039d4aa2af44c902b39944",
+      "bytes": 12924
+    },
+    "canonical18-assemble-media.py": {
+      "file": "canonical18-assemble-media.py",
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/media-provenance-source01/assemble_media.py",
+      "sha256": "2ecd2dcc1ac41f391972601a2e93163c170bf9d354788a6274c76f6df385ba26",
+      "bytes": 18738
+    },
+    "canonical18-prepare-media-assembly.py": {
+      "file": "canonical18-prepare-media-assembly.py",
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/media-provenance-source01/prepare_assembly.py",
+      "sha256": "550f886a4883b46333103465f04eceff32eb4dc41fb7f2c370a74f5ffc0cb3f0",
+      "bytes": 7490
+    },
+    "canonical18-code-LICENSE.txt": {
+      "file": "canonical18-code-LICENSE.txt",
+      "path": "/home/marctheshark/.t3/worktrees/rage-mill/t3-canonical18-swingup/LICENSE",
+      "sha256": "175868a772d0f8b95bfd02571e6c54368e2c7d7096380c1c7a80992ba2e74dc6",
+      "bytes": 1079
+    },
+    "canonical18-attribution.md": {
+      "file": "canonical18-attribution.md",
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/arena18-authoritative01/docs/attribution.md",
+      "sha256": "ac2f87cb9f3ec8d33dff450e0c449a474152c3e5e5c65ab2a8f33da2c71139ce",
+      "bytes": 4918
+    },
+    "canonical18-queen-eighteen.html": {
+      "file": "canonical18-queen-eighteen.html",
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/paired-view-source01/queen-eighteen.html",
+      "sha256": "150f6eb81d79f95dbbdeba946a4cb98dfee4388eeeb03298df19252839f3d518",
+      "bytes": 5406
+    },
+    "canonical18-queen-paired.js": {
+      "file": "canonical18-queen-paired.js",
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/paired-view-source01/assets/queen-paired.js",
+      "sha256": "8c1377e730c9368703b6c8acbbcb9d6760c8cb6c1528b2c16966d627d9c8d49a",
+      "bytes": 3018
+    },
+    "canonical18-queen-paired-controller.js": {
+      "file": "canonical18-queen-paired-controller.js",
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/paired-view-source01/assets/queen-paired-controller.js",
+      "sha256": "d4890deb220e89e5b59e77c71b495d6cbd8580e036cdfb6fc961e6e2adde7d67",
+      "bytes": 8623
+    },
+    "canonical18-queen-paired.css": {
+      "file": "canonical18-queen-paired.css",
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/paired-view-source01/assets/queen-paired.css",
+      "sha256": "8d672003ab181748f24dcfa97e11b484e995dfdba9ba21ba502a567fa56f5d28",
+      "bytes": 5100
+    }
+  },
+  "credits": {
+    "project": {
+      "author": "Marc / Rage Industries",
+      "website": "https://neuralyogi.com/",
+      "source": "https://github.com/marctheshark3/rage-mill",
+      "arena_source": "https://github.com/marctheshark3/pendulum-arena",
+      "code_license": "MIT",
+      "license_file": {
+        "file": "canonical18-code-LICENSE.txt",
+        "path": "/home/marctheshark/.t3/worktrees/rage-mill/t3-canonical18-swingup/LICENSE",
+        "sha256": "175868a772d0f8b95bfd02571e6c54368e2c7d7096380c1c7a80992ba2e74dc6",
+        "bytes": 1079
+      },
+      "scope": "MIT applies to project code. External sources, music and media retain their own rights and licenses."
+    },
+    "benchmark": {
+      "author": "Corben Sorenson",
+      "source": "https://github.com/corbensorenson/cartpole",
+      "pinned_source": "b84c6413974d5c0831cdf261ce15e58ba65cd3f5",
+      "accepted_fourteen_source": "3277b4173a9333819bf35acb848e384f52a227ec",
+      "published_fourteen": "https://github.com/corbensorenson/cartpole/releases/tag/fourteen-link-canonical-20261002",
+      "role": "Published canonical plant/task, fourteen-link benchmark and donor methodology; eighteen has its own qualification. No endorsement or independent reproduction is implied."
+    },
+    "inspiration": {
+      "author": "Kache / @yacineMTB",
+      "source": "https://x.com/yacineMTB/status/2064148140899348779",
+      "profile": "https://github.com/yacineMTB",
+      "role": "Published six-pendulum demonstration and iterative learning/control inspiration. No matched canonical score or endorsement is assigned."
+    },
+    "queen": {
+      "artist": "Queen",
+      "title": "Don't Stop Me Now",
+      "official_video": "https://www.youtube.com/watch?v=HgzGwKwLmgM",
+      "rights": "Queen recording, composition and official video retain their respective rightsholders. No license to extract, redistribute, rehost or remix audio is asserted."
+    }
+  },
+  "native_commands": 0,
+  "controller_calls": 0,
+  "reset_RNG_draws": 0,
+  "new_physical_resets": 0,
+  "qualification_awarded": false,
+  "source_staging_provenance": {
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/public-media-provenance01/canonical18-queen-paired-view.provenance.json",
+    "sha256": "4698decaebff2f07f1ab6a3ef8c5e82f3730ec1bf8975c24543229f05c18744e",
+    "bytes": 11070
+  },
+  "final_UI_sources": {
+    "dist/queen-eighteen.html": {
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/arena18-authoritative01/dist/queen-eighteen.html",
+      "sha256": "150f6eb81d79f95dbbdeba946a4cb98dfee4388eeeb03298df19252839f3d518",
+      "bytes": 5406
+    },
+    "dist/assets/queen-paired-controller.js": {
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/arena18-authoritative01/dist/assets/queen-paired-controller.js",
+      "sha256": "b31587673a6c32d28912f81e0a30f185cd592fd62f9fa60fbf46a60c23a98f1e",
+      "bytes": 8802
+    },
+    "dist/assets/queen-paired.js": {
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/arena18-authoritative01/dist/assets/queen-paired.js",
+      "sha256": "8c1377e730c9368703b6c8acbbcb9d6760c8cb6c1528b2c16966d627d9c8d49a",
+      "bytes": 3018
+    },
+    "dist/assets/queen-paired.css": {
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/arena18-authoritative01/dist/assets/queen-paired.css",
+      "sha256": "cb5841815d2ca3e9315adf253337c3b621f7218e2b91611da2a0e7fc6d89e808",
+      "bytes": 5100
+    },
+    "dist/_headers": {
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/arena18-authoritative01/dist/_headers",
+      "sha256": "091f4307ab56e585ee8a50de9c9972e30946c73ff7a8032b7b30705db93bba36",
+      "bytes": 491
+    }
+  },
+  "final_UI_source_review": {
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/queen-final-ui-review01/review.json",
+    "sha256": "0ad426913373fa2c4548e23d8752c040b6e34af58176a7c058b481857c4b93fe",
+    "bytes": 7805
+  },
+  "final_UI_changes": [
+    "Mobile heading clamp40px/14vw/70px;390px viewport measuredscroll378px.",
+    "Default browser timers bound to globalThis to preserve requiredWindow receiver.",
+    "Networkstalled withreadyState>=3 does notpause a buffered replay; actualwaiting and insufficientdata remain guarded."
+  ],
+  "test_evidence": {
+    "source": {
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/arena18-authoritative01/test/queen-paired.test.mjs",
+      "sha256": "bdbcfaa0f861688ae93e08d0e65fe2d01f4fc80be12778008541d0a023ce8d46",
+      "bytes": 16645
+    },
+    "log": {
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/arena18-queen-tests03.log",
+      "sha256": "e54da214a87c93a365494c4386221c2d6cfc6ab3f7bf8d9b6852ee7692de40b2",
+      "bytes": 7794
+    },
+    "tests": 37,
+    "passed": 37
+  },
+  "browser_evidence": {
+    "arena18-queen-mobile02.json": {
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/arena18-queen-mobile02.json",
+      "sha256": "5169f46e7e963b9138ba728109e386e33a789ff1713f51c8915c41918565b8ed",
+      "bytes": 5013
+    },
+    "arena18-queen-playback05.json": {
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/arena18-queen-playback05.json",
+      "sha256": "c011a8ccfe5ec43e522c19b885786cc3f48ce6eec9bc312c2e8c1548ab1247c4",
+      "bytes": 8455
+    },
+    "arena18-queen-full30-01.json": {
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/arena18-queen-full30-01.json",
+      "sha256": "142501bbcf6a220f29a46bac850e46a3db1859d3e7bbef15ff0356fb819778fe",
+      "bytes": 5980
+    }
+  },
+  "browser_QA": {
+    "passed": true,
+    "browser": "Firefox158.0 headless BiDi; T3preview explicitlyunsupported/AppArmor, retained fallback receipts",
+    "cache": "bypass enabled",
+    "desktop_paired_play": 9.492369,
+    "full_replay_natural_end": true,
+    "full_replay_seeking_events": 0,
+    "video_end_seconds": 30,
+    "queen_paused_at_replay_end": true,
+    "queen_observed_final_seconds": 29.50802,
+    "pause_end_replay_only_fallbacks_pass": true,
+    "mobile_viewport_px": 390,
+    "mobile_document_scroll_width_px": 378,
+    "youtube_mobile_iframe_px": [
+      344,
+      270
+    ],
+    "console_scope": "Four cross-site SameSite cookie messages; no application JavaScript exception in final QA.",
+    "limitations": "Separate streamed players have different start times; no sample-accurate synchronization or offline Queen audio delivery is claimed."
+  },
+  "reviewedAt": "2026-10-17T03:01:35.257680+00:00"
+}

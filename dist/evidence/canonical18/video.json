@@ -1,0 +1,47 @@
+{
+  "schema": "pendulum_arena.canonical18_video.v1",
+  "passed": true,
+  "n_links": 18,
+  "seed": 218500,
+  "frames": 1500,
+  "fps": 50,
+  "seconds": 30.0,
+  "initial_frame_included": false,
+  "extra_held_frames": 0,
+  "video_sha256": "281153a908a9879136534dfcd2082c25b63db1430a64c98e43bc50a139b202d1",
+  "video_bytes": 632881,
+  "original_render_receipt": {
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/scientific-render-owner01/result/receipt.json",
+    "sha256": "bdf94a0d1c6e97a7e885c7113e7b20a916849174ec4ea8f0bb715d95035bc8a5",
+    "bytes": 2098
+  },
+  "source_episode_receipt": {
+    "bytes": 20994,
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/canonical18-release01/reserved/video/episode-218500/receipt.json",
+    "sha256": "f278bdd9b3113151aec829f3747ce9733f571969a0a44274a8fa368f5c71f324"
+  },
+  "source_recording": {
+    "bytes": 461301,
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/canonical18-release01/reserved/video/episode-218500/tape.npz",
+    "sha256": "f33f130c83f5dad9ea971c5de6b6289167655919e229372e6b839eb1f958a9b6"
+  },
+  "independent_media_audit": {
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/media-audit-owner01/result/receipt.json",
+    "sha256": "b7e73de5b9ac1e8f21864723de6329f09f098d0bba4fc2e32a21fc9223e12f17",
+    "bytes": 47420
+  },
+  "typed_release": {
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/canonical18-release01/verified-release.json",
+    "sha256": "074d91ac63e4cf111eca54efc27d390c94276c1c671e78604c80d74d200a60b9",
+    "bytes": 2370
+  },
+  "post_command_states_only": true,
+  "dynamics_reexecuted": false,
+  "controller_inference": false,
+  "interpolated_states": false,
+  "reset_count": 0,
+  "audio_streams": 0,
+  "Queen_delivery": "Separate visible official YouTube player; saved scientific and telemetry MP4s remain silent.",
+  "generatedAt": "2026-10-17T03:10:58.367961+00:00",
+  "qualification_awarded_by_this_summary": false
+}

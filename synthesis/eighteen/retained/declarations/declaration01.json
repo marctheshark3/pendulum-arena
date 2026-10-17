@@ -1,0 +1,65 @@
+{
+  "schema": "rage_mill.canonical18.prospective_declaration.v1",
+  "utc": "2026-10-17T01:01:08.554973+00:00",
+  "n_links": 18,
+  "inventory": [
+    "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/initial-inventory.json",
+    "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/content-inventory.json"
+  ],
+  "upstream": "b84c6413974d5c0831cdf261ce15e58ba65cd3f5",
+  "diagnostic_band": [
+    3180000,
+    3186999
+  ],
+  "plant_parity_band": [
+    3180000,
+    3180099
+  ],
+  "synthesis_band": [
+    3181000,
+    3181999
+  ],
+  "exact_calibration_seed": 3187000,
+  "development20": {
+    "seed_start": 3188000,
+    "episodes": 20
+  },
+  "development100": {
+    "seed_start": 3188100,
+    "episodes": 100
+  },
+  "formal_ranges_status": "prospectively allocated only; candidate identity must be fixed before any initialization",
+  "reserved": {
+    "noisy20": [
+      218000,
+      218019
+    ],
+    "noisy100": [
+      218100,
+      218199
+    ],
+    "exact20": [
+      218200,
+      218219
+    ],
+    "video": 218500
+  },
+  "reserved_status": "blocked until own-count calibration, fresh development120, freeze and independent review",
+  "candidate_initial_structure": {
+    "orbit_Hz": 6.25,
+    "orbit_nominal_angle": 0.14,
+    "bridge_commands": 450,
+    "park_commands": 850,
+    "live_commands": 650,
+    "value_design_commands": 700,
+    "R": 1000,
+    "maximum_distinct_f32_candidates": 16,
+    "launch_profiles": [
+      0.0
+    ]
+  },
+  "learning": "no learned trial without newly measured bottleneck and prospective total-cost/physical-success benefit",
+  "song_request_verbatim": "super star by queen",
+  "music_status": "verify exact track and authorized source; no substitution; does not block scientific/silent work",
+  "owner_rule": "Each owner pins inputs/runtime before launch, finite CPU/wall/native caps, create-only outputs, failures and total costs retained; no historical owner reruns."
+}

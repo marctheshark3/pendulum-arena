@@ -1,0 +1,276 @@
+{
+  "schema": "rage_mill.canonical18_media_review.v1",
+  "passed": true,
+  "complete": true,
+  "scope": "Exact copies of already audited actual218500 media plus presentation provenance; no new qualification or external reproduction is awarded.",
+  "media_audit": {
+    "file": "canonical18-silent-media-audit.json",
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/media-audit-owner01/result/receipt.json",
+    "sha256": "b7e73de5b9ac1e8f21864723de6329f09f098d0bba4fc2e32a21fc9223e12f17",
+    "bytes": 47420
+  },
+  "actual_receipt": {
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/canonical18-release01/reserved/video/episode-218500/receipt.json",
+    "sha256": "f278bdd9b3113151aec829f3747ce9733f571969a0a44274a8fa368f5c71f324",
+    "bytes": 20994
+  },
+  "actual_tape": {
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/canonical18-release01/reserved/video/episode-218500/tape.npz",
+    "sha256": "f33f130c83f5dad9ea971c5de6b6289167655919e229372e6b839eb1f958a9b6",
+    "bytes": 461301
+  },
+  "scientific_video": {
+    "file": "canonical18.mp4",
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/scientific-render-owner01/result/episode.mp4",
+    "sha256": "281153a908a9879136534dfcd2082c25b63db1430a64c98e43bc50a139b202d1",
+    "bytes": 632881
+  },
+  "silent_telemetry_video": {
+    "file": "canonical18-telemetry.mp4",
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/telemetry-render-owner02/result/canonical18-telemetry.mp4",
+    "sha256": "b198f901032b6293091cee90f3ffd2f54978a887b938af38dd5b1588bdecdf06",
+    "bytes": 1209424
+  },
+  "scientific_render_receipt": {
+    "file": "canonical18-scientific.render.json",
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/scientific-render-owner01/result/receipt.json",
+    "sha256": "bdf94a0d1c6e97a7e885c7113e7b20a916849174ec4ea8f0bb715d95035bc8a5",
+    "bytes": 2098
+  },
+  "scientific_adapter": {
+    "file": "canonical18-scientific.adapter.json",
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/scientific-render-owner01/result/adapter-provenance.json",
+    "sha256": "11a19ca74580380a556b2ea874a2aeeefb84c422c58f49eae5b5c7c03eba20df",
+    "bytes": 1876
+  },
+  "telemetry_render_receipt": {
+    "file": "canonical18-telemetry.render.json",
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/telemetry-render-owner02/result/render-proof/receipt.json",
+    "sha256": "0160ce13f7cc290a83620646724c22b47fb0c30d326d10a0e26329b5bb46fa66",
+    "bytes": 4563
+  },
+  "telemetry_rows": {
+    "file": "canonical18-telemetry.frames.json",
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/telemetry-render-owner02/result/render-proof/telemetry.json",
+    "sha256": "e3b2f8f903460abefaff285f6f0de553ac2dc70a11312d46997b9676a17a85d7",
+    "bytes": 656801
+  },
+  "telemetry_provenance": {
+    "file": "canonical18-telemetry.provenance.json",
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/public-media-provenance01/canonical18-telemetry.provenance.json",
+    "sha256": "a16a3dff1b1d8565f7a9354bcf0b214569fbcea0854ff94af77b650b1c8c891a",
+    "bytes": 10976
+  },
+  "queen_paired_view_provenance": {
+    "file": "canonical18-queen-paired-view.provenance.json",
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/public-media-provenance01/canonical18-queen-paired-view.provenance.json",
+    "sha256": "4698decaebff2f07f1ab6a3ef8c5e82f3730ec1bf8975c24543229f05c18744e",
+    "bytes": 11070
+  },
+  "poster": {
+    "file": "canonical18-poster.webp",
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/poster-owner01/result/canonical18-poster.webp",
+    "sha256": "bdb6476aa7f43afbbcd1c9dfc577ea19dfb7b74a45f235411a4635f78b7cf274",
+    "bytes": 114614
+  },
+  "lossless_final_frame": {
+    "file": "canonical18-poster.png",
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/poster-owner01/result/canonical18-poster.png",
+    "sha256": "b98e2e01abccf5e78f5602ed87fb110fc02dbcfd247bd5a27d32854775868ac2",
+    "bytes": 178567
+  },
+  "poster_provenance": {
+    "file": "canonical18-poster.render.json",
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/poster-owner01/result/receipt.json",
+    "sha256": "30f10c389be3b9b9e557ef7d1e383b4cfa452daff3a285e0d6d026e766a2dc17",
+    "bytes": 8938
+  },
+  "first_hold_start_post_command": 1099,
+  "first_hold_earned_post_command": 1348,
+  "strict_hold_ticks": 402,
+  "original_owners": {
+    "scientific-render-owner01": {
+      "launch": {
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/scientific-render-owner01/launch.json",
+        "sha256": "cdb12d5a26286a7c1cd1f1f26b664b00ed211767ce00248c650fa2bc826157a6",
+        "bytes": 228132
+      },
+      "completion": {
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/scientific-render-owner01/completion.json",
+        "sha256": "65799eb182979655a990738f5e692e888b771bf40514ad0b7cedc3a1d56f62df",
+        "bytes": 142734
+      },
+      "CPU_seconds": 23.036073000000002,
+      "wall_seconds": 5.919011986989062
+    },
+    "telemetry-render-owner02": {
+      "launch": {
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/telemetry-render-owner02/launch.json",
+        "sha256": "d9f683b39c07ff1ac9d46ed64c2b142d736c3026b064c15ae505203a49b25424",
+        "bytes": 228269
+      },
+      "completion": {
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/telemetry-render-owner02/completion.json",
+        "sha256": "96dbfe455fbed18fe89dbbb995d27902a2e7c71292c2b9e5628eef0407652fce",
+        "bytes": 142724
+      },
+      "CPU_seconds": 36.11143,
+      "wall_seconds": 8.589529992023017
+    },
+    "poster-owner01": {
+      "launch": {
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/poster-owner01/launch.json",
+        "sha256": "19ab7d8e941c42e74dd7d844187c2867bd83d5022c6ec9e3126ee25f523b9850",
+        "bytes": 240479
+      },
+      "completion": {
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/poster-owner01/completion.json",
+        "sha256": "3350f52842a289b6d3329bc5643b7507e40a98b33de99241f17ef59b57c1327e",
+        "bytes": 145002
+      },
+      "CPU_seconds": 3.427158,
+      "wall_seconds": 3.178550013981294
+    },
+    "media-audit-owner01": {
+      "launch": {
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/media-audit-owner01/launch.json",
+        "sha256": "82a6ceb30b118befc9bc4043f46a449a067df1f02fc1c5a7f9a727ab702e28f8",
+        "bytes": 232981
+      },
+      "completion": {
+        "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/media-audit-owner01/completion.json",
+        "sha256": "c45f434c0b4fa48791a66787e2e842c5495f4393e05423d7213f1644dc6003b1",
+        "bytes": 146735
+      },
+      "CPU_seconds": 17.65252,
+      "wall_seconds": 13.553552694967948
+    }
+  },
+  "source_files": {
+    "canonical18-render-scientific-saved-only.py": {
+      "file": "canonical18-render-scientific-saved-only.py",
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/media-source01/render_scientific_saved_only.py",
+      "sha256": "5753d698039a67d73f2fe620b24d255900aef88db612658f70bdf7f76982426e",
+      "bytes": 6645
+    },
+    "canonical18-scientific-renderer.py": {
+      "file": "canonical18-scientific-renderer.py",
+      "path": "/home/marctheshark/.t3/worktrees/rage-mill/t3-canonical18-swingup/src/rage_mill/canonical_video.py",
+      "sha256": "c2ba28234e9b3c632031c7d456b10c7e20e63d5e175097545e719adb01185556",
+      "bytes": 5779
+    },
+    "canonical18-render-telemetry-video-v2.py": {
+      "file": "canonical18-render-telemetry-video-v2.py",
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/arena18-authoritative01/scripts/render_telemetry_video_v2.py",
+      "sha256": "48a144d4ac3df4049f6f1592fcf55f4a79560b92b203353c88a6a3a6d7e3ebb0",
+      "bytes": 21729
+    },
+    "canonical18-audit-silent-media.py": {
+      "file": "canonical18-audit-silent-media.py",
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/media-source01/audit_silent_media.py",
+      "sha256": "bc82ae4767cb21a705d50a42d343041e4a90b0f617ffc8f13d5bfefdcca74ade",
+      "bytes": 14696
+    },
+    "canonical18-poster-from-silent.py": {
+      "file": "canonical18-poster-from-silent.py",
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/media-source02/poster_from_silent.py",
+      "sha256": "445d30c0dc4f3b714f67ea6245def40f9bcdf29c61039d4aa2af44c902b39944",
+      "bytes": 12924
+    },
+    "canonical18-assemble-media.py": {
+      "file": "canonical18-assemble-media.py",
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/media-provenance-source01/assemble_media.py",
+      "sha256": "2ecd2dcc1ac41f391972601a2e93163c170bf9d354788a6274c76f6df385ba26",
+      "bytes": 18738
+    },
+    "canonical18-prepare-media-assembly.py": {
+      "file": "canonical18-prepare-media-assembly.py",
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/media-provenance-source01/prepare_assembly.py",
+      "sha256": "550f886a4883b46333103465f04eceff32eb4dc41fb7f2c370a74f5ffc0cb3f0",
+      "bytes": 7490
+    },
+    "canonical18-code-LICENSE.txt": {
+      "file": "canonical18-code-LICENSE.txt",
+      "path": "/home/marctheshark/.t3/worktrees/rage-mill/t3-canonical18-swingup/LICENSE",
+      "sha256": "175868a772d0f8b95bfd02571e6c54368e2c7d7096380c1c7a80992ba2e74dc6",
+      "bytes": 1079
+    },
+    "canonical18-attribution.md": {
+      "file": "canonical18-attribution.md",
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/arena18-authoritative01/docs/attribution.md",
+      "sha256": "ac2f87cb9f3ec8d33dff450e0c449a474152c3e5e5c65ab2a8f33da2c71139ce",
+      "bytes": 4918
+    },
+    "canonical18-queen-eighteen.html": {
+      "file": "canonical18-queen-eighteen.html",
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/paired-view-source01/queen-eighteen.html",
+      "sha256": "150f6eb81d79f95dbbdeba946a4cb98dfee4388eeeb03298df19252839f3d518",
+      "bytes": 5406
+    },
+    "canonical18-queen-paired.js": {
+      "file": "canonical18-queen-paired.js",
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/paired-view-source01/assets/queen-paired.js",
+      "sha256": "8c1377e730c9368703b6c8acbbcb9d6760c8cb6c1528b2c16966d627d9c8d49a",
+      "bytes": 3018
+    },
+    "canonical18-queen-paired-controller.js": {
+      "file": "canonical18-queen-paired-controller.js",
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/paired-view-source01/assets/queen-paired-controller.js",
+      "sha256": "d4890deb220e89e5b59e77c71b495d6cbd8580e036cdfb6fc961e6e2adde7d67",
+      "bytes": 8623
+    },
+    "canonical18-queen-paired.css": {
+      "file": "canonical18-queen-paired.css",
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/paired-view-source01/assets/queen-paired.css",
+      "sha256": "8d672003ab181748f24dcfa97e11b484e995dfdba9ba21ba502a567fa56f5d28",
+      "bytes": 5100
+    }
+  },
+  "credits": {
+    "project": {
+      "author": "Marc / Rage Industries",
+      "website": "https://neuralyogi.com/",
+      "source": "https://github.com/marctheshark3/rage-mill",
+      "arena_source": "https://github.com/marctheshark3/pendulum-arena",
+      "code_license": "MIT",
+      "license_file": {
+        "file": "canonical18-code-LICENSE.txt",
+        "path": "/home/marctheshark/.t3/worktrees/rage-mill/t3-canonical18-swingup/LICENSE",
+        "sha256": "175868a772d0f8b95bfd02571e6c54368e2c7d7096380c1c7a80992ba2e74dc6",
+        "bytes": 1079
+      },
+      "scope": "MIT applies to project code. External sources, music and media retain their own rights and licenses."
+    },
+    "benchmark": {
+      "author": "Corben Sorenson",
+      "source": "https://github.com/corbensorenson/cartpole",
+      "pinned_source": "b84c6413974d5c0831cdf261ce15e58ba65cd3f5",
+      "accepted_fourteen_source": "3277b4173a9333819bf35acb848e384f52a227ec",
+      "published_fourteen": "https://github.com/corbensorenson/cartpole/releases/tag/fourteen-link-canonical-20261002",
+      "role": "Published canonical plant/task, fourteen-link benchmark and donor methodology; eighteen has its own qualification. No endorsement or independent reproduction is implied."
+    },
+    "inspiration": {
+      "author": "Kache / @yacineMTB",
+      "source": "https://x.com/yacineMTB/status/2064148140899348779",
+      "profile": "https://github.com/yacineMTB",
+      "role": "Published six-pendulum demonstration and iterative learning/control inspiration. No matched canonical score or endorsement is assigned."
+    },
+    "queen": {
+      "artist": "Queen",
+      "title": "Don't Stop Me Now",
+      "official_video": "https://www.youtube.com/watch?v=HgzGwKwLmgM",
+      "rights": "Queen recording, composition and official video retain their respective rightsholders. No license to extract, redistribute, rehost or remix audio is asserted."
+    }
+  },
+  "n_links": 18,
+  "seed": 218500,
+  "frames": 1500,
+  "fps": 50,
+  "duration_seconds": 30,
+  "native_commands": 0,
+  "controller_calls": 0,
+  "reset_RNG_draws": 0,
+  "new_physical_resets": 0,
+  "new_simulation_or_controller_inference": false,
+  "qualification_awarded_by_renderer": false
+}

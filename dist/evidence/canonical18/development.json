@@ -1,0 +1,18 @@
+{
+  "noisy100": {
+    "receipt": {
+      "bytes": 44015,
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/native-value-development100-01/result/episodes/receipt.json",
+      "sha256": "950520da615e4e8b18c409f136883ace1f906256aad3b107638198b2b85a25df"
+    },
+    "seed_start": 3188100
+  },
+  "noisy20": {
+    "receipt": {
+      "bytes": 24713,
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/native-value-development20-01/result/episodes/receipt.json",
+      "sha256": "ae146e8b31dc2db390626e4fa69b9177fdc3e447426c37893171055849e1fbbe"
+    },
+    "seed_start": 3188000
+  }
+}

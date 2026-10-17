@@ -1,0 +1,18 @@
+{
+  "episode_receipt": {
+    "bytes": 20810,
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/native-value-calibration01/result/episodes/episode-3187000/receipt.json",
+    "sha256": "945e748c0feff1119ab0eb808b634880b6efd1f6d1b17e5c73471f9e025660cc"
+  },
+  "identity_sha256": "b3b01a2f3d498579ec69d26e1a19d3209540bb989bbb6b1a6ef54581d25366fc",
+  "initial_state_gap": 0.0,
+  "is_feasible": true,
+  "maximum_dynamics_defect": 0.0,
+  "native_replay_proof": {
+    "bytes": 1941,
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/native-value-calibration01/result/native-proof/receipt.json",
+    "sha256": "db95c1c49a157bed54e4e8c7b6fe9f1ded1a73bcb2e06d219722a097ce4da95d"
+  },
+  "schema": "rage_mill.canonical_exact_source_calibration.v1",
+  "trajectory_integrity": true
+}

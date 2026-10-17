@@ -1,0 +1,55 @@
+{
+  "CPU_seconds": 0.797750944,
+  "all_original_source_bytes_match_actual18_freeze": true,
+  "archive_audits": [
+    {
+      "archive_members": 32,
+      "extracted": false,
+      "native_commands": 0,
+      "new_episodes": 0,
+      "original_files": 26,
+      "packet": "source",
+      "passed": true,
+      "reset_RNG_draws": 0,
+      "uncompressed_bytes": 294956
+    },
+    {
+      "archive_members": 85,
+      "extracted": false,
+      "native_commands": 0,
+      "new_episodes": 0,
+      "original_files": 79,
+      "packet": "retained",
+      "passed": true,
+      "reset_RNG_draws": 0,
+      "uncompressed_bytes": 33466891
+    }
+  ],
+  "manifest": {
+    "bytes": 56770,
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/synthesis18-public-source02/original-manifest.json",
+    "sha256": "9e2889a59d5a5fc8d734a854220a1c1f0228df384b3e3ba30fb908d7dc0a38c2"
+  },
+  "model_constructions": 0,
+  "native_commands": 0,
+  "new_claims": 0,
+  "new_episodes": 0,
+  "packets": [
+    {
+      "bytes": 67944,
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/synthesis18-public-source02/source.tar.gz",
+      "sha256": "42be86cd4b24606720bcbe3a5545b02d72bec2a8a8a3cefa173b03ee9feea3f8"
+    },
+    {
+      "bytes": 20514707,
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/synthesis18-public-source02/retained.tar.gz",
+      "sha256": "d970f802e829861e7e9dd11c3be1f3a104f5794245604253b8b7868af192ec81"
+    }
+  ],
+  "passed": true,
+  "reset_RNG_draws": 0,
+  "retained_files": 79,
+  "schema": "rage_mill.canonical18_public_synthesis_packet_receipt.v1",
+  "source_files": 26,
+  "wall_seconds": 0.8005691980361007
+}

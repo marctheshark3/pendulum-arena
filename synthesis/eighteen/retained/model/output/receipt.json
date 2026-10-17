@@ -1,0 +1,87 @@
+{
+  "schema": "rage_mill.canonical18_planning_model.v1",
+  "passed": true,
+  "n_links": 18,
+  "xml_sha256": "6f2c30ae3b6c6c46915609a50ff26590b5a9797a51fc7cddee8734ea49dc16e7",
+  "checks": [
+    {
+      "tick": 0,
+      "continuous_gap": 1.99697036684654e-10,
+      "native_transition_gap": 1.268679605814782e-12,
+      "native_state_derivative_gap": 4.8571146660236764e-08,
+      "native_input_derivative_gap": 2.7949567105167716e-09
+    },
+    {
+      "tick": 25,
+      "continuous_gap": 3.360867140145274e-11,
+      "native_transition_gap": 1.292160822785604e-13,
+      "native_state_derivative_gap": 1.6753442633188342e-08,
+      "native_input_derivative_gap": 8.870086887213802e-10
+    },
+    {
+      "tick": 100,
+      "continuous_gap": 1.7784351769023488e-10,
+      "native_transition_gap": 5.346972864472832e-13,
+      "native_state_derivative_gap": 2.1053571330753584e-08,
+      "native_input_derivative_gap": 7.531241741354222e-10
+    },
+    {
+      "tick": 150,
+      "continuous_gap": 2.5789148594412836e-11,
+      "native_transition_gap": 9.031664305325648e-14,
+      "native_state_derivative_gap": 1.464788290661545e-08,
+      "native_input_derivative_gap": 2.406167487478683e-10
+    },
+    {
+      "tick": 200,
+      "continuous_gap": 1.227800083825059e-10,
+      "native_transition_gap": 2.6259550089946515e-13,
+      "native_state_derivative_gap": 9.147596652381296e-09,
+      "native_input_derivative_gap": 7.649885169769277e-10
+    },
+    {
+      "tick": 250,
+      "continuous_gap": 3.759801359137782e-10,
+      "native_transition_gap": 1.5452916724001398e-12,
+      "native_state_derivative_gap": 7.2113479410163e-08,
+      "native_input_derivative_gap": 2.046339875327874e-09
+    },
+    {
+      "tick": 300,
+      "continuous_gap": 1.124060011736816e-10,
+      "native_transition_gap": 4.1130467087757694e-13,
+      "native_state_derivative_gap": 3.1473766839290596e-08,
+      "native_input_derivative_gap": 8.154268371640683e-10
+    },
+    {
+      "tick": 350,
+      "continuous_gap": 1.1609628813857853e-09,
+      "native_transition_gap": 3.4198814570160496e-12,
+      "native_state_derivative_gap": 1.3065018011904073e-07,
+      "native_input_derivative_gap": 2.7827152910501335e-09
+    },
+    {
+      "tick": 400,
+      "continuous_gap": 1.899991275422508e-11,
+      "native_transition_gap": 5.904532505290883e-14,
+      "native_state_derivative_gap": 6.329845980701521e-09,
+      "native_input_derivative_gap": 9.63824575705985e-10
+    },
+    {
+      "tick": 449,
+      "continuous_gap": 9.39946620537313e-10,
+      "native_transition_gap": 3.1069591344135006e-12,
+      "native_state_derivative_gap": 1.3885789851286745e-07,
+      "native_input_derivative_gap": 4.219151500395313e-09
+    }
+  ],
+  "donor_only_offline_initializer": true,
+  "donor_sha256": "b7471fb925f474c68b7a6dafc6002a90a7902362cebbcda6f342c60d2c68966e",
+  "native_cold_map_commands": 50,
+  "maximum_native_transition_gap": 3.4198814570160496e-12,
+  "controller_qualified": false,
+  "development_episodes": 0,
+  "reserved_episodes": 0,
+  "CPU_seconds": 0.424575296,
+  "wall_seconds": 177.64825403300347
+}

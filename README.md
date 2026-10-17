@@ -49,6 +49,45 @@ Existing results are retained. Retractions and supersessions are appended with
 reasons and sources. Source/credit corrections have a
 [dedicated form](https://github.com/marctheshark3/pendulum-arena/issues/new?template=correction.yml).
 
+## Eighteen links
+
+The eighteen-link campaign passes **141/141 frozen held-out episodes**, every
+one completing 1,500 commands and an **8.04 s strict upright hold**. Exact source
+calibration and fresh disjoint development20+100 pass under one unchanged
+classical policy. All 141 causal saved-policy proofs reproduce raw/float32
+commands, selected native pairs, complete launch forecasts and final states
+byte for byte. Cold and continuous native replay cover all **262 original
+calibration/development/reserved episodes: 393,000 unique commands**, with zero
+defect. These are same-owner checks; the entry remains author-attested.
+
+The [eighteen source view](benchmark/canonical18/README.md),
+[original synthesis and retained failures](synthesis/eighteen/README.md), and
+[complete evidence release](https://github.com/marctheshark3/pendulum-arena/releases/tag/canonical18-20261017)
+retain the own38-state model, route/orbit/full700-step value tables and gains.
+Original execution paths remain authoritative; public byte auditors make no
+portable numerical identity or independent-reproduction claim. Seventeen’s
+negative JEPA ranking study remains negative; no eighteen learned policy was
+adopted. Fifty hertz denotes simulated cadence, with no hardware deadline claim.
+
+The current hero is the actual held-out218500 recording in the standard
+1280×1080 telemetry layout. [Scientific](dist/assets/canonical18.mp4) and
+[silent telemetry](dist/assets/canonical18-telemetry.mp4) copies preserve all
+1,500 post-command states at50fps/30s. Rendering performs no dynamics,
+inference, reset or interpolation. The new `render_telemetry_video_v2.py`
+retains the old renderer and accepts the native multiply/legacy divide duration
+representations of an unchanged strict tick count; all other checks remain.
+
+Marc’s original soundtrack wording, “super star by queen”, was clarified to
+**Queen — “Don’t Stop Me Now”**, with YouTube accepted. The
+[paired view](https://arena.neuralyogi.com/queen-eighteen.html) uses the visible
+[official YouTube player](https://www.youtube.com/watch?v=HgzGwKwLmgM), started
+by a user gesture beside the unchanged silent replay. No Queen audio is
+extracted or rehosted, and the website’s MIT license does not license the song.
+[Recording provenance](dist/assets/canonical18-telemetry.provenance.json) and
+[separate Queen playback provenance](dist/assets/canonical18-queen-paired-view.provenance.json)
+retain the source, credits, edits and playback limits. All historical source,
+protocols, registry records, correction history and media remain available.
+
 ## Seventeen links
 
 The [hybrid-construction response](docs/hybrid-construction-response.md) and

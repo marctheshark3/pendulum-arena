@@ -1,0 +1,14 @@
+{
+  "schema": "rage_mill.canonical18_source_freeze_clock.v1",
+  "source_commit": "b2411f9896b6332dc00f97f462fc9278f3ade9bc",
+  "frozenAt": "2026-10-17T01:44:48Z",
+  "freeze": {
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-20261016/canonical18-release01/freeze.json",
+    "sha256": "2cbfb193ed550749c1db519fdf1c968131714a1d104249183ae4f8d104cdb66e",
+    "bytes": 205765
+  },
+  "source_freeze_is_release_host_tag": false,
+  "runAt": null,
+  "firstPublicAt": null,
+  "scope": "Original scientific source clock; actual GitHub release publication and later registry/Sites clocks are separate."
+}
