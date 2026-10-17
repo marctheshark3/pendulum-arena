@@ -1,0 +1,141 @@
+{
+  "captured_UTC": "2026-10-17T01:39:43.754577+00:00",
+  "derivative_checkpoint_sha256": "677141fa449e5caa0c4874e02d321659c96da8d123ee0769eef90bffb3d8cc95",
+  "feedback_result": {
+    "comparison": {
+      "all_array_bytes_equal": true,
+      "arrays": {
+        "gains": {
+          "array_bytes_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "offsets": {
+          "array_bytes_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "residuals": {
+          "array_bytes_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "roots": {
+          "array_bytes_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      }
+    },
+    "model_source": "rebuilt provider",
+    "native_commands": 0,
+    "reserved_episodes": 0,
+    "scope": "New full-horizon QR reconstruction, not an episode or qualification"
+  },
+  "model_adapter": {
+    "aggregate_child_CPU_seconds": 134.626789,
+    "argv": [
+      "/home/marctheshark/.t3/worktrees/rage-mill/t3-canonical17-swingup/.venv/bin/python",
+      "/home/marctheshark/.t3/artifacts/rage-mill-hybrid-response-20261016/arena/synthesis/seventeen/original/scripts/synthesize_canonical17.py",
+      "model",
+      "--donor",
+      "/home/marctheshark/.t3/artifacts/rage-mill-hybrid-response-20261016/arena/synthesis/data/16/early-reference.npz",
+      "--out",
+      "/home/marctheshark/.t3/artifacts/rage-mill-hybrid-response-20261016/validation/model17/product"
+    ],
+    "product": "/home/marctheshark/.t3/artifacts/rage-mill-hybrid-response-20261016/validation/model17/product",
+    "product_receipt_sha256": "26f5328cefd90c3928a441f2676969f7c70b48c525475eccedc19d4ec9ed459b",
+    "reserved_episodes": 0,
+    "returncode": 0,
+    "wall_seconds": 134.8024026399944,
+    "wall_timeout": false
+  },
+  "model_result": {
+    "CPU_seconds": 0.35660961599999996,
+    "checks": [
+      {
+        "continuous_gap": 1.7705481525354116e-10,
+        "native_input_derivative_gap": 1.2608492028221008e-09,
+        "native_state_derivative_gap": 6.198594637574217e-08,
+        "native_transition_gap": 1.4250267632576197e-12,
+        "tick": 0
+      },
+      {
+        "continuous_gap": 3.432010231563254e-11,
+        "native_input_derivative_gap": 8.322986744246919e-10,
+        "native_state_derivative_gap": 1.3424277078843971e-08,
+        "native_transition_gap": 1.585953590677036e-13,
+        "tick": 25
+      },
+      {
+        "continuous_gap": 1.410747074714891e-10,
+        "native_input_derivative_gap": 5.960885118838632e-10,
+        "native_state_derivative_gap": 2.493622286436903e-08,
+        "native_transition_gap": 3.598198128340613e-13,
+        "tick": 100
+      },
+      {
+        "continuous_gap": 3.0098590286797844e-11,
+        "native_input_derivative_gap": 1.6183543394276967e-10,
+        "native_state_derivative_gap": 1.4529805802965257e-08,
+        "native_transition_gap": 1.2567724638756772e-13,
+        "tick": 150
+      },
+      {
+        "continuous_gap": 8.23744406019955e-11,
+        "native_input_derivative_gap": 8.072764678956901e-10,
+        "native_state_derivative_gap": 6.668413057853151e-09,
+        "native_transition_gap": 7.679135105576052e-13,
+        "tick": 200
+      },
+      {
+        "continuous_gap": 1.7757351145064604e-11,
+        "native_input_derivative_gap": 1.1546794631556168e-09,
+        "native_state_derivative_gap": 8.710231536035451e-09,
+        "native_transition_gap": 1.2552459072168176e-13,
+        "tick": 250
+      },
+      {
+        "continuous_gap": 4.509708162458992e-10,
+        "native_input_derivative_gap": 9.25530763140614e-10,
+        "native_state_derivative_gap": 4.9015090652915205e-08,
+        "native_transition_gap": 1.4084289290394736e-12,
+        "tick": 300
+      },
+      {
+        "continuous_gap": 4.396021324737376e-10,
+        "native_input_derivative_gap": 1.7018226827758554e-09,
+        "native_state_derivative_gap": 1.0993758126076614e-07,
+        "native_transition_gap": 1.1449313719325005e-12,
+        "tick": 350
+      },
+      {
+        "continuous_gap": 3.3364866425245054e-10,
+        "native_input_derivative_gap": 1.2561964801705017e-09,
+        "native_state_derivative_gap": 4.5361140177391235e-08,
+        "native_transition_gap": 3.8983816175175434e-12,
+        "tick": 400
+      },
+      {
+        "continuous_gap": 4.843467849013905e-10,
+        "native_input_derivative_gap": 1.1715335368478463e-09,
+        "native_state_derivative_gap": 3.5573832324331534e-08,
+        "native_transition_gap": 1.9394798267402535e-12,
+        "tick": 449
+      }
+    ],
+    "controller_qualified": false,
+    "development_episodes": 0,
+    "donor_only_offline_initializer": true,
+    "donor_sha256": "b74bf2ec82fc8739de7e0443877f07d3d8d89d0a15f7fdf87d771c68308daff5",
+    "maximum_native_transition_gap": 3.8983816175175434e-12,
+    "n_links": 17,
+    "native_cold_map_commands": 50,
+    "passed": true,
+    "reserved_episodes": 0,
+    "schema": "rage_mill.canonical17_planning_model.v1",
+    "wall_seconds": 134.32888629398076,
+    "xml_sha256": "6850e9194902d5a03f9e209f2449f5d3a92310524723eb1bc8b8f5c02b7f483a"
+  },
+  "native_physics_calls_during_derivative_capture": 0,
+  "reference_sha256": "b7471fb925f474c68b7a6dafc6002a90a7902362cebbcda6f342c60d2c68966e",
+  "reserved_episodes": 0,
+  "role": "New numeric checkpoint from a freshly rebuilt original JIT provider; not a retained historical artifact",
+  "schema": "pendulum-arena.seventeen-new-derivative-checkpoint.v1"
+}

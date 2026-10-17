@@ -1,0 +1,42 @@
+{
+  "schema": "rage_mill.canonical17_parking_component.v1",
+  "n_links": 17,
+  "park_ticks": 850,
+  "method": "own-count hanging DARE angles10/rates1/cart10/cart-rate5/R1000",
+  "cases": [
+    {
+      "seed": 3171020,
+      "exact": true,
+      "ticks": 850,
+      "launch_error_norm": 5.25530830796946e-09,
+      "maximum_cart_m": 0.051853790085282646,
+      "recording_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/parking-component-prepared01/output/parking-3171020.npz",
+      "recording_sha256": "53e873990d1302057c69e3e009c606afe3f4ee2d2a57b496da570e625c4aff97"
+    },
+    {
+      "seed": 3171021,
+      "exact": false,
+      "ticks": 850,
+      "launch_error_norm": 1.2115242741278077e-07,
+      "maximum_cart_m": 0.07060060380810586,
+      "recording_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/parking-component-prepared01/output/parking-3171021.npz",
+      "recording_sha256": "18483adc272e6de7fe0771594d31766616715584e6a78d51262d3bad9ca73469"
+    },
+    {
+      "seed": 3171022,
+      "exact": false,
+      "ticks": 850,
+      "launch_error_norm": 9.930188413390106e-08,
+      "maximum_cart_m": 0.07099783594577931,
+      "recording_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/parking-component-prepared01/output/parking-3171022.npz",
+      "recording_sha256": "f5d331f1fa28510e8247bfe72e3263e37490dfc1043e4c611051d61dfbae58f6"
+    }
+  ],
+  "full_hanging_swingup_episodes": 0,
+  "component_only": true,
+  "controller_qualified": false,
+  "development_episodes": 0,
+  "reserved_episodes": 0,
+  "CPU_seconds": 1.018947744,
+  "wall_seconds": 1.0193799560074694
+}

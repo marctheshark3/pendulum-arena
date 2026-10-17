@@ -1,0 +1,15 @@
+{
+  "schema": "pendulum-arena.seventeen-new-numeric-checkpoint-inventory.v1",
+  "files": [
+    {
+      "path": "derivative-checkpoint.npz",
+      "bytes": 5082027,
+      "sha256": "677141fa449e5caa0c4874e02d321659c96da8d123ee0769eef90bffb3d8cc95"
+    },
+    {
+      "path": "derivative-checkpoint.json",
+      "bytes": 5501,
+      "sha256": "c0e31fe146572a13230f85a4c6f5d4b23c09cfe6085e1f4897a8ed665e00dfd2"
+    }
+  ]
+}

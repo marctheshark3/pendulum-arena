@@ -1,0 +1,35 @@
+{
+  "schema": "pendulum-arena.seventeen-adapter-inventory.v1",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 7922,
+      "sha256": "99543faa65caaec25cfce6dbb83328c99703aa11b3c16f51327dcec1a383f228"
+    },
+    {
+      "path": "run.py",
+      "bytes": 9522,
+      "sha256": "e3208b2df9178ca52c517945c1b35b07eac242214a06f0795010d538806526f7"
+    },
+    {
+      "path": "historical-launches.json",
+      "bytes": 40938,
+      "sha256": "c415e4a7e25af8f1b8cb272b7a1bf7013986b632ea4c1bc77586cc09c291379e"
+    },
+    {
+      "path": "original-manifest.json",
+      "bytes": 48880,
+      "sha256": "bc0d16393069fcec00ce3505407ab0a62ad0d3a2f0dd18424b83897d7e56ac82"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 104024,
+      "sha256": "62a5bb7b524ae58ebc592534aee372a0257f190cef34eb902ff89ee2d3194ec2"
+    },
+    {
+      "path": "derivative-checkpoint-manifest.json",
+      "bytes": 420,
+      "sha256": "3d84eb5d9e6c56ea3fcdd5db5419b435c057bcef54278287349bc2c786e7c44f"
+    }
+  ]
+}

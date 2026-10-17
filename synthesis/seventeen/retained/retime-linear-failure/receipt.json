@@ -1,0 +1,32 @@
+{
+  "schema": "rage_mill.canonical17_candidate_diagnostic.v1",
+  "n_links": 17,
+  "diagnostic_only": true,
+  "controller_qualified": false,
+  "development_episodes": 0,
+  "reserved_episodes": 0,
+  "cases": [
+    {
+      "seed": 3171031,
+      "exact": true,
+      "success": false,
+      "complete": false,
+      "finite": true,
+      "force_ok": true,
+      "float32_delivery_ok": true,
+      "rail_ok": false,
+      "ticks": 1175,
+      "longest_upright_ticks": 0,
+      "longest_upright_seconds": 0.0,
+      "maximum_cart_m": 3.0489355168204666,
+      "invalid_reason": null,
+      "recording_path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical17-20261016/retime440-linear-exact-prepared01/output/episode-3171031.npz",
+      "recording_sha256": "ce6a442676c59cebcc40eb9ee0fb2ca99062d4c9feee1e1823f90e6606685095"
+    }
+  ],
+  "controller_sha256": "d8424361fd599e23b327a21d399dd5abdb89625e6df867b985b336324ed69bed",
+  "cart_error_offsets_m": null,
+  "all_success": false,
+  "CPU_seconds": 0.46858819199999996,
+  "wall_seconds": 0.48260772303910926
+}
