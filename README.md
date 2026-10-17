@@ -78,14 +78,19 @@ retains the old renderer and accepts the native multiply/legacy divide duration
 representations of an unchanged strict tick count; all other checks remain.
 
 Marc’s original soundtrack wording, “super star by queen”, was clarified to
-**Queen — “Don’t Stop Me Now”**, with YouTube accepted. The
-[paired view](https://arena.neuralyogi.com/queen-eighteen.html) uses the visible
-[official YouTube player](https://www.youtube.com/watch?v=HgzGwKwLmgM), started
-by a user gesture beside the unchanged silent replay. No Queen audio is
-extracted or rehosted, and the website’s MIT license does not license the song.
-[Recording provenance](dist/assets/canonical18-telemetry.provenance.json) and
-[separate Queen playback provenance](dist/assets/canonical18-queen-paired-view.provenance.json)
-retain the source, credits, edits and playback limits. All historical source,
+**Queen — “Don’t Stop Me Now”**, with YouTube accepted. His follow-up requests
+one benchmark MP4 with the music mixed in. The [single-video view](https://arena.neuralyogi.com/queen-eighteen)
+and [download](dist/assets/canonical18-telemetry-dont-stop-me-now.mp4) use that
+same combined file. The [official recording](https://www.youtube.com/watch?v=HgzGwKwLmgM)
+is credited in the [soundtrack provenance](dist/assets/canonical18-telemetry-dont-stop-me-now.provenance.json)
+and [full credits](dist/assets/canonical18-soundtrack-CREDITS.md). All1500video
+packets, decoded frames and timings match the original silent telemetry;
+[independent review](dist/assets/canonical18-soundtrack-review.json) also verifies
+finite, non-silent, unclipped stereo audio. The music remains outside the
+website’s MIT license; no formal license grant is asserted. The
+[original paired view](dist/history/canonical18-paired-20261017.html) and
+[its original provenance](dist/assets/canonical18-queen-paired-view.provenance.json)
+remain historical. Scientific/silent recordings and all historical source,
 protocols, registry records, correction history and media remain available.
 
 ## Seventeen links

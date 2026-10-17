@@ -4,60 +4,40 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#101716">
-  <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta name="description" content="The eighteen-link Pendulum Arena replay, paired with Queen’s official Don't Stop Me Now video.">
-  <title>Eighteen × Queen · Pendulum Arena</title>
+  <meta name="description" content="The actual eighteen-link benchmark recording with Queen's Don't Stop Me Now soundtrack.">
+  <title>Eighteen · Pendulum Arena</title>
   <link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/assets/queen-paired.css">
-  <script type="module" src="/assets/queen-paired.js"></script>
+  <style>.single-player{width:100%;max-width:960px;margin:0 auto}.single-player video{display:block;width:100%;aspect-ratio:1280/1080;object-fit:contain;background:#0b1115}.soundtrack-note{margin-top:24px;font-size:12px;color:#53604d}</style>
 </head>
 <body>
-  <a class="skip" href="#main">Skip to the players</a>
+  <a class="skip" href="#main">Skip to the video</a>
   <header class="site-header">
     <a class="wordmark" href="/" aria-label="Pendulum Arena home"><svg viewBox="0 0 32 36" aria-hidden="true"><path d="M3 29h26M8 29V18l9-8 8 7"/><circle cx="17" cy="10" r="3"/><circle cx="25" cy="17" r="3"/></svg><span>PENDULUM<br>ARENA<span class="wordmark-dot">✳</span></span></a>
-    <a class="header-link" href="/#board">The board <span aria-hidden="true">↗</span></a>
+    <a class="header-link" href="/#board">The board ↗</a>
   </header>
   <main id="main" class="page">
     <section class="intro" aria-labelledby="title">
       <div><p class="eyebrow">RAGE INDUSTRIES / RECORDED SIMULATION</p><h1 id="title">EIGHTEEN.<br><span>DON’T STOP ME NOW.</span></h1></div>
-      <p class="intro-copy">The full thirty-second replay, with Queen beside it.<br>Press <strong>Play together</strong> to start both players.</p>
+      <p class="intro-copy">The full thirty-second benchmark replay.<br>Soundtrack: <strong>Queen — Don’t Stop Me Now.</strong></p>
     </section>
-    <div class="players">
-      <section class="player-card replay-card" aria-labelledby="replay-title">
-        <div class="card-heading"><h2 id="replay-title">18 links / the recording</h2><span>EPISODE 218500</span></div>
-        <video id="eighteen-replay" controls playsinline preload="metadata" poster="/assets/canonical18-poster.webp" aria-label="Thirty-second eighteen-link simulation with cart, force, angle and upright hold telemetry" aria-describedby="replay-note">
-          <source src="/assets/canonical18-telemetry.mp4" type="video/mp4">
-          <a href="/assets/canonical18-telemetry.mp4">Download the silent telemetry recording</a>.
-        </video>
-        <p id="replay-note" class="card-note">Uncut recorded states. 1,500 frames at 50 fps.<br>The replay controls also work on their own.</p>
-      </section>
-      <section class="player-card queen-card" aria-labelledby="queen-title">
-        <div class="card-heading"><h2 id="queen-title">Queen / the official video</h2><span>ON YOUTUBE</span></div>
-        <iframe id="queen-player" class="queen-frame" width="640" height="360" title="Queen — Don't Stop Me Now, official YouTube video"
-          src="https://www.youtube.com/embed/HgzGwKwLmgM?autoplay=0&amp;controls=1&amp;playsinline=1"
-          referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
-        <p class="card-note"><strong>“Don’t Stop Me Now” — Queen.</strong><br><a href="https://www.youtube.com/watch?v=HgzGwKwLmgM" target="_blank" rel="noopener noreferrer">Watch Queen’s official video on YouTube <span aria-hidden="true">↗</span></a></p>
-        <div class="paired-controls" role="group" aria-label="Paired playback controls">
-          <button id="play-together" class="button primary" type="button" disabled>Play together <span aria-hidden="true">↗</span></button>
-          <button id="pause-together" class="button" type="button">Pause both</button>
-          <button id="play-replay-only" class="button text-button" type="button" disabled>Play replay only</button>
-        </div>
-        <p id="playback-status" class="playback-status" role="status" aria-live="polite" aria-atomic="true">Loading the players. The replay and official YouTube link remain available.</p>
-      </section>
-    </div>
-    <section class="notes" aria-label="Playback and source notes">
-      <p>Queen starts at 0:00 alongside the replay. Pausing the replay or reaching its thirty-second end pauses Queen. The two players load separately, so their start may differ slightly.</p>
-      <p>The saved MP4 plays unchanged. Queen streams from the visible official YouTube player.</p>
+    <section class="player-card single-player" aria-labelledby="replay-title">
+      <div class="card-heading"><h2 id="replay-title">18 links / the recording</h2><span>EPISODE 218500</span></div>
+      <video id="eighteen-replay" controls playsinline preload="metadata" poster="/assets/canonical18-poster.webp" aria-label="Thirty-second eighteen-link simulation with Queen soundtrack and actual cart, force, angle and upright hold telemetry">
+        <source src="/assets/canonical18-telemetry-dont-stop-me-now.mp4" type="video/mp4">
+        <a href="/assets/canonical18-telemetry-dont-stop-me-now.mp4">Download the benchmark video with soundtrack</a>.
+      </video>
+      <p class="card-note">Uncut recorded states. 1,500 frames at 50 fps.</p>
     </section>
+    <p class="soundtrack-note">“Don’t Stop Me Now” — Queen. <a href="/assets/canonical18-telemetry-dont-stop-me-now.provenance.json">Soundtrack source and credits ↗</a></p>
     <nav class="downloads" aria-label="Recordings and provenance">
-      <a href="/assets/canonical18-telemetry.mp4" download>Silent telemetry MP4 <span aria-hidden="true">↓</span></a>
-      <a href="/assets/canonical18.mp4" download>Scientific MP4 <span aria-hidden="true">↓</span></a>
-      <a href="/assets/canonical18-telemetry.provenance.json">Recording provenance <span aria-hidden="true">↗</span></a>
-      <a href="/assets/canonical18-queen-paired-view.provenance.json">Queen pairing provenance <span aria-hidden="true">↗</span></a>
-      <a href="/evidence/canonical18/qualification.json">Benchmark evidence <span aria-hidden="true">↗</span></a>
+      <a href="/assets/canonical18-telemetry-dont-stop-me-now.mp4" download>Video with soundtrack ↓</a>
+      <a href="/assets/canonical18-telemetry.mp4" download>Silent telemetry MP4 ↓</a>
+      <a href="/assets/canonical18.mp4" download>Scientific MP4 ↓</a>
+      <a href="/assets/canonical18-telemetry.provenance.json">Recording provenance ↗</a>
+      <a href="/evidence/canonical18/qualification.json">Benchmark evidence ↗</a>
     </nav>
-    <noscript><p class="noscript">Use the two visible players individually, or open Queen’s official video and download the silent replay. Paired controls require JavaScript.</p></noscript>
   </main>
-  <footer><a href="https://neuralyogi.com" class="footer-brand">RAGE INDUSTRIES<span>neuralyogi.com</span></a><p>50 Hz simulated cadence.<br>Recorded simulation; no hardware or wall-clock realtime claim.</p><a href="/">Back to the arena <span aria-hidden="true">↗</span></a></footer>
+  <footer><a href="https://neuralyogi.com" class="footer-brand">RAGE INDUSTRIES<span>neuralyogi.com</span></a><p>50 Hz simulated cadence.<br>Recorded simulation; no hardware or wall-clock realtime claim.</p><a href="/">Back to the arena ↗</a></footer>
 </body>
 </html>

@@ -274,8 +274,8 @@ test('bootstrap wires ready events and buttons without autoplay', async () => {
   controller.destroy();
 });
 
-test('staged page has visible official player, direct fallbacks, no autoplay and mobile minimum viewport', async () => {
-  const html = await readFile(new URL('../dist/queen-eighteen.html', import.meta.url), 'utf8');
+test('archived paired page has visible official player, direct fallbacks, no autoplay and mobile minimum viewport', async () => {
+  const html = await readFile(new URL('../dist/history/canonical18-paired-20261017.html', import.meta.url), 'utf8');
   const css = await readFile(new URL('../dist/assets/queen-paired.css', import.meta.url), 'utf8');
   assert.match(html, /<video[^>]+controls[^>]+playsinline/);
   assert.match(html, /\/assets\/canonical18-telemetry\.mp4/);

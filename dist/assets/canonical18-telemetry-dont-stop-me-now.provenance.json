@@ -1,0 +1,123 @@
+{
+  "schema": "rage_mill.canonical18_music_share.v1",
+  "complete": true,
+  "assembledAt": "2026-10-17T13:13:24.267444+00:00",
+  "soundtrack_first_public_at": null,
+  "clock_scope": "Metadata assembly time is separate from scientific freeze, original release publication and eventual soundtrack publication. Mux/review receipts contain measured durations; no absolute mux clock is inferred from file mtimes.",
+  "video": "canonical18-telemetry-dont-stop-me-now.mp4",
+  "video_sha256": "6dbcf44854fb350942bd94eb0acbd2f95de224bc719e9f9cbd7ff27883c3dfdc",
+  "video_bytes": 1965707,
+  "original_video": "canonical18-telemetry.mp4",
+  "original_video_sha256": "b198f901032b6293091cee90f3ffd2f54978a887b938af38dd5b1588bdecdf06",
+  "original_provenance": "canonical18-telemetry.provenance.json",
+  "original_provenance_sha256": "a16a3dff1b1d8565f7a9354bcf0b214569fbcea0854ff94af77b650b1c8c891a",
+  "scientific_video": "canonical18.mp4",
+  "scientific_video_sha256": "281153a908a9879136534dfcd2082c25b63db1430a64c98e43bc50a139b202d1",
+  "frames": 1500,
+  "fps": 50,
+  "duration_seconds": 30,
+  "resolution": [
+    1280,
+    1080
+  ],
+  "video_stream_copied_without_reencoding": true,
+  "new_simulation_or_controller_inference": false,
+  "music": {
+    "title": "Don't Stop Me Now",
+    "artist": "Queen",
+    "official_recording_title": "Queen - Don't Stop Me Now (Official Video Remastered 4K)",
+    "official_channel": "Queen Official",
+    "official_source": "https://www.youtube.com/watch?v=HgzGwKwLmgM",
+    "user_selected_song_reference": "https://share.google/TVQnQhTlYCsfHExSh",
+    "source_audio": {
+      "bytes": 502303,
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-soundtrack-correction-20261017/queen-audio-musical05/queen-excerpt.m4a",
+      "sha256": "8b8ac499fc7b0840b425b2792f7e946e9824ec2e60b48ba7a9bfb1827cd0767e",
+      "file": "queen-excerpt.m4a"
+    },
+    "source_instruction": {
+      "bytes": 2648,
+      "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-soundtrack-correction-20261017/mux-inputs01/user-source-instruction.json",
+      "sha256": "4881f7341cda71e5d6a46747d23b75d0c4d4532a13a3adc006c3c111e1c61d97"
+    },
+    "retrieved_original_source_excerpt_seconds": [
+      26,
+      57
+    ],
+    "mixed_original_source_excerpt_seconds": [
+      26,
+      56
+    ],
+    "retrieved_file_excerpt_start_seconds": 0,
+    "retrieved_file_excerpt_end_seconds": 30,
+    "retrieved_file_duration_seconds": 31.005011,
+    "volume_multiplier": 0.35,
+    "fade_in_seconds": 0,
+    "fade_out_start_seconds": 29,
+    "fade_out_duration_seconds": 1,
+    "fade_out_curve": "linear",
+    "encoder": "AAC",
+    "target_bitrate_bps": 192000,
+    "sample_rate_hz": 48000,
+    "channels": 2
+  },
+  "music_license": "Third-party copyright; no Creative Commons or project MIT audio license asserted.",
+  "license_grant_asserted": false,
+  "legal_rights_clearance_asserted": false,
+  "actual_user_source_instruction_recorded": true,
+  "credit": "Queen \u2014 Don\u2019t Stop Me Now. Queen Official source linked above. Recording and composition retain their respective third-party rights, outside the project code MIT license. Marc / Rage Industries; canonical benchmark by Corben Sorenson; inspiration Kache / @yacineMTB. Full project and upstream attribution is preserved in canonical18-soundtrack-CREDITS.md.",
+  "credits_file": "canonical18-soundtrack-CREDITS.md",
+  "credits_sha256": "b92b1c6b2ffc46b194149933abc0c1895cff130697bc4ffe1ef5d7679b58271c",
+  "changes": "Retrieved nominal source26..57s; mix first30s (nominal source26..56s), gain0.35, linear fade29..30s, AAC192kbit/s48kHzstereo. Video stream copied without reencoding.",
+  "exact_audio_filters": "atrim=start=0:end=30,asetpts=PTS-STARTPTS,volume=0.35,afade=t=out:st=29:d=1:curve=tri",
+  "audio_verification": {
+    "all_samples_finite": true,
+    "audible_RMS_threshold": 0.005,
+    "channels": 2,
+    "clipped_samples": 0,
+    "peak_absolute": 0.27911847829818726,
+    "rms": 0.048471836057148686,
+    "rms_dBFS": -26.290210587848986,
+    "sample_frames": 1440000,
+    "selected_source_gain035_last1s_fade_correlation": 0.9983275225133499,
+    "selected_source_gain035_last1s_fade_relative_RMSE": 0.05799883933255907,
+    "codec": "aac",
+    "target_bitrate_bps": 192000,
+    "sample_rate_hz": 48000,
+    "stream_duration_seconds": 30,
+    "finite_non_silent_and_unclipped": true,
+    "decoded_sample_frames": 1440000
+  },
+  "independent_review": {
+    "receipt": "canonical18-soundtrack-review.json",
+    "receipt_sha256": "fec791ed77d8dd30c4dafc89f51a1928fa0b0bb1cbb9d18095a6eb936942f97b",
+    "review_scope": "Separate saved-media verification implementation within the author project; not third-party benchmark reproduction.",
+    "all_1500_decoded_video_frames_and_timestamps_identical": true,
+    "all_1500_encoded_video_packet_payload_hashes_and_pts_dts_durations_identical": true,
+    "video_extradata_and_timebase_identical": true,
+    "audio_valid_non_silent_and_unclipped": true,
+    "selected_source_gain_fade_correlation": 0.9983275225133499
+  },
+  "mux_receipt": {
+    "bytes": 6152,
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-soundtrack-correction-20261017/mux-owner01/receipt.json",
+    "sha256": "d92e4b70bdb1cd219d2455b20c9b6ad16aec18133175dd8ec74ab65874e4d802"
+  },
+  "original_draft_provenance": {
+    "bytes": 67576,
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-soundtrack-correction-20261017/mux-owner01/music-provenance-draft.json",
+    "sha256": "4f47cd4933ebabe0ca0ca08f2afd8ba6a9d20ad362046adf8dcf604702c5b8d0"
+  },
+  "original_credits": {
+    "path": "/home/marctheshark/.t3/artifacts/rage-mill-canonical18-soundtrack-correction-20261017/arena-source01/dist/assets/canonical18-CREDITS.md",
+    "sha256": "ff06f09f5f783164eaaa68425bfb85aeb7b8a92342a323192a2698eb534d200a",
+    "bytes": 3160
+  },
+  "native_commands": 0,
+  "controller_calls": 0,
+  "reset_RNG_draws": 0,
+  "new_physical_resets": 0,
+  "new_reserved_labels": 0,
+  "qualification_awarded": false,
+  "publication_authority": false
+}
