@@ -15,3 +15,6 @@
 @media(min-width:1600px){.gear-callout{padding-inline:max(6%,calc((100vw - 1400px)/2))}}
 @media(max-width:1050px){.gear-callout{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);padding-inline:5%;gap:23px 30px}.gear-preview{grid-row:span 2}.gear-action{grid-column:2;gap:8px}.gear-copy h2{font-size:32px}}
 @media(max-width:760px){.gear-callout{grid-template-columns:minmax(0,1fr);padding:32px 5%;gap:23px}.gear-preview{grid-row:auto;max-width:500px}.gear-copy h2{font-size:35px}.gear-copy>p:not(.eyebrow){max-width:480px}.gear-action{grid-column:1;gap:10px}.gear-action .button{min-height:47px}.gear-preview figcaption{font-size:8px}}
+
+/* Current storefront previews and presentation context; registry evidence stays unchanged. */
+.gear-preview-products{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.gear-preview-products a{display:block;min-width:0}.gear-preview-products img{background:#eceee4}.presentation-update{border-left:3px solid #7c8b67;padding:10px 14px;margin:16px 0;background:#f2f4e9}.presentation-update .evidence-links{margin:10px 0}
