@@ -1,0 +1,60 @@
+FLOPPY BRICK BREAKER / FIRST LIGHT HUMAN ALPHA
+
+Floppy game concept and human-versus-bot challenge idea by Corben;
+developed together by Corben and Marc, with their agents.
+
+Human play is a separate, unranked one-board alpha. Assisted director and direct
+cart-force controls are separate input modes. The passive hinge has no motor.
+This does not change Corben-versus-Marc autonomous controller competition.
+
+Browser profile: floppy-first-light-human-mujoco-3.8.0-v1
+Runtime: official @mujoco/mujoco 3.8.0 WebAssembly
+Original contact rules revision: 2
+Selected source revision: 74bde0779fc9bc6b569ffd10e07b0db18de6ad85
+Board: First Light, 15 one-health bricks, 100 points per removed brick
+Human mode: seed 20261019; three lives; 120 simulated seconds; no timeout win
+Force delivery: Float32, clamped to +/-80 N, held for 20 ms
+
+The official MuJoCo WebAssembly and a JavaScript loader with the documented
+upstream Emscripten static Embind patch are bundled locally. The patch and
+Emscripten copyright/license are retained in engine/vendor/.
+MuJoCo is developed by Google DeepMind and its contributors and licensed under
+Apache 2.0. Its license is included at ./engine/vendor/LICENSE.
+Upstream: https://github.com/google-deepmind/mujoco
+Package: https://www.npmjs.com/package/@mujoco/mujoco/v/3.8.0
+
+RETAINED AUTONOMOUS RECORDING
+
+Controller: Corben / Codex N1 campaign planner v13
+Controller SHA256:
+7c965d2756a0534b31ce574dcaaf3ed201d59e62fefe361d4a2bb95c4dedd250
+Retained source freeze: 7b9c11451e6bbb343309084236b28cff18d75ae6
+Original native runtime: MuJoCo 3.3.5
+Seed: 20261022
+Complete First Light segment: 45.0281875 simulated seconds; 15/15 bricks;
+1,500 points; 12 paddle hits; four lives after the campaign clear bonus.
+The later campaign was interrupted on Prism. This is a board clear, not a
+full campaign win. It is retained evidence, not a new reproduction or benchmark.
+
+Replay presentation: 482 selected frames from 2,252 original 50 Hz display
+frames; every fifth frame plus all event-bearing frames and the terminal.
+Public JSON SHA256:
+314b3359cd42331d950a8a62206b029b1b4ddf7e067b5f740a9fbd32d5657e96
+Original compressed First Light frames SHA256:
+bd97c1f0902e7a9a646582d213e2384bf24677f69a77aceb383a087535533be5
+Original First Light receipt SHA256:
+d188ca39c4e947e0e8c9921c159c77e5e865eb0739a29d6f36dee68e6c36108b
+
+PUBLICATION SCOPE
+
+This is a deliberately selected joint Arena release, with the origin credit
+carried into the title, controls, recording and documentation. It publishes
+selected model/rules and replay geometry/statistics, not the research workspace
+or its raw archives and correspondence. It makes no license assertion for the
+rest of that workspace. The website code follows the repository license;
+bundled MuJoCo retains its Apache 2.0 license.
+
+Full public source and release notes:
+https://github.com/marctheshark3/pendulum-arena/blob/main/docs/floppy.md
+
+Selected product validation: /floppy/validation.json

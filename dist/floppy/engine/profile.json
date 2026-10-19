@@ -1,0 +1,186 @@
+{
+  "source_profile": {
+    "name": "floppy-brick-breaker-arcade-one-link-v1",
+    "field": "uniform-mechanism-gravity-ball-gravcomp-v1",
+    "timestep": 6.25e-05,
+    "integrator": "RK4",
+    "command_period": 0.02,
+    "gravity": 9.81,
+    "rail_height": 4.0,
+    "rail_limit": 2.0,
+    "wall_x": 2.41875,
+    "goal_z": 4.3,
+    "length": 1.0,
+    "stem_top_recess": 0.03,
+    "cart_mass": 1.0,
+    "link_mass": 0.2,
+    "hinge_damping": 0.015,
+    "paddle_mass": 0.05,
+    "paddle_width": 0.64,
+    "paddle_thickness": 0.03,
+    "paddle_depth": 0.08,
+    "ball_mass": 0.01,
+    "ball_radius": 0.06,
+    "force_limit": 80.0,
+    "contact_stiffness": 4000000.0,
+    "contact_damping": 12.0,
+    "serve_center_speed": 3.5,
+    "serve_spread_x": 0.08,
+    "serve_lateral_speed": 0.12,
+    "serve_start_distance": 0.25,
+    "court_edge_fault": true,
+    "warmup": 2.0,
+    "possession_limit": 5.0,
+    "rally_limit": 30.0,
+    "match_limit": 120.0,
+    "crossing_clearance": 0.002,
+    "separation_clearance": 0.0005,
+    "target_score": 7,
+    "hard_score_cap": 11
+  },
+  "board": {
+    "index": 1,
+    "id": "first-light",
+    "name": "First Light",
+    "subtitle": "Open the skyline.",
+    "color": "#70e8df",
+    "accent": "#ffbd72",
+    "bricks": [
+      {
+        "id": "b00",
+        "x": -1.44,
+        "z": 1.75,
+        "width": 0.64,
+        "height": 0.22,
+        "hp": 1,
+        "row": 0
+      },
+      {
+        "id": "b01",
+        "x": -0.72,
+        "z": 1.75,
+        "width": 0.64,
+        "height": 0.22,
+        "hp": 1,
+        "row": 0
+      },
+      {
+        "id": "b02",
+        "x": 0.0,
+        "z": 1.75,
+        "width": 0.64,
+        "height": 0.22,
+        "hp": 1,
+        "row": 0
+      },
+      {
+        "id": "b03",
+        "x": 0.72,
+        "z": 1.75,
+        "width": 0.64,
+        "height": 0.22,
+        "hp": 1,
+        "row": 0
+      },
+      {
+        "id": "b04",
+        "x": 1.44,
+        "z": 1.75,
+        "width": 0.64,
+        "height": 0.22,
+        "hp": 1,
+        "row": 0
+      },
+      {
+        "id": "b05",
+        "x": -1.44,
+        "z": 2.15,
+        "width": 0.64,
+        "height": 0.22,
+        "hp": 1,
+        "row": 1
+      },
+      {
+        "id": "b06",
+        "x": -0.72,
+        "z": 2.15,
+        "width": 0.64,
+        "height": 0.22,
+        "hp": 1,
+        "row": 1
+      },
+      {
+        "id": "b07",
+        "x": 0.0,
+        "z": 2.15,
+        "width": 0.64,
+        "height": 0.22,
+        "hp": 1,
+        "row": 1
+      },
+      {
+        "id": "b08",
+        "x": 0.72,
+        "z": 2.15,
+        "width": 0.64,
+        "height": 0.22,
+        "hp": 1,
+        "row": 1
+      },
+      {
+        "id": "b09",
+        "x": 1.44,
+        "z": 2.15,
+        "width": 0.64,
+        "height": 0.22,
+        "hp": 1,
+        "row": 1
+      },
+      {
+        "id": "b10",
+        "x": -1.44,
+        "z": 2.55,
+        "width": 0.64,
+        "height": 0.22,
+        "hp": 1,
+        "row": 2
+      },
+      {
+        "id": "b11",
+        "x": -0.72,
+        "z": 2.55,
+        "width": 0.64,
+        "height": 0.22,
+        "hp": 1,
+        "row": 2
+      },
+      {
+        "id": "b12",
+        "x": 0.0,
+        "z": 2.55,
+        "width": 0.64,
+        "height": 0.22,
+        "hp": 1,
+        "row": 2
+      },
+      {
+        "id": "b13",
+        "x": 0.72,
+        "z": 2.55,
+        "width": 0.64,
+        "height": 0.22,
+        "hp": 1,
+        "row": 2
+      },
+      {
+        "id": "b14",
+        "x": 1.44,
+        "z": 2.55,
+        "width": 0.64,
+        "height": 0.22,
+        "hp": 1,
+        "row": 2
+      }
+    ]
+  }
+}

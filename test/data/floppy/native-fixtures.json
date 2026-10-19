@@ -1,0 +1,2764 @@
+{
+  "protocol_sha256": "ab4421f7b3b0df8114b6f7a6e4d5acf60ee1b5bb6aede0b26b2cc817e7bbcb08",
+  "runtime": {
+    "mujoco": "3.3.5",
+    "numpy": "2.4.6",
+    "python": "3.11.15 (main, Jun 23 2026, 15:18:56) [Clang 22.1.3 ]"
+  },
+  "fixtures": [
+    {
+      "id": "equilibrium",
+      "force": 0,
+      "initial": {
+        "qpos": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "qvel": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "phase": "warmup",
+        "life": 1,
+        "lives": 3,
+        "health": {
+          "b00": 1,
+          "b01": 1,
+          "b02": 1,
+          "b03": 1,
+          "b04": 1,
+          "b05": 1,
+          "b06": 1,
+          "b07": 1,
+          "b08": 1,
+          "b09": 1,
+          "b10": 1,
+          "b11": 1,
+          "b12": 1,
+          "b13": 1,
+          "b14": 1
+        },
+        "active": {
+          "b00": true,
+          "b01": true,
+          "b02": true,
+          "b03": true,
+          "b04": true,
+          "b05": true,
+          "b06": true,
+          "b07": true,
+          "b08": true,
+          "b09": true,
+          "b10": true,
+          "b11": true,
+          "b12": true,
+          "b13": true,
+          "b14": true
+        },
+        "warmup_end": 2
+      },
+      "commands": [
+        {
+          "qpos": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "qvel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "frame": {
+            "native_time": 0.020000000000000014,
+            "own": {
+              "x": 0.0,
+              "theta": 0.0,
+              "vx": 0.0,
+              "omega": 0.0,
+              "cart_world": [
+                0.0,
+                -4.0
+              ],
+              "paddle_world": [
+                0.0,
+                -3.0
+              ],
+              "tip_height": 1.0,
+              "normal_world": [
+                0.0,
+                1.0
+              ]
+            },
+            "ball_world": [
+              0.0,
+              0.0
+            ],
+            "ball_velocity_world": [
+              0.0,
+              0.0
+            ],
+            "time": 0.02,
+            "phase": "warmup",
+            "score": 0,
+            "lives": 3,
+            "hits": 0,
+            "health": {
+              "b00": 1,
+              "b01": 1,
+              "b02": 1,
+              "b03": 1,
+              "b04": 1,
+              "b05": 1,
+              "b06": 1,
+              "b07": 1,
+              "b08": 1,
+              "b09": 1,
+              "b10": 1,
+              "b11": 1,
+              "b12": 1,
+              "b13": 1,
+              "b14": 1
+            },
+            "active": {
+              "b00": true,
+              "b01": true,
+              "b02": true,
+              "b03": true,
+              "b04": true,
+              "b05": true,
+              "b06": true,
+              "b07": true,
+              "b08": true,
+              "b09": true,
+              "b10": true,
+              "b11": true,
+              "b12": true,
+              "b13": true,
+              "b14": true
+            },
+            "pending": [],
+            "force": 0.0,
+            "outcome": null,
+            "events": []
+          },
+          "events": []
+        },
+        {
+          "qpos": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "qvel": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "frame": {
+            "native_time": 0.04000000000000003,
+            "own": {
+              "x": 0.0,
+              "theta": 0.0,
+              "vx": 0.0,
+              "omega": 0.0,
+              "cart_world": [
+                0.0,
+                -4.0
+              ],
+              "paddle_world": [
+                0.0,
+                -3.0
+              ],
+              "tip_height": 1.0,
+              "normal_world": [
+                0.0,
+                1.0
+              ]
+            },
+            "ball_world": [
+              0.0,
+              0.0
+            ],
+            "ball_velocity_world": [
+              0.0,
+              0.0
+            ],
+            "time": 0.04,
+            "phase": "warmup",
+            "score": 0,
+            "lives": 3,
+            "hits": 0,
+            "health": {
+              "b00": 1,
+              "b01": 1,
+              "b02": 1,
+              "b03": 1,
+              "b04": 1,
+              "b05": 1,
+              "b06": 1,
+              "b07": 1,
+              "b08": 1,
+              "b09": 1,
+              "b10": 1,
+              "b11": 1,
+              "b12": 1,
+              "b13": 1,
+              "b14": 1
+            },
+            "active": {
+              "b00": true,
+              "b01": true,
+              "b02": true,
+              "b03": true,
+              "b04": true,
+              "b05": true,
+              "b06": true,
+              "b07": true,
+              "b08": true,
+              "b09": true,
+              "b10": true,
+              "b11": true,
+              "b12": true,
+              "b13": true,
+              "b14": true
+            },
+            "pending": [],
+            "force": 0.0,
+            "outcome": null,
+            "events": []
+          },
+          "events": []
+        }
+      ]
+    },
+    {
+      "id": "positive-pulse",
+      "force": 4,
+      "initial": {
+        "qpos": [
+          0.1,
+          0.02,
+          0.0,
+          0.0
+        ],
+        "qvel": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "phase": "rally",
+        "life": 1,
+        "lives": 3,
+        "health": {
+          "b00": 1,
+          "b01": 1,
+          "b02": 1,
+          "b03": 1,
+          "b04": 1,
+          "b05": 1,
+          "b06": 1,
+          "b07": 1,
+          "b08": 1,
+          "b09": 1,
+          "b10": 1,
+          "b11": 1,
+          "b12": 1,
+          "b13": 1,
+          "b14": 1
+        },
+        "active": {
+          "b00": true,
+          "b01": true,
+          "b02": true,
+          "b03": true,
+          "b04": true,
+          "b05": true,
+          "b06": true,
+          "b07": true,
+          "b08": true,
+          "b09": true,
+          "b10": true,
+          "b11": true,
+          "b12": true,
+          "b13": true,
+          "b14": true
+        },
+        "warmup_end": 2
+      },
+      "commands": [
+        {
+          "qpos": [
+            0.10074606670996356,
+            0.01909789979513706,
+            0.0,
+            0.0
+          ],
+          "qvel": [
+            0.07460660938520473,
+            -0.09020870707769595,
+            0.0,
+            0.0
+          ],
+          "frame": {
+            "native_time": 0.020000000000000014,
+            "own": {
+              "x": 0.10074606670996356,
+              "theta": 0.01909789979513706,
+              "vx": 0.07460660938520473,
+              "omega": -0.09020870707769595,
+              "cart_world": [
+                0.10074606670996356,
+                -4.0
+              ],
+              "paddle_world": [
+                0.11984280559748411,
+                -3.0001823593455343
+              ],
+              "tip_height": 0.9998176406544654,
+              "normal_world": [
+                0.019096738887520552,
+                0.9998176406544654
+              ]
+            },
+            "ball_world": [
+              0.0,
+              0.0
+            ],
+            "ball_velocity_world": [
+              0.0,
+              0.0
+            ],
+            "time": 0.02,
+            "phase": "rally",
+            "score": 0,
+            "lives": 3,
+            "hits": 0,
+            "health": {
+              "b00": 1,
+              "b01": 1,
+              "b02": 1,
+              "b03": 1,
+              "b04": 1,
+              "b05": 1,
+              "b06": 1,
+              "b07": 1,
+              "b08": 1,
+              "b09": 1,
+              "b10": 1,
+              "b11": 1,
+              "b12": 1,
+              "b13": 1,
+              "b14": 1
+            },
+            "active": {
+              "b00": true,
+              "b01": true,
+              "b02": true,
+              "b03": true,
+              "b04": true,
+              "b05": true,
+              "b06": true,
+              "b07": true,
+              "b08": true,
+              "b09": true,
+              "b10": true,
+              "b11": true,
+              "b12": true,
+              "b13": true,
+              "b14": true
+            },
+            "pending": [],
+            "force": 4.0,
+            "outcome": null,
+            "events": []
+          },
+          "events": []
+        },
+        {
+          "qpos": [
+            0.10298447542695001,
+            0.016389915562444714,
+            0.0,
+            0.0
+          ],
+          "qvel": [
+            0.14924485249035638,
+            -0.18067777470278892,
+            0.0,
+            0.0
+          ],
+          "frame": {
+            "native_time": 0.04000000000000003,
+            "own": {
+              "x": 0.10298447542695001,
+              "theta": 0.016389915562444714,
+              "vx": 0.14924485249035638,
+              "omega": -0.18067777470278892,
+              "cart_world": [
+                0.10298447542695001,
+                -4.0
+              ],
+              "paddle_world": [
+                0.11937365719723879,
+                -3.0001343116593606
+              ],
+              "tip_height": 0.9998656883406393,
+              "normal_world": [
+                0.016389181770288783,
+                0.9998656883406393
+              ]
+            },
+            "ball_world": [
+              0.0,
+              0.0
+            ],
+            "ball_velocity_world": [
+              0.0,
+              0.0
+            ],
+            "time": 0.04,
+            "phase": "rally",
+            "score": 0,
+            "lives": 3,
+            "hits": 0,
+            "health": {
+              "b00": 1,
+              "b01": 1,
+              "b02": 1,
+              "b03": 1,
+              "b04": 1,
+              "b05": 1,
+              "b06": 1,
+              "b07": 1,
+              "b08": 1,
+              "b09": 1,
+              "b10": 1,
+              "b11": 1,
+              "b12": 1,
+              "b13": 1,
+              "b14": 1
+            },
+            "active": {
+              "b00": true,
+              "b01": true,
+              "b02": true,
+              "b03": true,
+              "b04": true,
+              "b05": true,
+              "b06": true,
+              "b07": true,
+              "b08": true,
+              "b09": true,
+              "b10": true,
+              "b11": true,
+              "b12": true,
+              "b13": true,
+              "b14": true
+            },
+            "pending": [],
+            "force": 4.0,
+            "outcome": null,
+            "events": []
+          },
+          "events": []
+        }
+      ]
+    },
+    {
+      "id": "negative-pulse",
+      "force": -4,
+      "initial": {
+        "qpos": [
+          -0.1,
+          -0.02,
+          0.0,
+          0.0
+        ],
+        "qvel": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "phase": "rally",
+        "life": 1,
+        "lives": 3,
+        "health": {
+          "b00": 1,
+          "b01": 1,
+          "b02": 1,
+          "b03": 1,
+          "b04": 1,
+          "b05": 1,
+          "b06": 1,
+          "b07": 1,
+          "b08": 1,
+          "b09": 1,
+          "b10": 1,
+          "b11": 1,
+          "b12": 1,
+          "b13": 1,
+          "b14": 1
+        },
+        "active": {
+          "b00": true,
+          "b01": true,
+          "b02": true,
+          "b03": true,
+          "b04": true,
+          "b05": true,
+          "b06": true,
+          "b07": true,
+          "b08": true,
+          "b09": true,
+          "b10": true,
+          "b11": true,
+          "b12": true,
+          "b13": true,
+          "b14": true
+        },
+        "warmup_end": 2
+      },
+      "commands": [
+        {
+          "qpos": [
+            -0.10074606670996356,
+            -0.01909789979513706,
+            0.0,
+            0.0
+          ],
+          "qvel": [
+            -0.07460660938520473,
+            0.09020870707769595,
+            0.0,
+            0.0
+          ],
+          "frame": {
+            "native_time": 0.020000000000000014,
+            "own": {
+              "x": -0.10074606670996356,
+              "theta": -0.01909789979513706,
+              "vx": -0.07460660938520473,
+              "omega": 0.09020870707769595,
+              "cart_world": [
+                -0.10074606670996356,
+                -4.0
+              ],
+              "paddle_world": [
+                -0.11984280559748411,
+                -3.0001823593455343
+              ],
+              "tip_height": 0.9998176406544654,
+              "normal_world": [
+                -0.019096738887520552,
+                0.9998176406544654
+              ]
+            },
+            "ball_world": [
+              0.0,
+              0.0
+            ],
+            "ball_velocity_world": [
+              0.0,
+              0.0
+            ],
+            "time": 0.02,
+            "phase": "rally",
+            "score": 0,
+            "lives": 3,
+            "hits": 0,
+            "health": {
+              "b00": 1,
+              "b01": 1,
+              "b02": 1,
+              "b03": 1,
+              "b04": 1,
+              "b05": 1,
+              "b06": 1,
+              "b07": 1,
+              "b08": 1,
+              "b09": 1,
+              "b10": 1,
+              "b11": 1,
+              "b12": 1,
+              "b13": 1,
+              "b14": 1
+            },
+            "active": {
+              "b00": true,
+              "b01": true,
+              "b02": true,
+              "b03": true,
+              "b04": true,
+              "b05": true,
+              "b06": true,
+              "b07": true,
+              "b08": true,
+              "b09": true,
+              "b10": true,
+              "b11": true,
+              "b12": true,
+              "b13": true,
+              "b14": true
+            },
+            "pending": [],
+            "force": -4.0,
+            "outcome": null,
+            "events": []
+          },
+          "events": []
+        },
+        {
+          "qpos": [
+            -0.10298447542695001,
+            -0.016389915562444714,
+            0.0,
+            0.0
+          ],
+          "qvel": [
+            -0.14924485249035638,
+            0.18067777470278892,
+            0.0,
+            0.0
+          ],
+          "frame": {
+            "native_time": 0.04000000000000003,
+            "own": {
+              "x": -0.10298447542695001,
+              "theta": -0.016389915562444714,
+              "vx": -0.14924485249035638,
+              "omega": 0.18067777470278892,
+              "cart_world": [
+                -0.10298447542695001,
+                -4.0
+              ],
+              "paddle_world": [
+                -0.11937365719723879,
+                -3.0001343116593606
+              ],
+              "tip_height": 0.9998656883406393,
+              "normal_world": [
+                -0.016389181770288783,
+                0.9998656883406393
+              ]
+            },
+            "ball_world": [
+              0.0,
+              0.0
+            ],
+            "ball_velocity_world": [
+              0.0,
+              0.0
+            ],
+            "time": 0.04,
+            "phase": "rally",
+            "score": 0,
+            "lives": 3,
+            "hits": 0,
+            "health": {
+              "b00": 1,
+              "b01": 1,
+              "b02": 1,
+              "b03": 1,
+              "b04": 1,
+              "b05": 1,
+              "b06": 1,
+              "b07": 1,
+              "b08": 1,
+              "b09": 1,
+              "b10": 1,
+              "b11": 1,
+              "b12": 1,
+              "b13": 1,
+              "b14": 1
+            },
+            "active": {
+              "b00": true,
+              "b01": true,
+              "b02": true,
+              "b03": true,
+              "b04": true,
+              "b05": true,
+              "b06": true,
+              "b07": true,
+              "b08": true,
+              "b09": true,
+              "b10": true,
+              "b11": true,
+              "b12": true,
+              "b13": true,
+              "b14": true
+            },
+            "pending": [],
+            "force": -4.0,
+            "outcome": null,
+            "events": []
+          },
+          "events": []
+        }
+      ]
+    },
+    {
+      "id": "brick-damage-separation",
+      "force": 0,
+      "initial": {
+        "qpos": [
+          0.0,
+          0.0,
+          0.0,
+          1.577
+        ],
+        "qvel": [
+          0.0,
+          0.0,
+          0.0,
+          3.5
+        ],
+        "phase": "rally",
+        "life": 1,
+        "lives": 3,
+        "health": {
+          "b00": 1,
+          "b01": 1,
+          "b02": 1,
+          "b03": 1,
+          "b04": 1,
+          "b05": 1,
+          "b06": 1,
+          "b07": 1,
+          "b08": 1,
+          "b09": 1,
+          "b10": 1,
+          "b11": 1,
+          "b12": 1,
+          "b13": 1,
+          "b14": 1
+        },
+        "active": {
+          "b00": true,
+          "b01": true,
+          "b02": true,
+          "b03": true,
+          "b04": true,
+          "b05": true,
+          "b06": true,
+          "b07": true,
+          "b08": true,
+          "b09": true,
+          "b10": true,
+          "b11": true,
+          "b12": true,
+          "b13": true,
+          "b14": true
+        },
+        "warmup_end": 2
+      },
+      "commands": [
+        {
+          "qpos": [
+            0.0,
+            0.0,
+            0.0,
+            1.5190622387504316
+          ],
+          "qvel": [
+            0.0,
+            0.0,
+            0.0,
+            -3.467879369470518
+          ],
+          "frame": {
+            "native_time": 0.020000000000000014,
+            "own": {
+              "x": 0.0,
+              "theta": 0.0,
+              "vx": 0.0,
+              "omega": 0.0,
+              "cart_world": [
+                0.0,
+                -4.0
+              ],
+              "paddle_world": [
+                0.0,
+                -3.0
+              ],
+              "tip_height": 1.0,
+              "normal_world": [
+                0.0,
+                1.0
+              ]
+            },
+            "ball_world": [
+              0.0,
+              1.5190622387504316
+            ],
+            "ball_velocity_world": [
+              0.0,
+              -3.467879369470518
+            ],
+            "time": 0.02,
+            "phase": "rally",
+            "score": 100,
+            "lives": 3,
+            "hits": 0,
+            "health": {
+              "b00": 1,
+              "b01": 1,
+              "b02": 0,
+              "b03": 1,
+              "b04": 1,
+              "b05": 1,
+              "b06": 1,
+              "b07": 1,
+              "b08": 1,
+              "b09": 1,
+              "b10": 1,
+              "b11": 1,
+              "b12": 1,
+              "b13": 1,
+              "b14": 1
+            },
+            "active": {
+              "b00": true,
+              "b01": true,
+              "b02": false,
+              "b03": true,
+              "b04": true,
+              "b05": true,
+              "b06": true,
+              "b07": true,
+              "b08": true,
+              "b09": true,
+              "b10": true,
+              "b11": true,
+              "b12": true,
+              "b13": true,
+              "b14": true
+            },
+            "pending": [],
+            "force": 0.0,
+            "outcome": null,
+            "events": []
+          },
+          "events": [
+            {
+              "kind": "contact_begin",
+              "time": 0.000875,
+              "step": 14,
+              "life": 1,
+              "geom": "brick_b02",
+              "motion": {
+                "native_time": 0.0008750000000000003,
+                "own": {
+                  "x": 0.0,
+                  "theta": 0.0,
+                  "vx": 0.0,
+                  "omega": 0.0,
+                  "cart_world": [
+                    0.0,
+                    -4.0
+                  ],
+                  "paddle_world": [
+                    0.0,
+                    -3.0
+                  ],
+                  "tip_height": 1.0,
+                  "normal_world": [
+                    0.0,
+                    1.0
+                  ]
+                },
+                "ball_world": [
+                  0.0,
+                  1.580062499999999
+                ],
+                "ball_velocity_world": [
+                  0.0,
+                  3.4969583333333736
+                ]
+              }
+            },
+            {
+              "kind": "brick_damage",
+              "time": 0.000875,
+              "step": 14,
+              "life": 1,
+              "id": "b02",
+              "hp": 0,
+              "position": [
+                0.0,
+                1.75
+              ]
+            },
+            {
+              "kind": "contact_end",
+              "time": 0.002625,
+              "step": 42,
+              "life": 1,
+              "geom": "brick_b02",
+              "start": 0.000875,
+              "max_penetration": 0.0017408625474802514,
+              "motion": {
+                "native_time": 0.002625000000000002,
+                "own": {
+                  "x": 0.0,
+                  "theta": 0.0,
+                  "vx": 0.0,
+                  "omega": 0.0,
+                  "cart_world": [
+                    0.0,
+                    -4.0
+                  ],
+                  "paddle_world": [
+                    0.0,
+                    -3.0
+                  ],
+                  "tip_height": 1.0,
+                  "normal_world": [
+                    0.0,
+                    1.0
+                  ]
+                },
+                "ball_world": [
+                  0.0,
+                  1.579316642794977
+                ],
+                "ball_velocity_world": [
+                  0.0,
+                  -3.467879369470518
+                ]
+              }
+            },
+            {
+              "kind": "brick_removed",
+              "time": 0.002625,
+              "step": 42,
+              "life": 1,
+              "id": "b02"
+            }
+          ]
+        },
+        {
+          "qpos": [
+            0.0,
+            0.0,
+            0.0,
+            1.4497046513610268
+          ],
+          "qvel": [
+            0.0,
+            0.0,
+            0.0,
+            -3.467879369470518
+          ],
+          "frame": {
+            "native_time": 0.04000000000000003,
+            "own": {
+              "x": 0.0,
+              "theta": 0.0,
+              "vx": 0.0,
+              "omega": 0.0,
+              "cart_world": [
+                0.0,
+                -4.0
+              ],
+              "paddle_world": [
+                0.0,
+                -3.0
+              ],
+              "tip_height": 1.0,
+              "normal_world": [
+                0.0,
+                1.0
+              ]
+            },
+            "ball_world": [
+              0.0,
+              1.4497046513610268
+            ],
+            "ball_velocity_world": [
+              0.0,
+              -3.467879369470518
+            ],
+            "time": 0.04,
+            "phase": "rally",
+            "score": 100,
+            "lives": 3,
+            "hits": 0,
+            "health": {
+              "b00": 1,
+              "b01": 1,
+              "b02": 0,
+              "b03": 1,
+              "b04": 1,
+              "b05": 1,
+              "b06": 1,
+              "b07": 1,
+              "b08": 1,
+              "b09": 1,
+              "b10": 1,
+              "b11": 1,
+              "b12": 1,
+              "b13": 1,
+              "b14": 1
+            },
+            "active": {
+              "b00": true,
+              "b01": true,
+              "b02": false,
+              "b03": true,
+              "b04": true,
+              "b05": true,
+              "b06": true,
+              "b07": true,
+              "b08": true,
+              "b09": true,
+              "b10": true,
+              "b11": true,
+              "b12": true,
+              "b13": true,
+              "b14": true
+            },
+            "pending": [],
+            "force": 0.0,
+            "outcome": null,
+            "events": []
+          },
+          "events": [
+            {
+              "kind": "contact_begin",
+              "time": 0.000875,
+              "step": 14,
+              "life": 1,
+              "geom": "brick_b02",
+              "motion": {
+                "native_time": 0.0008750000000000003,
+                "own": {
+                  "x": 0.0,
+                  "theta": 0.0,
+                  "vx": 0.0,
+                  "omega": 0.0,
+                  "cart_world": [
+                    0.0,
+                    -4.0
+                  ],
+                  "paddle_world": [
+                    0.0,
+                    -3.0
+                  ],
+                  "tip_height": 1.0,
+                  "normal_world": [
+                    0.0,
+                    1.0
+                  ]
+                },
+                "ball_world": [
+                  0.0,
+                  1.580062499999999
+                ],
+                "ball_velocity_world": [
+                  0.0,
+                  3.4969583333333736
+                ]
+              }
+            },
+            {
+              "kind": "brick_damage",
+              "time": 0.000875,
+              "step": 14,
+              "life": 1,
+              "id": "b02",
+              "hp": 0,
+              "position": [
+                0.0,
+                1.75
+              ]
+            },
+            {
+              "kind": "contact_end",
+              "time": 0.002625,
+              "step": 42,
+              "life": 1,
+              "geom": "brick_b02",
+              "start": 0.000875,
+              "max_penetration": 0.0017408625474802514,
+              "motion": {
+                "native_time": 0.002625000000000002,
+                "own": {
+                  "x": 0.0,
+                  "theta": 0.0,
+                  "vx": 0.0,
+                  "omega": 0.0,
+                  "cart_world": [
+                    0.0,
+                    -4.0
+                  ],
+                  "paddle_world": [
+                    0.0,
+                    -3.0
+                  ],
+                  "tip_height": 1.0,
+                  "normal_world": [
+                    0.0,
+                    1.0
+                  ]
+                },
+                "ball_world": [
+                  0.0,
+                  1.579316642794977
+                ],
+                "ball_velocity_world": [
+                  0.0,
+                  -3.467879369470518
+                ]
+              }
+            },
+            {
+              "kind": "brick_removed",
+              "time": 0.002625,
+              "step": 42,
+              "life": 1,
+              "id": "b02"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paddle-center",
+      "force": 0,
+      "initial": {
+        "qpos": [
+          0.0,
+          0.0,
+          0.0,
+          -2.922
+        ],
+        "qvel": [
+          0.0,
+          0.0,
+          0.0,
+          -3.5
+        ],
+        "phase": "rally",
+        "life": 1,
+        "lives": 3,
+        "health": {
+          "b00": 1,
+          "b01": 1,
+          "b02": 1,
+          "b03": 1,
+          "b04": 1,
+          "b05": 1,
+          "b06": 1,
+          "b07": 1,
+          "b08": 1,
+          "b09": 1,
+          "b10": 1,
+          "b11": 1,
+          "b12": 1,
+          "b13": 1,
+          "b14": 1
+        },
+        "active": {
+          "b00": true,
+          "b01": true,
+          "b02": true,
+          "b03": true,
+          "b04": true,
+          "b05": true,
+          "b06": true,
+          "b07": true,
+          "b08": true,
+          "b09": true,
+          "b10": true,
+          "b11": true,
+          "b12": true,
+          "b13": true,
+          "b14": true
+        },
+        "warmup_end": 2
+      },
+      "commands": [
+        {
+          "qpos": [
+            0.0,
+            0.0,
+            0.0,
+            -2.864062244700268
+          ],
+          "qvel": [
+            0.0,
+            0.0,
+            0.0,
+            3.467879483275426
+          ],
+          "frame": {
+            "native_time": 0.020000000000000014,
+            "own": {
+              "x": 0.0,
+              "theta": 0.0,
+              "vx": 0.0,
+              "omega": 0.0,
+              "cart_world": [
+                0.0,
+                -4.0
+              ],
+              "paddle_world": [
+                0.0,
+                -3.0
+              ],
+              "tip_height": 1.0,
+              "normal_world": [
+                0.0,
+                1.0
+              ]
+            },
+            "ball_world": [
+              0.0,
+              -2.864062244700268
+            ],
+            "ball_velocity_world": [
+              0.0,
+              3.467879483275426
+            ],
+            "time": 0.02,
+            "phase": "rally",
+            "score": 0,
+            "lives": 3,
+            "hits": 1,
+            "health": {
+              "b00": 1,
+              "b01": 1,
+              "b02": 1,
+              "b03": 1,
+              "b04": 1,
+              "b05": 1,
+              "b06": 1,
+              "b07": 1,
+              "b08": 1,
+              "b09": 1,
+              "b10": 1,
+              "b11": 1,
+              "b12": 1,
+              "b13": 1,
+              "b14": 1
+            },
+            "active": {
+              "b00": true,
+              "b01": true,
+              "b02": true,
+              "b03": true,
+              "b04": true,
+              "b05": true,
+              "b06": true,
+              "b07": true,
+              "b08": true,
+              "b09": true,
+              "b10": true,
+              "b11": true,
+              "b12": true,
+              "b13": true,
+              "b14": true
+            },
+            "pending": [],
+            "force": 0.0,
+            "outcome": null,
+            "events": []
+          },
+          "events": [
+            {
+              "kind": "contact_begin",
+              "time": 0.000875,
+              "step": 14,
+              "life": 1,
+              "geom": "bottom_paddle",
+              "motion": {
+                "native_time": 0.0008750000000000003,
+                "own": {
+                  "x": 0.0,
+                  "theta": 0.0,
+                  "vx": 0.0,
+                  "omega": 0.0,
+                  "cart_world": [
+                    0.0,
+                    -4.0
+                  ],
+                  "paddle_world": [
+                    0.0,
+                    -3.0
+                  ],
+                  "tip_height": 1.0,
+                  "normal_world": [
+                    0.0,
+                    1.0
+                  ]
+                },
+                "ball_world": [
+                  0.0,
+                  -2.9250625000000023
+                ],
+                "ball_velocity_world": [
+                  0.0,
+                  -3.49695834221495
+                ]
+              }
+            },
+            {
+              "kind": "paddle_hit",
+              "time": 0.000875,
+              "step": 14,
+              "life": 1,
+              "normal": [
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "kind": "contact_end",
+              "time": 0.002625,
+              "step": 42,
+              "life": 1,
+              "geom": "bottom_paddle",
+              "start": 0.000875,
+              "max_penetration": 0.0017408649756565503,
+              "motion": {
+                "native_time": 0.002625000000000002,
+                "own": {
+                  "x": 0.0,
+                  "theta": 0.0,
+                  "vx": 0.0,
+                  "omega": 0.0,
+                  "cart_world": [
+                    0.0,
+                    -4.0
+                  ],
+                  "paddle_world": [
+                    0.0,
+                    -3.0
+                  ],
+                  "tip_height": 1.0,
+                  "normal_world": [
+                    0.0,
+                    1.0
+                  ]
+                },
+                "ball_world": [
+                  0.0,
+                  -2.9243166507221594
+                ],
+                "ball_velocity_world": [
+                  0.0,
+                  3.467879483275426
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "qpos": [
+            0.0,
+            0.0,
+            0.0,
+            -2.794704655034782
+          ],
+          "qvel": [
+            0.0,
+            0.0,
+            0.0,
+            3.467879483275426
+          ],
+          "frame": {
+            "native_time": 0.04000000000000003,
+            "own": {
+              "x": 0.0,
+              "theta": 0.0,
+              "vx": 0.0,
+              "omega": 0.0,
+              "cart_world": [
+                0.0,
+                -4.0
+              ],
+              "paddle_world": [
+                0.0,
+                -3.0
+              ],
+              "tip_height": 1.0,
+              "normal_world": [
+                0.0,
+                1.0
+              ]
+            },
+            "ball_world": [
+              0.0,
+              -2.794704655034782
+            ],
+            "ball_velocity_world": [
+              0.0,
+              3.467879483275426
+            ],
+            "time": 0.04,
+            "phase": "rally",
+            "score": 0,
+            "lives": 3,
+            "hits": 1,
+            "health": {
+              "b00": 1,
+              "b01": 1,
+              "b02": 1,
+              "b03": 1,
+              "b04": 1,
+              "b05": 1,
+              "b06": 1,
+              "b07": 1,
+              "b08": 1,
+              "b09": 1,
+              "b10": 1,
+              "b11": 1,
+              "b12": 1,
+              "b13": 1,
+              "b14": 1
+            },
+            "active": {
+              "b00": true,
+              "b01": true,
+              "b02": true,
+              "b03": true,
+              "b04": true,
+              "b05": true,
+              "b06": true,
+              "b07": true,
+              "b08": true,
+              "b09": true,
+              "b10": true,
+              "b11": true,
+              "b12": true,
+              "b13": true,
+              "b14": true
+            },
+            "pending": [],
+            "force": 0.0,
+            "outcome": null,
+            "events": []
+          },
+          "events": [
+            {
+              "kind": "contact_begin",
+              "time": 0.000875,
+              "step": 14,
+              "life": 1,
+              "geom": "bottom_paddle",
+              "motion": {
+                "native_time": 0.0008750000000000003,
+                "own": {
+                  "x": 0.0,
+                  "theta": 0.0,
+                  "vx": 0.0,
+                  "omega": 0.0,
+                  "cart_world": [
+                    0.0,
+                    -4.0
+                  ],
+                  "paddle_world": [
+                    0.0,
+                    -3.0
+                  ],
+                  "tip_height": 1.0,
+                  "normal_world": [
+                    0.0,
+                    1.0
+                  ]
+                },
+                "ball_world": [
+                  0.0,
+                  -2.9250625000000023
+                ],
+                "ball_velocity_world": [
+                  0.0,
+                  -3.49695834221495
+                ]
+              }
+            },
+            {
+              "kind": "paddle_hit",
+              "time": 0.000875,
+              "step": 14,
+              "life": 1,
+              "normal": [
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "kind": "contact_end",
+              "time": 0.002625,
+              "step": 42,
+              "life": 1,
+              "geom": "bottom_paddle",
+              "start": 0.000875,
+              "max_penetration": 0.0017408649756565503,
+              "motion": {
+                "native_time": 0.002625000000000002,
+                "own": {
+                  "x": 0.0,
+                  "theta": 0.0,
+                  "vx": 0.0,
+                  "omega": 0.0,
+                  "cart_world": [
+                    0.0,
+                    -4.0
+                  ],
+                  "paddle_world": [
+                    0.0,
+                    -3.0
+                  ],
+                  "tip_height": 1.0,
+                  "normal_world": [
+                    0.0,
+                    1.0
+                  ]
+                },
+                "ball_world": [
+                  0.0,
+                  -2.9243166507221594
+                ],
+                "ball_velocity_world": [
+                  0.0,
+                  3.467879483275426
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paddle-offset",
+      "force": 0,
+      "initial": {
+        "qpos": [
+          0.0,
+          0.0,
+          0.16,
+          -2.922
+        ],
+        "qvel": [
+          0.0,
+          0.0,
+          0.0,
+          -3.5
+        ],
+        "phase": "rally",
+        "life": 1,
+        "lives": 3,
+        "health": {
+          "b00": 1,
+          "b01": 1,
+          "b02": 1,
+          "b03": 1,
+          "b04": 1,
+          "b05": 1,
+          "b06": 1,
+          "b07": 1,
+          "b08": 1,
+          "b09": 1,
+          "b10": 1,
+          "b11": 1,
+          "b12": 1,
+          "b13": 1,
+          "b14": 1
+        },
+        "active": {
+          "b00": true,
+          "b01": true,
+          "b02": true,
+          "b03": true,
+          "b04": true,
+          "b05": true,
+          "b06": true,
+          "b07": true,
+          "b08": true,
+          "b09": true,
+          "b10": true,
+          "b11": true,
+          "b12": true,
+          "b13": true,
+          "b14": true
+        },
+        "warmup_end": 2
+      },
+      "commands": [
+        {
+          "qpos": [
+            -0.0002453100871841034,
+            0.0020857810072198927,
+            0.16000280232354946,
+            -2.8643960476793993
+          ],
+          "qvel": [
+            -0.013363639187617538,
+            0.11362608109029428,
+            0.0001551397363050412,
+            3.449699686494862
+          ],
+          "frame": {
+            "native_time": 0.020000000000000014,
+            "own": {
+              "x": -0.0002453100871841034,
+              "theta": 0.0020857810072198927,
+              "vx": -0.013363639187617538,
+              "omega": 0.11362608109029428,
+              "cart_world": [
+                -0.0002453100871841034,
+                -4.0
+              ],
+              "paddle_world": [
+                0.0018404694076771882,
+                -3.0000021752404162
+              ],
+              "tip_height": 0.9999978247595835,
+              "normal_world": [
+                0.002085779494861291,
+                0.9999978247595835
+              ]
+            },
+            "ball_world": [
+              0.16000280232354946,
+              -2.8643960476793993
+            ],
+            "ball_velocity_world": [
+              0.0001551397363050412,
+              3.449699686494862
+            ],
+            "time": 0.02,
+            "phase": "rally",
+            "score": 0,
+            "lives": 3,
+            "hits": 1,
+            "health": {
+              "b00": 1,
+              "b01": 1,
+              "b02": 1,
+              "b03": 1,
+              "b04": 1,
+              "b05": 1,
+              "b06": 1,
+              "b07": 1,
+              "b08": 1,
+              "b09": 1,
+              "b10": 1,
+              "b11": 1,
+              "b12": 1,
+              "b13": 1,
+              "b14": 1
+            },
+            "active": {
+              "b00": true,
+              "b01": true,
+              "b02": true,
+              "b03": true,
+              "b04": true,
+              "b05": true,
+              "b06": true,
+              "b07": true,
+              "b08": true,
+              "b09": true,
+              "b10": true,
+              "b11": true,
+              "b12": true,
+              "b13": true,
+              "b14": true
+            },
+            "pending": [],
+            "force": 0.0,
+            "outcome": null,
+            "events": []
+          },
+          "events": [
+            {
+              "kind": "contact_begin",
+              "time": 0.000875,
+              "step": 14,
+              "life": 1,
+              "geom": "bottom_paddle",
+              "motion": {
+                "native_time": 0.0008750000000000003,
+                "own": {
+                  "x": 0.0,
+                  "theta": 0.0,
+                  "vx": -5.835642450172719e-06,
+                  "omega": 4.96228099504483e-05,
+                  "cart_world": [
+                    0.0,
+                    -4.0
+                  ],
+                  "paddle_world": [
+                    0.0,
+                    -3.0
+                  ],
+                  "tip_height": 1.0,
+                  "normal_world": [
+                    0.0,
+                    1.0
+                  ]
+                },
+                "ball_world": [
+                  0.16,
+                  -2.9250625000000023
+                ],
+                "ball_velocity_world": [
+                  0.0,
+                  -3.4969662810473956
+                ]
+              }
+            },
+            {
+              "kind": "paddle_hit",
+              "time": 0.000875,
+              "step": 14,
+              "life": 1,
+              "normal": [
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "kind": "contact_end",
+              "time": 0.002625,
+              "step": 42,
+              "life": 1,
+              "geom": "bottom_paddle",
+              "start": 0.000875,
+              "max_penetration": 0.0017408648110185804,
+              "motion": {
+                "native_time": 0.002625000000000002,
+                "own": {
+                  "x": -1.318093866127989e-05,
+                  "theta": 0.0001120755486718032,
+                  "vx": -0.013366162079604582,
+                  "omega": 0.11364728780316327,
+                  "cart_world": [
+                    -1.318093866127989e-05,
+                    -4.0
+                  ],
+                  "paddle_world": [
+                    9.889460977589448e-05,
+                    -3.000000006280464
+                  ],
+                  "tip_height": 0.9999999937195357,
+                  "normal_world": [
+                    0.00011207554843717436,
+                    0.9999999937195357
+                  ]
+                },
+                "ball_world": [
+                  0.16000010677063353,
+                  -2.924334579732192
+                ],
+                "ball_velocity_world": [
+                  0.0001551397363050412,
+                  3.449699686494862
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "qpos": [
+            -0.0005131576317091805,
+            0.004363197438965885,
+            0.16000590511827284,
+            -2.795402053949566
+          ],
+          "qvel": [
+            -0.013434225093583437,
+            0.11422714151249108,
+            0.0001551397363050412,
+            3.449699686494862
+          ],
+          "frame": {
+            "native_time": 0.04000000000000003,
+            "own": {
+              "x": -0.0005131576317091805,
+              "theta": 0.004363197438965885,
+              "vx": -0.013434225093583437,
+              "omega": 0.11422714151249108,
+              "cart_world": [
+                -0.0005131576317091805,
+                -4.0
+              ],
+              "paddle_world": [
+                0.0038500259632139057,
+                -3.0000095187308444
+              ],
+              "tip_height": 0.9999904812691554,
+              "normal_world": [
+                0.004363183594923086,
+                0.9999904812691554
+              ]
+            },
+            "ball_world": [
+              0.16000590511827284,
+              -2.795402053949566
+            ],
+            "ball_velocity_world": [
+              0.0001551397363050412,
+              3.449699686494862
+            ],
+            "time": 0.04,
+            "phase": "rally",
+            "score": 0,
+            "lives": 3,
+            "hits": 1,
+            "health": {
+              "b00": 1,
+              "b01": 1,
+              "b02": 1,
+              "b03": 1,
+              "b04": 1,
+              "b05": 1,
+              "b06": 1,
+              "b07": 1,
+              "b08": 1,
+              "b09": 1,
+              "b10": 1,
+              "b11": 1,
+              "b12": 1,
+              "b13": 1,
+              "b14": 1
+            },
+            "active": {
+              "b00": true,
+              "b01": true,
+              "b02": true,
+              "b03": true,
+              "b04": true,
+              "b05": true,
+              "b06": true,
+              "b07": true,
+              "b08": true,
+              "b09": true,
+              "b10": true,
+              "b11": true,
+              "b12": true,
+              "b13": true,
+              "b14": true
+            },
+            "pending": [],
+            "force": 0.0,
+            "outcome": null,
+            "events": []
+          },
+          "events": [
+            {
+              "kind": "contact_begin",
+              "time": 0.000875,
+              "step": 14,
+              "life": 1,
+              "geom": "bottom_paddle",
+              "motion": {
+                "native_time": 0.0008750000000000003,
+                "own": {
+                  "x": 0.0,
+                  "theta": 0.0,
+                  "vx": -5.835642450172719e-06,
+                  "omega": 4.96228099504483e-05,
+                  "cart_world": [
+                    0.0,
+                    -4.0
+                  ],
+                  "paddle_world": [
+                    0.0,
+                    -3.0
+                  ],
+                  "tip_height": 1.0,
+                  "normal_world": [
+                    0.0,
+                    1.0
+                  ]
+                },
+                "ball_world": [
+                  0.16,
+                  -2.9250625000000023
+                ],
+                "ball_velocity_world": [
+                  0.0,
+                  -3.4969662810473956
+                ]
+              }
+            },
+            {
+              "kind": "paddle_hit",
+              "time": 0.000875,
+              "step": 14,
+              "life": 1,
+              "normal": [
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "kind": "contact_end",
+              "time": 0.002625,
+              "step": 42,
+              "life": 1,
+              "geom": "bottom_paddle",
+              "start": 0.000875,
+              "max_penetration": 0.0017408648110185804,
+              "motion": {
+                "native_time": 0.002625000000000002,
+                "own": {
+                  "x": -1.318093866127989e-05,
+                  "theta": 0.0001120755486718032,
+                  "vx": -0.013366162079604582,
+                  "omega": 0.11364728780316327,
+                  "cart_world": [
+                    -1.318093866127989e-05,
+                    -4.0
+                  ],
+                  "paddle_world": [
+                    9.889460977589448e-05,
+                    -3.000000006280464
+                  ],
+                  "tip_height": 0.9999999937195357,
+                  "normal_world": [
+                    0.00011207554843717436,
+                    0.9999999937195357
+                  ]
+                },
+                "ball_world": [
+                  0.16000010677063353,
+                  -2.924334579732192
+                ],
+                "ball_velocity_world": [
+                  0.0001551397363050412,
+                  3.449699686494862
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "illegal-side",
+      "force": 0,
+      "initial": {
+        "qpos": [
+          0.0,
+          0.0,
+          0.383,
+          -3.0
+        ],
+        "qvel": [
+          0.0,
+          0.0,
+          -3.5,
+          0.0
+        ],
+        "phase": "rally",
+        "life": 1,
+        "lives": 3,
+        "health": {
+          "b00": 1,
+          "b01": 1,
+          "b02": 1,
+          "b03": 1,
+          "b04": 1,
+          "b05": 1,
+          "b06": 1,
+          "b07": 1,
+          "b08": 1,
+          "b09": 1,
+          "b10": 1,
+          "b11": 1,
+          "b12": 1,
+          "b13": 1,
+          "b14": 1
+        },
+        "active": {
+          "b00": true,
+          "b01": true,
+          "b02": true,
+          "b03": true,
+          "b04": true,
+          "b05": true,
+          "b06": true,
+          "b07": true,
+          "b08": true,
+          "b09": true,
+          "b10": true,
+          "b11": true,
+          "b12": true,
+          "b13": true,
+          "b14": true
+        },
+        "warmup_end": 2
+      },
+      "commands": [
+        {
+          "qpos": [
+            0.0,
+            0.0,
+            0.37993750000000015,
+            -3.0
+          ],
+          "qvel": [
+            7.295500518452518e-06,
+            -0.000252287647439198,
+            -3.49720330914745,
+            0.0
+          ],
+          "frame": {
+            "native_time": 0.0008750000000000003,
+            "own": {
+              "x": 0.0,
+              "theta": 0.0,
+              "vx": 7.295500518452518e-06,
+              "omega": -0.000252287647439198,
+              "cart_world": [
+                0.0,
+                -4.0
+              ],
+              "paddle_world": [
+                0.0,
+                -3.0
+              ],
+              "tip_height": 1.0,
+              "normal_world": [
+                0.0,
+                1.0
+              ]
+            },
+            "ball_world": [
+              0.37993750000000015,
+              -3.0
+            ],
+            "ball_velocity_world": [
+              -3.49720330914745,
+              0.0
+            ],
+            "time": 0.000875,
+            "phase": "new_life",
+            "score": 0,
+            "lives": 2,
+            "hits": 0,
+            "health": {
+              "b00": 1,
+              "b01": 1,
+              "b02": 1,
+              "b03": 1,
+              "b04": 1,
+              "b05": 1,
+              "b06": 1,
+              "b07": 1,
+              "b08": 1,
+              "b09": 1,
+              "b10": 1,
+              "b11": 1,
+              "b12": 1,
+              "b13": 1,
+              "b14": 1
+            },
+            "active": {
+              "b00": true,
+              "b01": true,
+              "b02": true,
+              "b03": true,
+              "b04": true,
+              "b05": true,
+              "b06": true,
+              "b07": true,
+              "b08": true,
+              "b09": true,
+              "b10": true,
+              "b11": true,
+              "b12": true,
+              "b13": true,
+              "b14": true
+            },
+            "pending": [],
+            "force": 0.0,
+            "outcome": null,
+            "events": []
+          },
+          "events": [
+            {
+              "kind": "contact_begin",
+              "time": 0.000875,
+              "step": 14,
+              "life": 1,
+              "geom": "bottom_paddle",
+              "motion": {
+                "native_time": 0.0008750000000000003,
+                "own": {
+                  "x": 0.0,
+                  "theta": 0.0,
+                  "vx": 7.295500518452518e-06,
+                  "omega": -0.000252287647439198,
+                  "cart_world": [
+                    0.0,
+                    -4.0
+                  ],
+                  "paddle_world": [
+                    0.0,
+                    -3.0
+                  ],
+                  "tip_height": 1.0,
+                  "normal_world": [
+                    0.0,
+                    1.0
+                  ]
+                },
+                "ball_world": [
+                  0.37993750000000015,
+                  -3.0
+                ],
+                "ball_velocity_world": [
+                  -3.49720330914745,
+                  0.0
+                ]
+              }
+            },
+            {
+              "kind": "life_lost",
+              "time": 0.000875,
+              "step": 14,
+              "life": 1,
+              "reasons": [
+                "illegal_face"
+              ],
+              "lives": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stem-hit",
+      "force": 0,
+      "initial": {
+        "qpos": [
+          0.0,
+          0.0,
+          0.078,
+          -3.5
+        ],
+        "qvel": [
+          0.0,
+          0.0,
+          -3.5,
+          0.0
+        ],
+        "phase": "rally",
+        "life": 1,
+        "lives": 3,
+        "health": {
+          "b00": 1,
+          "b01": 1,
+          "b02": 1,
+          "b03": 1,
+          "b04": 1,
+          "b05": 1,
+          "b06": 1,
+          "b07": 1,
+          "b08": 1,
+          "b09": 1,
+          "b10": 1,
+          "b11": 1,
+          "b12": 1,
+          "b13": 1,
+          "b14": 1
+        },
+        "active": {
+          "b00": true,
+          "b01": true,
+          "b02": true,
+          "b03": true,
+          "b04": true,
+          "b05": true,
+          "b06": true,
+          "b07": true,
+          "b08": true,
+          "b09": true,
+          "b10": true,
+          "b11": true,
+          "b12": true,
+          "b13": true,
+          "b14": true
+        },
+        "warmup_end": 2
+      },
+      "commands": [
+        {
+          "qpos": [
+            0.0,
+            0.0,
+            0.07493749999999995,
+            -3.5
+          ],
+          "qvel": [
+            -1.0117436599444804e-05,
+            -0.00011624173146846639,
+            -3.497026566972483,
+            0.0
+          ],
+          "frame": {
+            "native_time": 0.0008750000000000003,
+            "own": {
+              "x": 0.0,
+              "theta": 0.0,
+              "vx": -1.0117436599444804e-05,
+              "omega": -0.00011624173146846639,
+              "cart_world": [
+                0.0,
+                -4.0
+              ],
+              "paddle_world": [
+                0.0,
+                -3.0
+              ],
+              "tip_height": 1.0,
+              "normal_world": [
+                0.0,
+                1.0
+              ]
+            },
+            "ball_world": [
+              0.07493749999999995,
+              -3.5
+            ],
+            "ball_velocity_world": [
+              -3.497026566972483,
+              0.0
+            ],
+            "time": 0.000875,
+            "phase": "new_life",
+            "score": 0,
+            "lives": 2,
+            "hits": 0,
+            "health": {
+              "b00": 1,
+              "b01": 1,
+              "b02": 1,
+              "b03": 1,
+              "b04": 1,
+              "b05": 1,
+              "b06": 1,
+              "b07": 1,
+              "b08": 1,
+              "b09": 1,
+              "b10": 1,
+              "b11": 1,
+              "b12": 1,
+              "b13": 1,
+              "b14": 1
+            },
+            "active": {
+              "b00": true,
+              "b01": true,
+              "b02": true,
+              "b03": true,
+              "b04": true,
+              "b05": true,
+              "b06": true,
+              "b07": true,
+              "b08": true,
+              "b09": true,
+              "b10": true,
+              "b11": true,
+              "b12": true,
+              "b13": true,
+              "b14": true
+            },
+            "pending": [],
+            "force": 0.0,
+            "outcome": null,
+            "events": []
+          },
+          "events": [
+            {
+              "kind": "contact_begin",
+              "time": 0.000875,
+              "step": 14,
+              "life": 1,
+              "geom": "bottom_stem",
+              "motion": {
+                "native_time": 0.0008750000000000003,
+                "own": {
+                  "x": 0.0,
+                  "theta": 0.0,
+                  "vx": -1.0117436599444804e-05,
+                  "omega": -0.00011624173146846639,
+                  "cart_world": [
+                    0.0,
+                    -4.0
+                  ],
+                  "paddle_world": [
+                    0.0,
+                    -3.0
+                  ],
+                  "tip_height": 1.0,
+                  "normal_world": [
+                    0.0,
+                    1.0
+                  ]
+                },
+                "ball_world": [
+                  0.07493749999999995,
+                  -3.5
+                ],
+                "ball_velocity_world": [
+                  -3.497026566972483,
+                  0.0
+                ]
+              }
+            },
+            {
+              "kind": "life_lost",
+              "time": 0.000875,
+              "step": 14,
+              "life": 1,
+              "reasons": [
+                "body_hit"
+              ],
+              "lives": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "miss",
+      "force": 0,
+      "initial": {
+        "qpos": [
+          0.0,
+          0.0,
+          0.0,
+          -4.299
+        ],
+        "qvel": [
+          0.0,
+          0.0,
+          0.0,
+          -3.5
+        ],
+        "phase": "rally",
+        "life": 1,
+        "lives": 3,
+        "health": {
+          "b00": 1,
+          "b01": 1,
+          "b02": 1,
+          "b03": 1,
+          "b04": 1,
+          "b05": 1,
+          "b06": 1,
+          "b07": 1,
+          "b08": 1,
+          "b09": 1,
+          "b10": 1,
+          "b11": 1,
+          "b12": 1,
+          "b13": 1,
+          "b14": 1
+        },
+        "active": {
+          "b00": true,
+          "b01": true,
+          "b02": true,
+          "b03": true,
+          "b04": true,
+          "b05": true,
+          "b06": true,
+          "b07": true,
+          "b08": true,
+          "b09": true,
+          "b10": true,
+          "b11": true,
+          "b12": true,
+          "b13": true,
+          "b14": true
+        },
+        "warmup_end": 2
+      },
+      "commands": [
+        {
+          "qpos": [
+            0.0,
+            0.0,
+            0.0,
+            -4.300093750000001
+          ],
+          "qvel": [
+            0.0,
+            0.0,
+            0.0,
+            -3.5
+          ],
+          "frame": {
+            "native_time": 0.0003125,
+            "own": {
+              "x": 0.0,
+              "theta": 0.0,
+              "vx": 0.0,
+              "omega": 0.0,
+              "cart_world": [
+                0.0,
+                -4.0
+              ],
+              "paddle_world": [
+                0.0,
+                -3.0
+              ],
+              "tip_height": 1.0,
+              "normal_world": [
+                0.0,
+                1.0
+              ]
+            },
+            "ball_world": [
+              0.0,
+              -4.300093750000001
+            ],
+            "ball_velocity_world": [
+              0.0,
+              -3.5
+            ],
+            "time": 0.0003125,
+            "phase": "new_life",
+            "score": 0,
+            "lives": 2,
+            "hits": 0,
+            "health": {
+              "b00": 1,
+              "b01": 1,
+              "b02": 1,
+              "b03": 1,
+              "b04": 1,
+              "b05": 1,
+              "b06": 1,
+              "b07": 1,
+              "b08": 1,
+              "b09": 1,
+              "b10": 1,
+              "b11": 1,
+              "b12": 1,
+              "b13": 1,
+              "b14": 1
+            },
+            "active": {
+              "b00": true,
+              "b01": true,
+              "b02": true,
+              "b03": true,
+              "b04": true,
+              "b05": true,
+              "b06": true,
+              "b07": true,
+              "b08": true,
+              "b09": true,
+              "b10": true,
+              "b11": true,
+              "b12": true,
+              "b13": true,
+              "b14": true
+            },
+            "pending": [],
+            "force": 0.0,
+            "outcome": null,
+            "events": []
+          },
+          "events": [
+            {
+              "kind": "life_lost",
+              "time": 0.0003125,
+              "step": 5,
+              "life": 1,
+              "reasons": [
+                "miss"
+              ],
+              "lives": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "last-brick-clear",
+      "force": 0,
+      "initial": {
+        "qpos": [
+          0.0,
+          0.0,
+          -1.44,
+          1.577
+        ],
+        "qvel": [
+          0.0,
+          0.0,
+          0.0,
+          3.5
+        ],
+        "phase": "rally",
+        "life": 1,
+        "lives": 3,
+        "health": {
+          "b00": 1,
+          "b01": 0,
+          "b02": 0,
+          "b03": 0,
+          "b04": 0,
+          "b05": 0,
+          "b06": 0,
+          "b07": 0,
+          "b08": 0,
+          "b09": 0,
+          "b10": 0,
+          "b11": 0,
+          "b12": 0,
+          "b13": 0,
+          "b14": 0
+        },
+        "active": {
+          "b00": true,
+          "b01": false,
+          "b02": false,
+          "b03": false,
+          "b04": false,
+          "b05": false,
+          "b06": false,
+          "b07": false,
+          "b08": false,
+          "b09": false,
+          "b10": false,
+          "b11": false,
+          "b12": false,
+          "b13": false,
+          "b14": false
+        },
+        "warmup_end": 2
+      },
+      "commands": [
+        {
+          "qpos": [
+            0.0,
+            0.0,
+            -1.44,
+            1.579316642794977
+          ],
+          "qvel": [
+            0.0,
+            0.0,
+            0.0,
+            -3.467879369470518
+          ],
+          "frame": {
+            "native_time": 0.002625000000000002,
+            "own": {
+              "x": 0.0,
+              "theta": 0.0,
+              "vx": 0.0,
+              "omega": 0.0,
+              "cart_world": [
+                0.0,
+                -4.0
+              ],
+              "paddle_world": [
+                0.0,
+                -3.0
+              ],
+              "tip_height": 1.0,
+              "normal_world": [
+                0.0,
+                1.0
+              ]
+            },
+            "ball_world": [
+              -1.44,
+              1.579316642794977
+            ],
+            "ball_velocity_world": [
+              0.0,
+              -3.467879369470518
+            ],
+            "time": 0.002625,
+            "phase": "finished",
+            "score": 100,
+            "lives": 3,
+            "hits": 0,
+            "health": {
+              "b00": 0,
+              "b01": 0,
+              "b02": 0,
+              "b03": 0,
+              "b04": 0,
+              "b05": 0,
+              "b06": 0,
+              "b07": 0,
+              "b08": 0,
+              "b09": 0,
+              "b10": 0,
+              "b11": 0,
+              "b12": 0,
+              "b13": 0,
+              "b14": 0
+            },
+            "active": {
+              "b00": false,
+              "b01": false,
+              "b02": false,
+              "b03": false,
+              "b04": false,
+              "b05": false,
+              "b06": false,
+              "b07": false,
+              "b08": false,
+              "b09": false,
+              "b10": false,
+              "b11": false,
+              "b12": false,
+              "b13": false,
+              "b14": false
+            },
+            "pending": [],
+            "force": 0.0,
+            "outcome": "cleared",
+            "events": []
+          },
+          "events": [
+            {
+              "kind": "contact_begin",
+              "time": 0.000875,
+              "step": 14,
+              "life": 1,
+              "geom": "brick_b00",
+              "motion": {
+                "native_time": 0.0008750000000000003,
+                "own": {
+                  "x": 0.0,
+                  "theta": 0.0,
+                  "vx": 0.0,
+                  "omega": 0.0,
+                  "cart_world": [
+                    0.0,
+                    -4.0
+                  ],
+                  "paddle_world": [
+                    0.0,
+                    -3.0
+                  ],
+                  "tip_height": 1.0,
+                  "normal_world": [
+                    0.0,
+                    1.0
+                  ]
+                },
+                "ball_world": [
+                  -1.44,
+                  1.580062499999999
+                ],
+                "ball_velocity_world": [
+                  0.0,
+                  3.4969583333333736
+                ]
+              }
+            },
+            {
+              "kind": "brick_damage",
+              "time": 0.000875,
+              "step": 14,
+              "life": 1,
+              "id": "b00",
+              "hp": 0,
+              "position": [
+                -1.44,
+                1.75
+              ]
+            },
+            {
+              "kind": "contact_end",
+              "time": 0.002625,
+              "step": 42,
+              "life": 1,
+              "geom": "brick_b00",
+              "start": 0.000875,
+              "max_penetration": 0.0017408625474802514,
+              "motion": {
+                "native_time": 0.002625000000000002,
+                "own": {
+                  "x": 0.0,
+                  "theta": 0.0,
+                  "vx": 0.0,
+                  "omega": 0.0,
+                  "cart_world": [
+                    0.0,
+                    -4.0
+                  ],
+                  "paddle_world": [
+                    0.0,
+                    -3.0
+                  ],
+                  "tip_height": 1.0,
+                  "normal_world": [
+                    0.0,
+                    1.0
+                  ]
+                },
+                "ball_world": [
+                  -1.44,
+                  1.579316642794977
+                ],
+                "ball_velocity_world": [
+                  0.0,
+                  -3.467879369470518
+                ]
+              }
+            },
+            {
+              "kind": "brick_removed",
+              "time": 0.002625,
+              "step": 42,
+              "life": 1,
+              "id": "b00"
+            },
+            {
+              "kind": "episode_end",
+              "time": 0.002625,
+              "step": 42,
+              "life": 1,
+              "outcome": "cleared",
+              "detail": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "xml_sha256": "12083562b5be9014d838548fa959abcfe1949408a114c7eb9b35d1e1bb899735",
+  "budget": {
+    "counts": {
+      "steps": 3915,
+      "compilations": 10,
+      "forwards": 3936,
+      "field_calls": 0
+    },
+    "limits": {
+      "steps": 6400,
+      "compilations": 10
+    },
+    "wall_seconds": 0.25880745402537286,
+    "wall_limit_seconds": 120
+  }
+}

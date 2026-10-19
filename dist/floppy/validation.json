@@ -1,0 +1,31 @@
+{
+  "schema": "floppy-first-light-alpha-validation-v1",
+  "browser_profile": "floppy-first-light-human-mujoco-3.8.0-v1",
+  "kind": "product integration checks; no autonomous qualification",
+  "checks": {
+    "repository_tests": {"passed": 116, "failed": 0},
+    "native_335_comparison": {"fixtures": 10, "commands": 16, "qpos_max_absolute": 9.540979117872439e-18, "qvel_max_absolute": 6.661338147750939e-15, "game_state_and_event_identities": "exact", "fixture_sha256": "c38c104249493d28fa5794e38d1255befc0c894a8cb706b018f772a46168b2dc"},
+    "static_bindings": "engine tests and fixture comparison pass with JavaScript string compilation disabled",
+    "browser_policy": "play initializes under an enforced script-src self + wasm-unsafe-eval policy; no JavaScript unsafe-eval exception",
+    "controls": "assisted/direct keyboard actions, release, pause, blur freeze, deterministic reset, pagehide pause and replay terminal checked",
+    "responsive_viewport": {"size": [390,844], "horizontal_overflow": false, "steering_button_height_px": 60, "pause_button_width_px": 44}
+  },
+  "desktop_timing_screen": {
+    "environment": "T3 collaborative Chromium on the development host, 1280x900; local static server",
+    "commands": 500,
+    "simulated_seconds": 9.989812500000001,
+    "wall_ms": 1370.5,
+    "tick_p50_ms": 2.700000047683716,
+    "tick_p95_ms": 2.9000000953674316,
+    "tick_max_ms": 7.300000071525574,
+    "command_budget_ms": 20,
+    "all_final_state_values_finite": true
+  },
+  "reproduce": ["npm test", "npm run check"],
+  "limits": [
+    "Selected short fixed fixtures do not establish full-campaign equivalence across MuJoCo versions.",
+    "Timing is one desktop screen, not a latency guarantee on other devices.",
+    "Physical phone and emulator performance remain unverified; the narrow browser viewport is responsive-layout evidence only.",
+    "No human win-rate study, unseen-serve reliability, learned-controller improvement or ranked result is claimed."
+  ]
+}

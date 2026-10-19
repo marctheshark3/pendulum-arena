@@ -292,11 +292,12 @@ test('archived paired page has visible official player, direct fallbacks, no aut
 test('effective CSP permits the visible official YouTube API and frame', async () => {
   const headers = await readFile(new URL('../dist/_headers', import.meta.url), 'utf8');
   const csp = headers.split('\n').find(line => line.includes('Content-Security-Policy:'));
-  assert.match(csp, /script-src 'self' https:\/\/www\.youtube\.com;/);
+  const scriptSources = csp.match(/(?:^|;)\s*script-src\s+([^;]+)/)[1].trim().split(/\s+/);
+  assert.deepEqual(new Set(scriptSources), new Set(["'self'", "'wasm-unsafe-eval'", 'https://www.youtube.com']));
   assert.match(csp, /frame-src https:\/\/www\.youtube\.com;/);
   assert.match(csp, /media-src 'self'/);
   assert.match(csp, /connect-src 'self'/);
-  assert.doesNotMatch(csp, /unsafe-eval|googlevideo|ytimg/);
+  assert.doesNotMatch(csp, /'unsafe-eval'|googlevideo|ytimg/);
   assert.match(headers, /Referrer-Policy: strict-origin-when-cross-origin/);
 });
 

@@ -1,0 +1,26 @@
+<mujoco model="floppy-brick-breaker-arcade-one-link-v1">
+      <compiler angle="radian" />
+      <option gravity="0 0 -9.81" timestep="6.25e-05" integrator="RK4" solver="Newton" iterations="100" tolerance="1e-12" />
+      <default>
+        <geom contype="0" conaffinity="0" condim="1" friction="0 0 0" />
+        <pair condim="1" friction="0 0 0 0 0" solref="-4000000.0 -12.0" solimp=".9999 .9999 .001 .5 2" />
+      </default>
+      <worldbody>
+        <body name="bottom_cart" pos="0 0 -4.0" quat="1 0 0 0">
+          <joint name="bottom_rail" type="slide" axis="1 0 0" />
+          <geom name="bottom_cart" type="box" pos="0 0 -.07" size=".12 .06 .07" mass="1.0" />
+          <body name="bottom_link">
+            <joint name="bottom_hinge" type="hinge" axis="0 1 0" damping="0.015" />
+            <geom name="bottom_stem" type="capsule" fromto="0 0 0 0 0 0.97" size=".015" mass="0.2" />
+            <body name="bottom_paddle" pos="0 0 1.0">
+              <geom name="bottom_paddle" type="box" size="0.32 0.04 0.015" mass="0.05" />
+            </body>
+          </body>
+        </body><body name="ball" gravcomp="1"><joint name="ball_x" type="slide" axis="1 0 0" /><joint name="ball_z" type="slide" axis="0 0 1" />
+          <geom name="ball" type="sphere" size="0.06" mass="0.01" />
+        </body>
+        <geom name="left_wall" type="box" pos="-2.46875 0 0" size=".05 .1 4.5" />
+        <geom name="right_wall" type="box" pos="2.46875 0 0" size=".05 .1 4.5" />
+      <geom name="ceiling_wall" type="box" pos="0 0 4.35" size="2.5187500000000003 .1 .05" /><geom name="brick_b00" type="box" pos="-1.44 0 1.75" size="0.32 .1 0.11" /><geom name="brick_b01" type="box" pos="-0.72 0 1.75" size="0.32 .1 0.11" /><geom name="brick_b02" type="box" pos="0.0 0 1.75" size="0.32 .1 0.11" /><geom name="brick_b03" type="box" pos="0.72 0 1.75" size="0.32 .1 0.11" /><geom name="brick_b04" type="box" pos="1.44 0 1.75" size="0.32 .1 0.11" /><geom name="brick_b05" type="box" pos="-1.44 0 2.15" size="0.32 .1 0.11" /><geom name="brick_b06" type="box" pos="-0.72 0 2.15" size="0.32 .1 0.11" /><geom name="brick_b07" type="box" pos="0.0 0 2.15" size="0.32 .1 0.11" /><geom name="brick_b08" type="box" pos="0.72 0 2.15" size="0.32 .1 0.11" /><geom name="brick_b09" type="box" pos="1.44 0 2.15" size="0.32 .1 0.11" /><geom name="brick_b10" type="box" pos="-1.44 0 2.55" size="0.32 .1 0.11" /><geom name="brick_b11" type="box" pos="-0.72 0 2.55" size="0.32 .1 0.11" /><geom name="brick_b12" type="box" pos="0.0 0 2.55" size="0.32 .1 0.11" /><geom name="brick_b13" type="box" pos="0.72 0 2.55" size="0.32 .1 0.11" /><geom name="brick_b14" type="box" pos="1.44 0 2.55" size="0.32 .1 0.11" /></worldbody><contact><pair geom1="ball" geom2="bottom_cart" /><pair geom1="ball" geom2="bottom_stem" /><pair geom1="ball" geom2="bottom_paddle" /><pair geom1="ball" geom2="left_wall" /><pair geom1="ball" geom2="right_wall" /><pair geom1="ball" geom2="ceiling_wall" /><pair name="brick_b00" geom1="ball" geom2="brick_b00" /><pair name="brick_b01" geom1="ball" geom2="brick_b01" /><pair name="brick_b02" geom1="ball" geom2="brick_b02" /><pair name="brick_b03" geom1="ball" geom2="brick_b03" /><pair name="brick_b04" geom1="ball" geom2="brick_b04" /><pair name="brick_b05" geom1="ball" geom2="brick_b05" /><pair name="brick_b06" geom1="ball" geom2="brick_b06" /><pair name="brick_b07" geom1="ball" geom2="brick_b07" /><pair name="brick_b08" geom1="ball" geom2="brick_b08" /><pair name="brick_b09" geom1="ball" geom2="brick_b09" /><pair name="brick_b10" geom1="ball" geom2="brick_b10" /><pair name="brick_b11" geom1="ball" geom2="brick_b11" /><pair name="brick_b12" geom1="ball" geom2="brick_b12" /><pair name="brick_b13" geom1="ball" geom2="brick_b13" /><pair name="brick_b14" geom1="ball" geom2="brick_b14" /></contact>
+      <actuator><motor joint="bottom_rail" /></actuator>
+    </mujoco>

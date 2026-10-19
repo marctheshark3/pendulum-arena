@@ -1,0 +1,61 @@
+{
+  "browser_profile": "floppy-first-light-human-mujoco-3.8.0-v1",
+  "runtime": {
+    "package": "@mujoco/mujoco",
+    "package_version": "3.8.0",
+    "reported_version": "3.8.0",
+    "build": "single-threaded default ESM/WASM",
+    "package_url": "https://registry.npmjs.org/@mujoco/mujoco/-/mujoco-3.8.0.tgz",
+    "package_sha512": "iLuXP2qM0gH/II898gvg2UEcuooXC7s44RVNyObnGHZkHKvvihLgZp0tJM2oZfciPlYxBbChsRMcU4on5Zt5rg==",
+    "source_url": "https://github.com/google-deepmind/mujoco/tree/3.8.0",
+    "license": "Apache-2.0",
+    "files": {
+      "mujoco.js": "66777739ae30c38c7ead0221a79e05cbcbad31da3eabeea8fb3f4789c80f22cc",
+      "mujoco.wasm": "a91233f2b4d77bdac310e2050a07e3b882da7fade32d94c80c960a9ec5f5ea53",
+      "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "THIRD_PARTY_NOTICES": "56104bcb2323d11014281936e2252c841eb01baedc1737d81e55c5df21cc52e0",
+      "EMSCRIPTEN_LICENSE": "620a78084fc7ca97c0b5dea9abf891f3ffcadfdbf305276f099c9c4e12fc1d86",
+      "embind-static-csp.patch": "8acadc6b0ab44440ffec982e2e02248c8574c86e19e84d59225043a7d9019e96"
+    },
+    "third_party_notices_source": "https://github.com/google-deepmind/mujoco/releases/download/3.8.0/mujoco-3.8.0-linux-aarch64.tar.gz",
+    "third_party_notices_note": "Unmodified upstream3.8.0 distribution notice retained conservatively; describes native distribution as well as engine dependencies.",
+    "upstream_files": {
+      "mujoco.js": "38caa5929112452a03b7921a5d81fc3e6b05619e8d446995128d93a906848575",
+      "mujoco.wasm": "a91233f2b4d77bdac310e2050a07e3b882da7fade32d94c80c960a9ec5f5ea53"
+    },
+    "loader_modification": {
+      "name": "Static Embind CSP compatibility patch",
+      "description": "Only craftInvokerFunction and __emval_get_method_caller are replaced by upstream Emscripten4.0.10 DYNAMIC_EXECUTION=0 synchronous static-closure fallbacks. WASM unchanged. The served loader is derived, not byte-identical to the official npm loader.",
+      "source_files": {
+        "https://github.com/emscripten-core/emscripten/blob/4.0.10/src/lib/libembind.js": "ea292d9b7e9fcdea03697c062ef4f9fd4da616fead87d62e1f88c6b77d209b14",
+        "https://github.com/emscripten-core/emscripten/blob/4.0.10/src/lib/libemval.js": "6b925c0a18f7cecafe810486cb40ff23f39ca19bd2e46ebf4d19194312c3acfa"
+      },
+      "license": "MIT OR University of Illinois/NCSA Open Source License; full upstream notice retained in EMSCRIPTEN_LICENSE",
+      "reproduce": "Extract mujoco.js from exact npm package, then patch -p0 < embind-static-csp.patch",
+      "validation": "Existing engine tests pass under node --disallow-code-generation-from-strings; strict browser CSP validation is recorded separately.",
+      "source_commit": "b7dc6e5747465580df5984e723b9d1f10d8e804b"
+    }
+  },
+  "selected_original_source": {
+    "commit": "74bde0779fc9bc6b569ffd10e07b0db18de6ad85",
+    "native_runtime": "MuJoCo 3.3.5",
+    "rules_revision": 2,
+    "files": {
+      "physics.py": "842c8647f0fe77fe819c5a41f55c2947461e62aa7648bf73b0af3dd52a4c7a5a",
+      "breaker.py": "bcc6191bc9008bfa1469e4880299f5b8abb4b48099f3e425422c15a508e95e4c",
+      "protocol.py": "732cecccf79928fa39c7891bf5b36cbecd84f7432afb470012cf6b86eaddaf82"
+    },
+    "export_note": "Model, profile, original First Light board, and fixed NumPy seed20261019 three-life serve schedule exported without native instantiation or stepping."
+  },
+  "exports": {
+    "model.xml": "e6f17e245384c1edfe23952c52f6c677595ebae79828117914fdbf8c2da0a0b5",
+    "profile.json": "486d6315dfcfaf720935659271fe1a36085dac01447aab4680b1dada4822043a",
+    "serves.json": "c0b3eed11e47044a70adfc755a4a432675001f2827c78c5c8a905ee3cc6fd3af"
+  },
+  "claim_limits": [
+    "Separate browser runtime; no native campaign equivalence or ranked result claim.",
+    "One-link First Light only; human input modes are separate from autonomous controller competition.",
+    "No damage/reward redesign; 100 points for each of the fifteen destroyed one-HP bricks.",
+    "Fixed posture helper changes only delivered cart force; it does not read the ball or edit native state."
+  ]
+}

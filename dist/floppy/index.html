@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101716">
+  <meta name="description" content="One motor. One floppy paddle. Play First Light, a one-board human Brick Breaker alpha, or watch a retained autonomous clear.">
+  <link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/floppy/floppy.css">
+  <link rel="canonical" href="https://arena.neuralyogi.com/floppy/">
+  <title>Floppy Brick Breaker · Pendulum Arena</title>
+  <script type="module" src="/floppy/app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#game">Skip to the game</a>
+  <header class="site-header">
+    <a class="wordmark" href="/" aria-label="Pendulum Arena home"><svg viewBox="0 0 32 36" aria-hidden="true"><path d="M3 29h26M8 29V18l9-8 8 7"/><circle cx="17" cy="10" r="3"/><circle cx="25" cy="17" r="3"/></svg><span>PENDULUM<br>ARENA<span class="brand-star">✳</span></span></a>
+    <a class="back-link" href="/">The research arena <span aria-hidden="true">↗</span></a>
+    <span class="alpha-badge">HUMAN PLAY / ALPHA 01</span>
+  </header>
+  <main>
+    <section class="intro" aria-labelledby="title">
+      <div><p class="eyebrow"><span class="dot"></span> ONE MOTOR. AN UNREASONABLE PADDLE.</p><h1 id="title">FLOPPY<br><span>BRICK BREAKER.</span></h1></div>
+      <div class="intro-copy"><p class="credit">Floppy game concept and human-versus-bot challenge idea by Corben; developed together by Corben and Marc, with their agents.</p><p>Keep the paddle upright.<br>Send the ball through the skyline.</p><a href="#rules">How this one works <span aria-hidden="true">↓</span></a></div>
+    </section>
+    <section class="arena" id="game" aria-labelledby="board-title">
+      <div class="arena-top"><div><p class="eyebrow">BOARD 01 / ONE LINK</p><h2 id="board-title">First Light<span>Open the skyline.</span></h2></div><div class="mode-tabs" role="tablist" aria-label="Game mode"><button id="play-tab" class="active" role="tab" aria-selected="true" aria-controls="play-panel">Play it</button><button id="watch-tab" role="tab" aria-selected="false" aria-controls="watch-panel" tabindex="-1">Watch a clear <span aria-hidden="true">↗</span></button></div></div>
+      <div class="game-grid">
+        <div class="court-column">
+          <div class="court-top"><span id="court-mode">HUMAN / ASSISTED DIRECTOR</span><span id="court-status"><i class="status-light"></i>LOADING</span></div>
+          <div class="court-wrap" id="court-wrap">
+            <canvas id="court" width="720" height="1280" tabindex="0" role="img" aria-label="First Light court. Fifteen bricks above a ball and an inverted pendulum paddle. Use the controls beside or below the court."></canvas>
+            <div class="court-overlay" id="court-overlay"><div class="overlay-kicker" id="overlay-kicker">YOUR TURN, HUMAN</div><h3 id="overlay-title">A little balance.<br>A lot of nerve.</h3><p id="overlay-copy">Loading the court…</p><button class="button lime-button" id="overlay-action" disabled>Loading… <span aria-hidden="true">↗</span></button></div>
+          </div>
+          <div class="court-bottom"><span>ONE CART / ONE PASSIVE HINGE</span><span id="clock-note">SIMULATION CLOCK</span></div>
+        </div>
+        <aside class="control-deck">
+          <div class="scoreboard" aria-label="Current game statistics"><div class="score-main"><span>SCORE</span><strong id="score">0000</strong><span id="score-note">100 POINTS / REMOVED BRICK</span></div><div class="mini-stats"><div><span>BRICKS</span><strong><b id="bricks">0</b><small>/ 15</small></strong></div><div><span>LIVES</span><strong id="lives">3</strong></div><div><span id="time-label">TIME LEFT</span><strong id="time">2:00</strong></div></div></div>
+          <div id="play-panel" role="tabpanel" aria-labelledby="play-tab">
+            <div class="control-heading"><span class="number">01</span><div><h3>You steer. It balances.</h3><p>Move the target along the rail. A balance assist supplies the cart force; the hinge stays passive.</p></div></div>
+            <fieldset class="input-mode"><legend>Control style</legend><label><input type="radio" name="control-mode" value="assisted" checked><span>Assisted director <small>Recommended first</small></span></label><label><input type="radio" name="control-mode" value="direct"><span>Direct cart force <small>You handle the balance</small></span></label></fieldset>
+            <div class="target-readout"><span id="target-label">TARGET POSITION</span><strong id="target-value">+0.00 <small>m</small></strong></div>
+            <div class="steer-dock"><div class="steer-controls" aria-label="Steering controls"><button id="steer-left" class="steer" aria-label="Steer left, hold A or left arrow"><span aria-hidden="true">←</span><small>A / LEFT</small></button><button id="steer-center" class="center-control" aria-label="Center target">CENTER<span aria-hidden="true">·</span></button><button id="steer-right" class="steer" aria-label="Steer right, hold D or right arrow"><span aria-hidden="true">→</span><small>D / RIGHT</small></button><button id="mobile-pause" class="mobile-pause" aria-label="Pause game">Ⅱ</button></div></div>
+            <p class="key-note">Hold a button or focus the court and use <kbd>A</kbd> <kbd>D</kbd> / arrow keys. <kbd>Space</kbd> pauses.</p>
+            <div class="primary-actions"><button id="go" class="button lime-button" disabled>Loading physics… <span aria-hidden="true">↗</span></button><button id="reset" class="button reset-button" disabled aria-label="Reset this board">Reset <span aria-hidden="true">↺</span></button></div>
+            <p id="feedback" class="feedback" role="status" aria-live="polite">Preparing the court. Nothing moves until you press Go.</p>
+            <div class="session-spec"><span>FIXED BOARD / FIXED SERVE SEED</span><span>3 LIVES · 120 SIMULATED SECONDS</span><span>LOCAL PLAY · NO RANKED SCORE</span></div>
+          </div>
+          <div id="watch-panel" role="tabpanel" aria-labelledby="watch-tab" hidden>
+            <div class="control-heading"><span class="number">↗</span><div><h3>A controller goes first.</h3><p>A retained autonomous First Light clear. A recording, with no live human input.</p></div></div>
+            <div class="replay-card"><span class="eyebrow">SELECTED RECORDING / ONE LINK</span><h3>15 bricks.<br>One floppy paddle.</h3><p id="replay-description">The full First Light board, from reset to clear.</p><dl><dt>Board</dt><dd>First Light · 15 / 15</dd><dt>Score</dt><dd>1,500 points</dd><dt>Scope</dt><dd>Board clear; later campaign unfinished</dd></dl></div>
+            <div class="replay-progress"><label for="replay-position">RECORDING POSITION <output id="replay-time">0:00 / 0:45</output></label><input id="replay-position" type="range" min="0" max="1" step="0.001" value="0" disabled aria-label="Recording position"></div>
+            <div class="primary-actions"><button id="replay-go" class="button lime-button" disabled>Loading recording… <span aria-hidden="true">▶</span></button><button id="replay-reset" class="button reset-button" aria-label="Restart recording">Restart <span aria-hidden="true">↺</span></button></div>
+            <p class="feedback" id="replay-status" role="status">Loading the selected recording.</p>
+            <p class="replay-limit">Retained source evidence, presented at 10 Hz. This is not an independent reproduction or a browser benchmark. The native recording used MuJoCo 3.3.5.</p>
+          </div>
+        </aside>
+      </div>
+      <p class="profile-note"><span class="dot"></span> BROWSER PROFILE · <span id="runtime-version">MuJoCo WebAssembly</span> · Selected one-link model and board, a different runtime from the retained research. Browser play is a separate alpha.</p>
+    </section>
+    <section class="rules" id="rules" aria-labelledby="rules-title"><div class="rules-intro"><p class="eyebrow">THE RULES TRAVEL WITH THE GAME</p><h2 id="rules-title">Clear the skyline.<br><em>Keep your balance.</em></h2><p>The ball has no gravity. Your pendulum does. Only the cart has a motor, so every return disturbs the paddle you need for the next one.</p></div><div class="rule-list"><article><span>01 / THE BOARD</span><h3>15 bricks. 100 points each.</h3><p>Every First Light brick has one health point. Row colors help you read the board; deeper bricks award the same points. A clear completes after the final contact separates.</p></article><article><span>02 / THE LIVES</span><h3>Three chances to stay together.</h3><p>A missed ball, collapse, rail or court-edge fault, body contact or illegal paddle-face contact costs a life. Removed bricks stay removed. A new life begins with a two-second warmup.</p></article><article><span>03 / THE CLOCK</span><h3>120 seconds of simulation.</h3><p>Clear all fifteen bricks to win. A timeout ends the board without a win. Changing tabs, leaving the window or a slow frame pauses human play; press Resume when you return.</p></article><article><span>04 / THE MODES</span><h3>Play is its own lane.</h3><p>Human assisted and direct play are separate from the autonomous Corben-versus-Marc competition. There is no leaderboard or submitted-bot ranking in this alpha.</p></article></div></section>
+    <section class="about"><div><p class="eyebrow">CREDIT IS PART OF THE EXPERIMENT.</p><h2>Built together.<br><em>With the receipts.</em></h2></div><div><p>Floppy game concept and human-versus-bot challenge idea by Corben; developed together by Corben and Marc, with their agents.</p><p>The public release includes selected model, rules and recording provenance. Controller research keeps its own frozen versions, evidence and limits.</p><div class="source-links"><a href="/floppy/credits.txt">Sources &amp; release scope ↗</a><a href="https://github.com/marctheshark3/pendulum-arena/tree/main/dist/floppy">Read the public source ↗</a><a href="/">Back to the arena ↗</a></div></div></section>
+  </main>
+  <footer><a href="https://neuralyogi.com" class="footer-brand">RAGE INDUSTRIES<span>by NeuralYogi ↗</span></a><p>Small problem. Unreasonable paddle.</p><span>Simulation · One-board alpha · Credit the work.</span></footer>
+  <noscript><p class="noscript">JavaScript enables the physics, controls and recording. You can still read the rules and <a href="/floppy/credits.txt">source notes</a>.</p></noscript>
+</body>
+</html>

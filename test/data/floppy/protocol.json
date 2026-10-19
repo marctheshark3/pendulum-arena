@@ -1,0 +1,24 @@
+{
+  "id": "marc-floppy-browser-alpha-fixtures-v1-20261019",
+  "purpose": "Finite browser-port integration validation, not research campaign qualification",
+  "native_source_commit": "74bde0779fc9bc6b569ffd10e07b0db18de6ad85",
+  "native_runtime": "MuJoCo3.3.5/Python3.11.15/NumPy2.4.6",
+  "profile": "original one-link BreakerProfile, First Light, rules_revision2",
+  "native_budget": {"steps": 6400, "compilations": 10, "wall_seconds": 120},
+  "inputs": [
+    {"id":"equilibrium", "qpos":[0,0,0,0], "qvel":[0,0,0,0], "phase":"warmup", "force":0},
+    {"id":"positive-pulse", "qpos":[0.1,0.02,0,0], "qvel":[0,0,0,0], "phase":"rally", "force":4},
+    {"id":"negative-pulse", "qpos":[-0.1,-0.02,0,0], "qvel":[0,0,0,0], "phase":"rally", "force":-4},
+    {"id":"brick-damage-separation", "qpos":[0,0,0,1.577], "qvel":[0,0,0,3.5], "phase":"rally", "force":0},
+    {"id":"paddle-center", "qpos":[0,0,0,-2.922], "qvel":[0,0,0,-3.5], "phase":"rally", "force":0},
+    {"id":"paddle-offset", "qpos":[0,0,0.16,-2.922], "qvel":[0,0,0,-3.5], "phase":"rally", "force":0},
+    {"id":"illegal-side", "qpos":[0,0,0.383,-3], "qvel":[0,0,-3.5,0], "phase":"rally", "force":0},
+    {"id":"stem-hit", "qpos":[0,0,0.078,-3.5], "qvel":[0,0,-3.5,0], "phase":"rally", "force":0},
+    {"id":"miss", "qpos":[0,0,0,-4.299], "qvel":[0,0,0,-3.5], "phase":"rally", "force":0},
+    {"id":"last-brick-clear", "qpos":[0,0,-1.44,1.577], "qvel":[0,0,0,3.5], "phase":"rally", "force":0, "only_alive":"b00"}
+  ],
+  "commands_per_fixture": 2,
+  "stop": "No repeat or tuning of consumed inputs; preserve failure and diagnose from retained records. No campaign, optimizer, reserved/cohort or remote work.",
+  "comparison_gate": {"qpos_absolute": 0.000001, "qvel_absolute": 0.00001, "game_state": "exact phase/score/hits/health/active/lives/outcome and event kinds/geometries"},
+  "claim_limit": "Selected fixed local cases only; different engine version, browser implementation and human input division remain separately named. No whole-campaign or unseen-seed qualification."
+}

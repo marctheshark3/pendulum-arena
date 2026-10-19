@@ -1,0 +1,159 @@
+--- mujoco.js
++++ mujoco.js
+@@ -5159,61 +5159,57 @@
+       return requiredArgCount;
+     }
+   
+-  function craftInvokerFunction(humanName, argTypes, classType, cppInvokerFunc, cppTargetFunc, /** boolean= */ isAsync) {
+-      // humanName: a human-readable string name for the function to be generated.
+-      // argTypes: An array that contains the embind type objects for all types in the function signature.
+-      //    argTypes[0] is the type object for the function return value.
+-      //    argTypes[1] is the type object for function this object/class type, or null if not crafting an invoker for a class method.
+-      //    argTypes[2...] are the actual function parameters.
+-      // classType: The embind type object for the class to be bound, or null if this is not a method of a class.
+-      // cppInvokerFunc: JS Function object to the C++-side function that interops into C++ code.
+-      // cppTargetFunc: Function pointer (an integer to FUNCTION_TABLE) to the target C++ function the cppInvokerFunc will end up calling.
+-      // isAsync: Optional. If true, returns an async function. Async bindings are only supported with JSPI.
++  // Local CSP compatibility change: upstream Emscripten 4.0.10
++  // DYNAMIC_EXECUTION=0 synchronous fallback. Copyright 2012 The Emscripten
++  // Authors; MIT / University of Illinois-NCSA. See EMSCRIPTEN_LICENSE.
++  function craftInvokerFunction(humanName, argTypes, classType, cppInvokerFunc, cppTargetFunc, isAsync) {
+       var argCount = argTypes.length;
+-  
+       if (argCount < 2) {
+         throwBindingError("argTypes array size mismatch! Must at least get return value and 'this' types!");
+       }
+-  
+       assert(!isAsync, 'Async bindings are only supported with JSPI.');
+       var isClassMethodFunc = (argTypes[1] !== null && classType !== null);
+-  
+-      // Free functions with signature "void function()" do not need an invoker that marshalls between wire types.
+-      // TODO: This omits argument count check - enable only at -O3 or similar.
+-      //    if (ENABLE_UNSAFE_OPTS && argCount == 2 && argTypes[0].name == "void" && !isClassMethodFunc) {
+-      //       return FUNCTION_TABLE[fn];
+-      //    }
+-  
+-      // Determine if we need to use a dynamic stack to store the destructors for the function parameters.
+-      // TODO: Remove this completely once all function invokers are being dynamically generated.
+       var needsDestructorStack = usesDestructorStack(argTypes);
+-  
+       var returns = (argTypes[0].name !== 'void');
+-  
+       var expectedArgCount = argCount - 2;
+       var minArgs = getRequiredArgCount(argTypes);
+-      // Builld the arguments that will be passed into the closure around the invoker
+-      // function.
+-      var closureArgs = [humanName, throwBindingError, cppInvokerFunc, cppTargetFunc, runDestructors, argTypes[0], argTypes[1]];
+-      for (var i = 0; i < argCount - 2; ++i) {
+-        closureArgs.push(argTypes[i+2]);
+-      }
+-      if (!needsDestructorStack) {
+-        // Skip return value at index 0 - it's not deleted here. Also skip class type if not a method.
+-        for (var i = isClassMethodFunc?1:2; i < argTypes.length; ++i) {
+-          if (argTypes[i].destructorFunction !== null) {
+-            closureArgs.push(argTypes[i].destructorFunction);
+-          }
+-        }
+-      }
+-      closureArgs.push(checkArgCount, minArgs, expectedArgCount);
+-  
+-      let [args, invokerFnBody] = createJsInvoker(argTypes, isClassMethodFunc, returns, isAsync);
+-      var invokerFn = new Function(...args, invokerFnBody)(...closureArgs);
++      var argsWired = new Array(expectedArgCount);
++      var invokerFuncArgs = [];
++      var destructors = [];
++      var invokerFn = function(...args) {
++        checkArgCount(args.length, minArgs, expectedArgCount, humanName, throwBindingError);
++        destructors.length = 0;
++        var thisWired;
++        invokerFuncArgs.length = isClassMethodFunc ? 2 : 1;
++        invokerFuncArgs[0] = cppTargetFunc;
++        if (isClassMethodFunc) {
++          thisWired = argTypes[1]['toWireType'](destructors, this);
++          invokerFuncArgs[1] = thisWired;
++        }
++        for (var i = 0; i < expectedArgCount; ++i) {
++          argsWired[i] = argTypes[i + 2]['toWireType'](destructors, args[i]);
++          invokerFuncArgs.push(argsWired[i]);
++        }
++        var rv = cppInvokerFunc(...invokerFuncArgs);
++        function onDone(rv) {
++          if (needsDestructorStack) {
++            runDestructors(destructors);
++          } else {
++            for (var i = isClassMethodFunc ? 1 : 2; i < argTypes.length; i++) {
++              var param = i === 1 ? thisWired : argsWired[i - 2];
++              if (argTypes[i].destructorFunction !== null) {
++                argTypes[i].destructorFunction(param);
++              }
++            }
++          }
++          if (returns) return argTypes[0]['fromWireType'](rv);
++        }
++        return onDone(rv);
++      };
+       return createNamedFunction(humanName, invokerFn);
+     }
+-  
+-  
++
++
+   var heap32VectorToArray = (count, firstElement) => {
+       var array = [];
+       for (var i = 0; i < count; i++) {
+@@ -6150,42 +6146,22 @@
+     };
+   
+   
++  // Local CSP compatibility change: upstream Emscripten 4.0.10
++  // DYNAMIC_EXECUTION=0 fallback; license retained in EMSCRIPTEN_LICENSE.
+   var __emval_get_method_caller = (argCount, argTypes, kind) => {
+       var types = emval_lookupTypes(argCount, argTypes);
+       var retType = types.shift();
+-      argCount--; // remove the shifted off return type
+-  
+-      var functionBody =
+-        `return function (obj, func, destructorsRef, args) {\n`;
+-  
+-      var offset = 0;
+-      var argsList = []; // 'obj?, arg0, arg1, arg2, ... , argN'
+-      if (kind === /* FUNCTION */ 0) {
+-        argsList.push('obj');
+-      }
+-      var params = ['retType'];
+-      var args = [retType];
+-      for (var i = 0; i < argCount; ++i) {
+-        argsList.push(`arg${i}`);
+-        params.push(`argType${i}`);
+-        args.push(types[i]);
+-        functionBody +=
+-          `  var arg${i} = argType${i}.readValueFromPointer(args${offset ? '+' + offset : ''});\n`;
+-        offset += types[i].argPackAdvance;
+-      }
+-      var invoker = kind === /* CONSTRUCTOR */ 1 ? 'new func' : 'func.call';
+-      functionBody +=
+-        `  var rv = ${invoker}(${argsList.join(', ')});\n`;
+-      if (!retType.isVoid) {
+-        params.push('emval_returnValue');
+-        args.push(emval_returnValue);
+-        functionBody +=
+-          '  return emval_returnValue(retType, destructorsRef, rv);\n';
+-      }
+-      functionBody +=
+-        "};\n";
+-  
+-      var invokerFunction = new Function(...params, functionBody)(...args);
++      argCount--;
++      var argN = new Array(argCount);
++      var invokerFunction = (obj, func, destructorsRef, args) => {
++        var offset = 0;
++        for (var i = 0; i < argCount; ++i) {
++          argN[i] = types[i]['readValueFromPointer'](args + offset);
++          offset += types[i].argPackAdvance;
++        }
++        var rv = kind === 1 ? Reflect.construct(func, argN) : func.apply(obj, argN);
++        return emval_returnValue(retType, destructorsRef, rv);
++      };
+       var functionName = `methodCaller<(${types.map(t => t.name).join(', ')}) => ${retType.name}>`;
+       return emval_addMethodCaller(createNamedFunction(functionName, invokerFunction));
+     };

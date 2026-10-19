@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "python3 -m http.server 4315 --directory dist --bind 127.0.0.1",
     "test": "node --test test/*.test.mjs",
-    "check": "node scripts/validate-registry.mjs && node scripts/check-site.mjs"
+    "check": "node scripts/validate-registry.mjs && node scripts/check-site.mjs && node --disallow-code-generation-from-strings scripts/check-floppy-port.mjs"
   },
   "engines": { "node": ">=22" }
 }
